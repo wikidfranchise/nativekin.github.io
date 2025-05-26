@@ -1,3 +1,3 @@
-## About NativeKin
+## About
 
-This site exists to reconnect and reclaim Indigenous identity, law, and leadership—one record at a time. Built by allies, led by data.
+This is a syllabus-driven project to document and share Indigenous movements, voices, and legal struggles.
