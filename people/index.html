@@ -1,75 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>NativeKin | People</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9ac53; color: #2b2a2b; }
-        header { background: #757bc8; color: white; padding: 1rem 2rem; }
-        nav a { color: white; margin-right: 1.5rem; text-decoration: none; font-weight: bold; }
-        nav a:hover { text-decoration: underline; }
-        main { padding: 2rem; }
-        footer { background: #b0b1a6; color: #2b2a2b; padding: 1rem 2rem; text-align: center; font-size: 0.9em; }
-        section { margin-bottom: 2rem; padding: 1rem; background: #fff5e6; border-radius: 8px; }
-        h2 { margin-top: 0; color: #757bc8; border-bottom: 2px solid #757bc8; }
-        ul { list-style: none; padding-left: 1rem; }
-        li { margin: 0.5rem 0; font-weight: bold; }
-        a { color: #d98c94; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-    </style>
+  <meta charset="UTF-8">
+  <title>NativeKin | People</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9ac53;
+      color: #2b2a2b;
+    }
+    header {
+      background: #757bc8;
+      color: white;
+      padding: 1rem 2rem;
+    }
+    nav a {
+      color: white;
+      margin-right: 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .card {
+      background: #fff5e6;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      width: 300px;
+      padding: 1rem;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .card h3 {
+      margin: 0.5rem 0 0.25rem;
+      color: #2b2a2b;
+    }
+    .card p {
+      margin: 0.25rem 0;
+    }
+    .social-links a {
+      margin: 0 0.5rem;
+      text-decoration: none;
+      color: #d98c94;
+      font-weight: bold;
+    }
+    footer {
+      background: #b0b1a6;
+      color: #2b2a2b;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>People of NativeKin</h1>
-        <nav>
-            <a href="/">Home</a>
-            <a href="/people/">People</a>
-            <a href="/movements/">Movements</a>
-            <a href="/treaties/">Treaties</a>
-            <a href="/legal/">Legal</a>
-            <a href="/media/">Media</a>
-        </nav>
-    </header>
-    <main>
-        <p>Explore key figures grouped by their tribal affiliations. Click a name to read their full bio.</p>
+  <header>
+    <h1>People of NativeKin</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/people/">People</a>
+      <a href="/movements/">Movements</a>
+      <a href="/treaties/">Treaties</a>
+      <a href="/legal/">Legal</a>
+      <a href="/media/">Media</a>
+    </nav>
+  </header>
+  <main>
+    <!-- Tara Houska -->
+    <div class="card">
+      <img src="https://example.com/images/tara-houska.jpg" alt="Tara Houska">
+      <h3>Tara Houska</h3>
+      <p><strong>Tribe:</strong> Couchiching First Nation (Anishinaabe)</p>
+      <p>Tribal attorney, land defender, founder of Giniw Collective, and environmental justice advocate.</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/zhaabowekwe/" target="_blank">Instagram</a>
+        <a href="https://twitter.com/zhaabowekwe" target="_blank">Twitter</a>
+      </div>
+    </div>
 
-        <section>
-            <h2>Diné (Navajo Nation)</h2>
-            <ul>
-                <li><a href="emma-robbins.html">Emma Robbins</a> – clean water activist</li>
-            </ul>
-        </section>
+    <!-- Julian Brave NoiseCat -->
+    <div class="card">
+      <img src="https://example.com/images/julian-noisecat.jpg" alt="Julian Brave NoiseCat">
+      <h3>Julian Brave NoiseCat</h3>
+      <p><strong>Tribe:</strong> Canim Lake Band Tsq'escen (Secwepemc) / Lil’Wat</p>
+      <p>Writer, filmmaker, policy analyst, and advocate for Indigenous rights and climate justice.</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/jnoisecat/" target="_blank">Instagram</a>
+        <a href="https://twitter.com/jnoisecat" target="_blank">Twitter</a>
+      </div>
+    </div>
 
-        <section>
-            <h2>White Earth Ojibwe</h2>
-            <ul>
-                <li><a href="winona-laduke.html">Winona LaDuke</a> – Honor the Earth founder</li>
-            </ul>
-        </section>
+    <!-- Winona LaDuke -->
+    <div class="card">
+      <img src="https://example.com/images/winona-laduke.jpg" alt="Winona LaDuke">
+      <h3>Winona LaDuke</h3>
+      <p><strong>Tribe:</strong> White Earth Nation (Ojibwe)</p>
+      <p>Environmentalist, economist, author, and founder of the White Earth Land Recovery Project.</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/winonaladuke/" target="_blank">Instagram</a>
+      </div>
+    </div>
 
-        <section>
-            <h2>Laguna Pueblo</h2>
-            <ul>
-                <li><a href="debra-haaland.html">Deb Haaland</a> – Secretary of the Interior</li>
-            </ul>
-        </section>
+    <!-- Deb Haaland -->
+    <div class="card">
+      <img src="https://example.com/images/deb-haaland.jpg" alt="Deb Haaland">
+      <h3>Deb Haaland</h3>
+      <p><strong>Tribe:</strong> Laguna Pueblo</p>
+      <p>Former U.S. Secretary of the Interior and one of the first Native American women in Congress.</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/repdebhaaland/" target="_blank">Instagram</a>
+        <a href="https://twitter.com/repdebhaaland" target="_blank">Twitter</a>
+      </div>
+    </div>
 
-        <section>
-            <h2>Couchiching First Nation (Anishinaabe)</h2>
-            <ul>
-                <li><a href="tara-houska.html">Tara Houska</a> – climate justice legal advisor</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Secwepemc / Lil’Wat Nation</h2>
-            <ul>
-                <li><a href="julian-brave-noisecat.html">Julian Brave NoiseCat</a> – writer & filmmaker</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        &copy; 2025 NativeKin. Built with integrity. Hosted on GitHub Pages.
-    </footer>
+    <!-- Emma Robbins -->
+    <div class="card">
+      <img src="https://example.com/images/emma-robbins.jpg" alt="Emma Robbins">
+      <h3>Emma Robbins</h3>
+      <p><strong>Tribe:</strong> Diné (Navajo Nation)</p>
+      <p>Artist, activist, and founder of The Chapter House, focusing on Indigenous women's empowerment.</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/emmarobbinz/" target="_blank">Instagram</a>
+        <a href="https://twitter.com/robbinzintherez" target="_blank">Twitter</a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    &copy; 2025 NativeKin. Built with integrity. Hosted on GitHub Pages.
+  </footer>
 </body>
 </html>
