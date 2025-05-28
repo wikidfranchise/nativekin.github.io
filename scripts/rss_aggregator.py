@@ -1,17 +1,17 @@
-
 import feedparser
 import json
-from datetime import datetime
+import os
 
-# Load the tribal news sources
-with open('nativekin_feeds.json', 'r') as f:
+# Locate the feeds JSON file in the parent data/ directory
+feed_file = os.path.join(os.path.dirname(__file__), '..', 'data', 'nativekin_feeds.json')
+with open(feed_file, 'r') as f:
     tribal_news_sources = json.load(f)
 
 aggregated_articles = []
 
 for source in tribal_news_sources:
     feed = feedparser.parse(source['rss'])
-    for entry in feed.entries[:5]:  # Only pull latest 5 entries per source
+    for entry in feed.entries[:5]:  # Only fetch latest 5 per source
         aggregated_articles.append({
             'title': entry.get('title', 'No Title'),
             'link': entry.get('link', ''),
@@ -22,8 +22,9 @@ for source in tribal_news_sources:
             'national': source['national']
         })
 
-# Write the aggregated data
-with open('nativekin_aggregated_articles.json', 'w') as f:
+# Save the aggregated result in the data/ directory
+output_file = os.path.join(os.path.dirname(__file__), '..', 'data', 'nativekin_aggregated_articles.json')
+with open(output_file, 'w') as f:
     json.dump(aggregated_articles, f, indent=2)
 
-print(f"Aggregated {len(aggregated_articles)} articles from {len(tribal_news_sources)} sources.")
+print(f"✅ Aggregated {len(aggregated_articles)} articles from {len(tribal_news_sources)} sources.")
