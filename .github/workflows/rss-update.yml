@@ -27,6 +27,7 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add src/index.html
-          git commit -m "🔄 Auto-update RSS feed [skip ci]" || echo "No changes"
+          git add media/index.html
+          git commit -m "📰 Auto-update RSS feed [skip ci]" || echo "No changes"
           git push
+
