@@ -1,9 +1,9 @@
-name: Auto Update RSS Feed
+name: Update RSS Feed
 
 on:
   schedule:
-    - cron: '0 * * * *' # every hour
-  workflow_dispatch:
+    - cron: '0 * * * *'  # Every hour on the hour
+  workflow_dispatch:     # Also allows manual trigger from GitHub UI
 
 jobs:
   build:
@@ -12,21 +12,21 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Set up Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '20'
 
       - name: Install dependencies
-        run: npm install
+        run: npm install rss-parser
 
-      - name: Run generator
-        run: node generate.js
+      - name: Run RSS Feed Generator
+        run: node src/generate.js
 
-      - name: Commit and push
+      - name: Commit and push changes
         run: |
-          git config --global user.name "NativeKin Bot"
-          git config --global user.email "bot@nativekin.org"
-          git add index.html
-          git commit -m "Auto-update feed"
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add src/index.html
+          git commit -m "🔄 Auto-update RSS feed [skip ci]" || echo "No changes"
           git push
