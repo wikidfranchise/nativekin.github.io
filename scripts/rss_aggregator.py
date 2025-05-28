@@ -2,16 +2,21 @@ import feedparser
 import json
 import os
 
-# Locate the feeds JSON file in the parent data/ directory
-feed_file = os.path.join(os.path.dirname(__file__), '..', 'data', 'nativekin_feeds.json')
+# Resolve path to ../data/nativekin_feeds.json
+base_dir = os.path.dirname(__file__)
+feed_file = os.path.join(base_dir, '..', 'data', 'nativekin_feeds.json')
+output_file = os.path.join(base_dir, '..', 'data', 'nativekin_aggregated_articles.json')
+
+# Load the feed registry
 with open(feed_file, 'r') as f:
     tribal_news_sources = json.load(f)
 
 aggregated_articles = []
 
+# Fetch and process each feed
 for source in tribal_news_sources:
     feed = feedparser.parse(source['rss'])
-    for entry in feed.entries[:5]:  # Only fetch latest 5 per source
+    for entry in feed.entries[:5]:
         aggregated_articles.append({
             'title': entry.get('title', 'No Title'),
             'link': entry.get('link', ''),
@@ -22,8 +27,7 @@ for source in tribal_news_sources:
             'national': source['national']
         })
 
-# Save the aggregated result in the data/ directory
-output_file = os.path.join(os.path.dirname(__file__), '..', 'data', 'nativekin_aggregated_articles.json')
+# Save output
 with open(output_file, 'w') as f:
     json.dump(aggregated_articles, f, indent=2)
 
