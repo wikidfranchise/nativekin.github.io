@@ -2,18 +2,17 @@ import feedparser
 import json
 import os
 
-# Resolve path to ../data/nativekin_feeds.json
-base_dir = os.path.dirname(__file__)
-feed_file = os.path.join(base_dir, '..', 'data', 'nativekin_feeds.json')
-output_file = os.path.join(base_dir, '..', 'data', 'nativekin_aggregated_articles.json')
+# Correct path to the feed file located in ../data/
+feed_file = os.path.join(os.path.dirname(__file__), '..', 'data', 'nativekin_feeds.json')
+output_file = os.path.join(os.path.dirname(__file__), '..', 'data', 'nativekin_aggregated_articles.json')
 
-# Load the feed registry
+# Load feed registry
 with open(feed_file, 'r') as f:
     tribal_news_sources = json.load(f)
 
 aggregated_articles = []
 
-# Fetch and process each feed
+# Parse feeds
 for source in tribal_news_sources:
     feed = feedparser.parse(source['rss'])
     for entry in feed.entries[:5]:
