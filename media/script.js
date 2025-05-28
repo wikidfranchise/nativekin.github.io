@@ -1,43 +1,35 @@
+
 document.addEventListener('DOMContentLoaded', () => {
   const searchInput = document.getElementById('search');
+  const articleContainer = document.getElementById('articles');
 
-  // Append fetched articles
-  function renderArticles(items) {
-    const body = document.querySelector('body');
-    items.forEach(item => {
-      const article = document.createElement('article');
-      article.classList.add('article');
-      article.innerHTML = `
-        <h2><a href="${item.link}" target="_blank">${item.title}</a></h2>
-        <p class="source">${item.pubDate}</p>
-        <p>${item.description}</p>
+  fetch('/data/nativekin_aggregated_articles.json')
+    .then(response => response.json())
+    .then(data => {
+      renderArticles(data);
+
+      searchInput.addEventListener('input', () => {
+        const term = searchInput.value.toLowerCase();
+        const filtered = data.filter(article =>
+          article.title.toLowerCase().includes(term) ||
+          article.summary.toLowerCase().includes(term) ||
+          article.tribe.toLowerCase().includes(term)
+        );
+        renderArticles(filtered);
+      });
+    });
+
+  function renderArticles(articles) {
+    articleContainer.innerHTML = '';
+    articles.forEach(article => {
+      const el = document.createElement('article');
+      el.classList.add('article');
+      el.innerHTML = `
+        <h2><a href="${article.link}" target="_blank">${article.title}</a></h2>
+        <p class="meta">${article.published || ''} | <strong>${article.tribe}</strong></p>
+        <p>${article.summary}</p>
       `;
-      body.appendChild(article);
+      articleContainer.appendChild(el);
     });
   }
-
-  // Fetch and parse RSS
-  fetch('https://rss.nytimes.com/services/xml/rss/nyt/US.xml')  // change to your feed
-    .then(response => response.text())
-    .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
-    .then(data => {
-      const items = Array.from(data.querySelectorAll("item")).map(item => ({
-        title: item.querySelector("title").textContent,
-        link: item.querySelector("link").textContent,
-        pubDate: item.querySelector("pubDate").textContent,
-        description: item.querySelector("description").textContent
-      }));
-      renderArticles(items);
-    })
-    .catch(console.error);
-
-  // Filter
-  searchInput.addEventListener('input', () => {
-    const term = searchInput.value.toLowerCase();
-    const articles = document.querySelectorAll('.article');
-    articles.forEach(article => {
-      const text = article.innerText.toLowerCase();
-      article.style.display = text.includes(term) ? 'block' : 'none';
-    });
-  });
 });
