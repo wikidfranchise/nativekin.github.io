@@ -1,150 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>NativeKin | Home</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9ac53;
-      color: #2b2a2b;
-    }
-    header {
-      background: #757bc8;
-      color: white;
-      padding: 1rem 2rem;
-    }
-    nav a {
-      color: white;
-      margin-right: 1.5rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    main {
-      padding: 2rem;
-    }
-    footer {
-      background: #b0b1a6;
-      color: #2b2a2b;
-      padding: 1rem 2rem;
-      text-align: center;
-      font-size: 0.9em;
-    }
-    h2 {
-      margin-top: 2rem;
-      text-align: center;
-    }
-    input, select {
-      margin: 1rem 0;
-      padding: 0.5rem;
-      width: 100%;
-      max-width: 400px;
-      font-size: 1rem;
-    }
-    .card {
-      background: #fff5e6;
-      padding: 1rem;
-      margin: 1rem 0;
-      border-radius: 5px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    .card h3 {
-      margin: 0 0 0.5rem;
-    }
-    .results {
-      max-width: 800px;
-      margin: auto;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>NativeKin.org</h1>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/people/">People</a>
-      <a href="/movements/">Movements</a>
-      <a href="/treaties/">Treaties</a>
-      <a href="/legal/">Legal</a>
-      <a href="/media/">Media</a>
-    </nav>
-  </header>
-  <main>
-    <h2>Welcome to NativeKin</h2>
-    <p>This is a living repository of Indigenous political, cultural, and legal intelligence—built from inside the circle, not the outside.</p>
-    <p>Use the navigation above to explore content by section, or scroll down to search tribes by name and region.</p>
 
-    <h2>Explore Federally Recognized Tribes</h2>
-    <div style="text-align:center;">
-      <input type="text" id="search" placeholder="Search by tribe name or region...">
-      <select id="stateFilter">
-        <option value="">Filter by state</option>
-      </select>
-    </div>
-    <div class="results" id="results"></div>
-  </main>
-  <footer>
-    &copy; 2025 NativeKin. Built with integrity. Hosted on GitHub Pages.
-  </footer>
-
-  <script>
-    let tribes = [];
-
-    async function loadData() {
-      const response = await fetch('/tribes/tribes.json');
-      tribes = await response.json();
-
-      populateStates();
-      displayResults(tribes);
-    }
-
-    function populateStates() {
-      const stateSet = new Set(tribes.map(t => t.state).filter(Boolean));
-      const stateFilter = document.getElementById('stateFilter');
-      Array.from(stateSet).sort().forEach(state => {
-        const option = document.createElement('option');
-        option.value = state;
-        option.textContent = state;
-        stateFilter.appendChild(option);
-      });
-    }
-
-    function displayResults(data) {
-      const results = document.getElementById('results');
-      results.innerHTML = '';
-      data.forEach(item => {
-        const div = document.createElement('div');
-        div.className = 'card';
-        div.innerHTML = `
-          <h3>${item.full_name}</h3>
-          <p><strong>Location:</strong> ${item.city}, ${item.state} ${item.zip}</p>
-          <p><strong>Address:</strong> ${item.address}</p>
-          <p><strong>Phone:</strong> ${item.phone || 'N/A'}</p>
-        `;
-        results.appendChild(div);
-      });
-    }
-
-    function filterData() {
-      const query = document.getElementById('search').value.toLowerCase();
-      const state = document.getElementById('stateFilter').value;
-      const filtered = tribes.filter(t => {
-        const matchesName = t.full_name.toLowerCase().includes(query);
-        const matchesState = !state || t.state === state;
-        return matchesName && matchesState;
-      });
-      displayResults(filtered);
-    }
-
-    document.getElementById('search').addEventListener('input', filterData);
-    document.getElementById('stateFilter').addEventListener('change', filterData);
-
-    loadData();
-  </script>
-</body>
-</html>
+    <html>
+      <head>
+        <title>Native Media Feed</title>
+        <style>
+          body { font-family: sans-serif; padding: 2em; background: #fffaf0; color: #222; }
+          h1 { color: #b22222; }
+          ul { list-style: none; padding: 0; }
+          li { margin-bottom: 1em; }
+          .source { font-size: 0.9em; color: #666; }
+        </style>
+      </head>
+      <body>
+        <h1>Native Media Feed</h1>
+        <ul>
+            <li>
+              <a href="https://ictnews.org/news/pge-court-battle-nears-conclusion-over-land-rights-at-willamette-falls/" target="_blank">PGE court battle nears conclusion over land rights at Willamette Falls  </a><br>
+              <span class="source">Source: Indian Country Today</span>
+            </li>
+            <li>
+              <a href="https://ictnews.org/news/global-indigenous-report-indigenous-land-defenders-under-attack-worldwide/" target="_blank">GLOBAL INDIGENOUS: Report: Indigenous land defenders under attack worldwide</a><br>
+              <span class="source">Source: Indian Country Today</span>
+            </li>
+            <li>
+              <a href="https://ictnews.org/news/king-charles-iii-speaks-of-truth-and-reconciliation-in-opening-canadian-parliament/" target="_blank">King Charles III speaks of ‘truth and reconciliation’ in opening Canadian Parliament</a><br>
+              <span class="source">Source: Indian Country Today</span>
+            </li>
+            <li>
+              <a href="https://ictnews.org/news/indigenous-amazon-tribe-says-new-york-times-story-led-to-its-members-being-smeared-as-porn-addicts/" target="_blank">Indigenous Amazon tribe says New York Times story led to its members being smeared as porn addicts</a><br>
+              <span class="source">Source: Indian Country Today</span>
+            </li>
+            <li>
+              <a href="https://ictnews.org/news/the-supreme-court-rejects-a-plea-to-block-a-copper-mine-on-land-in-arizona-thats-sacred-to-apaches/" target="_blank">The Supreme Court rejects a plea to block a copper mine on land in Arizona that’s sacred to Apaches</a><br>
+              <span class="source">Source: Indian Country Today</span>
+            </li>
+            <li>
+              <a href="https://www.nativenews.net/tuesday-may-27-2025/" target="_blank">Tuesday, May 27, 2025</a><br>
+              <span class="source">Source: National Native News</span>
+            </li>
+            <li>
+              <a href="https://www.nativenews.net/monday-may-26-2025/" target="_blank">Monday, May 26, 2025</a><br>
+              <span class="source">Source: National Native News</span>
+            </li>
+            <li>
+              <a href="https://www.nativenews.net/friday-may-23-2025/" target="_blank">Friday, May 23, 2025</a><br>
+              <span class="source">Source: National Native News</span>
+            </li>
+            <li>
+              <a href="https://www.nativenews.net/thursday-may-22-2025/" target="_blank">Thursday, May 22, 2025</a><br>
+              <span class="source">Source: National Native News</span>
+            </li>
+            <li>
+              <a href="https://www.nativenews.net/wednesday-may-21-2025/" target="_blank">Wednesday, May 21, 2025</a><br>
+              <span class="source">Source: National Native News</span>
+            </li>
+            <li>
+              <a href="https://www.nativeamericacalling.com/wednesday-may-28-2025-hurdles-opposition-confront-tribes-on-the-cusp-of-federal-recognition/" target="_blank">Wednesday, May 28, 2025 – Hurdles, opposition confront tribes on the cusp of federal recognition</a><br>
+              <span class="source">Source: Native America Calling</span>
+            </li>
+            <li>
+              <a href="https://www.nativeamericacalling.com/tuesday-may-27-2025-confusion-reigns-following-federal-staff-service-cuts/" target="_blank">Tuesday, May 27, 2025 – Confusion reigns following federal staff, service cuts</a><br>
+              <span class="source">Source: Native America Calling</span>
+            </li>
+            <li>
+              <a href="https://www.nativeamericacalling.com/monday-may-26-2025-native-american-veterans-reflect-on-the-lessons-learned-in-the-50-years-since-the-end-of-the-vietnam-war/" target="_blank">Monday, May 26, 2025 – Native American veterans reflect on the lessons learned in the 50 years since the end of the Vietnam War</a><br>
+              <span class="source">Source: Native America Calling</span>
+            </li>
+            <li>
+              <a href="https://www.nativeamericacalling.com/friday-may-23-2025-five-years-after-george-floyds-death-racial-justice-advocates-watch-momentum-whither/" target="_blank">Friday, May 23, 2025 – Five years after George Floyd’s death, racial justice advocates watch momentum whither</a><br>
+              <span class="source">Source: Native America Calling</span>
+            </li>
+            <li>
+              <a href="https://www.nativeamericacalling.com/thursday-may-22-2025-conservation-consultation-and-competition-tribal-foresty-managers-react-to-timber-emergency/" target="_blank">Thursday, May 22, 2025 – Conservation, consultation, and competition: tribal forestry managers react to timber ’emergency’</a><br>
+              <span class="source">Source: Native America Calling</span>
+            </li>
+        </ul>
+      </body>
+    </html>
+  
