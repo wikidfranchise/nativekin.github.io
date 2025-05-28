@@ -1,0 +1,65 @@
+[
+  {
+    "tribe": "Navajo Nation",
+    "name": "Navajo Times",
+    "url": "https://navajotimes.com",
+    "rss": "https://navajotimes.com/feed",
+    "national": false
+  },
+  {
+    "tribe": "Cherokee Nation",
+    "name": "Cherokee Phoenix",
+    "url": "https://cherokeephoenix.org",
+    "rss": "https://cherokeephoenix.org/rss",
+    "national": false
+  },
+  {
+    "tribe": "Muscogee (Creek) Nation",
+    "name": "Mvskoke Media",
+    "url": "https://www.mvskokemedia.com",
+    "rss": "https://www.mvskokemedia.com/feed",
+    "national": false
+  },
+  {
+    "tribe": "Osage Nation",
+    "name": "Osage News",
+    "url": "https://osagenews.org",
+    "rss": "https://osagenews.org/feed",
+    "national": false
+  },
+  {
+    "tribe": "Confederated Tribes of Grand Ronde",
+    "name": "Smoke Signals",
+    "url": "https://www.smokesignals.org",
+    "rss": "https://www.smokesignals.org/feed",
+    "national": false
+  },
+  {
+    "tribe": "Multi-Tribal / National",
+    "name": "Native News Online",
+    "url": "https://nativenewsonline.net",
+    "rss": "https://nativenewsonline.net/feed",
+    "national": true
+  },
+  {
+    "tribe": "Multi-Tribal / National",
+    "name": "Indianz.com",
+    "url": "https://indianz.com",
+    "rss": "https://indianz.com/rss.asp",
+    "national": true
+  },
+  {
+    "tribe": "Multi-Tribal / National",
+    "name": "National Native News",
+    "url": "https://www.nativenews.net",
+    "rss": "https://www.nativenews.net/feed",
+    "national": true
+  },
+  {
+    "tribe": "Multi-Tribal / National",
+    "name": "Native America Calling",
+    "url": "https://www.nativeamericacalling.com",
+    "rss": "https://www.nativeamericacalling.com/feed",
+    "national": true
+  }
+]
