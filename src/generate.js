@@ -71,7 +71,7 @@ async function generatePage() {
   const compiled = Handlebars.compile(template);
   const output = compiled({ articles });
 
-  fs.writeFileSync("index.html", output);
+  fs.writeFileSync("media/index.html", html);
   console.log("✅ index.html generated.");
 }
 
