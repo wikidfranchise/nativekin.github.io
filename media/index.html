@@ -1,96 +1,109 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NativeKin News</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NativeKin Tribal News</title>
   <style>
-    body { font-family: Arial, sans-serif; background: #f9f9f9; margin: 0; padding: 1em; }
-    h1 { text-align: center; color: #333; }
-    .filters { display: flex; flex-wrap: wrap; justify-content: center; gap: 1em; margin-bottom: 1em; }
-    select, input[type="text"] { padding: 0.5em; font-size: 1em; }
-    .articles { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1em; }
-    .card { border-left: 6px solid #333; background: white; padding: 1em; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-radius: 5px; }
-    .card h2 { margin-top: 0; font-size: 1.1em; }
-    .meta { font-size: 0.9em; color: #666; margin-bottom: 0.5em; }
-    .summary { font-size: 0.95em; color: #333; }
-    .tribe-tag { font-weight: bold; display: inline-block; padding: 0.2em 0.5em; border-radius: 3px; color: white; margin-top: 0.5em; }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9fafb;
+      color: #1f2937;
+      padding: 2rem;
+    }
+    h1 {
+      color: #0f172a;
+    }
+    .search-container {
+      margin-bottom: 1rem;
+    }
+    input, select {
+      padding: 0.5rem;
+      margin-right: 0.5rem;
+    }
+    .article {
+      background-color: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    .article h3 {
+      margin: 0 0 0.5rem 0;
+    }
+    .article small {
+      color: #6b7280;
+    }
   </style>
 </head>
 <body>
   <h1>NativeKin Tribal News</h1>
-  <div class="filters">
+
+  <div class="search-container">
+    <input type="text" id="search" placeholder="Search..." />
     <select id="tribeFilter">
       <option value="">All Tribes</option>
     </select>
-    <select id="nationalFilter">
-      <option value="">All Types</option>
-      <option value="true">National Only</option>
-      <option value="false">Local Only</option>
+    <select id="stateFilter">
+      <option value="">All States</option>
     </select>
-    <input type="text" id="searchInput" placeholder="Search...">
   </div>
-  <div class="articles" id="articleContainer"></div>
-  
+
+  <div id="articles"></div>
+
   <script>
-    const tribeColors = {
-      "Muscogee (Creek) Nation": "#006666",
-      "Osage Nation": "#8B0000",
-      "Multi-Tribal / National": "#4444AA"
-      // Add more as needed
-    };
+    let articles = [];
 
-    async function loadArticles() {
-      const res = await fetch('data/nativekin_aggregated_articles.json');
-      const data = await res.json();
-
-      const container = document.getElementById('articleContainer');
-      const tribeFilter = document.getElementById('tribeFilter');
-      const nationalFilter = document.getElementById('nationalFilter');
-      const searchInput = document.getElementById('searchInput');
-
-      const tribes = [...new Set(data.map(a => a.tribe))].sort();
-      tribes.forEach(t => {
-        const opt = document.createElement('option');
-        opt.value = t;
-        opt.textContent = t;
-        tribeFilter.appendChild(opt);
+    fetch('/data/nativekin_aggregated_articles.json')
+      .then(response => response.json())
+      .then(data => {
+        articles = data;
+        populateFilters(data);
+        displayArticles(data);
       });
 
-      function renderArticles() {
-        container.innerHTML = '';
-        const tf = tribeFilter.value;
-        const nf = nationalFilter.value;
-        const q = searchInput.value.toLowerCase();
-
-        data.filter(a => {
-          return (!tf || a.tribe === tf) &&
-                 (!nf || String(a.national) === nf) &&
-                 (a.title.toLowerCase().includes(q) || a.summary.toLowerCase().includes(q));
-        }).forEach(article => {
-          const div = document.createElement('div');
-          div.className = 'card';
-          div.style.borderLeftColor = tribeColors[article.tribe] || '#555';
-
-          div.innerHTML = `
-            <h2><a href="${article.link}" target="_blank">${article.title}</a></h2>
-            <div class="meta">${new Date(article.published).toLocaleDateString()} – ${article.source}</div>
-            <div class="summary">${article.summary}</div>
-            <div class="tribe-tag" style="background:${tribeColors[article.tribe] || '#555'}">${article.tribe}</div>
-          `;
-          container.appendChild(div);
-        });
-      }
-
-      tribeFilter.addEventListener('change', renderArticles);
-      nationalFilter.addEventListener('change', renderArticles);
-      searchInput.addEventListener('input', renderArticles);
-
-      renderArticles();
+    function populateFilters(data) {
+      const tribes = [...new Set(data.map(item => item.tribe))].sort();
+      const tribeFilter = document.getElementById('tribeFilter');
+      tribes.forEach(tribe => {
+        const option = document.createElement('option');
+        option.value = tribe;
+        option.textContent = tribe;
+        tribeFilter.appendChild(option);
+      });
     }
 
-    loadArticles();
+    function displayArticles(data) {
+      const container = document.getElementById('articles');
+      container.innerHTML = '';
+      data.forEach(article => {
+        const div = document.createElement('div');
+        div.className = 'article';
+        div.innerHTML = `
+          <h3><a href="${article.link}" target="_blank">${article.title}</a></h3>
+          <small>${article.published} - ${article.source} (${article.tribe})</small>
+          <p>${article.summary}</p>
+        `;
+        container.appendChild(div);
+      });
+    }
+
+    document.getElementById('search').addEventListener('input', filterArticles);
+    document.getElementById('tribeFilter').addEventListener('change', filterArticles);
+    document.getElementById('stateFilter').addEventListener('change', filterArticles);
+
+    function filterArticles() {
+      const search = document.getElementById('search').value.toLowerCase();
+      const tribe = document.getElementById('tribeFilter').value;
+      const filtered = articles.filter(article => {
+        return (
+          (!tribe || article.tribe === tribe) &&
+          (article.title.toLowerCase().includes(search) || article.summary.toLowerCase().includes(search))
+        );
+      });
+      displayArticles(filtered);
+    }
   </script>
 </body>
 </html>
