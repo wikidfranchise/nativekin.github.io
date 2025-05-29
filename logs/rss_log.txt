@@ -1,1 +1,10 @@
 [2025-05-29 09:52:01.088695] Aggregated 10 articles from 9 sources
+[2025-05-29 10:10:03.668294] Error parsing Navajo Times feed: <unknown>:25:68: not well-formed (invalid token)
+[2025-05-29 10:10:04.346720] Error parsing Cherokee Phoenix feed: <unknown>:3:84: not well-formed (invalid token)
+[2025-05-29 10:10:06.864721] Parsed 5 entries from Mvskoke Media
+[2025-05-29 10:10:07.317828] Parsed 5 entries from Osage News
+[2025-05-29 10:10:07.920554] Error parsing Smoke Signals feed: <unknown>:24:124: not well-formed (invalid token)
+[2025-05-29 10:10:16.359700] Error parsing Native News Online feed: <unknown>:79:55: not well-formed (invalid token)
+[2025-05-29 10:10:16.636421] Error parsing Indianz.com feed: <unknown>:12:59: not well-formed (invalid token)
+[2025-05-29 10:10:18.236431] Parsed 5 entries from National Native News
+[2025-05-29 10:10:19.459995] Parsed 5 entries from Native America Calling
