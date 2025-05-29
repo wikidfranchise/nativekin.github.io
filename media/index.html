@@ -2,91 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NativeKin News Aggregator</title>
+  <title>Native Media Feed</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-      padding: 20px;
+      background: #fffaf0;
+      color: #333;
+      padding: 2rem;
     }
     h1 {
-      text-align: center;
+      color: #b22222;
     }
-    #search {
-      display: block;
-      margin: 20px auto;
-      padding: 10px;
-      width: 80%;
-      font-size: 16px;
+    .search-box {
+      margin-bottom: 1.5rem;
     }
     .article {
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      padding: 20px;
-      margin: 20px auto;
-      max-width: 800px;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      border-bottom: 1px solid #ccc;
     }
-    .article h3 {
-      margin-top: 0;
-    }
-    .article a {
-      text-decoration: none;
-      color: #007BFF;
-    }
-    .article a:hover {
-      text-decoration: underline;
-    }
-    .article p {
-      margin: 5px 0;
+    .source {
+      font-size: 0.9rem;
+      color: #666;
     }
   </style>
 </head>
 <body>
-  <h1>NativeKin Tribal News Feed</h1>
-  <input type="text" id="search" placeholder="Search news by keyword...">
-  <div id="news-container"></div>
+  <h1>Native Media Feed</h1>
+  <input type="text" id="search" class="search-box" placeholder="Search articles..." />
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const searchInput = document.getElementById('search');
-      const container = document.getElementById('news-container');
 
-      fetch('../data/nativekin_aggregated_articles.json')
-        .then(response => response.json())
-        .then(data => {
-          renderArticles(data);
-
-          searchInput.addEventListener('input', () => {
-            const term = searchInput.value.toLowerCase();
-            const filtered = data.filter(article => {
-              return (
-                article.title.toLowerCase().includes(term) ||
-                article.summary.toLowerCase().includes(term) ||
-                article.tribe.toLowerCase().includes(term) ||
-                article.source.toLowerCase().includes(term)
-              );
-            });
-            renderArticles(filtered);
-          });
-        });
-
-      function renderArticles(articles) {
-        container.innerHTML = '';
-        articles.forEach(article => {
-          container.innerHTML += `
-            <div class="article">
-              <h3><a href="${article.link}" target="_blank">${article.title}</a></h3>
-              <p><strong>Tribe:</strong> ${article.tribe} ${article.national ? '(National)' : ''}</p>
-              <p><strong>Published:</strong> ${new Date(article.published).toLocaleDateString()}</p>
-              <p>${article.summary}</p>
-              <p><em>Source: ${article.source}</em></p>
-            </div>
-          `;
-        });
-      }
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
