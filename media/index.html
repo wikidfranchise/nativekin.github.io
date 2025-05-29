@@ -52,7 +52,7 @@
       const searchInput = document.getElementById('search');
       const articlesContainer = document.getElementById('articles');
 
-      fetch('data/nativekin_aggregated_articles.json')
+      fetch('/media/nativekin_aggregated_articles.json')
         .then(response => response.json())
         .then(data => {
           const renderArticles = (articles) => {
