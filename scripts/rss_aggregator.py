@@ -3,31 +3,28 @@ import json
 import os
 from datetime import datetime
 
-feed_file = os.path.join(os.path.dirname(__file__), '..', 'data', 'nativekin_feeds.json')
-output_file = os.path.join(os.path.dirname(__file__), '..', 'data', 'nativekin_aggregated_articles.json')
-log_file = os.path.join(os.path.dirname(__file__), '..', 'logs', 'rss_log.txt')
+# File paths
+base_dir = os.path.dirname(__file__)
+feed_file = os.path.join(base_dir, '..', 'data', 'nativekin_feeds.json')
+output_file = os.path.join(base_dir, '..', 'data', 'nativekin_aggregated_articles.json')
+log_file = os.path.join(base_dir, '..', 'logs', 'rss_log.txt')
 
-# Make logs folder if missing
+# Ensure logs dir exists
 os.makedirs(os.path.dirname(log_file), exist_ok=True)
-
-def log(msg):
-    timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-    with open(log_file, 'a') as lf:
-        lf.write(f"[{timestamp}] {msg}\n")
-    print(msg)
 
 # Load feed registry
 with open(feed_file, 'r') as f:
     tribal_news_sources = json.load(f)
 
 aggregated_articles = []
+log_lines = [f"\n[{datetime.utcnow().isoformat()} UTC] Feed aggregation run\n"]
 
 # Parse feeds
 for source in tribal_news_sources:
-    log(f"🔍 Fetching: {source['name']} ({source['rss']})")
     feed = feedparser.parse(source['rss'])
     entry_count = len(feed.entries)
-    log(f"→ {entry_count} entries found.")
+    log_lines.append(f"- {source['name']} ({source['tribe']}): {entry_count} entries")
+
     for entry in feed.entries[:5]:
         aggregated_articles.append({
             'title': entry.get('title', 'No Title'),
@@ -39,10 +36,12 @@ for source in tribal_news_sources:
             'national': source['national']
         })
 
-# Save only if there are new articles
-if aggregated_articles:
-    with open(output_file, 'w') as f:
-        json.dump(aggregated_articles, f, indent=2)
-    log(f"✅ Saved {len(aggregated_articles)} articles to {output_file}")
-else:
-    log("⚠️ No articles aggregated. JSON not updated.")
+# Save aggregated data
+with open(output_file, 'w') as f:
+    json.dump(aggregated_articles, f, indent=2)
+
+# Save log file
+with open(log_file, 'a') as f:
+    f.write('\n'.join(log_lines) + '\n')
+
+print(f"✅ Aggregated {len(aggregated_articles)} articles from {len(tribal_news_sources)} sources.")
