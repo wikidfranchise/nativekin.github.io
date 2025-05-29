@@ -1,0 +1,14 @@
+{
+  "Muscogee (Creek) Nation": {
+    "primary_color": "#cc0000",
+    "secondary_color": "#ffffff"
+  },
+  "Osage Nation": {
+    "primary_color": "#003366",
+    "secondary_color": "#f4f4f4"
+  },
+  "Multi-Tribal / National": {
+    "primary_color": "#006400",
+    "secondary_color": "#e6ffe6"
+  }
+}
