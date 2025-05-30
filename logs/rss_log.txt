@@ -9,3 +9,8 @@
 [2025-05-29 10:10:18.236431] Parsed 5 entries from National Native News
 [2025-05-29 10:10:19.459995] Parsed 5 entries from Native America Calling
 [2025-05-29 16:25:00.859089] ERROR reading feed list: [Errno 2] No such file or directory: 'C:\\Users\\John\\documents\\nativekin.org\\nativekin-media-site\\nativekin.github.io\\scripts\\..\\scripts\\nativekin_feeds.json'
+[2025-05-30 09:22:08.998630] ERROR reading feed list: [Errno 2] No such file or directory: 'C:\\Users\\John\\documents\\nativekin.org\\nativekin-media-site\\nativekin.github.io\\scripts\\..\\scripts\\nativekin_feeds.json'
+[2025-05-30 09:22:30.611919] ERROR reading feed list: [Errno 2] No such file or directory: 'C:\\Users\\John\\documents\\nativekin.org\\nativekin-media-site\\nativekin.github.io\\scripts\\..\\scripts\\nativekin_feeds.json'
+[2025-05-30 09:24:25.040637] ERROR reading feed list: [Errno 2] No such file or directory: 'C:\\Users\\John\\documents\\nativekin.org\\nativekin-media-site\\nativekin.github.io\\scripts\\..\\scripts\\nativekin_feeds.json'
+[2025-05-30 09:25:13.748235] ERROR reading feed list: [Errno 2] No such file or directory: 'C:\\Users\\John\\documents\\nativekin.org\\nativekin-media-site\\nativekin.github.io\\scripts\\..\\scripts\\nativekin_feeds.json'
+[2025-05-30 09:27:27.942020] ERROR reading feed list: [Errno 2] No such file or directory: 'C:\\Users\\John\\documents\\nativekin.org\\nativekin-media-site\\nativekin.github.io\\scripts\\..\\scripts\\nativekin_feeds.json'

@@ -8,7 +8,7 @@ base_dir = os.path.dirname(os.path.abspath(__file__))
 script_dir = os.path.dirname(os.path.abspath(__file__))
 media_dir = os.path.join(script_dir, '..', 'media')
 log_dir = os.path.join(base_dir, '..', 'logs')
-feed_file = os.path.join(base_dir, '..', 'scripts', 'nativekin_feeds.json')
+feed_file = os.path.join(base_dir, '..', 'media', 'nativekin_feeds.json')
 output_file = os.path.join(media_dir, 'nativekin_aggregated_articles.json')
 log_file = os.path.join(log_dir, 'rss_log.txt')
 
