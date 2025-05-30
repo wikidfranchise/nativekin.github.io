@@ -15,29 +15,15 @@
     }
     .search-box {
       margin-bottom: 1.5rem;
-      padding: 0.5rem;
-      font-size: 1rem;
-      width: 100%;
     }
     .article {
-      margin-bottom: 1.5rem;
-      padding: 1rem;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      background: #fff;
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      border-bottom: 1px solid #ccc;
     }
-    .title {
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: #000;
-    }
-    .summary {
-      margin-top: 0.5rem;
-    }
-    .meta {
-      font-size: 0.85rem;
+    .source {
+      font-size: 0.9rem;
       color: #666;
-      margin-top: 0.5rem;
     }
   </style>
 </head>
@@ -45,49 +31,7 @@
   <h1>Native Media Feed</h1>
   <input type="text" id="search" class="search-box" placeholder="Search articles..." />
 
-  <div id="articles"></div>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const searchInput = document.getElementById('search');
-      const articlesContainer = document.getElementById('articles');
-
-      fetch('/media/nativekin_aggregated_articles.json')
-        .then(response => response.json())
-        .then(data => {
-          const renderArticles = (articles) => {
-            articlesContainer.innerHTML = '';
-            articles.forEach(article => {
-              const div = document.createElement('div');
-              div.className = 'article';
-              div.innerHTML = `
-                <div class="title"><a href="${article.link}" target="_blank">${article.title}</a></div>
-                <div class="summary">${article.summary}</div>
-                <div class="meta">
-                  Source: ${article.source} | Tribe: ${article.tribe} | Date: ${article.published}
-                </div>
-              `;
-              articlesContainer.appendChild(div);
-            });
-          };
-
-          renderArticles(data);
-
-          searchInput.addEventListener('input', () => {
-            const term = searchInput.value.toLowerCase();
-            const filtered = data.filter(article =>
-              article.title.toLowerCase().includes(term) ||
-              article.summary.toLowerCase().includes(term) ||
-              article.tribe.toLowerCase().includes(term)
-            );
-            renderArticles(filtered);
-          });
-        })
-        .catch(err => {
-          articlesContainer.innerHTML = '<p>Error loading articles. Check data path or file structure.</p>';
-          console.error('Error loading JSON:', err);
-        });
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
