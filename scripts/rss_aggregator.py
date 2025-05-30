@@ -3,18 +3,19 @@ import json
 import feedparser
 from datetime import datetime
 
-# Define paths
+# Base directory setup
 base_dir = os.path.dirname(os.path.abspath(__file__))
-data_dir = os.path.join(base_dir, '..', 'data')
+script_dir = os.path.dirname(os.path.abspath(__file__))
+media_dir = os.path.join(script_dir, '..', 'media')
 log_dir = os.path.join(base_dir, '..', 'logs')
-feed_file = os.path.join(data_dir, 'nativekin_feeds.json')
-output_file = os.path.join(data_dir, 'nativekin_aggregated_articles.json')
+feed_file = os.path.join(base_dir, '..', 'scripts', 'nativekin_feeds.json')
+output_file = os.path.join(media_dir, 'nativekin_aggregated_articles.json')
 log_file = os.path.join(log_dir, 'rss_log.txt')
 
-# Ensure the logs directory exists
+# Ensure log directory exists
 os.makedirs(log_dir, exist_ok=True)
 
-# Load feed registry
+# Load tribal RSS feed definitions
 try:
     with open(feed_file, 'r', encoding='utf-8') as f:
         tribal_news_sources = json.load(f)
@@ -33,7 +34,7 @@ for source in tribal_news_sources:
         if feed.bozo:
             log_entries.append(f"[{datetime.now()}] Error parsing {source['name']} feed: {feed.bozo_exception}")
             continue
-        for entry in feed.entries[:5]:  # Top 5 entries per feed
+        for entry in feed.entries[:5]:  # Limit to top 5 per feed
             aggregated_articles.append({
                 'title': entry.get('title', 'No Title'),
                 'link': entry.get('link', ''),
@@ -41,7 +42,7 @@ for source in tribal_news_sources:
                 'summary': entry.get('summary', '')[:300],
                 'source': source['name'],
                 'tribe': source['tribe'],
-                'national': source['national']
+                'national': source.get('national', False)
             })
         log_entries.append(f"[{datetime.now()}] Parsed {len(feed.entries[:5])} entries from {source['name']}")
     except Exception as e:
