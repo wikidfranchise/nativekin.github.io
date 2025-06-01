@@ -30,7 +30,7 @@ log_entries = []
 # Parse each RSS feed
 for source in tribal_news_sources:
     try:
-        feed = feedparser.parse(source['rss'])
+        feed = feedparser.parse(source['url'])
         if feed.bozo:
             log_entries.append(f"[{datetime.now()}] Error parsing {source['name']} feed: {feed.bozo_exception}")
             continue

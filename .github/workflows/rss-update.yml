@@ -3,7 +3,8 @@ name: Update RSS Feed
 on:
   schedule:
     - cron: '0 * * * *'  # Every hour on the hour
-  workflow_dispatch:     # Also allows manual trigger from GitHub UI
+  workflow_dispatch:     # Manual trigger from GitHub UI
+
 permissions:
   contents: write
 
@@ -22,15 +23,13 @@ jobs:
       - name: Install dependencies
         run: npm install rss-parser handlebars
 
-
       - name: Run RSS Feed Generator
         run: node src/generate.js
 
-      - name: Commit and push changes
+      - name: Commit and push updated feed
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add media/index.html
-          git commit -m "📰 Auto-update RSS feed [skip ci]" || echo "No changes"
+          git add media/nativekin_aggregated_articles.json
+          git commit -m "📰 Auto-update aggregated JSON feed [skip ci]" || echo "No changes to commit"
           git push
-

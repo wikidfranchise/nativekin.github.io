@@ -14,3 +14,22 @@
 [2025-05-30 09:24:25.040637] ERROR reading feed list: [Errno 2] No such file or directory: 'C:\\Users\\John\\documents\\nativekin.org\\nativekin-media-site\\nativekin.github.io\\scripts\\..\\scripts\\nativekin_feeds.json'
 [2025-05-30 09:25:13.748235] ERROR reading feed list: [Errno 2] No such file or directory: 'C:\\Users\\John\\documents\\nativekin.org\\nativekin-media-site\\nativekin.github.io\\scripts\\..\\scripts\\nativekin_feeds.json'
 [2025-05-30 09:27:27.942020] ERROR reading feed list: [Errno 2] No such file or directory: 'C:\\Users\\John\\documents\\nativekin.org\\nativekin-media-site\\nativekin.github.io\\scripts\\..\\scripts\\nativekin_feeds.json'
+[2025-06-01 11:32:58.260251] ERROR reading feed list: [Errno 2] No such file or directory: 'C:\\Users\\John\\documents\\nativekin.org\\nativekin-media-site\\nativekin.github.io\\scripts\\..\\media\\nativekin_feeds.json'
+[2025-06-01 11:52:36.092721] Exception reading Mvskoke Media: 'rss'
+[2025-06-01 11:52:36.092959] Exception reading Osage News: 'rss'
+[2025-06-01 11:52:36.092967] Exception reading Cherokee Phoenix: 'rss'
+[2025-06-01 11:52:36.092969] Exception reading Indian Country Today: 'rss'
+[2025-06-01 11:52:36.092971] Exception reading Native News Online: 'rss'
+[2025-06-01 11:52:36.092973] Exception reading Native America Calling: 'rss'
+[2025-06-01 11:52:36.092975] Exception reading National Native News: 'rss'
+[2025-06-01 11:52:36.092977] Exception reading The Circle News: 'rss'
+[2025-06-01 11:52:36.092978] Exception reading Lakota Times: 'rss'
+[2025-06-01 12:05:09.741259] Parsed 5 entries from Mvskoke Media
+[2025-06-01 12:05:10.088417] Parsed 5 entries from Osage News
+[2025-06-01 12:05:10.591808] Error parsing Cherokee Phoenix feed: <unknown>:2:0: syntax error
+[2025-06-01 12:05:10.884412] Error parsing Indian Country Today feed: <unknown>:2:0: syntax error
+[2025-06-01 12:05:17.756150] Error parsing Native News Online feed: <unknown>:79:55: not well-formed (invalid token)
+[2025-06-01 12:05:18.516804] Parsed 5 entries from Native America Calling
+[2025-06-01 12:05:19.241444] Parsed 5 entries from National Native News
+[2025-06-01 12:05:19.534136] Parsed 5 entries from The Circle News
+[2025-06-01 12:05:21.132913] Parsed 5 entries from Lakota Times

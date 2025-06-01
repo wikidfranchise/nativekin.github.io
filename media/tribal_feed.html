@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Native Media Feed</title>
   <style>
     body {
@@ -15,23 +15,74 @@
     }
     .search-box {
       margin-bottom: 1.5rem;
+      padding: 0.5rem;
+      font-size: 1rem;
+      width: 100%;
     }
     .article {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 1rem;
       margin-bottom: 1rem;
-      padding: 0.5rem;
-      border-bottom: 1px solid #ccc;
+      border-radius: 8px;
     }
-    .source {
-      font-size: 0.9rem;
+    .article h2 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .meta {
+      font-size: 0.85rem;
       color: #666;
+      margin-top: 0.5rem;
     }
   </style>
 </head>
 <body>
   <h1>Native Media Feed</h1>
   <input type="text" id="search" class="search-box" placeholder="Search articles..." />
+  <div id="articles"></div>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchInput = document.getElementById('search');
+      const articlesContainer = document.getElementById('articles');
 
-  <script src="script.js"></script>
+      fetch('nativekin_aggregated_articles.json')
+        .then(response => response.json())
+        .then(data => {
+          function renderArticles(articles) {
+            articlesContainer.innerHTML = '';
+            articles.forEach(article => {
+              const div = document.createElement('div');
+              div.className = 'article';
+              div.innerHTML = `
+                <h2><a href="${article.link}" target="_blank">${article.title}</a></h2>
+                <p>${article.summary}</p>
+                <div class="meta">Source: ${article.source} | Tribe: ${article.tribe} | Date: ${article.published}</div>
+              `;
+              articlesContainer.appendChild(div);
+            });
+          }
+
+          renderArticles(data);
+
+          searchInput.addEventListener('input', () => {
+            const term = searchInput.value.toLowerCase();
+            const filtered = data.filter(a => {
+              return (
+                a.title.toLowerCase().includes(term) ||
+                a.summary.toLowerCase().includes(term) ||
+                a.tribe.toLowerCase().includes(term)
+              );
+            });
+            renderArticles(filtered);
+          });
+        })
+        .catch(error => {
+          articlesContainer.innerHTML = '<p>Error loading articles. Check data path or file structure.</p>';
+          console.error(error);
+        });
+    });
+  </script>
 </body>
 </html>

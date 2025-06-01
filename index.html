@@ -39,17 +39,77 @@
     })
     .then(data => {
       const container = document.createElement('div');
-      data.forEach(article => {
-        const div = document.createElement('div');
-        div.className = 'article';
-        div.innerHTML = `
-          <h3><a href="${article.link}" target="_blank">${article.title}</a></h3>
-          <p class="source">${article.source} — ${article.published}</p>
-          <p>${article.summary}</p>
-        `;
-        container.appendChild(div);
+
+      // Create search box reference
+      const searchInput = document.getElementById('search');
+
+      // Create dropdowns
+      const tribeSelect = document.createElement('select');
+      tribeSelect.innerHTML = '<option value="">All Tribes</option>';
+
+      const stateSelect = document.createElement('select');
+      stateSelect.innerHTML = '<option value="">All States</option>';
+
+      // Populate dropdowns
+      const tribes = [...new Set(data.map(a => a.tribe).filter(Boolean))].sort();
+      tribes.forEach(tribe => {
+        const opt = document.createElement('option');
+        opt.value = tribe;
+        opt.textContent = tribe;
+        tribeSelect.appendChild(opt);
       });
+
+      const states = [...new Set(data.map(a => a.state).filter(Boolean))].sort();
+      states.forEach(state => {
+        const opt = document.createElement('option');
+        opt.value = state;
+        opt.textContent = state;
+        stateSelect.appendChild(opt);
+      });
+
+      // Display filters under the search bar
+      const controlBox = document.createElement('div');
+      controlBox.style.marginBottom = '1.5rem';
+      controlBox.appendChild(tribeSelect);
+      controlBox.appendChild(stateSelect);
+      searchInput.insertAdjacentElement('afterend', controlBox);
+
+      // Render articles
+      const renderArticles = (filtered) => {
+        container.innerHTML = '';
+        filtered.forEach(article => {
+          const div = document.createElement('div');
+          div.className = 'article';
+          div.innerHTML = `
+            <h3><a href="${article.link}" target="_blank">${article.title}</a></h3>
+            <p class="source">${article.source} — ${article.published}</p>
+            <p>${article.summary}</p>
+          `;
+          container.appendChild(div);
+        });
+      };
+
+      // Filtering logic
+      const filterAndRender = () => {
+        const query = searchInput.value.toLowerCase();
+        const selectedTribe = tribeSelect.value;
+        const selectedState = stateSelect.value;
+
+        const filtered = data.filter(article =>
+          (!selectedTribe || article.tribe === selectedTribe) &&
+          (!selectedState || article.state === selectedState) &&
+          (article.title.toLowerCase().includes(query) || article.summary.toLowerCase().includes(query))
+        );
+
+        renderArticles(filtered);
+      };
+
+      searchInput.addEventListener('input', filterAndRender);
+      tribeSelect.addEventListener('change', filterAndRender);
+      stateSelect.addEventListener('change', filterAndRender);
+
       document.body.appendChild(container);
+      filterAndRender();
     })
     .catch(error => {
       console.error("Failed to load or parse articles:", error);
