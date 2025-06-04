@@ -85,11 +85,6 @@
       `;
     }
 
-    function clearSearch() {
-      tribeSearch.value = '';
-      tribeInfo.innerHTML = '';
-    }
-
     tribeSearch.addEventListener('input', () => {
       const input = tribeSearch.value.trim().toLowerCase();
       const match = tribalData.find(t => t.Tribe.toLowerCase() === input);
@@ -102,6 +97,14 @@
 
     tribeSearch.addEventListener('focus', () => {
       tribeSearch.select();
+    });
+
+    tribeSearch.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        const input = tribeSearch.value.trim().toLowerCase();
+        const match = tribalData.find(t => t.Tribe.toLowerCase() === input);
+        if (match) renderTribe(match);
+      }
     });
   </script>
 
