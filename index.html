@@ -85,18 +85,19 @@
       `;
     }
 
-    function searchAndRender() {
+    function clearSearch() {
+      tribeSearch.value = '';
+      tribeInfo.innerHTML = '';
+    }
+
+    tribeSearch.addEventListener('input', () => {
       const input = tribeSearch.value.trim().toLowerCase();
       const match = tribalData.find(t => t.Tribe.toLowerCase() === input);
       if (match) {
         renderTribe(match);
       } else {
-        tribeInfo.innerHTML = '<div class="card">No match found.</div>';
+        tribeInfo.innerHTML = '';
       }
-    }
-
-    tribeSearch.addEventListener('input', () => {
-      searchAndRender();
     });
 
     tribeSearch.addEventListener('focus', () => {
