@@ -85,14 +85,16 @@
       `;
     }
 
-    tribeSearch.addEventListener('input', () => {
+    tribeSearch.addEventListener('change', () => {
       const input = tribeSearch.value.trim().toLowerCase();
       const match = tribalData.find(t => t.Tribe.toLowerCase() === input);
       if (match) {
         renderTribe(match);
-        tribeSearch.value = '';
-        tribeSearch.blur();
-        setTimeout(() => tribeSearch.focus(), 0); // refocus so dropdown appears
+        setTimeout(() => {
+          tribeSearch.value = '';
+          tribeSearch.blur();
+          tribeSearch.focus();
+        }, 100);
       } else {
         tribeInfo.innerHTML = '';
       }
