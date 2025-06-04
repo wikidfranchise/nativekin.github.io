@@ -49,71 +49,61 @@
 
   <div id="tribeInfo"></div>
 
-  <script>
-    const tribeSearch = document.getElementById('tribeSearch');
-    const tribeList = document.getElementById('tribeList');
-    const tribeInfo = document.getElementById('tribeInfo');
-    const tribalData = [];
+  <<script>
+  const tribeSearch = document.getElementById('tribeSearch');
+  const tribeList = document.getElementById('tribeList');
+  const tribeInfo = document.getElementById('tribeInfo');
+  const tribalData = [];
 
-    fetch('./data/tribalDirectory.json')
-      .then(res => res.json())
-      .then(data => {
-        tribalData.push(...data);
-        data.forEach(t => {
-          const opt = document.createElement('option');
-          opt.value = t.Tribe;
-          tribeList.appendChild(opt);
-        });
-      })
-      .catch(err => console.error('❌ Failed to load tribal data:', err));
+  fetch('./data/tribalDirectory.json')
+    .then(res => res.json())
+    .then(data => {
+      tribalData.push(...data);
+      data.forEach(t => {
+        const opt = document.createElement('option');
+        opt.value = t.Tribe;
+        tribeList.appendChild(opt);
+      });
+    })
+    .catch(err => console.error('❌ Failed to load tribal data:', err));
 
-    function handleSearch() {
-      const inputValue = tribeSearch.value.toLowerCase().trim();
-      const match = tribalData.find(t => t.Tribe.toLowerCase() === inputValue);
+  function renderTribe(tribe) {
+    const imgSrc = tribe.SnapshotFilename && tribe.SnapshotFilename.trim() !== ''
+      ? `/media/hpsnaps/${tribe.SnapshotFilename}`
+      : '/media/hpsnaps/placeholder.png`;
 
-      if (match) {
-        renderTribe(match);
-      } else {
-        tribeInfo.innerHTML = '';
-      }
+    tribeInfo.innerHTML = `
+      <div class="card">
+        <div><strong>${tribe.Tribe}</strong></div>
+        <div>${tribe.City}, ${tribe.State} ${tribe.Zip}</div>
+        <div>${tribe.Phone}</div>
+        <div><em>Region: ${tribe.Region}</em></div>
+        <img src="${imgSrc}" alt="${tribe.Tribe}" class="image-preview" />
+      </div>
+    `;
+  }
+
+  function tryMatch(value) {
+    const match = tribalData.find(t => t.Tribe.toLowerCase() === value.toLowerCase());
+    if (match) {
+      renderTribe(match);
+    } else {
+      tribeInfo.innerHTML = '';
     }
+  }
 
-// Listen to both typing and selection
-tribeSearch.addEventListener('input', handleSearch);
-tribeSearch.addEventListener('change', handleSearch);
+  tribeSearch.addEventListener('change', () => {
+    tryMatch(tribeSearch.value);
+  });
 
-    
-      function renderTribe(tribe) {
-      const imgSrc = tribe.SnapshotFilename && tribe.SnapshotFilename.trim() !== ''
-        ? `./media/hpsnaps/${tribe.SnapshotFilename}`
-        : '/media/hpsnaps/placeholder.png';
+  tribeSearch.addEventListener('input', () => {
+    tryMatch(tribeSearch.value);
+  });
 
-      tribeInfo.innerHTML = `
-        <div class="card">
-          <div><strong>${tribe.Tribe}</strong></div>
-          <div>${tribe.City}, ${tribe.State} ${tribe.Zip}</div>
-          <div>${tribe.Phone}</div>
-          <div><em>Region: ${tribe.Region}</em></div>
-          <img src="${imgSrc}" alt="${tribe.Tribe}" class="image-preview" />
-        </div>
-      `;
-    }
-
-    tribeSearch.addEventListener('input', () => {
-      const inputValue = tribeSearch.value.toLowerCase();
-      const match = tribalData.find(t =>
-        t.Tribe.toLowerCase() === inputValue
-      );
-
-      if (match) {
-        renderTribe(match);
-      } else {
-        tribeInfo.innerHTML = '';
-      }
-
-      tribeSearch.focus(); // allow retyping without manual click
-    });
-  </script>
+  tribeSearch.addEventListener('focus', () => {
+    tribeSearch.select(); // auto-selects text for overwrite
+  });
+</script>
 
   <script data-goatcounter="https://nativekin.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
