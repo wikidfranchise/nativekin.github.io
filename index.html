@@ -49,10 +49,11 @@
 
   <div id="tribeInfo"></div>
 
-  <<script>
+  <script>
   const tribeSearch = document.getElementById('tribeSearch');
   const tribeList = document.getElementById('tribeList');
   const tribeInfo = document.getElementById('tribeInfo');
+  const searchBtn = document.getElementById('searchBtn');
   const tribalData = [];
 
   fetch('./data/tribalDirectory.json')
@@ -83,25 +84,27 @@
     `;
   }
 
-  function tryMatch(value) {
-    const match = tribalData.find(t => t.Tribe.toLowerCase() === value.toLowerCase());
+  function tryMatch() {
+    const input = tribeSearch.value.trim().toLowerCase();
+    const match = tribalData.find(t => t.Tribe.toLowerCase() === input);
     if (match) {
       renderTribe(match);
     } else {
-      tribeInfo.innerHTML = '';
+      tribeInfo.innerHTML = `<div class="card">No match found.</div>`;
     }
   }
 
-  tribeSearch.addEventListener('change', () => {
-    tryMatch(tribeSearch.value);
+  // Trigger on button click
+  searchBtn.addEventListener('click', tryMatch);
+
+  // Also allow Enter key
+  tribeSearch.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') tryMatch();
   });
 
-  tribeSearch.addEventListener('input', () => {
-    tryMatch(tribeSearch.value);
-  });
-
+  // Optional: auto-focus and select content
   tribeSearch.addEventListener('focus', () => {
-    tribeSearch.select(); // auto-selects text for overwrite
+    tribeSearch.select();
   });
 </script>
 
