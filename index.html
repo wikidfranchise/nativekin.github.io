@@ -53,12 +53,12 @@
     const tribeSearch = document.getElementById('tribeSearch');
     const tribeList = document.getElementById('tribeList');
     const tribeInfo = document.getElementById('tribeInfo');
-    const tribalData = [];
+    let tribalData = [];
 
     fetch('./data/tribalDirectory.json')
       .then(res => res.json())
       .then(data => {
-        tribalData.push(...data);
+        tribalData = data;
         data.forEach(t => {
           if (t.Tribe && t.Tribe.trim() !== "") {
             const opt = document.createElement('option');
@@ -85,8 +85,8 @@
       `;
     }
 
-    tribeSearch.addEventListener('input', () => {
-      const input = tribeSearch.value.trim().toLowerCase();
+    function performSearch(inputValue) {
+      const input = inputValue.trim().toLowerCase();
       const match = tribalData.find(t => t.Tribe.toLowerCase() === input);
       if (match) {
         tribeSearch.value = match.Tribe;
@@ -94,24 +94,21 @@
       } else {
         tribeInfo.innerHTML = '';
       }
-    });
+    }
 
-    tribeSearch.addEventListener('focus', () => {
-      tribeSearch.setSelectionRange(0, tribeSearch.value.length);
+    tribeSearch.addEventListener('input', () => {
+      performSearch(tribeSearch.value);
     });
 
     tribeSearch.addEventListener('keydown', (e) => {
       if (e.key === 'Enter') {
         e.preventDefault();
-        const input = tribeSearch.value.trim().toLowerCase();
-        const match = tribalData.find(t => t.Tribe.toLowerCase() === input);
-        if (match) {
-          tribeSearch.value = match.Tribe;
-          renderTribe(match);
-        } else {
-          tribeInfo.innerHTML = '';
-        }
+        performSearch(tribeSearch.value);
       }
+    });
+
+    tribeSearch.addEventListener('focus', () => {
+      tribeSearch.select();
     });
   </script>
 
