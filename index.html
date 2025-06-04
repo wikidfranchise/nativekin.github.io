@@ -44,7 +44,7 @@
 <body>
   <h1>NativeKin Tribal News</h1>
 
-  <input type="text" id="tribeSearch" placeholder="Search for your stribe..." list="tribeList" />
+  <input type="text" id="tribeSearch" placeholder="Search for your tribe..." list="tribeList" />
   <datalist id="tribeList"></datalist>
 
   <div id="tribeInfo"></div>
@@ -67,9 +67,25 @@
       })
       .catch(err => console.error('❌ Failed to load tribal data:', err));
 
-    function renderTribe(tribe) {
+    function handleSearch() {
+      const inputValue = tribeSearch.value.toLowerCase().trim();
+      const match = tribalData.find(t => t.Tribe.toLowerCase() === inputValue);
+
+      if (match) {
+        renderTribe(match);
+      } else {
+        tribeInfo.innerHTML = '';
+      }
+    }
+
+// Listen to both typing and selection
+tribeSearch.addEventListener('input', handleSearch);
+tribeSearch.addEventListener('change', handleSearch);
+
+    
+      function renderTribe(tribe) {
       const imgSrc = tribe.SnapshotFilename && tribe.SnapshotFilename.trim() !== ''
-        ? `/media/hpsnaps/${tribe.SnapshotFilename}`
+        ? `./media/hpsnaps/${tribe.SnapshotFilename}`
         : '/media/hpsnaps/placeholder.png';
 
       tribeInfo.innerHTML = `
@@ -84,8 +100,9 @@
     }
 
     tribeSearch.addEventListener('input', () => {
+      const inputValue = tribeSearch.value.toLowerCase();
       const match = tribalData.find(t =>
-        t.Tribe.toLowerCase() === tribeSearch.value.toLowerCase()
+        t.Tribe.toLowerCase() === inputValue
       );
 
       if (match) {
@@ -93,6 +110,8 @@
       } else {
         tribeInfo.innerHTML = '';
       }
+
+      tribeSearch.focus(); // allow retyping without manual click
     });
   </script>
 
