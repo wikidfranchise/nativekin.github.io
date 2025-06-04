@@ -23,16 +23,6 @@
       border-radius: 8px;
       width: 300px;
     }
-    button {
-      padding: 10px 16px;
-      font-size: 16px;
-      margin-left: 8px;
-      background-color: #008080;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
     .card {
       background: white;
       border: 1px solid #ddd;
@@ -56,85 +46,65 @@
 
   <input type="text" id="tribeSearch" placeholder="Search for your tribe..." list="tribeList" />
   <datalist id="tribeList"></datalist>
-  <button id="searchBtn">Search</button>
 
   <div id="tribeInfo"></div>
 
-<script>
-  const tribeSearch = document.getElementById('tribeSearch');
-  const tribeList = document.getElementById('tribeList');
-  const tribeInfo = document.getElementById('tribeInfo');
-  const searchBtn = document.getElementById('searchBtn');
-  const tribalData = [];
+  <script>
+    const tribeSearch = document.getElementById('tribeSearch');
+    const tribeList = document.getElementById('tribeList');
+    const tribeInfo = document.getElementById('tribeInfo');
+    const tribalData = [];
 
-  fetch('./data/tribalDirectory.json')
-    .then(res => res.json())
-    .then(data => {
-      tribalData.push(...data);
-      data.forEach(t => {
-        if (t.Tribe && t.Tribe.trim() !== "") {
-          const opt = document.createElement('option');
-          opt.value = t.Tribe;
-          tribeList.appendChild(opt);
-        }
-      });
-    })
-    .catch(err => console.error('❌ Failed to load tribal data:', err));
+    fetch('./data/tribalDirectory.json')
+      .then(res => res.json())
+      .then(data => {
+        tribalData.push(...data);
+        data.forEach(t => {
+          if (t.Tribe && t.Tribe.trim() !== "") {
+            const opt = document.createElement('option');
+            opt.value = t.Tribe;
+            tribeList.appendChild(opt);
+          }
+        });
+      })
+      .catch(err => console.error('❌ Failed to load tribal data:', err));
 
-  function renderTribe(tribe) {
-    const imgSrc = tribe.SnapshotFilename && tribe.SnapshotFilename.trim() !== ''
-      ? `/media/hpsnaps/${tribe.SnapshotFilename}`
-      : '/media/hpsnaps/placeholder.png';
+    function renderTribe(tribe) {
+      const imgSrc = tribe.SnapshotFilename && tribe.SnapshotFilename.trim() !== ''
+        ? `/media/hpsnaps/${tribe.SnapshotFilename}`
+        : '/media/hpsnaps/placeholder.png';
 
-    tribeInfo.innerHTML = `
-      <div class="card">
-        <div><strong>${tribe.Tribe}</strong></div>
-        <div>${tribe.City}, ${tribe.State} ${tribe.Zip}</div>
-        <div>${tribe.Phone}</div>
-        <div><em>Region: ${tribe.Region}</em></div>
-        <img src="${imgSrc}" alt="${tribe.Tribe}" class="image-preview" />
-      </div>
-    `;
-  }
-
-  function tryMatch() {
-    const input = tribeSearch.value.trim().toLowerCase();
-    const match = tribalData.find(t => t.Tribe.toLowerCase() === input);
-    if (match) {
-      renderTribe(match);
-    } else {
-      tribeInfo.innerHTML = `<div class="card">No match found.</div>`;
+      tribeInfo.innerHTML = `
+        <div class="card">
+          <div><strong>${tribe.Tribe}</strong></div>
+          <div>${tribe.City}, ${tribe.State} ${tribe.Zip}</div>
+          <div>${tribe.Phone}</div>
+          <div><em>Region: ${tribe.Region}</em></div>
+          <img src="${imgSrc}" alt="${tribe.Tribe}" class="image-preview" />
+        </div>
+      `;
     }
-  }
 
-  searchBtn.addEventListener('click', () => {
-    tryMatch();
-    tribeSearch.focus();
-    tribeSearch.select();
-  });
+    tribeSearch.addEventListener('input', () => {
+      const input = tribeSearch.value.trim().toLowerCase();
+      const match = tribalData.find(t => t.Tribe.toLowerCase() === input);
+      if (match) {
+        renderTribe(match);
+      } else {
+        tribeInfo.innerHTML = '';
+      }
+    });
 
-  tribeSearch.addEventListener('input', () => {
-    tribeInfo.innerHTML = ''; // Clear current view when editing starts
-  });
-
-  tribeSearch.addEventListener('change', () => {
-    tryMatch();
-    tribeSearch.focus();
-    tribeSearch.select();
-  });
-
-  tribeSearch.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter') {
-      tryMatch();
-      tribeSearch.focus();
-      tribeSearch.select();
-    }
-  });
-
-  tribeSearch.addEventListener('focus', () => {
-    tribeSearch.select();
-  });
-</script>
+    tribeSearch.addEventListener('change', () => {
+      const input = tribeSearch.value.trim().toLowerCase();
+      const match = tribalData.find(t => t.Tribe.toLowerCase() === input);
+      if (match) {
+        renderTribe(match);
+      } else {
+        tribeInfo.innerHTML = '<div class="card">No match found.</div>';
+      }
+    });
+  </script>
 
   <script data-goatcounter="https://nativekin.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
