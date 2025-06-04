@@ -30,6 +30,13 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add media/nativekin_aggregated_articles.json
-          git commit -m "📰 Auto-update aggregated JSON feed [skip ci]" || echo "No changes to commit"
-          git push
+
+          # Check if the file has changed before pushing
+          if ! git diff --quiet media/nativekin_aggregated_articles.json; then
+            git add media/nativekin_aggregated_articles.json
+            git commit -m "📰 Update JSON feed [skip ci]"
+            git push
+          else
+            echo "No changes to JSON feed — nothing to commit."
+          fi
+

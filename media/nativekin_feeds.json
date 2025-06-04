@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Mvskoke Media",
+    "url": "https://www.mvskokemedia.com/feed/",
+    "tribe": "Muscogee (Creek) Nation",
+    "state": "Oklahoma"
+  },
+  {
+    "name": "Osage News",
+    "url": "https://osagenews.org/feed/",
+    "tribe": "Osage Nation",
+    "state": "Oklahoma"
+  },
+  {
+    "name": "Cherokee Phoenix",
+    "url": "https://www.cherokeephoenix.org/rss/",
+    "tribe": "Cherokee Nation",
+    "state": "Oklahoma"
+  },
+  {
+    "name": "Indian Country Today",
+    "url": "https://indiancountrytoday.com/.rss/full/",
+    "tribe": "Multi-Tribal / National",
+    "state": "National"
+  },
+  {
+    "name": "Native News Online",
+    "url": "https://nativenewsonline.net/rss",
+    "tribe": "Multi-Tribal / National",
+    "state": "National"
+  },
+  {
+    "name": "Native America Calling",
+    "url": "https://www.nativeamericacalling.com/feed/",
+    "tribe": "Multi-Tribal / National",
+    "state": "National"
+  },
+  {
+    "name": "National Native News",
+    "url": "https://www.nativenews.net/feed/",
+    "tribe": "Multi-Tribal / National",
+    "state": "National"
+  },
+  {
+    "name": "The Circle News",
+    "url": "https://thecirclenews.org/feed/",
+    "tribe": "Ojibwe/Dakota",
+    "state": "Minnesota"
+  },
+  {
+    "name": "Lakota Times",
+    "url": "https://www.lakotatimes.com/rss/",
+    "tribe": "Oglala Sioux",
+    "state": "South Dakota"
+  }
+]

@@ -1,0 +1,1679 @@
+--- Tribal News Aggregation Report - 2025-06-02 11:25:35 ---
+
+Total tribes in directory: 404
+
+
+Processing Tribe: Agdaagux Tribe of King Cove (URL: https://agdaagux.com/)
+  No specific news section found. Will try Base URL: https://agdaagux.com/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Akiak Native Community (URL: https://akiaknativecommunity.org/)
+  No specific news section found. Will try Base URL: https://akiaknativecommunity.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Alutiiq Tribe of Old Harbor (URL: https://sites.google.com/alutiiqtribe.org/main/home)
+  No specific news section found. Will try Base URL: https://sites.google.com/alutiiqtribe.org/main/home
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Birch Creek Tribe (URL: http://www.birchcreektribe.org)
+  No specific news section found. Will try Base URL: http://www.birchcreektribe.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Central Council of the Tlingit & Haida Indian Tribes (URL: http://www.ccthita.org)
+  No specific news section found. Will try Base URL: http://www.ccthita.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Cheesh-Na Tribe (URL: http://www.cheeshna.com)
+  No specific news section found. Will try Base URL: http://www.cheeshna.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Chickaloon Native Village (URL: http://www.chickaloon.org)
+  News Section Identified: http://www.chickaloon.org/blog/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Chilkat Indian Village (Klukwan) (URL: http://www.chilkat-nsn.gov)
+  News Section Identified: http://www.chilkat-nsn.gov/news/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Chilkoot Indian Association (Haines) (URL: http://chilkoot-nsn.gov)
+  No specific news section found. Will try Base URL: http://chilkoot-nsn.gov
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Chinik Eskimo Community (Golovin) (URL: http://www.kawerak.org)
+  No specific news section found. Will try Base URL: http://www.kawerak.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Craig Tribal Association (URL: http://www.craigtribe.org)
+  No specific news section found. Will try Base URL: http://www.craigtribe.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Curyung Tribal Council (URL: http://www.curyungtribe.com)
+  No specific news section found. Will try Base URL: http://www.curyungtribe.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Douglas Indian Association (URL: https://diataku.com/)
+  News Section Identified: https://diataku.com/news/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Eklutna Native Village (URL: http://www.eklutna-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.eklutna-nsn.gov
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Gulkana Village Council (URL: https://gulkanacouncil.org/)
+  News Section Identified: https://gulkanacouncil.org/news/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Healy Lake Village (URL: https://www.healylake.org/)
+  No specific news section found. Will try Base URL: https://www.healylake.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Hoonah Indian Association (URL: https://www.hoonahindianassociation.org/)
+  No specific news section found. Will try Base URL: https://www.hoonahindianassociation.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Hydaburg Cooperative Association (URL: http://hydaburgtribe.org)
+  No specific news section found. Will try Base URL: http://hydaburgtribe.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Igiugig Village (URL: http://www.igiugig.com)
+  No specific news section found. Will try Base URL: http://www.igiugig.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Inupiat Community of the Arctic Slope (URL: https://icas-nsn.gov/)
+  News Section Identified: https://icas-nsn.gov/news/
+  Pulled 1 articles via Scrape from https://icas-nsn.gov/news/
+
+Processing Tribe: Ivanof Bay Tribe (URL: http://www.ivanofbaytribe.org)
+  No specific news section found. Will try Base URL: http://www.ivanofbaytribe.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Kenaitze Indian Tribe (URL: http://kenaitze.org)
+  No specific news section found. Will try Base URL: http://kenaitze.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Ketchikan Indian Community (URL: http://www.kictribe.org)
+  No specific news section found. Will try Base URL: http://www.kictribe.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Native Village of Afognak (URL: http://www.afognak.org)
+  No specific news section found. Will try Base URL: http://www.afognak.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Native Village of Aleknagik (URL: http://www.bbna.com)
+  No specific news section found. Will try Base URL: http://www.bbna.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Native Village of Barrow Inupiat Traditional Government (URL: https://nvb-nsn.gov/)
+  No specific news section found. Will try Base URL: https://nvb-nsn.gov/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Native Village of Chitina (URL: https://www.chitina.org/)
+  No specific news section found. Will try Base URL: https://www.chitina.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Native Village of Council (URL: http://www.kawerak.org)
+  No specific news section found. Will try Base URL: http://www.kawerak.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Native Village of Ekwok (URL: http://www.bbna.com)
+  No specific news section found. Will try Base URL: http://www.bbna.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Native Village of Eyak (Cordova) (URL: http://www.eyak-nsn.gov)
+  News Section Identified: http://www.eyak-nsn.gov/news/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Native Village of False Pass (URL: http://www.apiai.org/tribes/false-pass/)
+  No specific news section found. Will try Base URL: http://www.apiai.org/tribes/false-pass/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Native Village of Fort Yukon (URL: http://www.fortyukon.org)
+  No specific news section found. Will try Base URL: http://www.fortyukon.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Native Village of Gakona (URL: http://www.nvgakona.com)
+  No specific news section found. Will try Base URL: http://www.nvgakona.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Native Village of Gambell (URL: https://kawerak.org/our-region/gambell/)
+  No specific news section found. Will try Base URL: https://kawerak.org/our-region/gambell/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Native Village of Georgetown (URL: http://www.georgetowntc.com)
+  No specific news section found. Will try Base URL: http://www.georgetowntc.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Native Village of Kanatak (URL: http://www.kanatak.com)
+  No specific news section found. Will try Base URL: http://www.kanatak.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Native Village of Kluti Kaah (aka Copper Center) (URL: http://www.klutikaah.com)
+  No specific news section found. Will try Base URL: http://www.klutikaah.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Native Village of Kotzebue (URL: http://www.kotzebueira.org)
+  No specific news section found. Will try Base URL: http://www.kotzebueira.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Native Village of Kwigillingok (URL: http://kwigtribe.org/)
+  No specific news section found. Will try Base URL: http://kwigtribe.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Native Village of Mekoryuk (URL: http://www.mekoryuktc.org)
+  No specific news section found. Will try Base URL: http://www.mekoryuktc.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Native Village of Napaimute (URL: http://www.napaimute.org)
+  No specific news section found. Will try Base URL: http://www.napaimute.org
+  Pulled 1 articles via Scrape from http://www.napaimute.org
+
+Processing Tribe: Native Village of Nunapitchuk (URL: http://www.yupik.org/)
+  No specific news section found. Will try Base URL: http://www.yupik.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Native Village of Ouzinkie (URL: http://www.ouzinkie.org)
+  No specific news section found. Will try Base URL: http://www.ouzinkie.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Native Village of Paimiut (URL: https://www.nativevillageofpaimiut.org/)
+  No specific news section found. Will try Base URL: https://www.nativevillageofpaimiut.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Native Village of Port Lions (URL: https://portlionstribe.net/)
+  No specific news section found. Will try Base URL: https://portlionstribe.net/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Native Village of Saint Michael (URL: https://kawerak.org/our-region/st-michael/)
+  No specific news section found. Will try Base URL: https://kawerak.org/our-region/st-michael/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Native Village of Tyonek (URL: https://www.tyonek.com/)
+  News Section Identified: https://www.tyonek.com/news/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Native Village of Unalakleet (URL: https://www.nativevillageofunalakleet.org/)
+  No specific news section found. Will try Base URL: https://www.nativevillageofunalakleet.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Native Village of Wales (URL: http://www.kawerak.org)
+  No specific news section found. Will try Base URL: http://www.kawerak.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Nenana Native Association (URL: https://www.nenananativeassociation.org/)
+  News Section Identified: https://www.nenananativeassociation.org/news
+  Pulled 5 articles via Scrape from https://www.nenananativeassociation.org/news
+
+Processing Tribe: Ninilchik Village (URL: http://www.ninilchiktribe-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.ninilchiktribe-nsn.gov
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Nome Eskimo Community (URL: http://www.necalaska.org)
+  No specific news section found. Will try Base URL: http://www.necalaska.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Northway Village (URL: http://www.northwayvillagecouncil.org)
+  No specific news section found. Will try Base URL: http://www.northwayvillagecouncil.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Nulato Village (URL: http://www.nulatotribe.net/)
+  No specific news section found. Will try Base URL: http://www.nulatotribe.net/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Organized Village of Kake (URL: https://www.kake-nsn.gov/)
+  No specific news section found. Will try Base URL: https://www.kake-nsn.gov/
+  Pulled 1 articles via Scrape from https://www.kake-nsn.gov/
+
+Processing Tribe: Organized Village of Kasaan (URL: http://www.kasaan.org)
+  No specific news section found. Will try Base URL: http://www.kasaan.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Organized Village of Saxman (URL: https://www.saxmantribe.org/)
+  No specific news section found. Will try Base URL: https://www.saxmantribe.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Orutsararmiut Traditional Native Council (URL: http://www.nativecouncil.org)
+  No specific news section found. Will try Base URL: http://www.nativecouncil.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Pedro Bay Village (URL: https://www.pedrobaycorp.com/)
+  No specific news section found. Will try Base URL: https://www.pedrobaycorp.com/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Petersburg Indian Association (URL: https://piatribal.org/)
+  No specific news section found. Will try Base URL: https://piatribal.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Qagan Tayagungin Tribe of Sand Point (URL: http://www.qttribe.org)
+  No specific news section found. Will try Base URL: http://www.qttribe.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Qawalangin Tribe of Unalaska (URL: https://www.qawalangin.com/)
+  News Section Identified: https://www.qawalangin.com/news/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Salamatof Tribe (URL: https://www.salamatof.com/)
+  No specific news section found. Will try Base URL: https://www.salamatof.com/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Seldovia Village Tribe (URL: http://www.svt.org)
+  No specific news section found. Will try Base URL: http://www.svt.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Sitka Tribe of Alaska (URL: http://www.sitkatribe.org)
+  No specific news section found. Will try Base URL: http://www.sitkatribe.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Sun'aq Tribe of Kodiak (URL: http://www.sunaq.org)
+  No specific news section found. Will try Base URL: http://www.sunaq.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Tangirnaq Native Village (URL: http://www.woodyisland.com)
+  No specific news section found. Will try Base URL: http://www.woodyisland.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Traditional Village of Togiak (URL: https://www.togiak.us/)
+  No specific news section found. Will try Base URL: https://www.togiak.us/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Ugashik Village (URL: http://www.ugashikvillage.com)
+  No specific news section found. Will try Base URL: http://www.ugashikvillage.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Village of Clarks Point (URL: https://www.clarkspointvillagecouncil.org/)
+  No specific news section found. Will try Base URL: https://www.clarkspointvillagecouncil.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Village of Dot Lake (URL: https://www.dotlakevillage.org/)
+  News Section Identified: https://www.dotlakevillage.org/news/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Village of Iliamna (URL: https://www.villageofiliamna.org/)
+  News Section Identified: https://www.villageofiliamna.org/blog/
+  Pulled 2 articles via Scrape from https://www.villageofiliamna.org/blog/
+
+Processing Tribe: Village of Solomon (URL: https://www.villageofsolomon.org/)
+  News Section Identified: https://www.villageofsolomon.org/news/
+  Pulled 5 articles via Scrape from https://www.villageofsolomon.org/news/
+
+Processing Tribe: Wrangell Cooperative Association (URL: https://www.wcatribe.org/)
+  No specific news section found. Will try Base URL: https://www.wcatribe.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Yakutat Tlingit Tribe (URL: https://yakutattlingittribe.org/)
+  News Section Identified: https://yakutattlingittribe.org/news/
+  Pulled 3 articles via Scrape from Base URL: https://yakutattlingittribe.org/
+
+Processing Tribe: Cayuga Nation (URL: http://www.cayuganation-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.cayuganation-nsn.gov
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Chickahominy Indian Tribe (URL: https://www.chickahominytribe.org/)
+  No specific news section found. Will try Base URL: https://www.chickahominytribe.org/
+  Pulled 1 articles via Scrape from https://www.chickahominytribe.org/
+
+Processing Tribe: Chickahominy Indian Tribe - Eastern Division (URL: http://www.cied.org)
+  No specific news section found. Will try Base URL: http://www.cied.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Chitimacha Tribe of Louisiana (URL: http://www.chitimacha.gov)
+  No specific news section found. Will try Base URL: http://www.chitimacha.gov
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Coushatta Tribe of Louisiana (URL: https://www.coushatta.org/)
+  News Section Identified: https://www.coushatta.org/news/
+  Pulled 5 articles via Scrape from https://www.coushatta.org/news/
+
+Processing Tribe: Eastern Band of Cherokee Indians (URL: http://www.ebci.com)
+  No specific news section found. Will try Base URL: http://www.ebci.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Houlton Band of Maliseet Indians (URL: http://www.maliseets.com)
+  No specific news section found. Will try Base URL: http://www.maliseets.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Jena Band of Choctaw Indians (URL: http://www.jenachoctaw.org)
+  No specific news section found. Will try Base URL: http://www.jenachoctaw.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Mashantucket Pequot Indian Tribe (URL: http://www.mptn-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.mptn-nsn.gov
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Mashpee Wampanoag Tribe (URL: https://mashpeewampanoagtribe-nsn.gov/)
+  News Section Identified: https://mashpeewampanoagtribe-nsn.gov/news/
+  Pulled 5 articles via Scrape from https://mashpeewampanoagtribe-nsn.gov/news/
+
+Processing Tribe: Mi'kmaq Nation (URL: http://micmac-nsn.gov)
+  No specific news section found. Will try Base URL: http://micmac-nsn.gov
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Mississippi Band of Choctaw Indians (URL: http://www.choctaw.org)
+  No specific news section found. Will try Base URL: http://www.choctaw.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Mohegan Tribe of Indians of Connecticut (URL: http://www.mohegan.nsn.us/)
+  No specific news section found. Will try Base URL: http://www.mohegan.nsn.us/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Monacan Indian Nation (URL: http://www.monacannation.com)
+  No specific news section found. Will try Base URL: http://www.monacannation.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Nansemond Indian Nation (URL: http://www.nansemond.org)
+  No specific news section found. Will try Base URL: http://www.nansemond.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Narragansett Indian Tribe (URL: http://narragansettindiannation.org/)
+  No specific news section found. Will try Base URL: http://narragansettindiannation.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Oneida Indian Nation (URL: http://www.oneidaindiannation.com)
+  No specific news section found. Will try Base URL: http://www.oneidaindiannation.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Onondaga Nation (URL: http://www.onondaganation.org)
+  No specific news section found. Will try Base URL: http://www.onondaganation.org
+  Pulled 5 articles via Scrape from http://www.onondaganation.org
+
+Processing Tribe: Pamunkey Indian Tribe (URL: http://www.pamunkey.org)
+  No specific news section found. Will try Base URL: http://www.pamunkey.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Passamaquoddy Tribe - Indian Township (URL: http://www.passamaquoddy.com)
+  No specific news section found. Will try Base URL: http://www.passamaquoddy.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Passamaquoddy Tribe - Pleasant Point (URL: http://www.wabanaki.com)
+  No specific news section found. Will try Base URL: http://www.wabanaki.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Penobscot Nation (URL: http://www.penobscotnation.org)
+  No specific news section found. Will try Base URL: http://www.penobscotnation.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Poarch Band of Creek Indians (URL: http://www.poarchcreekindians.org)
+  No specific news section found. Will try Base URL: http://www.poarchcreekindians.org
+  Pulled 2 articles via Scrape from http://www.poarchcreekindians.org
+
+Processing Tribe: Rappahannock Tribe, Inc. (URL: http://www.rappahannocktribe.org)
+  News Section Identified: http://www.rappahannocktribe.org/media/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Saint Regis Mohawk Tribe (URL: http://www.srmt-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.srmt-nsn.gov
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Seneca Nation of Indians (URL: http://www.sni.org)
+  No specific news section found. Will try Base URL: http://www.sni.org
+  Pulled 1 articles via Scrape from http://www.sni.org
+
+Processing Tribe: Upper Mattaponi Tribe (URL: http://www.uppermattaponi.org)
+  No specific news section found. Will try Base URL: http://www.uppermattaponi.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Wampanoag Tribe of Gay Head (Aquinnah) (URL: http://www.wampanoagtribe-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.wampanoagtribe-nsn.gov
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Alabama-Quassarte Tribal Town (URL: http://www.alabama-quassarte.org)
+  No specific news section found. Will try Base URL: http://www.alabama-quassarte.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Cherokee Nation (URL: http://www.cherokee.org)
+  No specific news section found. Will try Base URL: http://www.cherokee.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Delaware Tribe of Indians (URL: http://www.delawaretribe.org)
+  No specific news section found. Will try Base URL: http://www.delawaretribe.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Eastern Shawnee Tribe of Oklahoma (URL: http://www.estoo-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.estoo-nsn.gov
+  Pulled 1 articles via Scrape from http://www.estoo-nsn.gov
+
+Processing Tribe: Kialegee Tribal Town (URL: https://www.kialegeetribaltown.net/)
+  News Section Identified: https://www.kialegeetribaltown.net/news/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Miami Tribe of Oklahoma (URL: https://www.miamination.com)
+  News Section Identified: https://www.miamination.com/blog/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Modoc Nation (URL: http://www.modocnation.com)
+  No specific news section found. Will try Base URL: http://www.modocnation.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Ottawa Tribe of Oklahoma (URL: http://www.ottawatribe.org)
+  No specific news section found. Will try Base URL: http://www.ottawatribe.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Peoria Tribe of Indians of Oklahoma (URL: http://www.peoriatribe.com)
+  No specific news section found. Will try Base URL: http://www.peoriatribe.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Quapaw Nation (URL: http://www.quapawtribe.com)
+  No specific news section found. Will try Base URL: http://www.quapawtribe.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Seneca-Cayuga Nation (URL: http://www.sctribe.com)
+  No specific news section found. Will try Base URL: http://www.sctribe.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Shawnee Tribe (URL: http://www.shawnee-tribe.com)
+  No specific news section found. Will try Base URL: http://www.shawnee-tribe.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: The Chickasaw Nation (URL: http://www.chickasaw.net)
+  News Section Identified: http://www.chickasaw.net/news/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: The Choctaw Nation of Oklahoma (URL: http://www.choctawnation.com)
+  No specific news section found. Will try Base URL: http://www.choctawnation.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: The Muscogee (Creek) Nation (URL: http://www.mcn-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.mcn-nsn.gov
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: The Osage Nation (URL: http://www.osagenation-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.osagenation-nsn.gov
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: The Seminole Nation of Oklahoma (URL: http://www.sno-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.sno-nsn.gov
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Thlopthlocco Tribal Town (URL: http://www.tttown.org)
+  No specific news section found. Will try Base URL: http://www.tttown.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: United Keetoowah Band of Cherokee Indians in Oklahoma (URL: https://www.ukb-nsn.gov/)
+  No specific news section found. Will try Base URL: https://www.ukb-nsn.gov/
+  Pulled 3 articles via Scrape from https://www.ukb-nsn.gov/
+
+Processing Tribe: Wyandotte Nation (URL: http://www.wyandotte-nation.org)
+  No specific news section found. Will try Base URL: http://www.wyandotte-nation.org
+  Pulled 1 articles via Scrape from http://www.wyandotte-nation.org
+
+Processing Tribe: Cheyenne River Sioux Tribe of the Cheyenne River Reservation, South Dakota (URL: https://www.cheyenneriversioux.com/)
+  No specific news section found. Will try Base URL: https://www.cheyenneriversioux.com/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Crow Creek Sioux Tribe of the Crow Creek Reservation, South Dakota (URL: http://sdtribalrelations.com/crowcreek.aspx)
+  No specific news section found. Will try Base URL: http://sdtribalrelations.com/crowcreek.aspx
+  Pulled 2 articles via Scrape from http://sdtribalrelations.com/crowcreek.aspx
+
+Processing Tribe: Flandreau Santee Sioux Tribe of South Dakota (URL: https://fsst-nsn.gov/)
+  News Section Identified: https://fsst-nsn.gov/news-media
+  Pulled 1 articles via Scrape from Base URL: https://fsst-nsn.gov/
+
+Processing Tribe: Lower Brule Sioux Tribe of the Lower Brule Reservation, South Dakota (URL: https://www.lowerbrulesiouxtribe.com/)
+  No specific news section found. Will try Base URL: https://www.lowerbrulesiouxtribe.com/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Oglala Sioux Tribe (URL: https://oglalalakotanation.net/)
+  No specific news section found. Will try Base URL: https://oglalalakotanation.net/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Ponca Tribe of Nebraska (URL: http://www.poncatribe-ne.org)
+  No specific news section found. Will try Base URL: http://www.poncatribe-ne.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Rosebud Sioux Tribe of the Rosebud Indian Reservation, South Dakota (URL: http://www.rosebudsiouxtribe-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.rosebudsiouxtribe-nsn.gov
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Santee Sioux Nation, Nebraska (URL: https://santeesiouxnation.com/)
+  No specific news section found. Will try Base URL: https://santeesiouxnation.com/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Sisseton-Wahpeton Oyate of the Lake Traverse Reservation, South Dakota (URL: http://www.swo-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.swo-nsn.gov
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Spirit Lake Tribe, North Dakota (URL: http://www.spiritlakenation.com)
+  No specific news section found. Will try Base URL: http://www.spiritlakenation.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Standing Rock Sioux Tribe of North & South Dakota (URL: http://www.standingrock.org)
+  No specific news section found. Will try Base URL: http://www.standingrock.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Three Affiliated Tribes of the Fort Berthold Reservation, North Dakota (URL: http://www.mhanation.com)
+  No specific news section found. Will try Base URL: http://www.mhanation.com
+  Pulled 5 articles via Scrape from http://www.mhanation.com
+
+Processing Tribe: Turtle Mountain Band of Chippewa Indians of North Dakota (URL: http://tmbci.kkbold.com/)
+  No specific news section found. Will try Base URL: http://tmbci.kkbold.com/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Winnebago Tribe of Nebraska (URL: http://www.winnebagotribe.com)
+  No specific news section found. Will try Base URL: http://www.winnebagotribe.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Yankton Sioux Tribe of South Dakota (URL: http://www.yanktonsiouxtribe.net)
+  No specific news section found. Will try Base URL: http://www.yanktonsiouxtribe.net
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Bad River Band of the Lake Superior Tribe of Chippewa Indians of the Bad River Reservation, Wisconsin (URL: http://www.badriver-nsn.gov/home)
+  No specific news section found. Will try Base URL: http://www.badriver-nsn.gov/home
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Bay Mills Indian Community, Michigan (URL: http://www.baymills.org)
+  No specific news section found. Will try Base URL: http://www.baymills.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Forest County Potawatomi Community, Wisconsin (URL: http://www.fcpotawatomi.com)
+  No specific news section found. Will try Base URL: http://www.fcpotawatomi.com
+  Pulled 2 articles via Scrape from http://www.fcpotawatomi.com
+
+Processing Tribe: Grand Traverse Band of Ottawa and Chippewa Indians, Michigan (URL: http://www.gtbindians.org)
+  No specific news section found. Will try Base URL: http://www.gtbindians.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Hannahville Indian Community, Michigan (URL: http://www.hannahville.net)
+  No specific news section found. Will try Base URL: http://www.hannahville.net
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Ho-Chunk Nation of Wisconsin (URL: http://www.ho-chunknation.com)
+  No specific news section found. Will try Base URL: http://www.ho-chunknation.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Keweenaw Bay Indian Community, Michigan (URL: http://www.kbic-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.kbic-nsn.gov
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Lac Courte Oreilles Band of Lake Superior Chippewa Indians of Wisconsin (URL: http://www.lco-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.lco-nsn.gov
+  Pulled 1 articles via Scrape from http://www.lco-nsn.gov
+
+Processing Tribe: Lac du Flambeau Band of Lake Superior Chippewa Indians of the Lac du Flambeau Reservation of Wisconsin (URL: http://www.ldftribe.com)
+  No specific news section found. Will try Base URL: http://www.ldftribe.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Lac Vieux Desert Band of Lake Superior Chippewa Indians of Michigan (URL: http://www.lvdtribal.com)
+  No specific news section found. Will try Base URL: http://www.lvdtribal.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Little River Band of Ottawa Indians, Michigan (URL: http://www.lrboi-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.lrboi-nsn.gov
+  Pulled 4 articles via Scrape from http://www.lrboi-nsn.gov
+
+Processing Tribe: Little Traverse Bay Bands of Odawa Indians, Michigan (URL: http://www.ltbbodawa-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.ltbbodawa-nsn.gov
+  Pulled 4 articles via Scrape from http://www.ltbbodawa-nsn.gov
+
+Processing Tribe: Lower Sioux Indian Community in the State of Minnesota (URL: http://www.lowersioux.com)
+  No specific news section found. Will try Base URL: http://www.lowersioux.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Match-e-be-nash-she-wish Band of Pottawatomi Indians of Michigan (URL: https://gunlaketribe-nsn.gov/)
+  News Section Identified: https://gunlaketribe-nsn.gov/news/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Menominee Indian Tribe of Wisconsin (URL: http://www.menominee-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.menominee-nsn.gov
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Minnesota Chippewa Tribe - Bois Forte Band (Nett Lake) (URL: http://www.boisforte.com)
+  No specific news section found. Will try Base URL: http://www.boisforte.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Minnesota Chippewa Tribe - Fond du Lac Band (URL: http://www.fdlrez.com)
+  No specific news section found. Will try Base URL: http://www.fdlrez.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Minnesota Chippewa Tribe - Grand Portage Band (URL: https://www.grandportageband.com/)
+  No specific news section found. Will try Base URL: https://www.grandportageband.com/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Minnesota Chippewa Tribe - Leech Lake Band (URL: http://www.llojibwe.org)
+  No specific news section found. Will try Base URL: http://www.llojibwe.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Minnesota Chippewa Tribe - Mille Lacs Band (URL: http://www.millelacsband.com)
+  No specific news section found. Will try Base URL: http://www.millelacsband.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Minnesota Chippewa Tribe - White Earth Band (URL: http://www.whiteearth.com)
+  No specific news section found. Will try Base URL: http://www.whiteearth.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Minnesota Chippewa Tribe, Minnesota (URL: http://www.mnchippewatribe.org)
+  No specific news section found. Will try Base URL: http://www.mnchippewatribe.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Nottawaseppi Huron Band of the Potawatomi, Michigan (URL: http://www.nhbp-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.nhbp-nsn.gov
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Oneida Nation (URL: http://www.oneidanation.org)
+  No specific news section found. Will try Base URL: http://www.oneidanation.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Pokagon Band of Potawatomi Indians, Michigan and Indiana (URL: https://www.pokagonband-nsn.gov/)
+  No specific news section found. Will try Base URL: https://www.pokagonband-nsn.gov/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Prairie Island Indian Community in the State of Minnesota (URL: http://www.prairieisland.org)
+  No specific news section found. Will try Base URL: http://www.prairieisland.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Red Cliff Band of Lake Superior Chippewa Indians of Wisconsin (URL: http://www.redcliff-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.redcliff-nsn.gov
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Red Lake Band of Chippewa Indians, Minnesota (URL: http://www.redlakenation.org/)
+  News Section Identified: http://www.redlakenation.org/announcements/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Sac & Fox Tribe of the Mississippi in Iowa (URL: http://www.meskwaki.org)
+  No specific news section found. Will try Base URL: http://www.meskwaki.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Saginaw Chippewa Indian Tribe of Michigan (URL: http://www.sagchip.org)
+  No specific news section found. Will try Base URL: http://www.sagchip.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Sault Ste. Marie Tribe of Chippewa Indians, Michigan (URL: http://www.saulttribe.com)
+  No specific news section found. Will try Base URL: http://www.saulttribe.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Shakopee Mdewakanton Sioux Community of Minnesota (URL: http://www.shakopeedakota.org)
+  No specific news section found. Will try Base URL: http://www.shakopeedakota.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Sokaogon Chippewa Community, Wisconsin (URL: http://www.sokaogonchippewa.com)
+  No specific news section found. Will try Base URL: http://www.sokaogonchippewa.com
+  Pulled 5 articles via Scrape from http://www.sokaogonchippewa.com
+
+Processing Tribe: St. Croix Chippewa Indians of Wisconsin (URL: https://stcroixojibwe-nsn.gov/)
+  News Section Identified: https://stcroixojibwe-nsn.gov/news/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Stockbridge Munsee Community, Wisconsin (URL: http://www.mohican.com)
+  No specific news section found. Will try Base URL: http://www.mohican.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Upper Sioux Community, Minnesota (URL: http://www.uppersiouxcommunity-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.uppersiouxcommunity-nsn.gov
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Navajo Nation, Arizona, New Mexico & Utah (URL: http://www.navajo-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.navajo-nsn.gov
+  Pulled 5 articles via Scrape from http://www.navajo-nsn.gov
+
+Processing Tribe: Burns Paiute Tribe (URL: http://www.burnspaiute-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.burnspaiute-nsn.gov
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Coeur D'Alene Tribe (URL: http://www.cdatribe-nsn.gov/)
+  News Section Identified: http://www.cdatribe-nsn.gov/blog/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Confederated Salish and Kootenai Tribes of the Flathead Reservation (URL: http://www.cskt.org)
+  No specific news section found. Will try Base URL: http://www.cskt.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Confederated Tribes and Bands of the Yakama Nation (URL: https://www.yakama.com/)
+  No specific news section found. Will try Base URL: https://www.yakama.com/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Confederated Tribes of Siletz Indians of Oregon (URL: http://www.ctsi.nsn.us)
+  No specific news section found. Will try Base URL: http://www.ctsi.nsn.us
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Confederated Tribes of the Chehalis Reservation (URL: http://www.chehalistribe.org)
+  No specific news section found. Will try Base URL: http://www.chehalistribe.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Confederated Tribes of the Colville Reservation (URL: http://www.colvilletribes.com)
+  No specific news section found. Will try Base URL: http://www.colvilletribes.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Confederated Tribes of the Coos, Lower Umpqua and Siuslaw Indians (URL: http://www.ctclusi.org)
+  No specific news section found. Will try Base URL: http://www.ctclusi.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Confederated Tribes of the Grand Ronde Community of Oregon (URL: http://www.grandronde.org)
+  No specific news section found. Will try Base URL: http://www.grandronde.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Confederated Tribes of the Umatilla Indian Reservation (URL: https://ctuir.org/)
+  News Section Identified: https://ctuir.org/news/
+  Pulled 1 articles via Scrape from https://ctuir.org/news/
+
+Processing Tribe: Confederated Tribes of the Warm Springs Reservation of Oregon (URL: https://warmsprings-nsn.gov/)
+  News Section Identified: https://warmsprings-nsn.gov/news/
+  Pulled 1 articles via Scrape from https://warmsprings-nsn.gov/news/
+
+Processing Tribe: Coquille Indian Tribe (URL: http://www.coquilletribe.org)
+  No specific news section found. Will try Base URL: http://www.coquilletribe.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Cow Creek Band of Umpqua Tribe of Indians (URL: http://www.cowcreek-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.cowcreek-nsn.gov
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Cowlitz Indian Tribe (URL: http://www.cowlitz.org)
+  No specific news section found. Will try Base URL: http://www.cowlitz.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Hoh Indian Tribe (URL: http://www.hohtribe-nsn.org)
+  No specific news section found. Will try Base URL: http://www.hohtribe-nsn.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Jamestown S'Klallam Tribe (URL: http://www.jamestowntribe.org)
+  No specific news section found. Will try Base URL: http://www.jamestowntribe.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Kalispel Indian Community of the Kalispel Reservation (URL: http://www.kalispeltribe.com)
+  No specific news section found. Will try Base URL: http://www.kalispeltribe.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Klamath Tribes (URL: http://www.klamathtribes.org)
+  No specific news section found. Will try Base URL: http://www.klamathtribes.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Kootenai Tribe of Idaho (URL: http://www.kootenai.org)
+  No specific news section found. Will try Base URL: http://www.kootenai.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Lower Elwha Tribal Community (URL: https://www.elwha.org/)
+  News Section Identified: https://www.elwha.org/announcements/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Lummi Tribe of the Lummi Reservation (URL: https://www.lummi-nsn.gov/)
+  No specific news section found. Will try Base URL: https://www.lummi-nsn.gov/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Makah Indian Tribe of the Makah Indian Reservation (URL: http://www.makah.com)
+  No specific news section found. Will try Base URL: http://www.makah.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Metlakatla Indian Community, Annette Island Reserve (URL: http://www.metlakatla.com)
+  No specific news section found. Will try Base URL: http://www.metlakatla.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Muckleshoot Indian Tribe (URL: http://www.muckleshoot.nsn.us)
+  No specific news section found. Will try Base URL: http://www.muckleshoot.nsn.us
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Nez Perce Tribe (URL: http://www.nezperce.org)
+  No specific news section found. Will try Base URL: http://www.nezperce.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Nisqually Indian Tribe (URL: http://www.nisqually-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.nisqually-nsn.gov
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Nooksack Indian Tribe (URL: https://nooksacktribe.org/)
+  News Section Identified: https://nooksacktribe.org/blog/
+  Pulled 3 articles via Scrape from https://nooksacktribe.org/blog/
+
+Processing Tribe: Northwestern Band of the Shoshone Nation (URL: http://www.nwbshoshone.com)
+  News Section Identified: http://www.nwbshoshone.com/news/
+  Pulled 1 articles via Scrape from http://www.nwbshoshone.com/news/
+
+Processing Tribe: Port Gamble S'Klallam Tribe (URL: http://www.pgst.nsn.us)
+  No specific news section found. Will try Base URL: http://www.pgst.nsn.us
+  Pulled 1 articles via Scrape from http://www.pgst.nsn.us
+
+Processing Tribe: Puyallup Tribe of the Puyallup Reservation (URL: http://www.puyallup-tribe.com)
+  No specific news section found. Will try Base URL: http://www.puyallup-tribe.com
+  Pulled 1 articles via Scrape from http://www.puyallup-tribe.com
+
+Processing Tribe: Quileute Tribe of the Quileute Reservation (URL: http://www.quileutenation.org)
+  No specific news section found. Will try Base URL: http://www.quileutenation.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Quinault Indian Nation (URL: http://www.quinaultindiannation.com)
+  No specific news section found. Will try Base URL: http://www.quinaultindiannation.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Samish Indian Nation (URL: http://www.samishtribe.nsn.us)
+  No specific news section found. Will try Base URL: http://www.samishtribe.nsn.us
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Sauk-Suiattle Indian Tribe (URL: http://www.sauk-suiattle.com)
+  No specific news section found. Will try Base URL: http://www.sauk-suiattle.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Shoalwater Bay Indian Tribe of the Shoalwater Bay Indian Reservation (URL: http://www.shoalwaterbay-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.shoalwaterbay-nsn.gov
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Shoshone-Bannock Tribes of the Fort Hall Reservation (URL: https://www.sbtribes.com/)
+  News Section Identified: https://www.sbtribes.com/press-releases/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Skokomish Indian Tribe (URL: http://www.skokomish.org)
+  No specific news section found. Will try Base URL: http://www.skokomish.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Snoqualmie Indian Tribe (URL: https://snoqualmietribe.us/)
+  No specific news section found. Will try Base URL: https://snoqualmietribe.us/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Spokane Tribe of the Spokane Reservation (URL: http://www.spokanetribe.com)
+  No specific news section found. Will try Base URL: http://www.spokanetribe.com
+  Pulled 2 articles via Scrape from http://www.spokanetribe.com
+
+Processing Tribe: Squaxin Island Tribe of the Squaxin Island Reservation (URL: http://www.squaxinisland.org)
+  No specific news section found. Will try Base URL: http://www.squaxinisland.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Stillaguamish Tribe of Indians of Washington (URL: http://www.stillaguamish.com)
+  No specific news section found. Will try Base URL: http://www.stillaguamish.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Suquamish Indian Tribe of the Port Madison Reservation (URL: http://www.suquamish.nsn.us)
+  No specific news section found. Will try Base URL: http://www.suquamish.nsn.us
+  Pulled 4 articles via Scrape from http://www.suquamish.nsn.us
+
+Processing Tribe: Swinomish Indian Tribal Community (URL: http://www.swinomish-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.swinomish-nsn.gov
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Tulalip Tribes of Washington (URL: http://www.tulaliptribes-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.tulaliptribes-nsn.gov
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Upper Skagit Indian Tribe (URL: https://upperskagittribe-nsn.gov/)
+  No specific news section found. Will try Base URL: https://upperskagittribe-nsn.gov/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Agua Caliente Band of Cahuilla Indians of the Agua Caliente Indian Reservation, California (URL: http://www.aguacaliente.org)
+  No specific news section found. Will try Base URL: http://www.aguacaliente.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Augustine Band of Cahuilla Indians, California (URL: http://www.augustinetribe.org)
+  No specific news section found. Will try Base URL: http://www.augustinetribe.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Bear River Band of the Rohnerville Rancheria, California (URL: https://www.bearriverrancheria.org/)
+  No specific news section found. Will try Base URL: https://www.bearriverrancheria.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Berry Creek Rancheria of Maidu Indians of California (URL: https://www.berrycreekmaiduindians.org/)
+  News Section Identified: https://www.berrycreekmaiduindians.org/news/
+  Pulled 4 articles via Scrape from Base URL: https://www.berrycreekmaiduindians.org/
+
+Processing Tribe: Big Pine Paiute Tribe of the Owens Valley (URL: https://bigpinepaiute.org/)
+  No specific news section found. Will try Base URL: https://bigpinepaiute.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Big Sandy Rancheria of Western Mono Indians of California (URL: https://www.bigsandyrancheria.com/)
+  News Section Identified: https://www.bigsandyrancheria.com/blog/
+  Pulled 3 articles via Scrape from https://www.bigsandyrancheria.com/blog/
+
+Processing Tribe: Big Valley Band of Pomo Indians of the Big Valley Rancheria, California (URL: http://www.bvrancheria.com)
+  No specific news section found. Will try Base URL: http://www.bvrancheria.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Bishop Paiute Tribe (URL: https://www.bishoppaiutetribe.com/)
+  No specific news section found. Will try Base URL: https://www.bishoppaiutetribe.com/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Blue Lake Rancheria, California (URL: http://www.bluelakerancheria-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.bluelakerancheria-nsn.gov
+  Pulled 1 articles via Scrape from http://www.bluelakerancheria-nsn.gov
+
+Processing Tribe: Bridgeport Indian Colony (URL: http://www.bridgeportindiancolony.com)
+  No specific news section found. Will try Base URL: http://www.bridgeportindiancolony.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Buena Vista Rancheria of Me-Wuk Indians of California (URL: http://www.buenavistatribe.com)
+  No specific news section found. Will try Base URL: http://www.buenavistatribe.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Cabazon Band of Cahuilla Indians (URL: https://caltribalfamilies.org/places/cabazon-band-of-mission-indians/)
+  No specific news section found. Will try Base URL: https://caltribalfamilies.org/places/cabazon-band-of-mission-indians/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Cachil DeHe Band of Wintun Indians of the Colusa Indian Community of the Colusa Rancheria, California (URL: http://www.colusa-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.colusa-nsn.gov
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Cahuilla Band of Indians (URL: https://cahuilla-nsn.gov/)
+  News Section Identified: https://cahuilla-nsn.gov/blog/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Campo Band of Diegueno Mission Indians of the Campo Indian Reservation, California (URL: http://www.campo-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.campo-nsn.gov
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Capitan Grande Band of Diegueno Mission Indians of California (Barona Group of Capitan Grande Band of Mission Indians of the Barona Reservation, California) (URL: http://www.barona-nsn.gov/)
+  No specific news section found. Will try Base URL: http://www.barona-nsn.gov/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Capitan Grande Band of Diegueno Mission Indians of California: Viejas (Baron Long) Group of Capitan Grande Band of Mission Indians of the Viejas Reservation, California (URL: http://www.viejasbandofkumeyaay.org)
+  No specific news section found. Will try Base URL: http://www.viejasbandofkumeyaay.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Cher-Ae Heights Indian Community of the Trinidad Rancheria, California (URL: http://www.trinidad-rancheria.org)
+  No specific news section found. Will try Base URL: http://www.trinidad-rancheria.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Chicken Ranch Rancheria of Me-Wuk Indians of California (URL: https://chickenranchtribe.com/home)
+  No specific news section found. Will try Base URL: https://chickenranchtribe.com/home
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Cloverdale Rancheria of Pomo Indians of California (URL: http://www.cloverdalerancheria.com)
+  No specific news section found. Will try Base URL: http://www.cloverdalerancheria.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Cold Springs Rancheria of Mono Indians of California (URL: https://caltribalfamilies.org/places/cold-springs-rancheria-of-mono-indians/)
+  No specific news section found. Will try Base URL: https://caltribalfamilies.org/places/cold-springs-rancheria-of-mono-indians/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Coyote Valley Band of Pomo Indians of California (URL: https://www.coyotevalleytribe.org/)
+  News Section Identified: https://www.coyotevalleytribe.org/blog/
+  Pulled 1 articles via Scrape from https://www.coyotevalleytribe.org/blog/
+
+Processing Tribe: Dry Creek Rancheria Band of Pomo Indians, California (URL: http://www.drycreekrancheria.com)
+  No specific news section found. Will try Base URL: http://www.drycreekrancheria.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Elem Indian Colony of Pomo Indians of the Sulphur Bank Rancheria, California (URL: http://www.elemindiancolony.org/)
+  No specific news section found. Will try Base URL: http://www.elemindiancolony.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Elk Valley Rancheria, California (URL: http://www.elk-valley.com)
+  No specific news section found. Will try Base URL: http://www.elk-valley.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Enterprise Rancheria of Maidu Indians of California (URL: http://www.enterpriserancheria.org)
+  No specific news section found. Will try Base URL: http://www.enterpriserancheria.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Federated Indians of Graton Rancheria, California (URL: http://www.gratonrancheria.com)
+  No specific news section found. Will try Base URL: http://www.gratonrancheria.com
+  Pulled 1 articles via Scrape from http://www.gratonrancheria.com
+
+Processing Tribe: Fort Bidwell Indian Community of the Fort Bidwell Reservation of California (URL: https://caltribalfamilies.org/places/fort-bidwell-indian-community/)
+  No specific news section found. Will try Base URL: https://caltribalfamilies.org/places/fort-bidwell-indian-community/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Fort Independence Indian Community of Paiute Indians of the Fort Independence Reservation, California (URL: http://www.fortindependence.com)
+  No specific news section found. Will try Base URL: http://www.fortindependence.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Greenville Rancheria (URL: http://www.greenvillerancheria.com)
+  No specific news section found. Will try Base URL: http://www.greenvillerancheria.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Habematolel Pomo of Upper Lake, California (URL: https://www.hpultribe-nsn.gov/)
+  No specific news section found. Will try Base URL: https://www.hpultribe-nsn.gov/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Hoopa Valley Tribe, California (URL: http://www.hoopa-nsn.gov/)
+  No specific news section found. Will try Base URL: http://www.hoopa-nsn.gov/
+  Pulled 1 articles via Scrape from http://www.hoopa-nsn.gov/
+
+Processing Tribe: Hopland Band of Pomo Indians, California (URL: http://www.hoplandtribe.com)
+  No specific news section found. Will try Base URL: http://www.hoplandtribe.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Iipay Nation of Santa Ysabel, California (URL: https://www.iipaynationofsantaysabel-nsn.gov/)
+  News Section Identified: https://www.iipaynationofsantaysabel-nsn.gov/news/
+  Pulled 4 articles via Scrape from https://www.iipaynationofsantaysabel-nsn.gov/news/
+
+Processing Tribe: Ione Band of Miwok Indians of California (URL: https://ionemiwok.net/)
+  News Section Identified: https://ionemiwok.net/news/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Jackson Band of Miwuk Indians (URL: http://www.jacksoncasino.com/tribal)
+  No specific news section found. Will try Base URL: http://www.jacksoncasino.com/tribal
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Jamul Indian Village of California (URL: https://jamulindianvillage.com/)
+  News Section Identified: https://jamulindianvillage.com/news/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Karuk Tribe (URL: http://www.karuk.us)
+  No specific news section found. Will try Base URL: http://www.karuk.us
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Kashia Band of Pomo Indians of the Stewarts Point Rancheria, California (URL: http://stewartspoint.org/wp/)
+  No specific news section found. Will try Base URL: http://stewartspoint.org/wp/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Kletsel Dehe Wintun Nation of the Cortina Rancheria (URL: https://www.kletseldehe.org/)
+  News Section Identified: https://www.kletseldehe.org/news/
+  Pulled 4 articles via Scrape from https://www.kletseldehe.org/news/
+
+Processing Tribe: Koi Nation of Northern California (URL: http://koination.com)
+  No specific news section found. Will try Base URL: http://koination.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: La Jolla Band of Luiseno Indians, California (URL: https://www.lajollaindians.org/)
+  No specific news section found. Will try Base URL: https://www.lajollaindians.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: La Posta Band of Diegueno Mission Indians of the La Posta Indian Reservation, California (URL: http://www.lptribe.net)
+  No specific news section found. Will try Base URL: http://www.lptribe.net
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Lone Pine Paiute-Shoshone Tribe (URL: http://www.lppsr.org)
+  No specific news section found. Will try Base URL: http://www.lppsr.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Lytton Rancheria of California (URL: https://www.lyttonrancheria.com/)
+  No specific news section found. Will try Base URL: https://www.lyttonrancheria.com/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Mechoopda Indian Tribe of Chico Rancheria, California (URL: http://www.mechoopda-nsn.gov/)
+  No specific news section found. Will try Base URL: http://www.mechoopda-nsn.gov/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Mesa Grande Band of Diegueno Mission Indians of the Mesa Grande Reservation, California (URL: https://www.mesagrandeband-nsn.gov/)
+  News Section Identified: https://www.mesagrandeband-nsn.gov/news/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Middletown Rancheria of Pomo Indians of California (URL: https://middletownrancheria-nsn.gov/)
+  No specific news section found. Will try Base URL: https://middletownrancheria-nsn.gov/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Mooretown Rancheria of Maidu Indians of California (URL: https://www.mooretownrancheria-nsn.gov/)
+  News Section Identified: https://www.mooretownrancheria-nsn.gov/announcements/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Morongo Band of Mission Indians, California (URL: http://www.morongonation.org)
+  No specific news section found. Will try Base URL: http://www.morongonation.org
+  Pulled 3 articles via Scrape from http://www.morongonation.org
+
+Processing Tribe: Northfork Rancheria of Mono Indians of California (URL: https://northforkrancheria-nsn.gov/)
+  No specific news section found. Will try Base URL: https://northforkrancheria-nsn.gov/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Pala Band of Mission Indians (URL: http://www.palatribe.com)
+  News Section Identified: http://www.palatribe.com/news/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Paskenta Band of Nomlaki Indians of California (URL: https://paskenta-nsn.gov/)
+  News Section Identified: https://paskenta-nsn.gov/news/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Pauma Band of Luiseno Mission Indians of the Pauma & Yuima Reservation, California (URL: http://www.paumatribe.com)
+  News Section Identified: http://www.paumatribe.com/news/
+  Pulled 2 articles via Scrape from http://www.paumatribe.com/news/
+
+Processing Tribe: Pechanga Band of Indians (URL: http://www.pechanga-nsn.gov/)
+  No specific news section found. Will try Base URL: http://www.pechanga-nsn.gov/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Picayune Rancheria of Chukchansi Indians of California (URL: https://chukchansitribe.net/)
+  No specific news section found. Will try Base URL: https://chukchansitribe.net/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Pinoleville Pomo Nation, California (URL: http://pinolevillepomonation.org)
+  No specific news section found. Will try Base URL: http://pinolevillepomonation.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Pit River Tribe, California (includes XL Ranch, Big Bend, Likely, Lookout, Montgomery Creek, and Roaring Creek Rancherias) (URL: https://pitrivertribe.gov/)
+  News Section Identified: https://pitrivertribe.gov/blog/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Potter Valley Tribe, California (URL: http://www.pottervalleytribe.com)
+  No specific news section found. Will try Base URL: http://www.pottervalleytribe.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Quartz Valley Indian Community of the Quartz Valley Reservation of California (URL: http://www.qvir.com)
+  No specific news section found. Will try Base URL: http://www.qvir.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Ramona Band of Cahuilla, California (URL: https://ramona-nsn.gov)
+  News Section Identified: https://ramona-nsn.gov/news/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Redding Rancheria, California (URL: http://www.redding-rancheria.com)
+  No specific news section found. Will try Base URL: http://www.redding-rancheria.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Redwood Valley or Little River Band of Pomo Indians of the Redwood Valley Rancheria California (URL: https://www.rvrpomo.net/)
+  News Section Identified: https://www.rvrpomo.net/news/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Pulikla Tribe of Yurok People (URL: http://www.resighinirancheria.com)
+  News Section Identified: http://www.resighinirancheria.com/media/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Rincon Band of Luiseno Mission Indians of Rincon Reservation, California (URL: https://rincon-nsn.gov/)
+  News Section Identified: https://rincon-nsn.gov/news/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Robinson Rancheria (URL: https://rrcbc-nsn.gov)
+  News Section Identified: https://rrcbc-nsn.gov/blog/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Round Valley Indian Tribes, Round Valley Reservation, California (URL: http://www.rvit.org)
+  No specific news section found. Will try Base URL: http://www.rvit.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: San Pasqual Band of Diegueno Mission Indians of California (URL: https://www.sanpasqualbandofmissionindians.org/)
+  News Section Identified: https://www.sanpasqualbandofmissionindians.org/press-releases/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Santa Rosa Band of Cahuilla Indians, California (URL: https://santarosa-nsn.gov/)
+  No specific news section found. Will try Base URL: https://santarosa-nsn.gov/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Santa Rosa Indian Community of the Santa Rosa Rancheria, California (URL: http://www.tachi-yokut-nsn.gov/)
+  No specific news section found. Will try Base URL: http://www.tachi-yokut-nsn.gov/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Santa Ynez Band of Chumash Mission Indians of the Santa Ynez Reservation, California (URL: http://www.santaynezchumash.org)
+  No specific news section found. Will try Base URL: http://www.santaynezchumash.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Scotts Valley Band of Pomo Indians of California (URL: https://www.scottsvalley-nsn.gov/)
+  No specific news section found. Will try Base URL: https://www.scottsvalley-nsn.gov/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Sherwood Valley Rancheria of Pomo Indians of California (URL: https://www.sherwoodvalleybandofpomo.com/)
+  No specific news section found. Will try Base URL: https://www.sherwoodvalleybandofpomo.com/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Shingle Springs Band of Miwok Indians, Shingle Springs Rancheria (Verona Tract), California (URL: http://www.shinglespringsrancheria.com)
+  No specific news section found. Will try Base URL: http://www.shinglespringsrancheria.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Soboba Band of Luiseno Indians, California (URL: http://www.soboba-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.soboba-nsn.gov
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Susanville Indian Rancheria, California (URL: http://www.sir-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.sir-nsn.gov
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Sycuan Band of the Kumeyaay Nation (URL: http://www.sycuantribe.com)
+  No specific news section found. Will try Base URL: http://www.sycuantribe.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Table Mountain Rancheria (URL: https://caltribalfamilies.org/places/table-mountain-rancheria/)
+  No specific news section found. Will try Base URL: https://caltribalfamilies.org/places/table-mountain-rancheria/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Timbisha Shoshone Tribe (URL: http://timbisha.com)
+  No specific news section found. Will try Base URL: http://timbisha.com
+  Pulled 3 articles via Scrape from http://timbisha.com
+
+Processing Tribe: Tolowa Dee-ni' Nation (URL: http://www.tolowa-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.tolowa-nsn.gov
+  Pulled 2 articles via Scrape from http://www.tolowa-nsn.gov
+
+Processing Tribe: Torres Martinez Desert Cahuilla Indians, California (URL: http://www.torresmartinez.org)
+  No specific news section found. Will try Base URL: http://www.torresmartinez.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Tule River Indian Tribe of the Tule River Reservation, California (URL: https://tulerivertribe-nsn.gov/)
+  News Section Identified: https://tulerivertribe-nsn.gov/news/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Tuolumne Band of Me-Wuk Indians of the Tuolumne Rancheria of California (URL: http://www.mewuk.com/)
+  No specific news section found. Will try Base URL: http://www.mewuk.com/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Twenty-Nine Palms Band of Mission Indians of California (URL: https://www.29palmstribe.org/)
+  No specific news section found. Will try Base URL: https://www.29palmstribe.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: United Auburn Indian Community of the Auburn Rancheria of California (URL: http://www.auburnrancheria.com)
+  No specific news section found. Will try Base URL: http://www.auburnrancheria.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Utu Utu Gwaitu Paiute Tribe of the Benton Paiute Reservation, California (URL: http://www.bentonpaiutereservation.org)
+  No specific news section found. Will try Base URL: http://www.bentonpaiutereservation.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Wilton Rancheria, California (URL: https://wiltonrancheria-nsn.gov/)
+  No specific news section found. Will try Base URL: https://wiltonrancheria-nsn.gov/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Wiyot Tribe, California (URL: https://www.wiyot.us/)
+  No specific news section found. Will try Base URL: https://www.wiyot.us/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Yocha Dehe Wintun Nation, California (URL: http://www.yochadehe.org/)
+  No specific news section found. Will try Base URL: http://www.yochadehe.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Yuhaaviatam of San Manuel Nation (URL: http://www.sanmanuel-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.sanmanuel-nsn.gov
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Yurok Tribe of the Yurok Reservation, California (URL: https://www.yuroktribe.org/)
+  No specific news section found. Will try Base URL: https://www.yuroktribe.org/
+  Pulled 3 articles via Scrape from https://www.yuroktribe.org/
+
+Processing Tribe: Assiniboine & Sioux Tribes of the Fort Peck Indian Reservation, Montana (URL: http://www.fortpecktribes.org)
+  No specific news section found. Will try Base URL: http://www.fortpecktribes.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Blackfeet Tribe of the Blackfeet Indian Reservation of Montana (URL: https://www.blackfeetnation.com)
+  No specific news section found. Will try Base URL: https://www.blackfeetnation.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Chippewa Cree Indians of the Rocky Boy's Reservation, Montana (URL: https://www.rmtlc.org/tribes-we-serve/chippewa-cree-of-rocky-boy/)
+  No specific news section found. Will try Base URL: https://www.rmtlc.org/tribes-we-serve/chippewa-cree-of-rocky-boy/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Crow Tribe of Montana (URL: http://www.crow-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.crow-nsn.gov
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Eastern Shoshone Tribe of the Wind River Reservation, Wyoming (URL: http://www.easternshoshone.org)
+  No specific news section found. Will try Base URL: http://www.easternshoshone.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Fort Belknap Indian Community of the Fort Belknap Reservation of Montana (URL: http://www.ftbelknap.org)
+  No specific news section found. Will try Base URL: http://www.ftbelknap.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Little Shell Tribe of Chippewa Indians of Montana (URL: http://www.montanalittleshelltribe.org)
+  No specific news section found. Will try Base URL: http://www.montanalittleshelltribe.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Northern Arapaho Tribe of the Wind River Reservation, Wyoming (URL: http://www.northernarapaho.com)
+  No specific news section found. Will try Base URL: http://www.northernarapaho.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Northern Cheyenne Tribe of the Northern Cheyenne Indian Reservation, Montana (URL: http://www.cheyennenation.com)
+  No specific news section found. Will try Base URL: http://www.cheyennenation.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Absentee-Shawnee Tribe of Indians of Oklahoma (URL: https://www.astribe.com/)
+  No specific news section found. Will try Base URL: https://www.astribe.com/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Alabama-Coushatta Tribe of Texas (URL: http://www.alabama-coushatta.com)
+  No specific news section found. Will try Base URL: http://www.alabama-coushatta.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Apache Tribe of Oklahoma (URL: https://apachetribe.org/)
+  News Section Identified: https://apachetribe.org/news/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Caddo Nation of Oklahoma (URL: https://mycaddonation.com/)
+  News Section Identified: https://mycaddonation.com/blog
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Cheyenne and Arapaho Tribes, Oklahoma (URL: http://www.c-a-tribes.org)
+  No specific news section found. Will try Base URL: http://www.c-a-tribes.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Citizen Potawatomi Nation, Oklahoma (URL: http://www.potawatomi.org)
+  News Section Identified: http://www.potawatomi.org/news/
+  Pulled 1 articles via Scrape from http://www.potawatomi.org/news/
+
+Processing Tribe: Comanche Nation, Oklahoma (URL: http://www.comanchenation.com)
+  No specific news section found. Will try Base URL: http://www.comanchenation.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Delaware Nation, Oklahoma (URL: https://www.delawarenation-nsn.gov/)
+  No specific news section found. Will try Base URL: https://www.delawarenation-nsn.gov/
+  Pulled 5 articles via Scrape from https://www.delawarenation-nsn.gov/
+
+Processing Tribe: Fort Sill-Chiricahua-Warm Springs-Apache Tribe (URL: http://www.fortsillapache-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.fortsillapache-nsn.gov
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Iowa Tribe of Kansas and Nebraska (URL: https://www.iowatribeofkansasandnebraska.com/)
+  No specific news section found. Will try Base URL: https://www.iowatribeofkansasandnebraska.com/
+  Pulled 3 articles via Scrape from https://www.iowatribeofkansasandnebraska.com/
+
+Processing Tribe: Iowa Tribe of Oklahoma (URL: https://www.bahkhoje.com/)
+  No specific news section found. Will try Base URL: https://www.bahkhoje.com/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Kaw Nation, Oklahoma (URL: http://www.kawnation.com)
+  No specific news section found. Will try Base URL: http://www.kawnation.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Kickapoo Traditional Tribe of Texas (URL: https://kickapootexas.org/)
+  News Section Identified: https://kickapootexas.org/news/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Kickapoo Tribe of Oklahoma (URL: http://www.kickapootribeofoklahoma.com)
+  No specific news section found. Will try Base URL: http://www.kickapootribeofoklahoma.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Kiowa Indian Tribe of Oklahoma (URL: https://kiowatribe.org/)
+  No specific news section found. Will try Base URL: https://kiowatribe.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Otoe-Missouria Tribe of Indians, Oklahoma (URL: http://www.omtribe.org)
+  No specific news section found. Will try Base URL: http://www.omtribe.org
+  Pulled 5 articles via Scrape from http://www.omtribe.org
+
+Processing Tribe: Pawnee Nation of Oklahoma (URL: http://www.pawneenation.org)
+  No specific news section found. Will try Base URL: http://www.pawneenation.org
+  Pulled 1 articles via Scrape from http://www.pawneenation.org
+
+Processing Tribe: Ponca Tribe of Indians of Oklahoma (URL: https://www.ponca-nsn.gov/)
+  No specific news section found. Will try Base URL: https://www.ponca-nsn.gov/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Prairie Band Potawatomi Nation (URL: http://www.pbpindiantribe.com)
+  No specific news section found. Will try Base URL: http://www.pbpindiantribe.com
+  Pulled 1 articles via Scrape from http://www.pbpindiantribe.com
+
+Processing Tribe: Sac & Fox Nation of Missouri in Kansas and Nebraska (URL: http://www.sacandfoxks.com)
+  No specific news section found. Will try Base URL: http://www.sacandfoxks.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Sac & Fox Nation, Oklahoma (URL: http://www.sacandfoxnation-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.sacandfoxnation-nsn.gov
+  Pulled 4 articles via Scrape from http://www.sacandfoxnation-nsn.gov
+
+Processing Tribe: Tonkawa Tribe of Indians of Oklahoma (URL: http://www.tonkawatribe.com)
+  No specific news section found. Will try Base URL: http://www.tonkawatribe.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Wichita and Affiliated Tribes (Wichita, Keechi, Waco & Tawakonie), Oklahoma (URL: http://www.wichitatribe.com)
+  No specific news section found. Will try Base URL: http://www.wichitatribe.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Mescalero Apache Tribe of the Mescalero Reservation, New Mexico (URL: https://mescaleroapachetribe.com/)
+  News Section Identified: https://mescaleroapachetribe.com/news/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Ohkay Owingeh, New Mexico (URL: https://ohkay.org/)
+  No specific news section found. Will try Base URL: https://ohkay.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Pueblo of Acoma, New Mexico (URL: https://www.puebloofacoma.org/)
+  News Section Identified: https://www.puebloofacoma.org/news/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Pueblo of Cochiti, New Mexico (URL: https://cochiti.org/)
+  No specific news section found. Will try Base URL: https://cochiti.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Pueblo of Isleta, New Mexico (URL: https://www.isletapueblo.com/)
+  No specific news section found. Will try Base URL: https://www.isletapueblo.com/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Pueblo of Jemez, New Mexico (URL: https://www.jemezpueblo.org/)
+  News Section Identified: https://www.jemezpueblo.org/news/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Pueblo of Laguna, New Mexico (URL: https://www.lagunapueblo-nsn.gov/)
+  No specific news section found. Will try Base URL: https://www.lagunapueblo-nsn.gov/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Pueblo of Nambe, New Mexico (URL: https://www.nambepueblo.org/about-nambe-pueblo/)
+  No specific news section found. Will try Base URL: https://www.nambepueblo.org/about-nambe-pueblo/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Pueblo of Picuris, New Mexico (URL: http://www.picurispueblo.org/)
+  No specific news section found. Will try Base URL: http://www.picurispueblo.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Pueblo of Pojoaque, New Mexico (URL: https://pojoaque.org/)
+  News Section Identified: https://pojoaque.org/news/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Pueblo of San Felipe, New Mexico (URL: https://sfpueblo.com/)
+  News Section Identified: https://sfpueblo.com/news
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Pueblo of San Ildefonso, New Mexico (URL: https://sanipueblo.org/)
+  No specific news section found. Will try Base URL: https://sanipueblo.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Pueblo of Sandia, New Mexico (URL: https://sandiapueblo.nsn.us/)
+  No specific news section found. Will try Base URL: https://sandiapueblo.nsn.us/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Pueblo of Santa Ana, New Mexico (URL: https://santaana-nsn.gov/)
+  No specific news section found. Will try Base URL: https://santaana-nsn.gov/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Pueblo of Taos, New Mexico (URL: https://taospueblo.com/home/)
+  No specific news section found. Will try Base URL: https://taospueblo.com/home/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Pueblo of Tesuque, New Mexico (URL: https://www.newmexico.org/native-culture/native-communities/tesuque-pueblo/)
+  No specific news section found. Will try Base URL: https://www.newmexico.org/native-culture/native-communities/tesuque-pueblo/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Pueblo of Zia, New Mexico (URL: https://www.ziapueblo.org/)
+  No specific news section found. Will try Base URL: https://www.ziapueblo.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Ramah Navajo Chapter of the Navajo Nation (URL: https://ramah.navajochapters.org/)
+  No specific news section found. Will try Base URL: https://ramah.navajochapters.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Santo Domingo Pueblo (URL: https://santodomingotribe.org/)
+  No specific news section found. Will try Base URL: https://santodomingotribe.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Southern Ute Indian Tribe of the Southern Ute Reservation, Colorado (URL: https://www.southernute-nsn.gov/)
+  News Section Identified: https://www.southernute-nsn.gov/news/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Ute Mountain Ute Tribe (URL: https://www.utemountainutetribe.com/)
+  No specific news section found. Will try Base URL: https://www.utemountainutetribe.com/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Ysleta del Sur Pueblo (URL: https://www.ysletadelsurpueblo.org/)
+  News Section Identified: https://www.ysletadelsurpueblo.org/news/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Zuni Tribe of the Zuni Reservation, New Mexico (URL: https://www.ashiwi.org/)
+  No specific news section found. Will try Base URL: https://www.ashiwi.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Ak-Chin Indian Community (URL: http://www.ak-chin.nsn.us)
+  News Section Identified: http://www.ak-chin.nsn.us/news/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Chemehuevi Indian Tribe of the Chemehuevi Reservation, California (URL: http://www.chemehuevi.org)
+  No specific news section found. Will try Base URL: http://www.chemehuevi.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Cocopah Tribe of Arizona (URL: http://www.cocopah.com)
+  No specific news section found. Will try Base URL: http://www.cocopah.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Colorado River Indian Tribes of the Colorado River Indian Reservation, Arizona and California (URL: https://www.crit-nsn.gov/)
+  No specific news section found. Will try Base URL: https://www.crit-nsn.gov/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Confederated Tribes of the Goshute Reservation, Nevada and Utah (URL: https://www.ctgr.us/)
+  No specific news section found. Will try Base URL: https://www.ctgr.us/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Duckwater Shoshone Tribe of the Duckwater Reservation, Nevada (URL: http://www.duckwatertribe.org/)
+  No specific news section found. Will try Base URL: http://www.duckwatertribe.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Ely Shoshone Tribe of Nevada (URL: https://www.elyshoshonetribe.com/)
+  No specific news section found. Will try Base URL: https://www.elyshoshonetribe.com/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Fort McDowell Yavapai Nation, Arizona (URL: https://www.fmyn.org/)
+  No specific news section found. Will try Base URL: https://www.fmyn.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Fort Mojave Indian Tribe of Arizona, California & Nevada (URL: https://www.fortmojaveindiantribe.com/)
+  News Section Identified: https://www.fortmojaveindiantribe.com/blog/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Gila River Indian Community of the Gila River Indian Reservation, Arizona (URL: http://www.gilariver.org/)
+  No specific news section found. Will try Base URL: http://www.gilariver.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Havasupai Tribe of the Havasupai Reservation, Arizona (URL: https://theofficialhavasupaitribe.com/)
+  No specific news section found. Will try Base URL: https://theofficialhavasupaitribe.com/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Hopi Tribe of Arizona (URL: https://www.hopi-nsn.gov/)
+  News Section Identified: https://www.hopi-nsn.gov/news/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Hualapai Indian Tribe of the Hualapai Indian Reservation, Arizona (URL: http://www.hualapai-nsn.gov)
+  News Section Identified: http://www.hualapai-nsn.gov/news/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Kaibab Band of Paiute Indians of the Kaibab Indian Reservation, Arizona (URL: http://www.kaibabpaiute-nsn.gov/council.html)
+  No specific news section found. Will try Base URL: http://www.kaibabpaiute-nsn.gov/council.html
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Las Vegas Tribe of Paiute Indians of the Las Vegas Indian Colony, Nevada (URL: https://www.lvpaiutetribe.com/)
+  No specific news section found. Will try Base URL: https://www.lvpaiutetribe.com/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Lovelock Paiute Tribe of the Lovelock Indian Colony, Nevada (URL: https://www.paiutetribelovelock.org/)
+  No specific news section found. Will try Base URL: https://www.paiutetribelovelock.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Moapa Band of Paiute Indians of the Moapa River Indian Reservation, Nevada (URL: https://www.moapabandofpaiutes.com/)
+  No specific news section found. Will try Base URL: https://www.moapabandofpaiutes.com/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Paiute Indian Tribe of Utah (Cedar Band of Paiutes, Kanosh Band of Paiutes, Koosharem Band of Paiutes, Indian Peaks Band of Paiutes, and Shivwits Band of Paiutes) (URL: http://www.utahpaiutes.org/about/government/)
+  No specific news section found. Will try Base URL: http://www.utahpaiutes.org/about/government/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Pascua Yaqui Tribe of Arizona (URL: http://www.pascuayaqui-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.pascuayaqui-nsn.gov
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Pyramid Lake Paiute Tribe of the Pyramid Lake Reservation, Nevada (URL: https://plpt.nsn.us/)
+  No specific news section found. Will try Base URL: https://plpt.nsn.us/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Quechan Tribe of the Fort Yuma Indian Reservation, California & Arizona (URL: https://www.quechantribe.com/)
+  News Section Identified: https://www.quechantribe.com/announcements/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Reno-Sparks Indian Colony, Nevada (URL: https://www.rsic.org/)
+  No specific news section found. Will try Base URL: https://www.rsic.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Salt River Pima-Maricopa Indian Community of the Salt River Reservation, Arizona (URL: http://www.srpmic-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.srpmic-nsn.gov
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: San Carlos Apache Tribe of the San Carlos Reservation, Arizona (URL: https://itcaonline.com/member-tribes/san-carlos-apache-tribe/)
+  No specific news section found. Will try Base URL: https://itcaonline.com/member-tribes/san-carlos-apache-tribe/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: San Juan Southern Paiute Tribe of Arizona (URL: https://www.sanjuanpaiute-nsn.gov/)
+  News Section Identified: https://www.sanjuanpaiute-nsn.gov/blog
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Shoshone-Paiute Tribes of the Duck Valley Reservation, Nevada (URL: https://shopaitribes.org/spt/)
+  News Section Identified: https://shopaitribes.org/spt/media/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Summit Lake Paiute Tribe of Nevada (URL: https://www.summitlaketribe.org/)
+  No specific news section found. Will try Base URL: https://www.summitlaketribe.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Tohono O'odham Nation of Arizona (URL: http://www.tonation-nsn.gov)
+  No specific news section found. Will try Base URL: http://www.tonation-nsn.gov
+  Pulled 1 articles via Scrape from http://www.tonation-nsn.gov
+
+Processing Tribe: Tonto Apache Tribe of Arizona (URL: https://itcaonline.com/member-tribes/tonto-apache-tribe/)
+  No specific news section found. Will try Base URL: https://itcaonline.com/member-tribes/tonto-apache-tribe/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Ute Indian Tribe of the Uintah & Ouray Reservation, Utah (URL: http://www.utetribe.com)
+  No specific news section found. Will try Base URL: http://www.utetribe.com
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Walker River Paiute Tribe of the Walker River Reservation, Nevada (URL: https://www.wrpt.org/)
+  No specific news section found. Will try Base URL: https://www.wrpt.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Washoe Tribe of Nevada & California (Carson Colony, Dresslerville Colony, Woodfords Community, Stewart Community, & Washoe Ranches) (URL: https://washoetribe.us/)
+  No specific news section found. Will try Base URL: https://washoetribe.us/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: White Mountain Apache Tribe of the Fort Apache Reservation, Arizona (URL: http://www.wmat.us)
+  No specific news section found. Will try Base URL: http://www.wmat.us
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Winnemucca Indian Colony of Nevada (URL: https://winnemuccaindiancolony.org/)
+  No specific news section found. Will try Base URL: https://winnemuccaindiancolony.org/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Yavapai-Apache Nation of the Camp Verde Indian Reservation, Arizona (URL: http://www.yavapai-apache.org)
+  No specific news section found. Will try Base URL: http://www.yavapai-apache.org
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Yavapai-Prescott Indian Tribe (URL: https://www.ypit.com/about_ypit.htm)
+  No specific news section found. Will try Base URL: https://www.ypit.com/about_ypit.htm
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Yerington Paiute Tribe of the Yerington Colony and Campbell Ranch, Nevada (URL: https://yeringtonpaiute.us/)
+  News Section Identified: https://yeringtonpaiute.us/updates/
+  No articles pulled from RSS or Scrape.
+
+Processing Tribe: Yomba Shoshone Tribe of the Yomba Reservation, Nevada (URL: http://yombatribe.org/)
+  No specific news section found. Will try Base URL: http://yombatribe.org/
+  No articles pulled from RSS or Scrape.
+
+--- Aggregation Summary ---
+Total articles collected: 138
+Unique sources yielding articles: 54
+  - Inupiat Community of the Arctic Slope: 1 articles via Scrape from https://icas-nsn.gov/
+  - Native Village of Napaimute: 1 articles via Scrape from http://www.napaimute.org
+  - Nenana Native Association: 5 articles via Scrape from https://www.nenananativeassociation.org/
+  - Organized Village of Kake: 1 articles via Scrape from https://www.kake-nsn.gov/
+  - Village of Iliamna: 2 articles via Scrape from https://www.villageofiliamna.org/
+  - Village of Solomon: 5 articles via Scrape from https://www.villageofsolomon.org/
+  - Yakutat Tlingit Tribe: 3 articles via Scrape (Base URL Fallback) from https://yakutattlingittribe.org/
+  - Chickahominy Indian Tribe: 1 articles via Scrape from https://www.chickahominytribe.org/
+  - Coushatta Tribe of Louisiana: 5 articles via Scrape from https://www.coushatta.org/
+  - Mashpee Wampanoag Tribe: 5 articles via Scrape from https://mashpeewampanoagtribe-nsn.gov/
+  - Onondaga Nation: 5 articles via Scrape from http://www.onondaganation.org
+  - Poarch Band of Creek Indians: 2 articles via Scrape from http://www.poarchcreekindians.org
+  - Seneca Nation of Indians: 1 articles via Scrape from http://www.sni.org
+  - Eastern Shawnee Tribe of Oklahoma: 1 articles via Scrape from http://www.estoo-nsn.gov
+  - United Keetoowah Band of Cherokee Indians in Oklahoma: 3 articles via Scrape from https://www.ukb-nsn.gov/
+  - Wyandotte Nation: 1 articles via Scrape from http://www.wyandotte-nation.org
+  - Crow Creek Sioux Tribe of the Crow Creek Reservation, South Dakota: 2 articles via Scrape from http://sdtribalrelations.com/crowcreek.aspx
+  - Flandreau Santee Sioux Tribe of South Dakota: 1 articles via Scrape (Base URL Fallback) from https://fsst-nsn.gov/
+  - Three Affiliated Tribes of the Fort Berthold Reservation, North Dakota: 5 articles via Scrape from http://www.mhanation.com
+  - Forest County Potawatomi Community, Wisconsin: 2 articles via Scrape from http://www.fcpotawatomi.com
+  - Lac Courte Oreilles Band of Lake Superior Chippewa Indians of Wisconsin: 1 articles via Scrape from http://www.lco-nsn.gov
+  - Little River Band of Ottawa Indians, Michigan: 4 articles via Scrape from http://www.lrboi-nsn.gov
+  - Little Traverse Bay Bands of Odawa Indians, Michigan: 4 articles via Scrape from http://www.ltbbodawa-nsn.gov
+  - Sokaogon Chippewa Community, Wisconsin: 5 articles via Scrape from http://www.sokaogonchippewa.com
+  - Navajo Nation, Arizona, New Mexico & Utah: 5 articles via Scrape from http://www.navajo-nsn.gov
+  - Confederated Tribes of the Umatilla Indian Reservation: 1 articles via Scrape from https://ctuir.org/
+  - Confederated Tribes of the Warm Springs Reservation of Oregon: 1 articles via Scrape from https://warmsprings-nsn.gov/
+  - Nooksack Indian Tribe: 3 articles via Scrape from https://nooksacktribe.org/
+  - Northwestern Band of the Shoshone Nation: 1 articles via Scrape from http://www.nwbshoshone.com
+  - Port Gamble S'Klallam Tribe: 1 articles via Scrape from http://www.pgst.nsn.us
+  - Puyallup Tribe of the Puyallup Reservation: 1 articles via Scrape from http://www.puyallup-tribe.com
+  - Spokane Tribe of the Spokane Reservation: 2 articles via Scrape from http://www.spokanetribe.com
+  - Suquamish Indian Tribe of the Port Madison Reservation: 4 articles via Scrape from http://www.suquamish.nsn.us
+  - Berry Creek Rancheria of Maidu Indians of California: 4 articles via Scrape (Base URL Fallback) from https://www.berrycreekmaiduindians.org/
+  - Big Sandy Rancheria of Western Mono Indians of California: 3 articles via Scrape from https://www.bigsandyrancheria.com/
+  - Blue Lake Rancheria, California: 1 articles via Scrape from http://www.bluelakerancheria-nsn.gov
+  - Coyote Valley Band of Pomo Indians of California: 1 articles via Scrape from https://www.coyotevalleytribe.org/
+  - Federated Indians of Graton Rancheria, California: 1 articles via Scrape from http://www.gratonrancheria.com
+  - Hoopa Valley Tribe, California: 1 articles via Scrape from http://www.hoopa-nsn.gov/
+  - Iipay Nation of Santa Ysabel, California: 4 articles via Scrape from https://www.iipaynationofsantaysabel-nsn.gov/
+  - Kletsel Dehe Wintun Nation of the Cortina Rancheria: 4 articles via Scrape from https://www.kletseldehe.org/
+  - Morongo Band of Mission Indians, California: 3 articles via Scrape from http://www.morongonation.org
+  - Pauma Band of Luiseno Mission Indians of the Pauma & Yuima Reservation, California: 2 articles via Scrape from http://www.paumatribe.com
+  - Timbisha Shoshone Tribe: 3 articles via Scrape from http://timbisha.com
+  - Tolowa Dee-ni' Nation: 2 articles via Scrape from http://www.tolowa-nsn.gov
+  - Yurok Tribe of the Yurok Reservation, California: 3 articles via Scrape from https://www.yuroktribe.org/
+  - Citizen Potawatomi Nation, Oklahoma: 1 articles via Scrape from http://www.potawatomi.org
+  - Delaware Nation, Oklahoma: 5 articles via Scrape from https://www.delawarenation-nsn.gov/
+  - Iowa Tribe of Kansas and Nebraska: 3 articles via Scrape from https://www.iowatribeofkansasandnebraska.com/
+  - Otoe-Missouria Tribe of Indians, Oklahoma: 5 articles via Scrape from http://www.omtribe.org
+  - Pawnee Nation of Oklahoma: 1 articles via Scrape from http://www.pawneenation.org
+  - Prairie Band Potawatomi Nation: 1 articles via Scrape from http://www.pbpindiantribe.com
+  - Sac & Fox Nation, Oklahoma: 4 articles via Scrape from http://www.sacandfoxnation-nsn.gov
+  - Tohono O'odham Nation of Arizona: 1 articles via Scrape from http://www.tonation-nsn.gov
+Successfully saved aggregated articles to: C:\Users\John\Documents\nativekin.org\nativekin-media-site\nativekin.github.io\media\nativekin_aggregated_articles_with_tribe_region.json
