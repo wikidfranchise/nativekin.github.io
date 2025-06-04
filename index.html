@@ -90,11 +90,9 @@
       const match = tribalData.find(t => t.Tribe.toLowerCase() === input);
       if (match) {
         renderTribe(match);
-        setTimeout(() => {
-          tribeSearch.value = '';
-          tribeSearch.blur();
-          tribeSearch.focus();
-        }, 100);
+        // Set the field value to the matched tribe name (retain it visibly)
+        tribeSearch.value = match.Tribe;
+        tribeSearch.focus();
       } else {
         tribeInfo.innerHTML = '';
       }
