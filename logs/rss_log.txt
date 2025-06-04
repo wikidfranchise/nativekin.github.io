@@ -33,3 +33,12 @@
 [2025-06-01 12:05:19.241444] Parsed 5 entries from National Native News
 [2025-06-01 12:05:19.534136] Parsed 5 entries from The Circle News
 [2025-06-01 12:05:21.132913] Parsed 5 entries from Lakota Times
+[2025-06-04 15:27:55.176284] Parsed 5 entries from Mvskoke Media
+[2025-06-04 15:27:55.431496] Parsed 5 entries from Osage News
+[2025-06-04 15:27:55.847517] Error parsing Cherokee Phoenix feed: <unknown>:2:0: syntax error
+[2025-06-04 15:27:59.089452] Error parsing Indian Country Today feed: <unknown>:2:0: syntax error
+[2025-06-04 15:28:09.073240] Error parsing Native News Online feed: <unknown>:79:55: not well-formed (invalid token)
+[2025-06-04 15:28:09.938437] Parsed 5 entries from Native America Calling
+[2025-06-04 15:28:10.967559] Parsed 5 entries from National Native News
+[2025-06-04 15:28:11.375430] Parsed 5 entries from The Circle News
+[2025-06-04 15:28:13.919152] Parsed 5 entries from Lakota Times

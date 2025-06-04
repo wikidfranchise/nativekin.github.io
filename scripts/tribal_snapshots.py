@@ -11,7 +11,7 @@ from selenium.common.exceptions import WebDriverException, TimeoutException
 
 # === CONFIGURATION ===
 # Ensure these paths are correct for your system
-EXCEL_INPUT = r"C:\Users\John\Documents\nativekin.org\nativekin-media-site\nativekin.github.io\data\TribalLeadership_Sample_WithScreenshots.xlsx"
+EXCEL_INPUT = r"C:\Users\John\Documents\nativekin.org\nativekin-media-site\nativekin.github.io\scripts\TribalLeadership_Directory_-2947355220576375878.xlsx"
 EXCEL_OUTPUT = r"C:\Users\John\Documents\nativekin.org\nativekin-media-site\nativekin.github.io\scripts\TribalLeadership_WithScreenshots_AndURLs.xlsx" # <<< MODIFIED: Output Excel name
 FAILURE_LOG_PATH = r"C:\Users\John\Documents\nativekin.org\nativekin-media-site\nativekin.github.io\scripts\failures.log"
 SCREENSHOT_DIR = r"C:\Users\John\Documents\nativekin.org\nativekin-media-site\nativekin.github.io\media\hpsnaps"
