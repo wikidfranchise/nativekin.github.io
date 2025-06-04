@@ -148,13 +148,15 @@
 
     let allTribalData = [];
     let currentKeyboardFocus = -1; // For keyboard navigation in dropdown
+    let blurTimeoutId = null; 
 
     // --- DATA FETCHING ---
     async function fetchTribalData() {
       try {
-        const response = await fetch('/data/tribalDirectory.json'); 
+        // MODIFIED: Path without leading './' or '/'
+        const response = await fetch('data/tribalDirectory.json'); 
         if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}. Failed to load tribalDirectory.json. Ensure the file exists at '/data/tribalDirectory.json' (from the root of your site) and is valid.`);
+          throw new Error(`HTTP error! Status: ${response.status}. Failed to load tribalDirectory.json. Ensure the file exists at 'data/tribalDirectory.json' (relative to index.html) and is valid.`);
         }
         const data = await response.json();
         allTribalData = data
@@ -176,9 +178,10 @@
 
       const websiteLink = (tribe.Website && tribe.Website.trim() !== '') ? tribe.Website.trim() : '#';
       
+      // MODIFIED: Path without leading './' or '/'
       const imageSource = (tribe.SnapshotFilename && tribe.SnapshotFilename.trim() !== '' && tribe.SnapshotFilename.trim().toLowerCase() !== 'placeholder.png')
-        ? `/media/hpsnaps/${tribe.SnapshotFilename.trim()}` 
-        : '/media/hpsnaps/placeholder.png'; 
+        ? `media/hpsnaps/${tribe.SnapshotFilename.trim()}` 
+        : 'media/hpsnaps/placeholder.png'; 
 
       tribeInfoContainer.innerHTML = `
         <div class="card">
@@ -190,7 +193,7 @@
           <div><em>Region: ${tribe.Region || 'N/A'}</em></div>
           <a href="${websiteLink}" target="_blank" rel="noopener noreferrer" class="image-preview-link" title="Visit ${tribe.Tribe}'s Website">
             <img src="${imageSource}" alt="Snapshot of ${tribe.Tribe || 'Tribe'}'s website" class="image-preview"
-                 onerror="this.onerror=null; this.src='/media/hpsnaps/placeholder.png'; console.warn('Image not found: ${imageSource}, using placeholder.');" />
+                 onerror="this.onerror=null; this.src='media/hpsnaps/placeholder.png'; console.warn('Image not found: ${imageSource}, using placeholder.');" />
           </a>
         </div>
       `;
@@ -240,30 +243,37 @@
       }
     });
 
-    // MODIFIED: Focus listener now always shows all tribes to allow easy re-selection.
     searchInput.addEventListener('focus', () => {
-      populateDropdown(allTribalData); // Always show all tribes on focus
+      if (blurTimeoutId) {
+        clearTimeout(blurTimeoutId); 
+        blurTimeoutId = null;
+      }
+      populateDropdown(allTribalData); 
     });
     
     searchInput.addEventListener('blur', () => {
-        setTimeout(() => {
-            if (!dropdown.matches(':hover')) { 
+        if (blurTimeoutId) { 
+            clearTimeout(blurTimeoutId);
+        }
+        blurTimeoutId = setTimeout(() => {
+            if (document.activeElement !== searchInput && !dropdown.matches(':hover')) { 
                 dropdown.style.display = 'none';
             }
+            blurTimeoutId = null; 
         }, 150); 
     });
 
     searchInput.addEventListener('keydown', (e) => {
       const items = dropdown.querySelectorAll('.dropdown-item');
-      // If dropdown is not visible and user presses arrow keys, show it
-      if ((!dropdown.style.display || dropdown.style.display === 'none') && (e.key === 'ArrowDown' || e.key === 'ArrowUp')) {
+      
+      if ((dropdown.style.display === 'none' || !dropdown.style.display) && (e.key === 'ArrowDown' || e.key === 'ArrowUp')) {
+            if (blurTimeoutId) { clearTimeout(blurTimeoutId); blurTimeoutId = null; } 
             const query = searchInput.value.toLowerCase().trim();
             const tribesToDisplay = allTribalData.filter(tribe => 
                 tribe.Tribe.toLowerCase().includes(query)
             );
             populateDropdown(tribesToDisplay);
-            // Update items query selector AFTER populating, as 'items' would be stale
-            const newItems = dropdown.querySelectorAll('.dropdown-item');
+            const newItems = dropdown.querySelectorAll('.dropdown-item'); 
             if (newItems.length > 0) {
                  currentKeyboardFocus = (e.key === 'ArrowDown') ? 0 : newItems.length -1;
                  updateKeyboardFocus(newItems);
