@@ -99,6 +99,17 @@
     tribeSearch.addEventListener('focus', () => {
       tribeSearch.select();
     });
+
+    tribeSearch.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        const input = tribeSearch.value.trim().toLowerCase();
+        const match = tribalData.find(t => t.Tribe.toLowerCase() === input);
+        if (match) {
+          renderTribe(match);
+        }
+      }
+    });
   </script>
 
   <script data-goatcounter="https://nativekin.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
