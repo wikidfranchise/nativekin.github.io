@@ -44,7 +44,7 @@
 <body>
   <h1>NativeKin Tribal News</h1>
 
-  <input type="text" id="tribeSearch" placeholder="Search for your tribe..." list="tribeList" />
+  <input type="text" id="tribeSearch" placeholder="Search for your tribe..." list="tribeList" autocomplete="off" />
   <datalist id="tribeList"></datalist>
 
   <div id="tribeInfo"></div>
@@ -85,17 +85,7 @@
       `;
     }
 
-    tribeSearch.addEventListener('input', () => {
-      const input = tribeSearch.value.trim().toLowerCase();
-      const match = tribalData.find(t => t.Tribe.toLowerCase() === input);
-      if (match) {
-        renderTribe(match);
-      } else {
-        tribeInfo.innerHTML = '';
-      }
-    });
-
-    tribeSearch.addEventListener('change', () => {
+    function searchAndRender() {
       const input = tribeSearch.value.trim().toLowerCase();
       const match = tribalData.find(t => t.Tribe.toLowerCase() === input);
       if (match) {
@@ -103,6 +93,14 @@
       } else {
         tribeInfo.innerHTML = '<div class="card">No match found.</div>';
       }
+    }
+
+    tribeSearch.addEventListener('input', () => {
+      searchAndRender();
+    });
+
+    tribeSearch.addEventListener('focus', () => {
+      tribeSearch.select();
     });
   </script>
 
