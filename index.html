@@ -153,12 +153,12 @@
     // --- DATA FETCHING ---
     async function fetchTribalData() {
       try {
-        // MODIFIED: Construct URL relative to the document's base URI
-        const dataUrl = new URL('data/tribalDirectory.json', document.baseURI).href;
+        // MODIFIED: Construct absolute URL using window.location.origin
+        const dataUrl = `${window.location.origin}/data/tribalDirectory.json`;
         const response = await fetch(dataUrl); 
         
         if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}. Failed to load tribalDirectory.json from ${dataUrl}. Ensure the file exists and is accessible.`);
+          throw new Error(`HTTP error! Status: ${response.status}. Failed to load tribalDirectory.json from ${dataUrl}. Ensure the file exists at this exact path on your server and is accessible.`);
         }
         const data = await response.json();
         allTribalData = data
@@ -180,11 +180,13 @@
 
       const websiteLink = (tribe.Website && tribe.Website.trim() !== '') ? tribe.Website.trim() : '#';
       
-      // MODIFIED: Construct image URL relative to document's base URI for robustness
-      const placeholderImgPath = new URL('media/hpsnaps/placeholder.png', document.baseURI).href;
+      // MODIFIED: Construct absolute image URLs using window.location.origin
+      const baseImageUrl = `${window.location.origin}/media/hpsnaps/`;
+      const placeholderImgPath = `${baseImageUrl}placeholder.png`;
       let imageSource = placeholderImgPath;
+
       if (tribe.SnapshotFilename && tribe.SnapshotFilename.trim() !== '' && tribe.SnapshotFilename.trim().toLowerCase() !== 'placeholder.png') {
-        imageSource = new URL(`media/hpsnaps/${tribe.SnapshotFilename.trim()}`, document.baseURI).href;
+        imageSource = `${baseImageUrl}${tribe.SnapshotFilename.trim()}`;
       }
       
       tribeInfoContainer.innerHTML = `
@@ -210,9 +212,6 @@
       if (tribesToDisplay.length === 0 && searchInput.value.trim() !== '') {
         dropdown.innerHTML = '<div class="no-results">No tribes match your search.</div>';
       } else if (tribesToDisplay.length === 0 && searchInput.value.trim() === '') {
-         // If allTribalData is empty and input is empty, it means data hasn't loaded or is truly empty.
-         // The error message from fetchTribalData will be visible if loading failed.
-         // Otherwise, if allTribalData is empty for other reasons, this will hide the dropdown.
          dropdown.style.display = 'none'; 
          return;
       }
@@ -255,7 +254,6 @@
         clearTimeout(blurTimeoutId); 
         blurTimeoutId = null;
       }
-      // If data hasn't loaded yet, allTribalData will be empty, and populateDropdown will handle it.
       populateDropdown(allTribalData); 
     });
     
