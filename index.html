@@ -89,15 +89,15 @@
       const input = tribeSearch.value.trim().toLowerCase();
       const match = tribalData.find(t => t.Tribe.toLowerCase() === input);
       if (match) {
-        renderTribe(match);
         tribeSearch.value = match.Tribe;
+        renderTribe(match);
       } else {
         tribeInfo.innerHTML = '';
       }
     });
 
     tribeSearch.addEventListener('focus', () => {
-      tribeSearch.select();
+      tribeSearch.setSelectionRange(0, tribeSearch.value.length);
     });
 
     tribeSearch.addEventListener('keydown', (e) => {
@@ -106,7 +106,10 @@
         const input = tribeSearch.value.trim().toLowerCase();
         const match = tribalData.find(t => t.Tribe.toLowerCase() === input);
         if (match) {
+          tribeSearch.value = match.Tribe;
           renderTribe(match);
+        } else {
+          tribeInfo.innerHTML = '';
         }
       }
     });
