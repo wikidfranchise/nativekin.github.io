@@ -159,17 +159,33 @@
       isFetchingData = true;
       console.log("Attempting to fetch tribal data...");
       
-      // MODIFIED: Using root-relative path for dataUrl.
-      // This assumes 'data' folder is at the root of your domain.
-      const dataUrl = '/data/tribalDirectory.json'; 
-      // The browser will resolve this to 'https://yourdomain.com/data/tribalDirectory.json'
-      console.log("Browser will attempt to fetch from (root-relative path):", dataUrl);
+      const dataUrl = 'data/tribalDirectory.json'; // Simplest relative path
+      
+      // Log current page's protocol to check for 'blob:'
+      if (window.location.protocol === 'blob:') {
+        console.warn(
+          "WARNING: Page is running from a 'blob:' URL (" + window.location.href + "). " +
+          "Fetching relative paths like '" + dataUrl + "' can be unreliable in this context, " +
+          "leading to 'Failed to parse URL' errors. Please test on your live deployed site (e.g., https://nativekin.org) " +
+          "for accurate behavior."
+        );
+      }
+      
+      // For debugging, log what the browser would resolve the relative path to:
+      try {
+        const resolvedDataUrlForLogging = new URL(dataUrl, window.location.href).href;
+        console.log("Browser will attempt to resolve relative path '"+dataUrl+"' to full URL:", resolvedDataUrlForLogging);
+      } catch(e) {
+        console.warn("Could not construct full URL for logging due to invalid base (window.location.href):", window.location.href, e.message);
+      }
+
 
       try {
-        const response = await fetch(dataUrl); // Use the root-relative path directly
+        const response = await fetch(dataUrl); 
         
         if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}. Failed to load tribalDirectory.json from '${dataUrl}'. Ensure the file exists at this exact path on your server and is accessible.`);
+          console.error("Fetch failed. URL attempted by browser:", response.url); // response.url shows what was actually fetched
+          throw new Error(`HTTP error! Status: ${response.status}. Failed to load tribalDirectory.json from '${dataUrl}' (Browser attempted: '${response.url}'). Ensure the file exists at this path relative to your index.html and is accessible.`);
         }
         const data = await response.json();
         allTribalData = data
@@ -196,8 +212,7 @@
 
       const websiteLink = (tribe.Website && tribe.Website.trim() !== '') ? tribe.Website.trim() : '#';
       
-      // MODIFIED: Using root-relative path for images.
-      const imageBase = '/media/hpsnaps/'; 
+      const imageBase = 'media/hpsnaps/'; 
       const placeholderImgPath = `${imageBase}placeholder.png`;
       let imageSource = placeholderImgPath;
 
@@ -205,7 +220,6 @@
         imageSource = `${imageBase}${tribe.SnapshotFilename.trim()}`;
       }
       
-      // For img src, root-relative paths work directly.
       tribeInfoContainer.innerHTML = `
         <div class="card">
           <div><strong>${tribe.Tribe || 'N/A'}</strong></div>
@@ -216,7 +230,7 @@
           <div><em>Region: ${tribe.Region || 'N/A'}</em></div>
           <a href="${websiteLink}" target="_blank" rel="noopener noreferrer" class="image-preview-link" title="Visit ${tribe.Tribe}'s Website">
             <img src="${imageSource}" alt="Snapshot of ${tribe.Tribe || 'Tribe'}'s website" class="image-preview"
-                 onerror="this.onerror=null; this.src='${placeholderImgPath}'; console.warn('Image not found: ${imageSource} (tried root-relative), using placeholder.');" />
+                 onerror="this.onerror=null; this.src='${placeholderImgPath}'; console.warn('Image not found: ${imageSource} (tried relative path), using placeholder.');" />
           </a>
         </div>
       `;
@@ -284,13 +298,15 @@
       
       if (allTribalData.length === 0 && !isFetchingData) { 
         console.log("Focus event: No data, attempting to fetch.");
-        populateDropdown([]); 
+        populateDropdown([]); // Show "Loading tribes..." message
         try {
           await fetchTribalData(); 
-          console.log("Focus event: Fetch attempt complete, populating with allTribalData.");
+          console.log("Focus event: Fetch attempt complete. Current allTribalData length:", allTribalData.length);
           populateDropdown(allTribalData); 
         } catch (e) {
           console.error("Focus event: Fetch failed during focus.", e);
+          // Error message already handled by fetchTribalData.
+          // populateDropdown will show "No tribal data available" if allTribalData is still empty.
           populateDropdown(allTribalData); 
         }
       } else if (isFetchingData) {
@@ -298,7 +314,8 @@
         populateDropdown([]); 
       }
       else {
-        console.log("Focus event: Data already loaded, populating with allTribalData.");
+        // Data is already loaded, always show all tribes.
+        console.log("Focus event: Data already loaded. Current allTribalData length:", allTribalData.length, "Populating with all tribes.");
         populateDropdown(allTribalData);
       }
     });
@@ -327,6 +344,7 @@
             if (blurTimeoutId) { clearTimeout(blurTimeoutId); blurTimeoutId = null; } 
             
             console.log("Keydown: Opening dropdown with arrow keys.");
+            // On arrow key when dropdown is hidden, show all tribes (if data is loaded)
             populateDropdown(allTribalData);
 
             const newItems = dropdown.querySelectorAll('.dropdown-item'); 
