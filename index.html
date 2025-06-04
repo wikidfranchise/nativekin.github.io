@@ -1,123 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Native Media Feed</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NativeKin Tribal News</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #fffaf0;
-      color: #333;
-      padding: 2rem;
+      font-family: "Segoe UI", sans-serif;
+      padding: 30px;
+      background-color: #f7f7f7;
+      color: #222;
     }
     h1 {
-      color: #b22222;
-    }
-    .search-box {
-      margin-bottom: 1.5rem;
-    }
-    .article {
+      font-size: 2rem;
+      color: #008080;
       margin-bottom: 1rem;
-      padding: 0.5rem;
-      border-bottom: 1px solid #ccc;
     }
-    .source {
-      font-size: 0.9rem;
-      color: #666;
+    input[type="text"] {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 300px;
+    }
+    .card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 16px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      max-width: 640px;
+      margin-top: 20px;
+    }
+    .image-preview {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 12px;
+      margin-top: 12px;
+      border: 1px solid #ccc;
     }
   </style>
 </head>
 <body>
-  <h1>Native Media Feed</h1>
-  <input type="text" id="search" class="search-box" placeholder="Search articles..." />
+  <h1>NativeKin Tribal News</h1>
 
-<script>
-  fetch('media/nativekin_aggregated_articles.json')
-    .then(response => {
-      if (!response.ok) throw new Error("Network response was not ok");
-      return response.json();
-    })
-    .then(data => {
-      const container = document.createElement('div');
+  <input type="text" id="tribeSearch" placeholder="Search for your tribe..." list="tribeList" />
+  <datalist id="tribeList"></datalist>
 
-      // Create search box reference
-      const searchInput = document.getElementById('search');
+  <div id="tribeInfo"></div>
 
-      // Create dropdowns
-      const tribeSelect = document.createElement('select');
-      tribeSelect.innerHTML = '<option value="">All Tribes</option>';
+  <script>
+    const tribeSearch = document.getElementById('tribeSearch');
+    const tribeList = document.getElementById('tribeList');
+    const tribeInfo = document.getElementById('tribeInfo');
+    const tribalData = [];
 
-      const stateSelect = document.createElement('select');
-      stateSelect.innerHTML = '<option value="">All States</option>';
-
-      // Populate dropdowns
-      const tribes = [...new Set(data.map(a => a.tribe).filter(Boolean))].sort();
-      tribes.forEach(tribe => {
-        const opt = document.createElement('option');
-        opt.value = tribe;
-        opt.textContent = tribe;
-        tribeSelect.appendChild(opt);
-      });
-
-      const states = [...new Set(data.map(a => a.state).filter(Boolean))].sort();
-      states.forEach(state => {
-        const opt = document.createElement('option');
-        opt.value = state;
-        opt.textContent = state;
-        stateSelect.appendChild(opt);
-      });
-
-      // Display filters under the search bar
-      const controlBox = document.createElement('div');
-      controlBox.style.marginBottom = '1.5rem';
-      controlBox.appendChild(tribeSelect);
-      controlBox.appendChild(stateSelect);
-      searchInput.insertAdjacentElement('afterend', controlBox);
-
-      // Render articles
-      const renderArticles = (filtered) => {
-        container.innerHTML = '';
-        filtered.forEach(article => {
-          const div = document.createElement('div');
-          div.className = 'article';
-          div.innerHTML = `
-            <h3><a href="${article.link}" target="_blank">${article.title}</a></h3>
-            <p class="source">${article.source} — ${article.published}</p>
-            <p>${article.summary}</p>
-          `;
-          container.appendChild(div);
+    fetch('./data/tribalDirectory.json')
+      .then(res => res.json())
+      .then(data => {
+        tribalData.push(...data);
+        data.forEach(t => {
+          const opt = document.createElement('option');
+          opt.value = t.Tribe;
+          tribeList.appendChild(opt);
         });
-      };
+      })
+      .catch(err => console.error('❌ Failed to load tribal data:', err));
 
-      // Filtering logic
-      const filterAndRender = () => {
-        const query = searchInput.value.toLowerCase();
-        const selectedTribe = tribeSelect.value;
-        const selectedState = stateSelect.value;
+    function renderTribe(tribe) {
+      const imgSrc = tribe.SnapshotFilename && tribe.SnapshotFilename.trim() !== ''
+        ? `/media/hpsnaps/${tribe.SnapshotFilename}`
+        : '/media/hpsnaps/placeholder.png';
 
-        const filtered = data.filter(article =>
-          (!selectedTribe || article.tribe === selectedTribe) &&
-          (!selectedState || article.state === selectedState) &&
-          (article.title.toLowerCase().includes(query) || article.summary.toLowerCase().includes(query))
-        );
+      tribeInfo.innerHTML = `
+        <div class="card">
+          <div><strong>${tribe.Tribe}</strong></div>
+          <div>${tribe.City}, ${tribe.State} ${tribe.Zip}</div>
+          <div>${tribe.Phone}</div>
+          <div><em>Region: ${tribe.Region}</em></div>
+          <img src="${imgSrc}" alt="${tribe.Tribe}" class="image-preview" />
+        </div>
+      `;
+    }
 
-        renderArticles(filtered);
-      };
+    tribeSearch.addEventListener('input', () => {
+      const match = tribalData.find(t =>
+        t.Tribe.toLowerCase() === tribeSearch.value.toLowerCase()
+      );
 
-      searchInput.addEventListener('input', filterAndRender);
-      tribeSelect.addEventListener('change', filterAndRender);
-      stateSelect.addEventListener('change', filterAndRender);
-
-      document.body.appendChild(container);
-      filterAndRender();
-    })
-    .catch(error => {
-      console.error("Failed to load or parse articles:", error);
-      const msg = document.createElement('p');
-      msg.textContent = "⚠️ Failed to load news articles.";
-      document.body.appendChild(msg);
+      if (match) {
+        renderTribe(match);
+      } else {
+        tribeInfo.innerHTML = '';
+      }
     });
-</script>
+  </script>
 
+  <script data-goatcounter="https://nativekin.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
