@@ -5,8 +5,9 @@
     "State": "Alaska",
     "Zip": 99612.0,
     "Phone": "(907) 497-2648",
-    "SnapshotFilename": "agdaagux.png",
-    "Region": "Alaska"
+    "Region": "Alaska",
+    "SnapshotFilename": "agdaagux_com.png",
+    "Website": "https://agdaagux.com/"
   },
   {
     "Tribe": "Akiachak",
@@ -14,8 +15,9 @@
     "State": "Alaska",
     "Zip": 99551.0,
     "Phone": "(907) 825-4626",
-    "SnapshotFilename": "gmail.png",
-    "Region": "Alaska"
+    "Region": "Alaska",
+    "SnapshotFilename": "akiachak_org.png",
+    "Website": "http://akiachak.org"
   },
   {
     "Tribe": "Akiak",
@@ -23,8 +25,9 @@
     "State": "Alaska",
     "Zip": 99552.0,
     "Phone": "(907) 765-7112",
-    "SnapshotFilename": "akiaknativecommunity.png",
-    "Region": "Alaska"
+    "Region": "Alaska",
+    "SnapshotFilename": "akiaknativecommunity_org.png",
+    "Website": "https://akiaknativecommunity.org/"
   },
   {
     "Tribe": "Alatna",
@@ -32,8 +35,9 @@
     "State": "Alaska",
     "Zip": 99720.0,
     "Phone": "(907) 968-2304",
-    "SnapshotFilename": "",
-    "Region": "Alaska"
+    "Region": "Alaska",
+    "SnapshotFilename": "placeholder.png",
+    "Website": ""
   },
   {
     "Tribe": "Algaaciq",
@@ -41,8 +45,9 @@
     "State": "Alaska",
     "Zip": 99658.0,
     "Phone": "(907) 438-2932",
-    "SnapshotFilename": "",
-    "Region": "Alaska"
+    "Region": "Alaska",
+    "SnapshotFilename": "placeholder.png",
+    "Website": ""
   },
   {
     "Tribe": "Allakaket",
@@ -50,8 +55,9 @@
     "State": "Alaska",
     "Zip": 99720.0,
     "Phone": "(907) 968-2237",
-    "SnapshotFilename": "",
-    "Region": "Alaska"
+    "Region": "Alaska",
+    "SnapshotFilename": "placeholder.png",
+    "Website": ""
   },
   {
     "Tribe": "Alutiiq",
@@ -59,8 +65,9 @@
     "State": "Alaska",
     "Zip": 99643.0,
     "Phone": "(907) 286-2215",
-    "SnapshotFilename": "alutiiqtribe.png",
-    "Region": "Alaska"
+    "Region": "Alaska",
+    "SnapshotFilename": "alutiiqtribe_org.png",
+    "Website": "http://alutiiqtribe.org"
   },
   {
     "Tribe": "Angoon",
@@ -68,8 +75,9 @@
     "State": "Alaska",
     "Zip": 99820.0,
     "Phone": "(907) 788-3411",
-    "SnapshotFilename": "",
-    "Region": "Alaska"
+    "Region": "Alaska",
+    "SnapshotFilename": "placeholder.png",
+    "Website": ""
   },
   {
     "Tribe": "Anvik",
@@ -77,8 +85,9 @@
     "State": "Alaska",
     "Zip": 99558.0,
     "Phone": "(907) 663-6322",
-    "SnapshotFilename": "",
-    "Region": "Alaska"
+    "Region": "Alaska",
+    "SnapshotFilename": "placeholder.png",
+    "Website": ""
   },
   {
     "Tribe": "Arctic Village",
@@ -86,8 +95,9 @@
     "State": "Alaska",
     "Zip": "",
     "Phone": "(907) 587-5523",
-    "SnapshotFilename": "arcticvillage.png",
-    "Region": "Alaska"
+    "Region": "Alaska",
+    "SnapshotFilename": "arcticvillage_gov.png",
+    "Website": "http://arcticvillage.gov"
   },
   {
     "Tribe": "Asa'carsarmiut",
@@ -95,8 +105,9 @@
     "State": "Alaska",
     "Zip": 99632.0,
     "Phone": "(907) 591-2814",
-    "SnapshotFilename": "asacarsarmiut.png",
-    "Region": "Alaska"
+    "Region": "Alaska",
+    "SnapshotFilename": "asacarsarmiut_org.png",
+    "Website": "http://asacarsarmiut.org"
   },
   {
     "Tribe": "Beaver",
@@ -104,8 +115,9 @@
     "State": "Alaska",
     "Zip": 99724.0,
     "Phone": "(907) 628-6126",
-    "SnapshotFilename": "beavercouncil.png",
-    "Region": "Alaska"
+    "Region": "Alaska",
+    "SnapshotFilename": "beavercouncil_org.png",
+    "Website": "http://beavercouncil.org"
   },
   {
     "Tribe": "Birch Creek",
@@ -113,8 +125,9 @@
     "State": "Alaska",
     "Zip": 99701.0,
     "Phone": "(907) 374-9925",
-    "SnapshotFilename": "birchcreektribe.png",
-    "Region": "Alaska"
+    "Region": "Alaska",
+    "SnapshotFilename": "birchcreektribe_org.png",
+    "Website": "http://www.birchcreektribe.org"
   },
   {
     "Tribe": "Tlingit & Haida",
@@ -122,8 +135,9 @@
     "State": "Alaska",
     "Zip": 99801.0,
     "Phone": "800-344-1432",
-    "SnapshotFilename": "tlingitandhaida.png",
-    "Region": "Alaska"
+    "Region": "Alaska",
+    "SnapshotFilename": "tlingitandhaida_gov.png",
+    "Website": "http://tlingitandhaida.gov"
   },
   {
     "Tribe": "Chalkyitsik",
@@ -131,8 +145,9 @@
     "State": "Alaska",
     "Zip": "",
     "Phone": "(907) 848-8117",
-    "SnapshotFilename": "",
-    "Region": "Alaska"
+    "Region": "Alaska",
+    "SnapshotFilename": "placeholder.png",
+    "Website": ""
   },
   {
     "Tribe": "Cheesh-Na",
@@ -140,8 +155,9 @@
     "State": "Alaska",
     "Zip": 99586.0,
     "Phone": "(907) 822-3503",
-    "SnapshotFilename": "cheeshna.png",
-    "Region": "Alaska"
+    "Region": "Alaska",
+    "SnapshotFilename": "cheeshna_com.png",
+    "Website": "http://www.cheeshna.com"
   },
   {
     "Tribe": "Chevak",
@@ -149,8 +165,9 @@
     "State": "Alaska",
     "Zip": 99563.0,
     "Phone": "(907) 858-7428",
-    "SnapshotFilename": "",
-    "Region": "Alaska"
+    "Region": "Alaska",
+    "SnapshotFilename": "placeholder.png",
+    "Website": ""
   },
   {
     "Tribe": "Chickaloon",
@@ -158,8 +175,9 @@
     "State": "Alaska",
     "Zip": 99645.0,
     "Phone": "(907) 745-0749",
-    "SnapshotFilename": "chickaloon-nsn.png",
-    "Region": "Alaska"
+    "Region": "Alaska",
+    "SnapshotFilename": "chickaloon-nsn_gov.png",
+    "Website": "http://chickaloon-nsn.gov"
   },
   {
     "Tribe": "Chignik Bay",
@@ -167,8 +185,9 @@
     "State": "Alaska",
     "Zip": 99564.0,
     "Phone": "(907) 749-4018",
-    "SnapshotFilename": "",
-    "Region": "Alaska"
+    "Region": "Alaska",
+    "SnapshotFilename": "placeholder.png",
+    "Website": ""
   },
   {
     "Tribe": "Chignik Lake",
@@ -176,8 +195,9 @@
     "State": "Alaska",
     "Zip": "",
     "Phone": "(907) 845-4041",
-    "SnapshotFilename": "",
-    "Region": "Alaska"
+    "Region": "Alaska",
+    "SnapshotFilename": "placeholder.png",
+    "Website": ""
   },
   {
     "Tribe": "Chilkat",
@@ -185,8 +205,9 @@
     "State": "Alaska",
     "Zip": 99827.0,
     "Phone": "(907) 767-5505",
-    "SnapshotFilename": "chilkat-nsn.png",
-    "Region": "Alaska"
+    "Region": "Alaska",
+    "SnapshotFilename": "chilkat-nsn_gov.png",
+    "Website": "http://www.chilkat-nsn.gov"
   },
   {
     "Tribe": "Chilkoot",
@@ -194,8 +215,9 @@
     "State": "Alaska",
     "Zip": 99827.0,
     "Phone": "(907) 766-2323",
-    "SnapshotFilename": "chilkoot-nsn.png",
-    "Region": "Alaska"
+    "Region": "Alaska",
+    "SnapshotFilename": "chilkoot-nsn_gov.png",
+    "Website": "http://chilkoot-nsn.gov"
   },
   {
     "Tribe": "Chinik",
@@ -203,8 +225,9 @@
     "State": "Alaska",
     "Zip": "",
     "Phone": "(907) 779-2214",
-    "SnapshotFilename": "kawerak.png",
-    "Region": "Alaska"
+    "Region": "Alaska",
+    "SnapshotFilename": "kawerak_org.png",
+    "Website": "http://kawerak.org"
   },
   {
     "Tribe": "Chuloonawick",
@@ -212,8 +235,9 @@
     "State": "Alaska",
     "Zip": 99581.0,
     "Phone": "(907) 949-1345",
-    "SnapshotFilename": "",
-    "Region": "Alaska"
+    "Region": "Alaska",
+    "SnapshotFilename": "placeholder.png",
+    "Website": ""
   },
   {
     "Tribe": "Circle",
@@ -221,7 +245,8 @@
     "State": "Alaska",
     "Zip": "",
     "Phone": "(907) 773-2822",
-    "SnapshotFilename": "tananachiefs.png",
-    "Region": "Alaska"
+    "Region": "Alaska",
+    "SnapshotFilename": "tananachiefs_org.png",
+    "Website": "http://tananachiefs.org"
   }
 ]

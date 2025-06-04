@@ -1,4 +1,4 @@
-http://yahoo.png | Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+http://yahoo.png | WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
   (Session info: chrome=137.0.7151.56)
 Stacktrace:
 	GetHandleVerifier [0x0x7ff6ff6ffea5+79173]
@@ -29,8 +29,8 @@ Stacktrace:
 	GetHandleVerifier [0x0x7ff6ff6ef558+11256]
 	BaseThreadInitThunk [0x0x7ffe91d6e8d7+23]
 	RtlUserThreadStart [0x0x7ffe92f3c5dc+44]
- | 0.53s
-http://anc.tribalcouncils | Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+
+http://anc.tribalcouncils | WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
   (Session info: chrome=137.0.7151.56)
 Stacktrace:
 	GetHandleVerifier [0x0x7ff6ff6ffea5+79173]
@@ -61,8 +61,8 @@ Stacktrace:
 	GetHandleVerifier [0x0x7ff6ff6ef558+11256]
 	BaseThreadInitThunk [0x0x7ffe91d6e8d7+23]
 	RtlUserThreadStart [0x0x7ffe92f3c5dc+44]
- | 0.44s
-http://nbowen.agntribe | Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+
+http://nbowen.agntribe | WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
   (Session info: chrome=137.0.7151.56)
 Stacktrace:
 	GetHandleVerifier [0x0x7ff6ff6ffea5+79173]
@@ -93,8 +93,8 @@ Stacktrace:
 	GetHandleVerifier [0x0x7ff6ff6ef558+11256]
 	BaseThreadInitThunk [0x0x7ffe91d6e8d7+23]
 	RtlUserThreadStart [0x0x7ffe92f3c5dc+44]
- | 0.42s
-http://anvik.tribal | Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+
+http://anvik.tribal | WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
   (Session info: chrome=137.0.7151.56)
 Stacktrace:
 	GetHandleVerifier [0x0x7ff6ff6ffea5+79173]
@@ -125,8 +125,8 @@ Stacktrace:
 	GetHandleVerifier [0x0x7ff6ff6ef558+11256]
 	BaseThreadInitThunk [0x0x7ffe91d6e8d7+23]
 	RtlUserThreadStart [0x0x7ffe92f3c5dc+44]
- | 0.49s
-http://tc.glv | Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+
+http://tc.glv | WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
   (Session info: chrome=137.0.7151.56)
 Stacktrace:
 	GetHandleVerifier [0x0x7ff6ff6ffea5+79173]
@@ -157,8 +157,8 @@ Stacktrace:
 	GetHandleVerifier [0x0x7ff6ff6ef558+11256]
 	BaseThreadInitThunk [0x0x7ffe91d6e8d7+23]
 	RtlUserThreadStart [0x0x7ffe92f3c5dc+44]
- | 0.33s
-http://jessica.fields | Message: unknown error: net::ERR_NAME_NOT_RESOLVED
+
+http://jessica.fields | WebDriverException: Message: unknown error: net::ERR_NAME_NOT_RESOLVED
   (Session info: chrome=137.0.7151.56)
 Stacktrace:
 	GetHandleVerifier [0x0x7ff6ff6ffea5+79173]
@@ -189,4 +189,4 @@ Stacktrace:
 	GetHandleVerifier [0x0x7ff6ff6ef558+11256]
 	BaseThreadInitThunk [0x0x7ffe91d6e8d7+23]
 	RtlUserThreadStart [0x0x7ffe92f3c5dc+44]
- | 0.42s
+
