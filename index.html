@@ -159,16 +159,12 @@
       isFetchingData = true;
       console.log("Attempting to fetch tribal data...");
       
-      // Using a simple relative path. Assumes index.html is at the root,
-      // and 'data' folder is also directly within that root.
       const dataUrl = 'data/tribalDirectory.json'; 
-      console.log("Relative dataUrl for fetch:", dataUrl);
-      // Log what the browser resolves this to for debugging:
       const resolvedDataUrl = new URL(dataUrl, window.location.href).href;
       console.log("Browser will attempt to fetch from (resolved URL):", resolvedDataUrl);
 
       try {
-        const response = await fetch(resolvedDataUrl); // Use the resolved URL
+        const response = await fetch(resolvedDataUrl);
         
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}. Failed to load tribalDirectory.json from '${resolvedDataUrl}'. Ensure the file exists at this path and is accessible.`);
@@ -198,7 +194,7 @@
 
       const websiteLink = (tribe.Website && tribe.Website.trim() !== '') ? tribe.Website.trim() : '#';
       
-      const imageBase = 'media/hpsnaps/'; // Simple relative path
+      const imageBase = 'media/hpsnaps/'; 
       const placeholderImgPath = `${imageBase}placeholder.png`;
       let imageSource = placeholderImgPath;
 
@@ -206,7 +202,6 @@
         imageSource = `${imageBase}${tribe.SnapshotFilename.trim()}`;
       }
       
-      // Resolve imageSource and placeholderImgPath to full URLs for the img tag's src and onerror
       const resolvedImageSource = new URL(imageSource, window.location.href).href;
       const resolvedPlaceholderImgPath = new URL(placeholderImgPath, window.location.href).href;
 
@@ -233,16 +228,23 @@
       if (isFetchingData) { 
           dropdown.innerHTML = '<div class="loading-message">Loading tribes...</div>';
       } else if (tribesToDisplay.length === 0 && searchInput.value.trim() !== '') {
+        // This case is for when the user has typed something and there are no matches
         dropdown.innerHTML = '<div class="no-results">No tribes match your search.</div>';
       } else if (tribesToDisplay.length === 0 && searchInput.value.trim() === '') {
-         if (allTribalData.length === 0 && !isFetchingData) { // Check this condition carefully
+         // This case is for when the input is empty, and there are no tribes to display
+         // (either data hasn't loaded, or allTribalData is genuinely empty)
+         if (allTribalData.length === 0 && !isFetchingData) { 
              dropdown.innerHTML = '<div class="no-results">No tribal data available. Check console for errors.</div>';
          } else {
+             // If allTribalData is populated but tribesToDisplay is empty with no search term,
+             // this shouldn't happen unless allTribalData was passed as empty.
+             // For safety, hide if it's truly empty and not just a filter result.
              dropdown.style.display = 'none'; 
              return;
          }
       }
 
+      // Only populate with items if not fetching and there are tribes to display
       if (!isFetchingData && tribesToDisplay.length > 0) {
           tribesToDisplay.forEach(tribe => {
             const itemDiv = document.createElement('div');
@@ -251,13 +253,14 @@
             itemDiv.addEventListener('mousedown', (e) => { 
               e.preventDefault(); 
               searchInput.value = tribe.Tribe; 
-              renderTribeInfo( tribe ); // Pass the actual tribe object
+              renderTribeInfo( tribe ); 
               dropdown.style.display = 'none';
             });
             dropdown.appendChild(itemDiv);
           });
       }
       
+      // Show dropdown if it has content (items, loading message, or no results message)
       if (dropdown.hasChildNodes()) {
           dropdown.style.display = 'block';
       } else {
@@ -268,56 +271,63 @@
     // --- EVENT LISTENERS ---
     searchInput.addEventListener('input', () => {
       const query = searchInput.value.toLowerCase().trim();
+      // Filter based on currently loaded allTribalData
       const filteredTribes = allTribalData.filter(tribe =>
         tribe.Tribe.toLowerCase().includes(query)
       );
       populateDropdown(filteredTribes);
       
-      if (query === '') { // If input is cleared, clear the info card
+      if (query === '') { 
         tribeInfoContainer.innerHTML = '';
       }
     });
 
+    // MODIFIED: Focus listener to be more direct about showing all tribes
     searchInput.addEventListener('focus', async () => {
+      console.log("Search input focused.");
       if (blurTimeoutId) {
         clearTimeout(blurTimeoutId); 
         blurTimeoutId = null;
+        console.log("Cleared blur timeout.");
       }
       
-      // If data hasn't been loaded yet (or failed previously) and not currently fetching, try to fetch.
+      // If data isn't loaded yet AND we are not currently fetching, try to fetch it.
       if (allTribalData.length === 0 && !isFetchingData) { 
         console.log("Focus event: No data, attempting to fetch.");
-        populateDropdown([]); // Show loading message immediately
+        populateDropdown([]); // Show "Loading tribes..."
         try {
           await fetchTribalData(); // Wait for data to load
+          // After fetch, populate with all data (or error message if fetch failed)
+          console.log("Focus event: Fetch attempt complete, populating with allTribalData.");
+          populateDropdown(allTribalData); 
         } catch (e) {
-          console.error("Focus event: Fetch failed.", e);
-          // Error message is already displayed by fetchTribalData.
-          // populateDropdown will be called after this to reflect the (empty) data state.
+          console.error("Focus event: Fetch failed during focus.", e);
+          // Error message is handled by fetchTribalData, populateDropdown will show "no data"
+          populateDropdown(allTribalData); // This will show "No tribal data available"
         }
+      } else if (isFetchingData) {
+        console.log("Focus event: Data is currently being fetched, showing loading message.");
+        populateDropdown([]); // Show "Loading tribes..."
       }
-      
-      // After attempting fetch (if needed), or if data was already there, populate the dropdown.
-      // If searchInput has text, filter by that, otherwise show all.
-      const query = searchInput.value.toLowerCase().trim();
-      const tribesToDisplay = allTribalData.filter(tribe => 
-          tribe.Tribe.toLowerCase().includes(query)
-      );
-      // If filter results in empty but there's no query, show all data.
-      // This ensures clicking into an empty search box shows all tribes.
-      populateDropdown(tribesToDisplay.length > 0 || query !== '' ? tribesToDisplay : allTribalData);
+      else {
+        // Data is already loaded, always show all tribes.
+        console.log("Focus event: Data already loaded, populating with allTribalData.");
+        populateDropdown(allTribalData);
+      }
     });
     
     searchInput.addEventListener('blur', () => {
+        console.log("Search input blurred.");
         if (blurTimeoutId) { 
             clearTimeout(blurTimeoutId);
         }
         blurTimeoutId = setTimeout(() => {
-            // Check if the focus is still within the search container (input or dropdown)
-            // This is a bit tricky as dropdown items don't receive focus directly.
-            // A common approach is to check if the mouse is over the dropdown.
+            console.log("Executing blur timeout action.");
             if (document.activeElement !== searchInput && !dropdown.matches(':hover')) { 
+                console.log("Hiding dropdown on blur.");
                 dropdown.style.display = 'none';
+            } else {
+                console.log("Not hiding dropdown: activeElement is searchInput or mouse is over dropdown.");
             }
             blurTimeoutId = null; 
         }, 200); 
@@ -326,15 +336,12 @@
     searchInput.addEventListener('keydown', (e) => {
       const items = dropdown.querySelectorAll('.dropdown-item');
       
-      // If dropdown is hidden and user presses arrow keys, show it (filtered or all)
       if ((dropdown.style.display === 'none' || !dropdown.style.display) && (e.key === 'ArrowDown' || e.key === 'ArrowUp')) {
             if (blurTimeoutId) { clearTimeout(blurTimeoutId); blurTimeoutId = null; } 
             
-            const query = searchInput.value.toLowerCase().trim();
-            const tribesToDisplay = allTribalData.filter(tribe => 
-                tribe.Tribe.toLowerCase().includes(query)
-            );
-            populateDropdown(tribesToDisplay.length > 0 || query !== '' ? tribesToDisplay : allTribalData);
+            console.log("Keydown: Opening dropdown with arrow keys.");
+            // On arrow key when dropdown is hidden, show all tribes
+            populateDropdown(allTribalData);
 
             const newItems = dropdown.querySelectorAll('.dropdown-item'); 
             if (newItems.length > 0) {
@@ -344,7 +351,7 @@
             return; 
       }
 
-      if (items.length === 0 && e.key !== 'Escape') return; // No items to navigate
+      if (items.length === 0 && e.key !== 'Escape') return; 
 
       if (e.key === 'ArrowDown') {
         e.preventDefault();
@@ -361,7 +368,6 @@
         if (currentKeyboardFocus > -1 && items[currentKeyboardFocus]) {
           items[currentKeyboardFocus].dispatchEvent(new MouseEvent('mousedown')); 
         } else if (items.length > 0) { 
-          // If user typed and pressed Enter without navigating, try to select the first match
           const directMatch = allTribalData.find(t => t.Tribe.toLowerCase() === searchInput.value.toLowerCase().trim());
           if (directMatch) {
               searchInput.value = directMatch.Tribe;
@@ -387,11 +393,8 @@
     // --- INITIALIZATION ---
     fetchTribalData().then(() => {
         console.log("Initial data fetch attempt complete on page load.");
-        // You could optionally populate the dropdown here if desired,
-        // but the focus event will handle it when the user clicks in.
     }).catch(err => {
         console.error("Initial data fetch failed on page load:", err);
-        // Error message is already handled by fetchTribalData
     }); 
 
   </script>
