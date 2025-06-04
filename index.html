@@ -153,10 +153,12 @@
     // --- DATA FETCHING ---
     async function fetchTribalData() {
       try {
-        // MODIFIED: Path without leading './' or '/'
-        const response = await fetch('data/tribalDirectory.json'); 
+        // MODIFIED: Construct URL relative to the document's base URI
+        const dataUrl = new URL('data/tribalDirectory.json', document.baseURI).href;
+        const response = await fetch(dataUrl); 
+        
         if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}. Failed to load tribalDirectory.json. Ensure the file exists at 'data/tribalDirectory.json' (relative to index.html) and is valid.`);
+          throw new Error(`HTTP error! Status: ${response.status}. Failed to load tribalDirectory.json from ${dataUrl}. Ensure the file exists and is accessible.`);
         }
         const data = await response.json();
         allTribalData = data
@@ -178,11 +180,13 @@
 
       const websiteLink = (tribe.Website && tribe.Website.trim() !== '') ? tribe.Website.trim() : '#';
       
-      // MODIFIED: Path without leading './' or '/'
-      const imageSource = (tribe.SnapshotFilename && tribe.SnapshotFilename.trim() !== '' && tribe.SnapshotFilename.trim().toLowerCase() !== 'placeholder.png')
-        ? `media/hpsnaps/${tribe.SnapshotFilename.trim()}` 
-        : 'media/hpsnaps/placeholder.png'; 
-
+      // MODIFIED: Construct image URL relative to document's base URI for robustness
+      const placeholderImgPath = new URL('media/hpsnaps/placeholder.png', document.baseURI).href;
+      let imageSource = placeholderImgPath;
+      if (tribe.SnapshotFilename && tribe.SnapshotFilename.trim() !== '' && tribe.SnapshotFilename.trim().toLowerCase() !== 'placeholder.png') {
+        imageSource = new URL(`media/hpsnaps/${tribe.SnapshotFilename.trim()}`, document.baseURI).href;
+      }
+      
       tribeInfoContainer.innerHTML = `
         <div class="card">
           <div><strong>${tribe.Tribe || 'N/A'}</strong></div>
@@ -193,7 +197,7 @@
           <div><em>Region: ${tribe.Region || 'N/A'}</em></div>
           <a href="${websiteLink}" target="_blank" rel="noopener noreferrer" class="image-preview-link" title="Visit ${tribe.Tribe}'s Website">
             <img src="${imageSource}" alt="Snapshot of ${tribe.Tribe || 'Tribe'}'s website" class="image-preview"
-                 onerror="this.onerror=null; this.src='media/hpsnaps/placeholder.png'; console.warn('Image not found: ${imageSource}, using placeholder.');" />
+                 onerror="this.onerror=null; this.src='${placeholderImgPath}'; console.warn('Image not found: ${imageSource}, using placeholder.');" />
           </a>
         </div>
       `;
@@ -206,6 +210,9 @@
       if (tribesToDisplay.length === 0 && searchInput.value.trim() !== '') {
         dropdown.innerHTML = '<div class="no-results">No tribes match your search.</div>';
       } else if (tribesToDisplay.length === 0 && searchInput.value.trim() === '') {
+         // If allTribalData is empty and input is empty, it means data hasn't loaded or is truly empty.
+         // The error message from fetchTribalData will be visible if loading failed.
+         // Otherwise, if allTribalData is empty for other reasons, this will hide the dropdown.
          dropdown.style.display = 'none'; 
          return;
       }
@@ -248,6 +255,7 @@
         clearTimeout(blurTimeoutId); 
         blurTimeoutId = null;
       }
+      // If data hasn't loaded yet, allTribalData will be empty, and populateDropdown will handle it.
       populateDropdown(allTribalData); 
     });
     
