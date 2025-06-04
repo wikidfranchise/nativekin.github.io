@@ -90,20 +90,11 @@
       const match = tribalData.find(t => t.Tribe.toLowerCase() === input);
       if (match) {
         renderTribe(match);
+        tribeSearch.value = '';
+        tribeSearch.blur();
+        setTimeout(() => tribeSearch.focus(), 0); // refocus so dropdown appears
       } else {
         tribeInfo.innerHTML = '';
-      }
-    });
-
-    tribeSearch.addEventListener('focus', () => {
-      tribeSearch.select();
-    });
-
-    tribeSearch.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') {
-        const input = tribeSearch.value.trim().toLowerCase();
-        const match = tribalData.find(t => t.Tribe.toLowerCase() === input);
-        if (match) renderTribe(match);
       }
     });
   </script>
