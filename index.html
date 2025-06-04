@@ -71,7 +71,7 @@
     .custom-dropdown .dropdown-item.highlighted {
       background-color: #e0e0e0; /* For keyboard navigation */
     }
-    .custom-dropdown .no-results {
+    .custom-dropdown .no-results, .custom-dropdown .loading-message {
         padding: 10px 15px;
         color: #777;
         font-style: italic;
@@ -144,30 +144,48 @@
     const searchInput = document.getElementById('tribeSearchInput');
     const dropdown = document.getElementById('customTribeDropdown');
     const tribeInfoContainer = document.getElementById('tribeInfoOutput');
-    // const newsContainer = document.getElementById('newsArticlesOutput'); // For later
-
+    
     let allTribalData = [];
-    let currentKeyboardFocus = -1; // For keyboard navigation in dropdown
+    let currentKeyboardFocus = -1;
     let blurTimeoutId = null; 
+    let isFetchingData = false; // Flag to prevent multiple concurrent fetches
 
     // --- DATA FETCHING ---
     async function fetchTribalData() {
+      if (isFetchingData) {
+        console.log("Fetch already in progress, skipping duplicate call.");
+        return; // Don't start a new fetch if one is already underway
+      }
+      isFetchingData = true;
+      console.log("Attempting to fetch tribal data...");
+      console.log("Current page href:", window.location.href);
+      console.log("Document baseURI:", document.baseURI);
+
       try {
-        // MODIFIED: Construct absolute URL using window.location.origin
-        const dataUrl = `${window.location.origin}/data/tribalDirectory.json`;
+        // MODIFIED: Construct URL relative to the document's current URL.
+        // This should be robust for most hosting setups including GitHub Pages.
+        const dataUrl = new URL('data/tribalDirectory.json', window.location.href).href;
+        console.log("Constructed dataUrl for fetch:", dataUrl);
+
         const response = await fetch(dataUrl); 
         
         if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}. Failed to load tribalDirectory.json from ${dataUrl}. Ensure the file exists at this exact path on your server and is accessible.`);
+          throw new Error(`HTTP error! Status: ${response.status}. Failed to load tribalDirectory.json from '${dataUrl}'. Ensure the file exists at this path relative to your index.html and is accessible.`);
         }
         const data = await response.json();
         allTribalData = data
           .filter(tribe => tribe.Tribe && tribe.Tribe.trim() !== "") 
           .sort((a, b) => a.Tribe.localeCompare(b.Tribe)); 
+        console.log(`Successfully loaded ${allTribalData.length} tribes.`);
         
       } catch (error) {
         console.error('❌ Error fetching or parsing tribal data:', error);
+        allTribalData = []; // Ensure data is empty on error
         tribeInfoContainer.innerHTML = `<div class="error-message">Error loading tribal directory. Please check the console for details or try again later. <br>Details: ${error.message}</div>`;
+        // Re-throw the error so callers (like the focus event) can know it failed
+        throw error; 
+      } finally {
+        isFetchingData = false; // Reset flag
       }
     }
 
@@ -180,13 +198,12 @@
 
       const websiteLink = (tribe.Website && tribe.Website.trim() !== '') ? tribe.Website.trim() : '#';
       
-      // MODIFIED: Construct absolute image URLs using window.location.origin
-      const baseImageUrl = `${window.location.origin}/media/hpsnaps/`;
-      const placeholderImgPath = `${baseImageUrl}placeholder.png`;
+      const placeholderBase = new URL('media/hpsnaps/', window.location.href).href;
+      const placeholderImgPath = `${placeholderBase}placeholder.png`;
       let imageSource = placeholderImgPath;
 
       if (tribe.SnapshotFilename && tribe.SnapshotFilename.trim() !== '' && tribe.SnapshotFilename.trim().toLowerCase() !== 'placeholder.png') {
-        imageSource = `${baseImageUrl}${tribe.SnapshotFilename.trim()}`;
+        imageSource = `${placeholderBase}${tribe.SnapshotFilename.trim()}`;
       }
       
       tribeInfoContainer.innerHTML = `
@@ -209,25 +226,36 @@
       dropdown.innerHTML = ''; 
       currentKeyboardFocus = -1; 
 
-      if (tribesToDisplay.length === 0 && searchInput.value.trim() !== '') {
+      if (isFetchingData) { // If still fetching, show loading message
+          dropdown.innerHTML = '<div class="loading-message">Loading tribes...</div>';
+      } else if (tribesToDisplay.length === 0 && searchInput.value.trim() !== '') {
         dropdown.innerHTML = '<div class="no-results">No tribes match your search.</div>';
       } else if (tribesToDisplay.length === 0 && searchInput.value.trim() === '') {
-         dropdown.style.display = 'none'; 
-         return;
+         // If allTribalData is empty and no search term, it implies data loading failed or no data.
+         // The error message from fetchTribalData would be displayed in tribeInfoContainer.
+         // Or, if fetch was successful but allTribalData is empty, show a message.
+         if (allTribalData.length === 0 && !isFetchingData) {
+             dropdown.innerHTML = '<div class="no-results">No tribal data available.</div>';
+         } else {
+             dropdown.style.display = 'none'; 
+             return;
+         }
       }
 
-      tribesToDisplay.forEach(tribe => {
-        const itemDiv = document.createElement('div');
-        itemDiv.classList.add('dropdown-item');
-        itemDiv.textContent = tribe.Tribe;
-        itemDiv.addEventListener('mousedown', (e) => { 
-          e.preventDefault(); 
-          searchInput.value = tribe.Tribe; 
-          renderTribeInfo(tribe);
-          dropdown.style.display = 'none';
-        });
-        dropdown.appendChild(itemDiv);
-      });
+      if (!isFetchingData && tribesToDisplay.length > 0) {
+          tribesToDisplay.forEach(tribe => {
+            const itemDiv = document.createElement('div');
+            itemDiv.classList.add('dropdown-item');
+            itemDiv.textContent = tribe.Tribe;
+            itemDiv.addEventListener('mousedown', (e) => { 
+              e.preventDefault(); 
+              searchInput.value = tribe.Tribe; 
+              renderTribeInfo(tribe);
+              dropdown.style.display = 'none';
+            });
+            dropdown.appendChild(itemDiv);
+          });
+      }
       
       if (dropdown.hasChildNodes()) {
           dropdown.style.display = 'block';
@@ -239,6 +267,7 @@
     // --- EVENT LISTENERS ---
     searchInput.addEventListener('input', () => {
       const query = searchInput.value.toLowerCase().trim();
+      // Filter based on currently loaded allTribalData
       const filteredTribes = allTribalData.filter(tribe =>
         tribe.Tribe.toLowerCase().includes(query)
       );
@@ -249,12 +278,31 @@
       }
     });
 
-    searchInput.addEventListener('focus', () => {
+    // MODIFIED: Focus listener to attempt fetch if data is missing
+    searchInput.addEventListener('focus', async () => {
       if (blurTimeoutId) {
         clearTimeout(blurTimeoutId); 
         blurTimeoutId = null;
       }
-      populateDropdown(allTribalData); 
+      
+      if (allTribalData.length === 0 && !isFetchingData) { // If data not loaded and not currently fetching
+        console.log("Focus event: No data, attempting to fetch.");
+        populateDropdown([]); // Show loading message
+        try {
+          await fetchTribalData(); // Wait for data
+        } catch (e) {
+          console.error("Focus event: Fetch failed.", e);
+          // Error message is already displayed by fetchTribalData itself.
+          // populateDropdown will reflect empty/error state.
+        }
+      }
+      // Always try to populate, even if fetch failed, to show "no data" or "no results".
+      // If searchInput has text, filter by that, otherwise show all.
+      const query = searchInput.value.toLowerCase().trim();
+      const tribesToDisplay = allTribalData.filter(tribe => 
+          tribe.Tribe.toLowerCase().includes(query)
+      );
+      populateDropdown(tribesToDisplay.length > 0 ? tribesToDisplay : allTribalData);
     });
     
     searchInput.addEventListener('blur', () => {
@@ -266,7 +314,7 @@
                 dropdown.style.display = 'none';
             }
             blurTimeoutId = null; 
-        }, 150); 
+        }, 200); // Increased timeout slightly
     });
 
     searchInput.addEventListener('keydown', (e) => {
@@ -274,11 +322,13 @@
       
       if ((dropdown.style.display === 'none' || !dropdown.style.display) && (e.key === 'ArrowDown' || e.key === 'ArrowUp')) {
             if (blurTimeoutId) { clearTimeout(blurTimeoutId); blurTimeoutId = null; } 
+            
             const query = searchInput.value.toLowerCase().trim();
             const tribesToDisplay = allTribalData.filter(tribe => 
                 tribe.Tribe.toLowerCase().includes(query)
             );
-            populateDropdown(tribesToDisplay);
+            populateDropdown(tribesToDisplay.length > 0 ? tribesToDisplay : allTribalData); // Show all if filter is empty
+
             const newItems = dropdown.querySelectorAll('.dropdown-item'); 
             if (newItems.length > 0) {
                  currentKeyboardFocus = (e.key === 'ArrowDown') ? 0 : newItems.length -1;
@@ -309,7 +359,7 @@
               searchInput.value = directMatch.Tribe;
               renderTribeInfo(directMatch);
               dropdown.style.display = 'none';
-          } else if (items.length === 1 && items[0].textContent !== 'No tribes match your search.') {
+          } else if (items.length === 1 && items[0].textContent !== 'No tribes match your search.' && items[0].textContent !== 'Loading tribes...' && items[0].textContent !== 'No tribal data available.') {
              items[0].dispatchEvent(new MouseEvent('mousedown')); 
           }
         }
@@ -327,7 +377,16 @@
     }
 
     // --- INITIALIZATION ---
-    fetchTribalData(); 
+    fetchTribalData().then(() => {
+        // Optional: if you want to show the dropdown immediately on load *if* data is present
+        // if (allTribalData.length > 0) {
+        //   populateDropdown(allTribalData);
+        // }
+        console.log("Initial data fetch attempt complete.");
+    }).catch(err => {
+        console.error("Initial data fetch failed:", err);
+        // Error message is already handled by fetchTribalData
+    }); 
 
   </script>
   <script data-goatcounter="https://nativekin.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
