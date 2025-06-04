@@ -85,17 +85,19 @@
       `;
     }
 
-    tribeSearch.addEventListener('change', () => {
+    tribeSearch.addEventListener('input', () => {
       const input = tribeSearch.value.trim().toLowerCase();
       const match = tribalData.find(t => t.Tribe.toLowerCase() === input);
       if (match) {
         renderTribe(match);
-        // Set the field value to the matched tribe name (retain it visibly)
         tribeSearch.value = match.Tribe;
-        tribeSearch.focus();
       } else {
         tribeInfo.innerHTML = '';
       }
+    });
+
+    tribeSearch.addEventListener('focus', () => {
+      tribeSearch.select();
     });
   </script>
 
