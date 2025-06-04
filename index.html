@@ -132,10 +132,12 @@
   <div class="search-container">
     <input type="text" id="tribeSearchInput" placeholder="Search or select your tribe..." autocomplete="off" />
     <div id="customTribeDropdown" class="custom-dropdown">
-      </div>
+      <!-- Tribe names will be populated here by JavaScript -->
+    </div>
   </div>
 
   <div id="tribeInfoOutput"></div>
+  <!-- Placeholder for news articles, to be addressed later -->
   <div id="newsArticlesOutput"></div>
 
   <script>
@@ -198,16 +200,12 @@
       dropdown.innerHTML = ''; 
       currentKeyboardFocus = -1; 
 
-      if (tribesToDisplay.length === 0 && searchInput.value.trim() !== '') { // Only show "no results" if user has typed something
+      if (tribesToDisplay.length === 0 && searchInput.value.trim() !== '') {
         dropdown.innerHTML = '<div class="no-results">No tribes match your search.</div>';
       } else if (tribesToDisplay.length === 0 && searchInput.value.trim() === '') {
-        // If input is empty and no tribes (e.g. initial load error), don't show "no results" unless intended.
-        // Or, show a specific message like "Type to search or select from list" if allTribalData is truly empty.
-        // For now, just don't show "no results" if input is blank and list is blank.
-         dropdown.style.display = 'none'; // Hide if truly empty and no search term
+         dropdown.style.display = 'none'; 
          return;
       }
-
 
       tribesToDisplay.forEach(tribe => {
         const itemDiv = document.createElement('div');
@@ -215,14 +213,13 @@
         itemDiv.textContent = tribe.Tribe;
         itemDiv.addEventListener('mousedown', (e) => { 
           e.preventDefault(); 
-          searchInput.value = tribe.Tribe; // Set input value to selected tribe
+          searchInput.value = tribe.Tribe; 
           renderTribeInfo(tribe);
           dropdown.style.display = 'none';
         });
         dropdown.appendChild(itemDiv);
       });
       
-      // Only display dropdown if there are items or a "no results" message to show
       if (dropdown.hasChildNodes()) {
           dropdown.style.display = 'block';
       } else {
@@ -238,57 +235,43 @@
       );
       populateDropdown(filteredTribes);
       
-      // If the input is cleared by typing, also clear the tribe info card
       if (query === '') {
         tribeInfoContainer.innerHTML = '';
       }
     });
 
-    // MODIFIED: Simplified focus listener
+    // MODIFIED: Focus listener now always shows all tribes to allow easy re-selection.
     searchInput.addEventListener('focus', () => {
-      // When the input is focused, always show the full list of tribes initially
-      // (or a filtered list if the user has already typed something and then re-focused).
-      // The 'input' event will handle further filtering if the user then types.
-      const query = searchInput.value.toLowerCase().trim();
-      const tribesToDisplay = allTribalData.filter(tribe => 
-          tribe.Tribe.toLowerCase().includes(query) // This will show all if query is empty
-      );
-      populateDropdown(tribesToDisplay);
+      populateDropdown(allTribalData); // Always show all tribes on focus
     });
     
     searchInput.addEventListener('blur', () => {
-        // Use a small timeout to allow mousedown event on dropdown items to fire first
         setTimeout(() => {
-            if (!dropdown.matches(':hover')) { // Only hide if mouse isn't over the dropdown
+            if (!dropdown.matches(':hover')) { 
                 dropdown.style.display = 'none';
             }
-        }, 150); // 150ms delay
+        }, 150); 
     });
-
 
     searchInput.addEventListener('keydown', (e) => {
       const items = dropdown.querySelectorAll('.dropdown-item');
-      if (!dropdown.style.display || dropdown.style.display === 'none') {
-        if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
-            // If dropdown is not visible and user presses arrow keys, show it
+      // If dropdown is not visible and user presses arrow keys, show it
+      if ((!dropdown.style.display || dropdown.style.display === 'none') && (e.key === 'ArrowDown' || e.key === 'ArrowUp')) {
             const query = searchInput.value.toLowerCase().trim();
             const tribesToDisplay = allTribalData.filter(tribe => 
                 tribe.Tribe.toLowerCase().includes(query)
             );
             populateDropdown(tribesToDisplay);
-            // Update items query selector after populating
+            // Update items query selector AFTER populating, as 'items' would be stale
             const newItems = dropdown.querySelectorAll('.dropdown-item');
             if (newItems.length > 0) {
                  currentKeyboardFocus = (e.key === 'ArrowDown') ? 0 : newItems.length -1;
                  updateKeyboardFocus(newItems);
             }
-            return; // Prevent further processing in this keydown event
-        }
+            return; 
       }
 
-
       if (items.length === 0 && e.key !== 'Escape') return;
-
 
       if (e.key === 'ArrowDown') {
         e.preventDefault();
@@ -321,19 +304,11 @@
 
     function updateKeyboardFocus(items) {
       items.forEach(item => item.classList.remove('highlighted'));
-      if (items[currentKeyboardFocus] && items[currentKeyboardFocus].classList) { // Check if classList exists
+      if (items[currentKeyboardFocus] && items[currentKeyboardFocus].classList) { 
         items[currentKeyboardFocus].classList.add('highlighted');
         items[currentKeyboardFocus].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       }
     }
-
-    // Removed the global click listener, relying on blur with a timeout now.
-    // document.addEventListener('click', (e) => {
-    //   const searchContainer = searchInput.closest('.search-container');
-    //   if (searchContainer && !searchContainer.contains(e.target)) {
-    //     dropdown.style.display = 'none';
-    //   }
-    // });
 
     // --- INITIALIZATION ---
     fetchTribalData(); 
@@ -342,11 +317,3 @@
   <script data-goatcounter="https://nativekin.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
-```
-
-After some internal review of the logic, I've slightly adjusted the `focus` listener to be more robust: it will show a list filtered by the current input (which means all tribes if the input is empty, or a pre-filtered list if the user clicks back into a field that already has text). The `input` listener then continues to filter as the user types.
-
-I also made some refinements to the `blur` behavior and keyboard navigation to make it a bit smoother, especially around showing and hiding the dropdown.
-The condition in `populateDropdown` for displaying "No tribes match your search" has also been tweaked to only show if the user has actually typed something. And if the input is cleared, the tribe info card will also clear.
-
-Try this version out. It should behave more like what you're expecting when you click back into the search fie
