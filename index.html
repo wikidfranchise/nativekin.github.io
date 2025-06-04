@@ -159,15 +159,17 @@
       isFetchingData = true;
       console.log("Attempting to fetch tribal data...");
       
-      const dataUrl = 'data/tribalDirectory.json'; 
-      const resolvedDataUrl = new URL(dataUrl, window.location.href).href;
-      console.log("Browser will attempt to fetch from (resolved URL):", resolvedDataUrl);
+      // MODIFIED: Using root-relative path for dataUrl.
+      // This assumes 'data' folder is at the root of your domain.
+      const dataUrl = '/data/tribalDirectory.json'; 
+      // The browser will resolve this to 'https://yourdomain.com/data/tribalDirectory.json'
+      console.log("Browser will attempt to fetch from (root-relative path):", dataUrl);
 
       try {
-        const response = await fetch(resolvedDataUrl);
+        const response = await fetch(dataUrl); // Use the root-relative path directly
         
         if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}. Failed to load tribalDirectory.json from '${resolvedDataUrl}'. Ensure the file exists at this path and is accessible.`);
+          throw new Error(`HTTP error! Status: ${response.status}. Failed to load tribalDirectory.json from '${dataUrl}'. Ensure the file exists at this exact path on your server and is accessible.`);
         }
         const data = await response.json();
         allTribalData = data
@@ -194,7 +196,8 @@
 
       const websiteLink = (tribe.Website && tribe.Website.trim() !== '') ? tribe.Website.trim() : '#';
       
-      const imageBase = 'media/hpsnaps/'; 
+      // MODIFIED: Using root-relative path for images.
+      const imageBase = '/media/hpsnaps/'; 
       const placeholderImgPath = `${imageBase}placeholder.png`;
       let imageSource = placeholderImgPath;
 
@@ -202,9 +205,7 @@
         imageSource = `${imageBase}${tribe.SnapshotFilename.trim()}`;
       }
       
-      const resolvedImageSource = new URL(imageSource, window.location.href).href;
-      const resolvedPlaceholderImgPath = new URL(placeholderImgPath, window.location.href).href;
-
+      // For img src, root-relative paths work directly.
       tribeInfoContainer.innerHTML = `
         <div class="card">
           <div><strong>${tribe.Tribe || 'N/A'}</strong></div>
@@ -214,8 +215,8 @@
           <div>Phone: ${tribe.Phone || 'N/A'}</div>
           <div><em>Region: ${tribe.Region || 'N/A'}</em></div>
           <a href="${websiteLink}" target="_blank" rel="noopener noreferrer" class="image-preview-link" title="Visit ${tribe.Tribe}'s Website">
-            <img src="${resolvedImageSource}" alt="Snapshot of ${tribe.Tribe || 'Tribe'}'s website" class="image-preview"
-                 onerror="this.onerror=null; this.src='${resolvedPlaceholderImgPath}'; console.warn('Image not found: ${resolvedImageSource}, using placeholder.');" />
+            <img src="${imageSource}" alt="Snapshot of ${tribe.Tribe || 'Tribe'}'s website" class="image-preview"
+                 onerror="this.onerror=null; this.src='${placeholderImgPath}'; console.warn('Image not found: ${imageSource} (tried root-relative), using placeholder.');" />
           </a>
         </div>
       `;
@@ -228,23 +229,16 @@
       if (isFetchingData) { 
           dropdown.innerHTML = '<div class="loading-message">Loading tribes...</div>';
       } else if (tribesToDisplay.length === 0 && searchInput.value.trim() !== '') {
-        // This case is for when the user has typed something and there are no matches
         dropdown.innerHTML = '<div class="no-results">No tribes match your search.</div>';
       } else if (tribesToDisplay.length === 0 && searchInput.value.trim() === '') {
-         // This case is for when the input is empty, and there are no tribes to display
-         // (either data hasn't loaded, or allTribalData is genuinely empty)
          if (allTribalData.length === 0 && !isFetchingData) { 
              dropdown.innerHTML = '<div class="no-results">No tribal data available. Check console for errors.</div>';
          } else {
-             // If allTribalData is populated but tribesToDisplay is empty with no search term,
-             // this shouldn't happen unless allTribalData was passed as empty.
-             // For safety, hide if it's truly empty and not just a filter result.
              dropdown.style.display = 'none'; 
              return;
          }
       }
 
-      // Only populate with items if not fetching and there are tribes to display
       if (!isFetchingData && tribesToDisplay.length > 0) {
           tribesToDisplay.forEach(tribe => {
             const itemDiv = document.createElement('div');
@@ -260,7 +254,6 @@
           });
       }
       
-      // Show dropdown if it has content (items, loading message, or no results message)
       if (dropdown.hasChildNodes()) {
           dropdown.style.display = 'block';
       } else {
@@ -271,7 +264,6 @@
     // --- EVENT LISTENERS ---
     searchInput.addEventListener('input', () => {
       const query = searchInput.value.toLowerCase().trim();
-      // Filter based on currently loaded allTribalData
       const filteredTribes = allTribalData.filter(tribe =>
         tribe.Tribe.toLowerCase().includes(query)
       );
@@ -282,7 +274,6 @@
       }
     });
 
-    // MODIFIED: Focus listener to be more direct about showing all tribes
     searchInput.addEventListener('focus', async () => {
       console.log("Search input focused.");
       if (blurTimeoutId) {
@@ -291,26 +282,22 @@
         console.log("Cleared blur timeout.");
       }
       
-      // If data isn't loaded yet AND we are not currently fetching, try to fetch it.
       if (allTribalData.length === 0 && !isFetchingData) { 
         console.log("Focus event: No data, attempting to fetch.");
-        populateDropdown([]); // Show "Loading tribes..."
+        populateDropdown([]); 
         try {
-          await fetchTribalData(); // Wait for data to load
-          // After fetch, populate with all data (or error message if fetch failed)
+          await fetchTribalData(); 
           console.log("Focus event: Fetch attempt complete, populating with allTribalData.");
           populateDropdown(allTribalData); 
         } catch (e) {
           console.error("Focus event: Fetch failed during focus.", e);
-          // Error message is handled by fetchTribalData, populateDropdown will show "no data"
-          populateDropdown(allTribalData); // This will show "No tribal data available"
+          populateDropdown(allTribalData); 
         }
       } else if (isFetchingData) {
         console.log("Focus event: Data is currently being fetched, showing loading message.");
-        populateDropdown([]); // Show "Loading tribes..."
+        populateDropdown([]); 
       }
       else {
-        // Data is already loaded, always show all tribes.
         console.log("Focus event: Data already loaded, populating with allTribalData.");
         populateDropdown(allTribalData);
       }
@@ -340,7 +327,6 @@
             if (blurTimeoutId) { clearTimeout(blurTimeoutId); blurTimeoutId = null; } 
             
             console.log("Keydown: Opening dropdown with arrow keys.");
-            // On arrow key when dropdown is hidden, show all tribes
             populateDropdown(allTribalData);
 
             const newItems = dropdown.querySelectorAll('.dropdown-item'); 
