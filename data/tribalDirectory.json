@@ -1,0 +1,5285 @@
+[
+  {
+    "Tribe": "Agdaagux",
+    "City": "King Cove",
+    "State": "Alaska",
+    "Zip": "99612",
+    "Phone": "(907) 497-2648",
+    "SnapshotFilename": "yahoo.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Akiachak",
+    "City": "AKiachak",
+    "State": "Alaska",
+    "Zip": "99551",
+    "Phone": "(907) 825-4626",
+    "SnapshotFilename": "gmail.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Akiak",
+    "City": "Akiak",
+    "State": "Alaska",
+    "Zip": "99552",
+    "Phone": "(907) 765-7112",
+    "SnapshotFilename": "akiaknativecommunity.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Alatna",
+    "City": "Allakeket",
+    "State": "Alaska",
+    "Zip": "99720",
+    "Phone": "(907) 968-2304",
+    "SnapshotFilename": "outlook.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Algaaciq",
+    "City": "St. Mary's",
+    "State": "Alaska",
+    "Zip": "99658",
+    "Phone": "(907) 438-2932",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Allakaket",
+    "City": "Allakaket",
+    "State": "Alaska",
+    "Zip": "99720",
+    "Phone": "(907) 968-2237",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Alutiiq",
+    "City": "Old Harbor",
+    "State": "Alaska",
+    "Zip": "99643",
+    "Phone": "(907) 286-2215",
+    "SnapshotFilename": "alutiiqtribe.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Angoon",
+    "City": "Angoon",
+    "State": "Alaska",
+    "Zip": "99820",
+    "Phone": "(907) 788-3411",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Anvik",
+    "City": "Anvik",
+    "State": "Alaska",
+    "Zip": "99558",
+    "Phone": "(907) 663-6322",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Arctic Village",
+    "City": "",
+    "State": "Alaska",
+    "Zip": "",
+    "Phone": "(907) 587-5523",
+    "SnapshotFilename": "arcticvillage.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Asa'carsarmiut",
+    "City": "Mountain Village",
+    "State": "Alaska",
+    "Zip": "99632",
+    "Phone": "(907) 591-2814",
+    "SnapshotFilename": "asacarsarmiut.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Beaver",
+    "City": "Beaver",
+    "State": "Alaska",
+    "Zip": "99724",
+    "Phone": "(907) 628-6126",
+    "SnapshotFilename": "beavercouncil.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Birch Creek",
+    "City": "Fairbanks",
+    "State": "Alaska",
+    "Zip": "99701",
+    "Phone": "(907) 374-9925",
+    "SnapshotFilename": "birchcreektribe.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Tlingit & Haida",
+    "City": "Juneau",
+    "State": "Alaska",
+    "Zip": "99801",
+    "Phone": "800-344-1432",
+    "SnapshotFilename": "tlingitandhaida.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Chalkyitsik",
+    "City": "",
+    "State": "Alaska",
+    "Zip": "",
+    "Phone": "(907) 848-8117",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Cheesh-Na",
+    "City": "Gakona",
+    "State": "Alaska",
+    "Zip": "99586",
+    "Phone": "(907) 822-3503",
+    "SnapshotFilename": "cheeshna.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Chevak",
+    "City": "Chevak",
+    "State": "Alaska",
+    "Zip": "99563",
+    "Phone": "(907) 858-7428",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Chickaloon",
+    "City": "Palmer",
+    "State": "Alaska",
+    "Zip": "99645",
+    "Phone": "(907) 745-0749",
+    "SnapshotFilename": "chickaloon-nsn.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Chignik Bay",
+    "City": "Chignik",
+    "State": "Alaska",
+    "Zip": "99564",
+    "Phone": "(907) 749-4018",
+    "SnapshotFilename": "aol.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Chignik Lake",
+    "City": "",
+    "State": "Alaska",
+    "Zip": "",
+    "Phone": "(907) 845-4041",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Chilkat",
+    "City": "Klukwan",
+    "State": "Alaska",
+    "Zip": "99827",
+    "Phone": "(907) 767-5505",
+    "SnapshotFilename": "chilkat-nsn.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Chilkoot",
+    "City": "Haines",
+    "State": "Alaska",
+    "Zip": "99827",
+    "Phone": "(907) 766-2323",
+    "SnapshotFilename": "chilkoot-nsn.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Chinik",
+    "City": "",
+    "State": "Alaska",
+    "Zip": "",
+    "Phone": "(907) 779-2214",
+    "SnapshotFilename": "kawerak.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Chuloonawick",
+    "City": "Emmonak",
+    "State": "Alaska",
+    "Zip": "99581",
+    "Phone": "(907) 949-1345",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Circle",
+    "City": "",
+    "State": "Alaska",
+    "Zip": "",
+    "Phone": "(907) 773-2822",
+    "SnapshotFilename": "tananachiefs.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Craig",
+    "City": "Craig",
+    "State": "Alaska",
+    "Zip": "99921",
+    "Phone": "(907) 826-3996",
+    "SnapshotFilename": "craigtribe.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Curyung",
+    "City": "Dillingham",
+    "State": "Alaska",
+    "Zip": "99576",
+    "Phone": "(907) 842-2384",
+    "SnapshotFilename": "curyungtribe.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Douglas",
+    "City": "Juneau",
+    "State": "Alaska",
+    "Zip": "99801",
+    "Phone": "(907) 364-2916",
+    "SnapshotFilename": "diataku.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Egegik",
+    "City": "Egegik",
+    "State": "Alaska",
+    "Zip": "99579",
+    "Phone": "(907) 233-2211",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Eklutna",
+    "City": "Chugiak",
+    "State": "Alaska",
+    "Zip": "99567",
+    "Phone": "(907) 688-6020",
+    "SnapshotFilename": "eklutna.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Emmonak",
+    "City": "Emmonak",
+    "State": "Alaska",
+    "Zip": "99581",
+    "Phone": "(907) 949-1720",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Evansville",
+    "City": "Bettles Field",
+    "State": "Alaska",
+    "Zip": "99726",
+    "Phone": "(907) 692-5005",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Gulkana",
+    "City": "Gakona",
+    "State": "Alaska",
+    "Zip": "99586",
+    "Phone": "(907) 822-3746",
+    "SnapshotFilename": "gulkanacouncil.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Healy Lake",
+    "City": "Fairbanks",
+    "State": "Alaska",
+    "Zip": "99709",
+    "Phone": "(907) 371-4044",
+    "SnapshotFilename": "healylake.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Holy Cross",
+    "City": "Holy Cross",
+    "State": "Alaska",
+    "Zip": "99602",
+    "Phone": "(907) 476-7124",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Hoonah",
+    "City": "Hoonah",
+    "State": "Alaska",
+    "Zip": "99829",
+    "Phone": "(907) 945-3545",
+    "SnapshotFilename": "hiatribe.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Hughes",
+    "City": "Hughes",
+    "State": "Alaska",
+    "Zip": "99745",
+    "Phone": "(907) 889-2239",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Huslia",
+    "City": "Huslia",
+    "State": "Alaska",
+    "Zip": "99746",
+    "Phone": "(907) 829-2294",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Hydaburg",
+    "City": "Hydaburg",
+    "State": "Alaska",
+    "Zip": "99922",
+    "Phone": "(907) 285-3666",
+    "SnapshotFilename": "hydaburgtribe.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Igiugig",
+    "City": "Igiugig",
+    "State": "Alaska",
+    "Zip": "99613",
+    "Phone": "(907) 533-3211",
+    "SnapshotFilename": "igiugig.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Inupiat",
+    "City": "Barrow",
+    "State": "Alaska",
+    "Zip": "99723",
+    "Phone": "(907) 852-4227",
+    "SnapshotFilename": "icas-nsn.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Iqugmiut",
+    "City": "Russian Mission",
+    "State": "Alaska",
+    "Zip": "99657",
+    "Phone": "(907) 584-5511",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Ivanof Bay",
+    "City": "Anchorage",
+    "State": "Alaska",
+    "Zip": "99507",
+    "Phone": "(907) 522-2263",
+    "SnapshotFilename": "ivanofbaytribe.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Kaguyuk",
+    "City": "",
+    "State": "Alaska",
+    "Zip": "",
+    "Phone": "(907) 836-2231",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Kaktovik",
+    "City": "Kaktovik",
+    "State": "Alaska",
+    "Zip": "99747",
+    "Phone": "(907) 640-2042/2043",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Kasigluk",
+    "City": "Kasigluk",
+    "State": "Alaska",
+    "Zip": "99609",
+    "Phone": "(907) 477-6405",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Kenaitze",
+    "City": "Kenai",
+    "State": "Alaska",
+    "Zip": "99611",
+    "Phone": "(907) 335-7200",
+    "SnapshotFilename": "kenaitze.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Ketchikan",
+    "City": "Ketchikan",
+    "State": "Alaska",
+    "Zip": "99901",
+    "Phone": "(907) 228-9275",
+    "SnapshotFilename": "kictribe.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "King Island",
+    "City": "Nome",
+    "State": "Alaska",
+    "Zip": "99762",
+    "Phone": "(907) 443-2209",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "King Salmon",
+    "City": "King Salmon",
+    "State": "Alaska",
+    "Zip": "99613",
+    "Phone": "(907) 246-3553",
+    "SnapshotFilename": "icloud.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Klawock",
+    "City": "Klawok",
+    "State": "Alaska",
+    "Zip": "99925",
+    "Phone": "907-401-8250",
+    "SnapshotFilename": "klawocktribe.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Knik",
+    "City": "Palmer",
+    "State": "Alaska",
+    "Zip": "99645",
+    "Phone": "(907) 373-7991",
+    "SnapshotFilename": "kniktribe.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Kokhanok",
+    "City": "Kokhanok",
+    "State": "Alaska",
+    "Zip": "99606",
+    "Phone": "(907) 282-2202",
+    "SnapshotFilename": "kokhanok.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Koyukuk",
+    "City": "Koyukuk",
+    "State": "Alaska",
+    "Zip": "99754",
+    "Phone": "(907) 927-2253",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Levelock",
+    "City": "Levelock",
+    "State": "Alaska",
+    "Zip": "99625",
+    "Phone": "(907) 287-3030",
+    "SnapshotFilename": "bbna.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Lime",
+    "City": "",
+    "State": "Alaska",
+    "Zip": "",
+    "Phone": "(907) 526-5236",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Louden Tribe",
+    "City": "",
+    "State": "Alaska",
+    "Zip": "",
+    "Phone": "(907) 656-1711",
+    "SnapshotFilename": "loudentribe.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Manley Hot Springs",
+    "City": "",
+    "State": "Alaska",
+    "Zip": "",
+    "Phone": "907-672-2020",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Manokotak",
+    "City": "Manokotak",
+    "State": "Alaska",
+    "Zip": "99628",
+    "Phone": "(907) 289-2067",
+    "SnapshotFilename": "hotmail.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Mcgrath",
+    "City": "McGrath",
+    "State": "Alaska",
+    "Zip": "99627",
+    "Phone": "(907) 524-3024",
+    "SnapshotFilename": "mcgrathnvc.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Mentasta",
+    "City": "Mentasta",
+    "State": "Alaska",
+    "Zip": "99780",
+    "Phone": "(907) 291-2319",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Naknek",
+    "City": "Naknek",
+    "State": "Alaska",
+    "Zip": "99633",
+    "Phone": "(907) 246-4210",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Afognak",
+    "City": "Kodiak",
+    "State": "Alaska",
+    "Zip": "99615",
+    "Phone": "(907) 486-6357",
+    "SnapshotFilename": "afognak.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Akhiok",
+    "City": "",
+    "State": "Alaska",
+    "Zip": "",
+    "Phone": "(907) 836-2312",
+    "SnapshotFilename": "kodiakhealthcare.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Akutan",
+    "City": "Akutan",
+    "State": "Alaska",
+    "Zip": "99553",
+    "Phone": "(907) 698-2300",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Aleknagik",
+    "City": "Aleknagik",
+    "State": "Alaska",
+    "Zip": "99555",
+    "Phone": "(907) 842-2080",
+    "SnapshotFilename": "bbna_2.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Ambler",
+    "City": "Ambler",
+    "State": "Alaska",
+    "Zip": "99786",
+    "Phone": "(907) 445-2196",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Atka",
+    "City": "Atka",
+    "State": "Alaska",
+    "Zip": "99547",
+    "Phone": "(907)222-5400",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Atqasuk",
+    "City": "Atqasuk",
+    "State": "Alaska",
+    "Zip": "99791",
+    "Phone": "(907) 633-2575",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Barrow",
+    "City": "Barrow",
+    "State": "Alaska",
+    "Zip": "99723",
+    "Phone": "(907) 852-4411",
+    "SnapshotFilename": "nvb-nsn.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Belkofski",
+    "City": "King Cove",
+    "State": "Alaska",
+    "Zip": "99612",
+    "Phone": "(907) 497-3122",
+    "SnapshotFilename": "arctic.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Brevig Mission",
+    "City": "Brevig Mission",
+    "State": "Alaska",
+    "Zip": "99785",
+    "Phone": "(907) 642-4301",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Buckland",
+    "City": "",
+    "State": "Alaska",
+    "Zip": "",
+    "Phone": "(907) 494-2171",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Cantwell",
+    "City": "",
+    "State": "Alaska",
+    "Zip": "",
+    "Phone": "(907) 768-2591",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Chenega",
+    "City": "Anchorage",
+    "State": "Alaska",
+    "Zip": "99503",
+    "Phone": "907-529-9345",
+    "SnapshotFilename": "chenega.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Chignik Lagoon",
+    "City": "Chignik",
+    "State": "Alaska",
+    "Zip": "99565",
+    "Phone": "(907) 840-2281",
+    "SnapshotFilename": "chigniklagoon.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Chitina",
+    "City": "Chitina",
+    "State": "Alaska",
+    "Zip": "99566",
+    "Phone": "(907) 823-2215",
+    "SnapshotFilename": "tsedina.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Chuathbaluk",
+    "City": "Chuathbaluk",
+    "State": "Alaska",
+    "Zip": "99557",
+    "Phone": "(907) 467-2120",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Council",
+    "City": "Nome",
+    "State": "Alaska",
+    "Zip": "99762",
+    "Phone": "(907) 443-7649",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Deering",
+    "City": "",
+    "State": "Alaska",
+    "Zip": "",
+    "Phone": "(907) 363-2138",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Diomede",
+    "City": "",
+    "State": "Alaska",
+    "Zip": "",
+    "Phone": "(907) 686-2175",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Eagle",
+    "City": "Eagle",
+    "State": "Alaska",
+    "Zip": "99738",
+    "Phone": "(907) 547-2281",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Eek",
+    "City": "Eek",
+    "State": "Alaska",
+    "Zip": "99578",
+    "Phone": "(907) 536-5128",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Ekuk",
+    "City": "Dillingham",
+    "State": "Alaska",
+    "Zip": "99576",
+    "Phone": "(907) 842-3842",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Ekwok",
+    "City": "Ekwok",
+    "State": "Alaska",
+    "Zip": "99580",
+    "Phone": "(907) 464-3336",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Elim IRA",
+    "City": "",
+    "State": "Alaska",
+    "Zip": "",
+    "Phone": "(907) 890-3737",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Eyak",
+    "City": "Cordova",
+    "State": "Alaska",
+    "Zip": "99574",
+    "Phone": "(907) 424-7738",
+    "SnapshotFilename": "eyak-nsn.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "False Pass",
+    "City": "False Pass",
+    "State": "Alaska",
+    "Zip": "99583",
+    "Phone": "(907) 548-2227",
+    "SnapshotFilename": "apiai.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Fort Yukon",
+    "City": "Fort Yukon",
+    "State": "Alaska",
+    "Zip": "99740",
+    "Phone": "(907) 662-2581",
+    "SnapshotFilename": "fortyukon.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Gakona",
+    "City": "Gakona",
+    "State": "Alaska",
+    "Zip": "99588",
+    "Phone": "(907) 822-5777",
+    "SnapshotFilename": "nvgakona.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Gambell",
+    "City": "Nome",
+    "State": "Alaska",
+    "Zip": "99762",
+    "Phone": "(907) 985-5346",
+    "SnapshotFilename": "kawerak_3.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Georgetown",
+    "City": "Anchorage",
+    "State": "Alaska",
+    "Zip": "99503",
+    "Phone": "(907) 274-2195",
+    "SnapshotFilename": "georgetowntc.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Goodnews Bay",
+    "City": "Goodnews Bay",
+    "State": "Alaska",
+    "Zip": "99589",
+    "Phone": "(907) 967-8929",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Hamilton",
+    "City": "",
+    "State": "Alaska",
+    "Zip": "",
+    "Phone": "(907) 899-2160/2161",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Hooper Bay",
+    "City": "Hooper Bay",
+    "State": "Alaska",
+    "Zip": "99604",
+    "Phone": "(907) 758-4915",
+    "SnapshotFilename": "nvptc.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Kanatak",
+    "City": "",
+    "State": "Alaska",
+    "Zip": "",
+    "Phone": "(907) 357-5991",
+    "SnapshotFilename": "kanatak.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Karluk",
+    "City": "",
+    "State": "Alaska",
+    "Zip": "",
+    "Phone": "(907) 241-2218",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Kiana",
+    "City": "Kiana",
+    "State": "Alaska",
+    "Zip": "99749",
+    "Phone": "(907) 475-2109",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Kipnuk",
+    "City": "Kipnuk",
+    "State": "Alaska",
+    "Zip": "99614",
+    "Phone": "(907) 896-5515",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Kivalina",
+    "City": "Kivalina",
+    "State": "Alaska",
+    "Zip": "99750",
+    "Phone": "(907) 645-2153",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Kluti Kaah",
+    "City": "Copper Center",
+    "State": "Alaska",
+    "Zip": "99573",
+    "Phone": "(907) 822-5541",
+    "SnapshotFilename": "klutikaah.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Kobuk",
+    "City": "",
+    "State": "Alaska",
+    "Zip": "",
+    "Phone": "(907) 948-2203",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Kongiganak",
+    "City": "Kongiganak",
+    "State": "Alaska",
+    "Zip": "99559",
+    "Phone": "(907) 557-5226/5225",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Kotzebue",
+    "City": "Kotzebue",
+    "State": "Alaska",
+    "Zip": "99752",
+    "Phone": "(907) 442-3467",
+    "SnapshotFilename": "kotzebueira.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Koyuk",
+    "City": "Koyuk",
+    "State": "Alaska",
+    "Zip": "99753",
+    "Phone": "(907) 963-3651",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Kwigillingok",
+    "City": "Kwigillingok",
+    "State": "Alaska",
+    "Zip": "99622",
+    "Phone": "(907) 588-8114/8212",
+    "SnapshotFilename": "kwigtribe.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Kwinhagak",
+    "City": "Quinhagak",
+    "State": "Alaska",
+    "Zip": "99655",
+    "Phone": "(907) 556-8171",
+    "SnapshotFilename": "kwinhagak.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Larsen Bay",
+    "City": "",
+    "State": "Alaska",
+    "Zip": "99624",
+    "Phone": "(907) 847-2207",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Marshall",
+    "City": "Marshall",
+    "State": "Alaska",
+    "Zip": "99585",
+    "Phone": "(907) 679-6302",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Mary's Igloo",
+    "City": "",
+    "State": "Alaska",
+    "Zip": "",
+    "Phone": "(907) 642-3731",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Mekoryuk",
+    "City": "Mekoryuk",
+    "State": "Alaska",
+    "Zip": "99630",
+    "Phone": "(907) 827-8828",
+    "SnapshotFilename": "mekoryuktc.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Minto",
+    "City": "",
+    "State": "Alaska",
+    "Zip": "",
+    "Phone": "907-798-6003",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Nanwalek",
+    "City": "Nanwalek",
+    "State": "Alaska",
+    "Zip": "99603",
+    "Phone": "(907) 281-2274",
+    "SnapshotFilename": "nanwalekira.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Napaimute",
+    "City": "Bethel",
+    "State": "Alaska",
+    "Zip": "99559",
+    "Phone": "907-675-4388",
+    "SnapshotFilename": "napaimute.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Napakiak",
+    "City": "Napakiak",
+    "State": "Alaska",
+    "Zip": "99634",
+    "Phone": "(907) 589-2135",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Napaskiak",
+    "City": "",
+    "State": "Alaska",
+    "Zip": "",
+    "Phone": "(907) 737-7364",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Nelson Lagoon",
+    "City": "Nelson Lagoon",
+    "State": "Alaska",
+    "Zip": "99571",
+    "Phone": "(907) 989-2204",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Nightmute",
+    "City": "Nightmute",
+    "State": "Alaska",
+    "Zip": "99690",
+    "Phone": "(907) 647-6215",
+    "SnapshotFilename": "live.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Nikolski",
+    "City": "",
+    "State": "Alaska",
+    "Zip": "",
+    "Phone": "907-575-1238",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Noatak",
+    "City": "Noatak",
+    "State": "Alaska",
+    "Zip": "99761",
+    "Phone": "(907) 485-2173",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Nuiqsut",
+    "City": "Nuiqsut",
+    "State": "Alaska",
+    "Zip": "99789",
+    "Phone": "(907) 480-3010",
+    "SnapshotFilename": "nvnuiqsut.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Nunam Iqua",
+    "City": "",
+    "State": "Alaska",
+    "Zip": "",
+    "Phone": "(907) 498-4184",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Nunapitchuk",
+    "City": "Nunapitchuk",
+    "State": "Alaska",
+    "Zip": "99641",
+    "Phone": "(907) 527-5705",
+    "SnapshotFilename": "yupik.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Ouzinkie",
+    "City": "Ouzinkie",
+    "State": "Alaska",
+    "Zip": "99644",
+    "Phone": "(907) 680-2259",
+    "SnapshotFilename": "ouzinkie.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Paimiut",
+    "City": "Anchorage",
+    "State": "Alaska",
+    "Zip": "99503",
+    "Phone": "(907) 561-0304",
+    "SnapshotFilename": "nativevillageofpaimiut.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Perryville",
+    "City": "Perryville",
+    "State": "Alaska",
+    "Zip": "99648",
+    "Phone": "(907) 853-4073",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Pilot Point",
+    "City": "Pilot Point",
+    "State": "Alaska",
+    "Zip": "99469",
+    "Phone": "(907) 797-2208",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Point Hope IRA",
+    "City": "Pt. Hope",
+    "State": "Alaska",
+    "Zip": "99766",
+    "Phone": "(907) 368-2330",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Point Lay IRA",
+    "City": "Point Lay",
+    "State": "Alaska",
+    "Zip": "99759",
+    "Phone": "(907) 833-5052",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Port Graham",
+    "City": "Port Graham",
+    "State": "Alaska",
+    "Zip": "99603",
+    "Phone": "(907) 284-2227",
+    "SnapshotFilename": "portgraham.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Port Heiden",
+    "City": "Port Heiden",
+    "State": "Alaska",
+    "Zip": "99549",
+    "Phone": "(907) 837-2296",
+    "SnapshotFilename": "portheidenalaska.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Port Lions",
+    "City": "Port Lions",
+    "State": "Alaska",
+    "Zip": "99550",
+    "Phone": "(907) 454-2234",
+    "SnapshotFilename": "portlionstribe.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Ruby",
+    "City": "Ruby",
+    "State": "Alaska",
+    "Zip": "99768",
+    "Phone": "(907) 468-4479",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "St. Michael IRA",
+    "City": "St Michael",
+    "State": "Alaska",
+    "Zip": "99659",
+    "Phone": "(907) 923-2304",
+    "SnapshotFilename": "kawerak_4.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Savoonga",
+    "City": "Savoonga",
+    "State": "Alaska",
+    "Zip": "99769",
+    "Phone": "(907) 984-6414",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Scammon Bay",
+    "City": "Scammon Bay",
+    "State": "Alaska",
+    "Zip": "99662",
+    "Phone": "(907) 558-5425",
+    "SnapshotFilename": "marayarmiut.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Selawik",
+    "City": "Selawik",
+    "State": "Alaska",
+    "Zip": "99770",
+    "Phone": "(907) 484-2165",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Shaktoolik",
+    "City": "Shaktoolik",
+    "State": "Alaska",
+    "Zip": "99771",
+    "Phone": "(907) 955-3701",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Shishmaref IRA",
+    "City": "Shishmaref",
+    "State": "Alaska",
+    "Zip": "99772",
+    "Phone": "(907) 649-3821",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Shungnak",
+    "City": "Shungnak",
+    "State": "Alaska",
+    "Zip": "99773",
+    "Phone": "(907) 437-2163",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Stevens Village",
+    "City": "",
+    "State": "Alaska",
+    "Zip": "",
+    "Phone": "(907) 478-7228",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Tanacross",
+    "City": "Tanacross",
+    "State": "Alaska",
+    "Zip": "99776",
+    "Phone": "(907) 883-5024",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Tanana",
+    "City": "Tanana",
+    "State": "Alaska",
+    "Zip": "99777",
+    "Phone": "(907) 366-7170",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Tatitlek",
+    "City": "Tatitlek",
+    "State": "Alaska",
+    "Zip": "99677",
+    "Phone": "(907) 325-2311",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Tazlina",
+    "City": "Glennallen",
+    "State": "Alaska",
+    "Zip": "99588",
+    "Phone": "(907) 822-4375",
+    "SnapshotFilename": "cvinternet.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Teller",
+    "City": "Teller",
+    "State": "Alaska",
+    "Zip": "99778",
+    "Phone": "(907) 642-3381",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Tetlin",
+    "City": "Tok",
+    "State": "Alaska",
+    "Zip": "99780",
+    "Phone": "(907) 883-2021",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Tuntutuliak",
+    "City": "Tuntutuliak",
+    "State": "Alaska",
+    "Zip": "99680",
+    "Phone": "(907) 256-2128",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Tununak",
+    "City": "Tununak",
+    "State": "Alaska",
+    "Zip": "99681",
+    "Phone": "(907) 652-6527",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Tyonek",
+    "City": "Tyonek",
+    "State": "Alaska",
+    "Zip": "99682",
+    "Phone": "(907) 583-2201",
+    "SnapshotFilename": "tyonek.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Unalakleet",
+    "City": "Unalakleet",
+    "State": "Alaska",
+    "Zip": "99684",
+    "Phone": "(907) 624-3622",
+    "SnapshotFilename": "nativevillageofunalakleet.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Unga",
+    "City": "Sand Point",
+    "State": "Alaska",
+    "Zip": "99661",
+    "Phone": "(907) 383-2415",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Venetie IRA",
+    "City": "Venetie",
+    "State": "Alaska",
+    "Zip": "99781",
+    "Phone": "(907) 849-8165",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Wales",
+    "City": "Wales",
+    "State": "Alaska",
+    "Zip": "99783",
+    "Phone": "(907) 664-3062",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "White Mountain AK",
+    "City": "White Mountain",
+    "State": "Alaska",
+    "Zip": "99784",
+    "Phone": "(907) 638-3651",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Nenana",
+    "City": "Nenana",
+    "State": "Alaska",
+    "Zip": "99760",
+    "Phone": "(907) 832-5461",
+    "SnapshotFilename": "nenananativeassociation.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "New Koliganek",
+    "City": "",
+    "State": "Alaska",
+    "Zip": "",
+    "Phone": "(907) 596-3434",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "New Stuyahok",
+    "City": "New Stuyahok",
+    "State": "Alaska",
+    "Zip": "99636",
+    "Phone": "(907) 693-3173",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Newhalen",
+    "City": "Newhalen",
+    "State": "Alaska",
+    "Zip": "99606",
+    "Phone": "(907) 571-1410",
+    "SnapshotFilename": "newhalentribal.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Newtok",
+    "City": "Newtok",
+    "State": "Alaska",
+    "Zip": "99559",
+    "Phone": "(907) 237-2202",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Nikolai",
+    "City": "Nikolai",
+    "State": "Alaska",
+    "Zip": "99691",
+    "Phone": "(907) 293-2311",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Ninilchik",
+    "City": "Ninilchik",
+    "State": "Alaska",
+    "Zip": "99639",
+    "Phone": "(907) 567-3313",
+    "SnapshotFilename": "ninilchiktribe-nsn.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Nome",
+    "City": "Nome",
+    "State": "Alaska",
+    "Zip": "99762",
+    "Phone": "(907) 443-2246",
+    "SnapshotFilename": "necalaska.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Nondalton",
+    "City": "Nondalton",
+    "State": "Alaska",
+    "Zip": "99640",
+    "Phone": "(907) 294-2257",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Noorvik",
+    "City": "Noorvik",
+    "State": "Alaska",
+    "Zip": "99763",
+    "Phone": "(907) 636-2144",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Northway",
+    "City": "",
+    "State": "Alaska",
+    "Zip": "",
+    "Phone": "(907) 778-2311",
+    "SnapshotFilename": "aptalaska.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Nulato",
+    "City": "Nulato",
+    "State": "Alaska",
+    "Zip": "99765",
+    "Phone": "(907) 898-2339",
+    "SnapshotFilename": "nulatotribe.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Nunakauyarmiut",
+    "City": "Toksook Bay",
+    "State": "Alaska",
+    "Zip": "99637",
+    "Phone": "(907) 427-7114/7615",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Grayling",
+    "City": "Grayling",
+    "State": "Alaska",
+    "Zip": "99590",
+    "Phone": "(907) 453-5116",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Kake",
+    "City": "Kake",
+    "State": "Alaska",
+    "Zip": "99830",
+    "Phone": "(907) 785-6471",
+    "SnapshotFilename": "kake-nsn.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Kasaan",
+    "City": "",
+    "State": "Alaska",
+    "Zip": "",
+    "Phone": "(907) 542-2230",
+    "SnapshotFilename": "kasaan.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Kwethluk",
+    "City": "Kwethluk",
+    "State": "Alaska",
+    "Zip": "99621",
+    "Phone": "(907) 757-6714",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Saxman",
+    "City": "Ketchikan",
+    "State": "Alaska",
+    "Zip": "99901",
+    "Phone": "(907) 247-2502",
+    "SnapshotFilename": "saxmantribe.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Orutsararmiut",
+    "City": "Bethel",
+    "State": "Alaska",
+    "Zip": "99559",
+    "Phone": "(907) 543-2608",
+    "SnapshotFilename": "nativecouncil.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Oscarville",
+    "City": "",
+    "State": "Alaska",
+    "Zip": "",
+    "Phone": "(907) 737-7099",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Pauloff Harbor",
+    "City": "Sand Point",
+    "State": "Alaska",
+    "Zip": "99661",
+    "Phone": "(907) 383-6075",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Pedro Bay",
+    "City": "Pedro Bay",
+    "State": "Alaska",
+    "Zip": "99647",
+    "Phone": "(907) 850-2225",
+    "SnapshotFilename": "pedrobay.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Petersburg",
+    "City": "Petersburg",
+    "State": "Alaska",
+    "Zip": "99833",
+    "Phone": "(907) 772-3636",
+    "SnapshotFilename": "piatribal.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Pilot Station",
+    "City": "Pilot Station",
+    "State": "Alaska",
+    "Zip": "99650",
+    "Phone": "(907) 549-3373",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Pitka's Point",
+    "City": "St. Mary's",
+    "State": "Alaska",
+    "Zip": "99658",
+    "Phone": "(907) 438-2833",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Platinum",
+    "City": "Platinum",
+    "State": "Alaska",
+    "Zip": "99651",
+    "Phone": "(907) 979-8220",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Portage Creek",
+    "City": "Anchorage",
+    "State": "Alaska",
+    "Zip": "99516",
+    "Phone": "(907) 277-1105",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Pribilof Islands",
+    "City": "",
+    "State": "",
+    "Zip": "",
+    "Phone": "",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Qagan Tayagungin",
+    "City": "Sand Point",
+    "State": "Alaska",
+    "Zip": "99661",
+    "Phone": "(907) 383-5616",
+    "SnapshotFilename": "qttribe.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Qawalangin",
+    "City": "Unalaska",
+    "State": "Alaska",
+    "Zip": "99685",
+    "Phone": "(907) 581-2920",
+    "SnapshotFilename": "qawalangin.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Rampart",
+    "City": "Rampart",
+    "State": "Alaska",
+    "Zip": "99767",
+    "Phone": "(907) 358-3312",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "St. George",
+    "City": "",
+    "State": "Alaska",
+    "Zip": "",
+    "Phone": "(907) 859-2205/2206",
+    "SnapshotFilename": "stgtribe.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Saint Paul",
+    "City": "St. Paul Island",
+    "State": "Alaska",
+    "Zip": "99660",
+    "Phone": "907-615-5300",
+    "SnapshotFilename": "aleut.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Salamatof",
+    "City": "Kenai",
+    "State": "Alaska",
+    "Zip": "99611",
+    "Phone": "(907) 283-2700",
+    "SnapshotFilename": "salamatof.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Seldovia",
+    "City": "Seldovia",
+    "State": "Alaska",
+    "Zip": "99663",
+    "Phone": "(907) 234-7898",
+    "SnapshotFilename": "svt.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Shageluk",
+    "City": "Shageluk",
+    "State": "Alaska",
+    "Zip": "99665",
+    "Phone": "(907) 473-8239",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Sitka",
+    "City": "Sitka",
+    "State": "Alaska",
+    "Zip": "99835",
+    "Phone": "(907) 747-3207",
+    "SnapshotFilename": "sitkatribe.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Skagway",
+    "City": "Skagway",
+    "State": "Alaska",
+    "Zip": "99840",
+    "Phone": "(907) 983-4068",
+    "SnapshotFilename": "skagwaytraditional.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "South Naknek",
+    "City": "South Naknek",
+    "State": "Alaska",
+    "Zip": "99670",
+    "Phone": "(907) 246-7942",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Stebbins",
+    "City": "Stebbins",
+    "State": "Alaska",
+    "Zip": "99671",
+    "Phone": "(907) 934-2393",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Sun'aq",
+    "City": "Kodiak",
+    "State": "Alaska",
+    "Zip": "99615",
+    "Phone": "(907) 531-5009",
+    "SnapshotFilename": "sunaq.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Takotna",
+    "City": "Takotna",
+    "State": "Alaska",
+    "Zip": "99675",
+    "Phone": "(907) 298-2212",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Tangirnaq",
+    "City": "Kodiak",
+    "State": "Alaska",
+    "Zip": "99615",
+    "Phone": "(907) 486-9872",
+    "SnapshotFilename": "woodyisland.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Telida",
+    "City": "Elko",
+    "State": "Alaska",
+    "Zip": "89801",
+    "Phone": "(907) 864-0629",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Togiak",
+    "City": "Togiak",
+    "State": "Alaska",
+    "Zip": "99678",
+    "Phone": "(907) 493-5003",
+    "SnapshotFilename": "togiak.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Tuluksak",
+    "City": "Tuluksak",
+    "State": "Alaska",
+    "Zip": "99679",
+    "Phone": "(907) 695-6420",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Twin Hills",
+    "City": "Twin Hills",
+    "State": "Alaska",
+    "Zip": "99678",
+    "Phone": "(907) 525-4821",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Ugashik",
+    "City": "Anchorage",
+    "State": "Alaska",
+    "Zip": "99503",
+    "Phone": "(907) 338-7611",
+    "SnapshotFilename": "ugashikvillage.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Umkumiut",
+    "City": "",
+    "State": "Alaska",
+    "Zip": "",
+    "Phone": "(907) 647-6145",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Alakanuk",
+    "City": "Alakanuk",
+    "State": "Alaska",
+    "Zip": "99554",
+    "Phone": "(907) 238-3419",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Anaktuvuk Pass",
+    "City": "Anaktuvuk Pass",
+    "State": "Alaska",
+    "Zip": "99721",
+    "Phone": "(907) 661-2575",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Aniak",
+    "City": "Aniak",
+    "State": "Alaska",
+    "Zip": "99557",
+    "Phone": "(907) 675-4349",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Atmautluak",
+    "City": "Atmautluak",
+    "State": "Alaska",
+    "Zip": "99559",
+    "Phone": "(907) 553-5610",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Bill Moore's Slough",
+    "City": "Kotlik",
+    "State": "Alaska",
+    "Zip": "99620",
+    "Phone": "(907) 899-4232",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Chefornak",
+    "City": "Chefornak",
+    "State": "Alaska",
+    "Zip": "99561",
+    "Phone": "(907) 867-8850",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Clark's Point",
+    "City": "Clarks Point",
+    "State": "Alaska",
+    "Zip": "99569",
+    "Phone": "(907)843-2837",
+    "SnapshotFilename": "clarkspointvillagecouncil.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Crooked Creek",
+    "City": "Crooked Creek",
+    "State": "Alaska",
+    "Zip": "99575",
+    "Phone": "(907) 432-2200",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Dot Lake",
+    "City": "Dot Lake",
+    "State": "Alaska",
+    "Zip": "99737",
+    "Phone": "(907) 882-2695",
+    "SnapshotFilename": "dotlakevillage.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Iliamna",
+    "City": "Iliamna",
+    "State": "Alaska",
+    "Zip": "99606",
+    "Phone": "(907) 571-1246",
+    "SnapshotFilename": "villageofiliamna.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Kalskag",
+    "City": "Kalskag",
+    "State": "Alaska",
+    "Zip": "99607",
+    "Phone": "(907) 471-2207",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Kaltag",
+    "City": "Kaltag",
+    "State": "Alaska",
+    "Zip": "99748",
+    "Phone": "(907) 534-2224",
+    "SnapshotFilename": "kaltagtribe.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Kotlik",
+    "City": "Kotlik",
+    "State": "Alaska",
+    "Zip": "99620",
+    "Phone": "(907) 899-4326/4836",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Lower Kalskag",
+    "City": "Lower Kalskag",
+    "State": "Alaska",
+    "Zip": "99626",
+    "Phone": "(907) 471-2300",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Ohogamiut",
+    "City": "Marshall",
+    "State": "Alaska",
+    "Zip": "99585",
+    "Phone": "(907) 679-6517",
+    "SnapshotFilename": "ohogtc.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Red Devil",
+    "City": "Red Devil",
+    "State": "Alaska",
+    "Zip": "99656",
+    "Phone": "(907) 947-4563",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Sleetmute",
+    "City": "Sleetmute",
+    "State": "Alaska",
+    "Zip": "99668",
+    "Phone": "(907) 449-4263",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Solomon",
+    "City": "",
+    "State": "Alaska",
+    "Zip": "",
+    "Phone": "(907) 443-4985",
+    "SnapshotFilename": "villageofsolomon.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Stony River",
+    "City": "",
+    "State": "Alaska",
+    "Zip": "",
+    "Phone": "(907) 537-3258",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Venetie",
+    "City": "Venetie",
+    "State": "Alaska",
+    "Zip": "99781",
+    "Phone": "(907) 849-8212",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Wainwright",
+    "City": "Wainwright",
+    "State": "Alaska",
+    "Zip": "99782",
+    "Phone": "(907) 763-2535",
+    "SnapshotFilename": "vowak.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Wrangell",
+    "City": "Wrangell",
+    "State": "Alaska",
+    "Zip": "99929",
+    "Phone": "(907) 874-4304",
+    "SnapshotFilename": "wcatribe.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Yakutat",
+    "City": "Yakutat",
+    "State": "Alaska",
+    "Zip": "99689",
+    "Phone": "(907) 784-3238",
+    "SnapshotFilename": "ytttribe.png",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Andreafski",
+    "City": "Saint Marys",
+    "State": "Alaska",
+    "Zip": "99658",
+    "Phone": "(907) 438-2312",
+    "SnapshotFilename": "",
+    "Region": "Alaska"
+  },
+  {
+    "Tribe": "Catawba",
+    "City": "Rock Hill",
+    "State": "South Carolina",
+    "Zip": "29730",
+    "Phone": "(803) 366-4792",
+    "SnapshotFilename": "catawba.png",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Cayuga Nation of New York",
+    "City": "Union Springs",
+    "State": "New York",
+    "Zip": "13160",
+    "Phone": "315-568-0750",
+    "SnapshotFilename": "cayuganation-nsn.png",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Chickahominy Indian Tribe, Inc.",
+    "City": "Providence Forge",
+    "State": "Virginia",
+    "Zip": "23140",
+    "Phone": "804-829-2027",
+    "SnapshotFilename": "chickahominytribe.png",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Chickahominy Indians-Eastern Division",
+    "City": "Providence Forge",
+    "State": "Virginia",
+    "Zip": "23140",
+    "Phone": "804-966-7815",
+    "SnapshotFilename": "cit-ed.png",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Chitimacha",
+    "City": "Charenton",
+    "State": "Louisiana",
+    "Zip": "70523",
+    "Phone": "(337) 923-4973",
+    "SnapshotFilename": "chitimacha.png",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Coushatta",
+    "City": "Elton",
+    "State": "Louisiana",
+    "Zip": "70532",
+    "Phone": "(337) 584-1401",
+    "SnapshotFilename": "coushatta.png",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Eastern Cherokee",
+    "City": "Cherokee",
+    "State": "North Carolina",
+    "Zip": "28719",
+    "Phone": "(828) 359-7000",
+    "SnapshotFilename": "ebci.png",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Houlton",
+    "City": "Littleton",
+    "State": "Maine",
+    "Zip": "04730",
+    "Phone": "(207) 532-4273",
+    "SnapshotFilename": "maliseets.png",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Jena",
+    "City": "Trout",
+    "State": "Louisiana",
+    "Zip": "71371",
+    "Phone": "(318) 992-2717",
+    "SnapshotFilename": "jenachoctaw.png",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Mashantucket Pequot",
+    "City": "Mashantucket",
+    "State": "Connecticut",
+    "Zip": "06338",
+    "Phone": "(860) 396-6572",
+    "SnapshotFilename": "mptn-nsn.png",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Mashpee",
+    "City": "Mashpee",
+    "State": "Massachusetts",
+    "Zip": "02649",
+    "Phone": "(508) 477-0208",
+    "SnapshotFilename": "mashpeewampanoagtribe-nsn.png",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Mi'kmaq",
+    "City": "Presque Isle",
+    "State": "Maine",
+    "Zip": "04769",
+    "Phone": "(207) 764-1972",
+    "SnapshotFilename": "micmac-nsn.png",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Miccosukee",
+    "City": "Miami",
+    "State": "Florida",
+    "Zip": "33194",
+    "Phone": "(305) 223-8380",
+    "SnapshotFilename": "",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Mississippi Choctaw",
+    "City": "Choctaw",
+    "State": "Mississippi",
+    "Zip": "39350",
+    "Phone": "(601) 656-5251",
+    "SnapshotFilename": "choctaw.png",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Mohegan",
+    "City": "Uncasville",
+    "State": "Connecticut",
+    "Zip": "06382",
+    "Phone": "(860) 862-6100",
+    "SnapshotFilename": "mohegan.png",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Monacan Indian Nation",
+    "City": "Madison Heights",
+    "State": "Virginia",
+    "Zip": "24572",
+    "Phone": "434-363-4864",
+    "SnapshotFilename": "monacannation.png",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Nansemond Indian Tribe",
+    "City": "Suffolk",
+    "State": "Virginia",
+    "Zip": "23434",
+    "Phone": "757-255-9317",
+    "SnapshotFilename": "nansemond.png",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Narragansett",
+    "City": "Charlestown",
+    "State": "Rhode Island",
+    "Zip": "02813",
+    "Phone": "(401) 364-1100",
+    "SnapshotFilename": "narragansettindiannation.png",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Oneida",
+    "City": "Verona",
+    "State": "New York",
+    "Zip": "13421",
+    "Phone": "(315) 829-8900",
+    "SnapshotFilename": "oneidaindiannation.png",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Onondaga",
+    "City": "Nedrow",
+    "State": "New York",
+    "Zip": "13120",
+    "Phone": "(315)469-0302",
+    "SnapshotFilename": "onondaganation.png",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Pamunkey",
+    "City": "King William",
+    "State": "Virginia",
+    "Zip": "23086",
+    "Phone": "804-339-1629",
+    "SnapshotFilename": "pamunkey.png",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Passamaquoddy",
+    "City": "",
+    "State": "Maine",
+    "Zip": "",
+    "Phone": "",
+    "SnapshotFilename": "",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Passamaquoddy Indian Township",
+    "City": "Princeton",
+    "State": "Maine",
+    "Zip": "04668",
+    "Phone": "(207) 796-2301",
+    "SnapshotFilename": "passamaquoddy.png",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Passamaquoddy Pleasant Point",
+    "City": "Perry",
+    "State": "Maine",
+    "Zip": "04667",
+    "Phone": "(207) 853-2600",
+    "SnapshotFilename": "wabanaki.png",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Penobscot",
+    "City": "Indian Island",
+    "State": "Maine",
+    "Zip": "04468",
+    "Phone": "(207) 817-7349",
+    "SnapshotFilename": "penobscotnation.png",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Poarch",
+    "City": "Atmore",
+    "State": "Alabama",
+    "Zip": "36502",
+    "Phone": "(251) 368-9136",
+    "SnapshotFilename": "pci-nsn.png",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Rappahannock",
+    "City": "Indian Neck",
+    "State": "Virginia",
+    "Zip": "23148",
+    "Phone": "804-769-0260",
+    "SnapshotFilename": "rappahannocktribe.png",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Saint Regis",
+    "City": "Akwesasne",
+    "State": "New York",
+    "Zip": "13655",
+    "Phone": "(518) 358-2272",
+    "SnapshotFilename": "srmt-nsn.png",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Seminole",
+    "City": "Hollywood",
+    "State": "Florida",
+    "Zip": "33024",
+    "Phone": "(800) 683-7800",
+    "SnapshotFilename": "semtribe.png",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Seneca",
+    "City": "Irving",
+    "State": "New York",
+    "Zip": "14081",
+    "Phone": "(716) 532-4900",
+    "SnapshotFilename": "sni.png",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Shinnecock",
+    "City": "Southampton",
+    "State": "New York",
+    "Zip": "11968",
+    "Phone": "631-283-6143",
+    "SnapshotFilename": "shinnecock.png",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Tonawanda",
+    "City": "Basom",
+    "State": "New York",
+    "Zip": "14013",
+    "Phone": "(716) 542-4244",
+    "SnapshotFilename": "",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Tunica-Biloxi",
+    "City": "Marksville",
+    "State": "Louisiana",
+    "Zip": "71351",
+    "Phone": "(318) 253-9767",
+    "SnapshotFilename": "paragoncasinoresort.png",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Tuscarora",
+    "City": "Via Lewistown",
+    "State": "New York",
+    "Zip": "14092",
+    "Phone": "(716) 264-6007 x110",
+    "SnapshotFilename": "",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Upper Mattaponi",
+    "City": "King William",
+    "State": "Virginia",
+    "Zip": "23086",
+    "Phone": "(804) 769-0041",
+    "SnapshotFilename": "umitribe.png",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Wampanoag",
+    "City": "Aquinnah",
+    "State": "Massachusetts",
+    "Zip": "02535",
+    "Phone": "(508) 645-9265",
+    "SnapshotFilename": "wampanoagtribe-nsn.png",
+    "Region": "Eastern"
+  },
+  {
+    "Tribe": "Alabama-Quassarte Tribal Town",
+    "City": "Wetumka",
+    "State": "Oklahoma",
+    "Zip": "74883",
+    "Phone": "**(405)452-3987",
+    "SnapshotFilename": "alabama-quassarte.png",
+    "Region": "Eastern Oklahoma"
+  },
+  {
+    "Tribe": "Cherokee Nation",
+    "City": "Tahlequah",
+    "State": "Oklahoma",
+    "Zip": "74464",
+    "Phone": "(800) 256-0671",
+    "SnapshotFilename": "cherokee.png",
+    "Region": "Eastern Oklahoma"
+  },
+  {
+    "Tribe": "Delaware Tribe of Indians",
+    "City": "Bartlesville",
+    "State": "Oklahoma",
+    "Zip": "74006",
+    "Phone": "(918) 337-6590",
+    "SnapshotFilename": "delawaretribe.png",
+    "Region": "Eastern Oklahoma"
+  },
+  {
+    "Tribe": "Eastern Shawnee Tribe of Oklahoma",
+    "City": "Seneca",
+    "State": "Missouri",
+    "Zip": "64865",
+    "Phone": "(918) 666-2435",
+    "SnapshotFilename": "estoo.png",
+    "Region": "Eastern Oklahoma"
+  },
+  {
+    "Tribe": "Kialegee Tribal Town",
+    "City": "Wetumka",
+    "State": "Oklahoma",
+    "Zip": "74883",
+    "Phone": "(405) 452-3262",
+    "SnapshotFilename": "kialegeetribe.png",
+    "Region": "Eastern Oklahoma"
+  },
+  {
+    "Tribe": "Miami Tribe of Oklahoma",
+    "City": "Miami",
+    "State": "Oklahoma",
+    "Zip": "74354",
+    "Phone": "(918) 541-1300",
+    "SnapshotFilename": "miamination.png",
+    "Region": "Eastern Oklahoma"
+  },
+  {
+    "Tribe": "Modoc Nation",
+    "City": "Miami",
+    "State": "Oklahoma",
+    "Zip": "74354",
+    "Phone": "(918) 542-1190",
+    "SnapshotFilename": "modocnation.png",
+    "Region": "Eastern Oklahoma"
+  },
+  {
+    "Tribe": "Ottawa Tribe of Oklahoma",
+    "City": "Miami",
+    "State": "Oklahoma",
+    "Zip": "74354",
+    "Phone": "(918) 540-1536",
+    "SnapshotFilename": "",
+    "Region": "Eastern Oklahoma"
+  },
+  {
+    "Tribe": "Peoria Tribe of Indians of Oklahoma",
+    "City": "Miami",
+    "State": "Oklahoma",
+    "Zip": "74354",
+    "Phone": "(918) 540-2535",
+    "SnapshotFilename": "peoriatribe.png",
+    "Region": "Eastern Oklahoma"
+  },
+  {
+    "Tribe": "Quapaw Nation",
+    "City": "Quapaw",
+    "State": "Oklahoma",
+    "Zip": "74364",
+    "Phone": "(918) 542-1853",
+    "SnapshotFilename": "quapawnation.png",
+    "Region": "Eastern Oklahoma"
+  },
+  {
+    "Tribe": "Seneca-Cayuga Nation",
+    "City": "Grove",
+    "State": "Oklahoma",
+    "Zip": "74344",
+    "Phone": "(918) 787-5452",
+    "SnapshotFilename": "sctribe.png",
+    "Region": "Eastern Oklahoma"
+  },
+  {
+    "Tribe": "Shawnee Tribe",
+    "City": "Miami",
+    "State": "Oklahoma",
+    "Zip": "74354",
+    "Phone": "(918) 542-2441",
+    "SnapshotFilename": "shawnee-tribe.png",
+    "Region": "Eastern Oklahoma"
+  },
+  {
+    "Tribe": "The Chickasaw Nation",
+    "City": "Ada",
+    "State": "Oklahoma",
+    "Zip": "74820",
+    "Phone": "(580) 436-2603",
+    "SnapshotFilename": "chickasaw.png",
+    "Region": "Eastern Oklahoma"
+  },
+  {
+    "Tribe": "The Choctaw Nation of Oklahoma",
+    "City": "Durant",
+    "State": "Oklahoma",
+    "Zip": "74701",
+    "Phone": "(580) 924-8280",
+    "SnapshotFilename": "choctawnation.png",
+    "Region": "Eastern Oklahoma"
+  },
+  {
+    "Tribe": "The Muscogee (Creek) Nation",
+    "City": "Muskogee",
+    "State": "Oklahoma",
+    "Zip": "74403",
+    "Phone": "(800) 482-1979",
+    "SnapshotFilename": "mcn-nsn.png",
+    "Region": "Eastern Oklahoma"
+  },
+  {
+    "Tribe": "The Osage Nation",
+    "City": "Pawhuska",
+    "State": "Oklahoma",
+    "Zip": "74056",
+    "Phone": "(918) 287-5555",
+    "SnapshotFilename": "osagenation-nsn.png",
+    "Region": "Eastern Oklahoma"
+  },
+  {
+    "Tribe": "The Seminole Nation  of Oklahoma",
+    "City": "Wewoka",
+    "State": "Oklahoma",
+    "Zip": "74884",
+    "Phone": "(405) 257-7200",
+    "SnapshotFilename": "sno-nsn.png",
+    "Region": "Eastern Oklahoma"
+  },
+  {
+    "Tribe": "Thlopthlocco Tribal Town",
+    "City": "Okemah",
+    "State": "Oklahoma",
+    "Zip": "74859",
+    "Phone": "(866) 988-8696",
+    "SnapshotFilename": "tttown.png",
+    "Region": "Eastern Oklahoma"
+  },
+  {
+    "Tribe": "United Keetoowah Band of Cherokee Indians in Oklahoma",
+    "City": "Tahlequah",
+    "State": "Oklahoma",
+    "Zip": "74464",
+    "Phone": "(918) 871-2800",
+    "SnapshotFilename": "ukb-nsn.png",
+    "Region": "Eastern Oklahoma"
+  },
+  {
+    "Tribe": "Wyandotte Nation",
+    "City": "Wyandotte",
+    "State": "Oklahoma",
+    "Zip": "74370",
+    "Phone": "(918) 678-2297",
+    "SnapshotFilename": "wyandotte-nation.png",
+    "Region": "Eastern Oklahoma"
+  },
+  {
+    "Tribe": "Cheyenne River Sioux Tribe",
+    "City": "Eagle Butte",
+    "State": "South Dakota",
+    "Zip": "57625",
+    "Phone": "(605) 964-4155",
+    "SnapshotFilename": "cheyenneriversioux.png",
+    "Region": "Great Plains"
+  },
+  {
+    "Tribe": "Crow Creek",
+    "City": "Fort Thompson",
+    "State": "South Dakota",
+    "Zip": "57339",
+    "Phone": "(605) 245-2221",
+    "SnapshotFilename": "sdtribalrelations.png",
+    "Region": "Great Plains"
+  },
+  {
+    "Tribe": "Flandreau",
+    "City": "Flandreau",
+    "State": "South Dakota",
+    "Zip": "57028",
+    "Phone": "(605) 997-3891",
+    "SnapshotFilename": "fsst.png",
+    "Region": "Great Plains"
+  },
+  {
+    "Tribe": "Lower Brule",
+    "City": "Lower Brule",
+    "State": "South Dakota",
+    "Zip": "57548",
+    "Phone": "(605) 473-5561",
+    "SnapshotFilename": "lbst.png",
+    "Region": "Great Plains"
+  },
+  {
+    "Tribe": "Oglala Sioux",
+    "City": "Pine Ridge",
+    "State": "South Dakota",
+    "Zip": "57770",
+    "Phone": "(605) 867-5821",
+    "SnapshotFilename": "oglalalakotanation.png",
+    "Region": "Great Plains"
+  },
+  {
+    "Tribe": "Omaha",
+    "City": "Macy",
+    "State": "Nebraska",
+    "Zip": "68039",
+    "Phone": "(402) 837-5391",
+    "SnapshotFilename": "theomahatribe.png",
+    "Region": "Great Plains"
+  },
+  {
+    "Tribe": "Ponca of Nebraska",
+    "City": "Niobrara",
+    "State": "Nebraska",
+    "Zip": "68760",
+    "Phone": "(402) 857-3391",
+    "SnapshotFilename": "poncatribe-ne.png",
+    "Region": "Great Plains"
+  },
+  {
+    "Tribe": "Rosebud",
+    "City": "Rosebud",
+    "State": "South Dakota",
+    "Zip": "57570",
+    "Phone": "(605) 747-2381",
+    "SnapshotFilename": "rosebudsiouxtribe-nsn.png",
+    "Region": "Great Plains"
+  },
+  {
+    "Tribe": "Santee Sioux",
+    "City": "Niobrara",
+    "State": "Nebraska",
+    "Zip": "68760",
+    "Phone": "(402) 857-2772",
+    "SnapshotFilename": "santeesiouxnation.png",
+    "Region": "Great Plains"
+  },
+  {
+    "Tribe": "Sisseton-Wahpeton",
+    "City": "Agency Village",
+    "State": "South Dakota",
+    "Zip": "57262",
+    "Phone": "(605) 698-3911",
+    "SnapshotFilename": "swo-nsn.png",
+    "Region": "Great Plains"
+  },
+  {
+    "Tribe": "Spirit Lake",
+    "City": "Fort Totten",
+    "State": "North Dakota",
+    "Zip": "58335",
+    "Phone": "(701) 381-2006",
+    "SnapshotFilename": "spiritlakenation.png",
+    "Region": "Great Plains"
+  },
+  {
+    "Tribe": "Standing Rock",
+    "City": "Fort Yates",
+    "State": "North Dakota",
+    "Zip": "58538",
+    "Phone": "(701) 854-8500",
+    "SnapshotFilename": "standingrock.png",
+    "Region": "Great Plains"
+  },
+  {
+    "Tribe": "Three Affiliated",
+    "City": "New Town",
+    "State": "North Dakota",
+    "Zip": "58763",
+    "Phone": "(701) 627-4781",
+    "SnapshotFilename": "mhanation.png",
+    "Region": "Great Plains"
+  },
+  {
+    "Tribe": "Turtle Mountain",
+    "City": "Belcourt",
+    "State": "North Dakota",
+    "Zip": "58316",
+    "Phone": "(701) 477-2600",
+    "SnapshotFilename": "",
+    "Region": "Great Plains"
+  },
+  {
+    "Tribe": "Winnebago",
+    "City": "Winnebago",
+    "State": "Nebraska",
+    "Zip": "68071",
+    "Phone": "(402) 878-2272",
+    "SnapshotFilename": "winnebagotribe.png",
+    "Region": "Great Plains"
+  },
+  {
+    "Tribe": "Yankton",
+    "City": "Wagner",
+    "State": "South Dakota",
+    "Zip": "57380",
+    "Phone": "(605) 384-3641",
+    "SnapshotFilename": "yanktonsiouxtribe.png",
+    "Region": "Great Plains"
+  },
+  {
+    "Tribe": "Bad River Band",
+    "City": "Ashland",
+    "State": "Wisconsin",
+    "Zip": "54806",
+    "Phone": "(715) 682-7111",
+    "SnapshotFilename": "badriver-nsn.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "Bay Mills",
+    "City": "Brimley",
+    "State": "Michigan",
+    "Zip": "49715",
+    "Phone": "(906) 248-3241",
+    "SnapshotFilename": "baymills.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "Forest County",
+    "City": "Crandon",
+    "State": "Wisconsin",
+    "Zip": "54520",
+    "Phone": "(715) 478-7200",
+    "SnapshotFilename": "fcpotawatomi.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "Grand Traverse",
+    "City": "Peshawbestown",
+    "State": "Michigan",
+    "Zip": "49682",
+    "Phone": "(231) 534-7129",
+    "SnapshotFilename": "gtbindians.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "Hannahville",
+    "City": "Wilson",
+    "State": "Michigan",
+    "Zip": "49896",
+    "Phone": "(906) 723-2602",
+    "SnapshotFilename": "hannahville.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "Ho-Chunk",
+    "City": "Black River Falls",
+    "State": "Wisconsin",
+    "Zip": "54615",
+    "Phone": "(715) 284-9343",
+    "SnapshotFilename": "ho-chunknation.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "Keweenaw",
+    "City": "Baraga",
+    "State": "Michigan",
+    "Zip": "49908",
+    "Phone": "(906) 353-6623",
+    "SnapshotFilename": "kbic-nsn.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "Lac Courte Oreilles",
+    "City": "Hayward",
+    "State": "Wisconsin",
+    "Zip": "54843",
+    "Phone": "(715) 634-8934",
+    "SnapshotFilename": "lco-nsn.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "Lac du Flambeau",
+    "City": "Lac du Flambeau",
+    "State": "Wisconsin",
+    "Zip": "54538",
+    "Phone": "(715) 588-4206",
+    "SnapshotFilename": "ldftribe.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "Lac Vieux",
+    "City": "Watersmeet",
+    "State": "Michigan",
+    "Zip": "49969",
+    "Phone": "(906) 358-4577",
+    "SnapshotFilename": "lvd-nsn.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "Little River",
+    "City": "Manistee",
+    "State": "Michigan",
+    "Zip": "49660",
+    "Phone": "(231) 723-8288",
+    "SnapshotFilename": "lrboi-nsn.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "Little Traverse",
+    "City": "Harbor Springs",
+    "State": "Michigan",
+    "Zip": "49740",
+    "Phone": "(231) 242-1418",
+    "SnapshotFilename": "ltbbodawa-nsn.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "Lower Sioux",
+    "City": "Morton",
+    "State": "Minnesota",
+    "Zip": "56270",
+    "Phone": "(507) 697-6185",
+    "SnapshotFilename": "lowersioux.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "Match-e-be-nash-she-wish Band",
+    "City": "Shelbyville",
+    "State": "Michigan",
+    "Zip": "49344",
+    "Phone": "(269) 397-1780",
+    "SnapshotFilename": "gunlaketribe-nsn.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "Menominee",
+    "City": "Keshena",
+    "State": "Wisconsin",
+    "Zip": "54135",
+    "Phone": "(715) 799-5100",
+    "SnapshotFilename": "mitw.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "Bois Forte",
+    "City": "Nett Lake",
+    "State": "Minnesota",
+    "Zip": "55772",
+    "Phone": "(218) 757-3261",
+    "SnapshotFilename": "boisforte.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "Fond du Lac",
+    "City": "Cloquet",
+    "State": "Minnesota",
+    "Zip": "55720",
+    "Phone": "(218) 879-4593",
+    "SnapshotFilename": "fdlband.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "Grand Portage",
+    "City": "Grand Portage",
+    "State": "Minnesota",
+    "Zip": "55605",
+    "Phone": "(218) 475-2277",
+    "SnapshotFilename": "grandportage.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "Leech Lake",
+    "City": "Cass Lake",
+    "State": "Minnesota",
+    "Zip": "56633",
+    "Phone": "(218) 335-8200",
+    "SnapshotFilename": "llojibwe.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "Mille Lacs",
+    "City": "Onamia",
+    "State": "Minnesota",
+    "Zip": "56359",
+    "Phone": "(320) 532-4181",
+    "SnapshotFilename": "millelacsband.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "White Earth",
+    "City": "Ogema",
+    "State": "Minnesota",
+    "Zip": "56591",
+    "Phone": "(218) 983-3285",
+    "SnapshotFilename": "whiteearth-nsn.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "Minnesota Chippewa",
+    "City": "Cass Lake",
+    "State": "Minnesota",
+    "Zip": "56633",
+    "Phone": "(218) 335-8581",
+    "SnapshotFilename": "mnchippewatribe.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "Nottawaseppi Potawatomi",
+    "City": "Fulton",
+    "State": "Michigan",
+    "Zip": "49052",
+    "Phone": "(269) 729-5151",
+    "SnapshotFilename": "nhbp-nsn.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "Oneida Nation (Wisconsin)",
+    "City": "Oneida",
+    "State": "Wisconsin",
+    "Zip": "54155",
+    "Phone": "(800) 236-2214",
+    "SnapshotFilename": "oneidanation.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "Pokagon",
+    "City": "Dowagiac",
+    "State": "Michigan",
+    "Zip": "49047",
+    "Phone": "(269) 782-6323",
+    "SnapshotFilename": "pokagonband-nsn.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "Prairie Island",
+    "City": "Welch",
+    "State": "Minnesota",
+    "Zip": "55089",
+    "Phone": "(651) 385-4100",
+    "SnapshotFilename": "prairieisland.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "Red Cliff",
+    "City": "Bayfield",
+    "State": "Wisconsin",
+    "Zip": "54814",
+    "Phone": "(715) 779-3700",
+    "SnapshotFilename": "redcliff-nsn.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "Red Lake",
+    "City": "Red Lake",
+    "State": "Minnesota",
+    "Zip": "56671",
+    "Phone": "(218) 679-3341",
+    "SnapshotFilename": "redlakenation.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "Sac & Fox of Mississippi",
+    "City": "Tama",
+    "State": "Iowa",
+    "Zip": "52339",
+    "Phone": "(641) 484-4678",
+    "SnapshotFilename": "meskwaki.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "Saginaw Chippewa",
+    "City": "Mt. Pleasant",
+    "State": "Michigan",
+    "Zip": "48858",
+    "Phone": "(989) 775-4000",
+    "SnapshotFilename": "sagchip.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "Sault Ste. Marie",
+    "City": "Sault Ste. Marie",
+    "State": "Michigan",
+    "Zip": "49783",
+    "Phone": "(906) 635-6050",
+    "SnapshotFilename": "saulttribe.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "Shakopee",
+    "City": "Prior Lake",
+    "State": "Minnesota",
+    "Zip": "55372",
+    "Phone": "(952) 445-8900",
+    "SnapshotFilename": "shakopeedakota.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "Sokaogon",
+    "City": "Crandon",
+    "State": "Wisconsin",
+    "Zip": "54520",
+    "Phone": "(715) 478-7500",
+    "SnapshotFilename": "sokaogonchippewa.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "St. Croix",
+    "City": "Webster",
+    "State": "Wisconsin",
+    "Zip": "54893",
+    "Phone": "(715) 349-2195",
+    "SnapshotFilename": "stcroixojibwe-nsn.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "Stockbridge",
+    "City": "Bowler",
+    "State": "Wisconsin",
+    "Zip": "54416",
+    "Phone": "(715) 793-4111",
+    "SnapshotFilename": "mohican-nsn.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "Upper Sioux",
+    "City": "Granite Falls",
+    "State": "Minnesota",
+    "Zip": "56241",
+    "Phone": "(320) 564-6372",
+    "SnapshotFilename": "uppersiouxcommunity-nsn.png",
+    "Region": "Midwest"
+  },
+  {
+    "Tribe": "Navajo",
+    "City": "Window Rock",
+    "State": "Arizona",
+    "Zip": "86515",
+    "Phone": "(928) 871-7000",
+    "SnapshotFilename": "navajo-nsn.png",
+    "Region": "Navajo"
+  },
+  {
+    "Tribe": "Burns Paiute",
+    "City": "Burns",
+    "State": "Oregon",
+    "Zip": "97720",
+    "Phone": "(541) 573-2088",
+    "SnapshotFilename": "burnspaiute-nsn.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Coeur D'Alene",
+    "City": "Plummer",
+    "State": "Idaho",
+    "Zip": "83851",
+    "Phone": "(208) 686-1800",
+    "SnapshotFilename": "cdatribe-nsn.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Confederated Salish",
+    "City": "Pablo",
+    "State": "Montana",
+    "Zip": "59855",
+    "Phone": "(406) 675-2700",
+    "SnapshotFilename": "cskt.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Confederated Yakama",
+    "City": "Toppenish",
+    "State": "Washington",
+    "Zip": "98948",
+    "Phone": "(509) 865-5121",
+    "SnapshotFilename": "yakama.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Siletz Tribe",
+    "City": "Siletz",
+    "State": "Oregon",
+    "Zip": "97380",
+    "Phone": "(541) 444-2532",
+    "SnapshotFilename": "msn.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Chehalis",
+    "City": "Oakville",
+    "State": "Washington",
+    "Zip": "98568",
+    "Phone": "(360) 273-5911",
+    "SnapshotFilename": "chehalistribe.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Confederated Colville",
+    "City": "Nespelem",
+    "State": "Washington",
+    "Zip": "99155",
+    "Phone": "(509) 634-2200",
+    "SnapshotFilename": "colvilletribes.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Confederated Coos",
+    "City": "Coos Bay",
+    "State": "Oregon",
+    "Zip": "97420",
+    "Phone": "(541) 888-9577",
+    "SnapshotFilename": "ctclusi.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Grand Ronde Tribes",
+    "City": "Grand Ronde",
+    "State": "Oregon",
+    "Zip": "97347",
+    "Phone": "(503) 879-5211",
+    "SnapshotFilename": "grandronde.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Umatilla Tribe",
+    "City": "Pendleton",
+    "State": "Oregon",
+    "Zip": "97801",
+    "Phone": "(541) 276-3165",
+    "SnapshotFilename": "ctuir.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Warms Springs Tribe",
+    "City": "Warm Springs",
+    "State": "Oregon",
+    "Zip": "97761",
+    "Phone": "(541) 553-1161",
+    "SnapshotFilename": "warmsprings-nsn.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Coquille",
+    "City": "North Bend",
+    "State": "Oregon",
+    "Zip": "97459",
+    "Phone": "(541) 756-0904",
+    "SnapshotFilename": "coquilletribe.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Cow Creek",
+    "City": "Roseburg",
+    "State": "Oregon",
+    "Zip": "97470",
+    "Phone": "(541) 672-9405",
+    "SnapshotFilename": "cowcreek-nsn.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Cowlitz",
+    "City": "Longview",
+    "State": "Washington",
+    "Zip": "98632",
+    "Phone": "(360) 577-8140",
+    "SnapshotFilename": "cowlitz.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Hoh",
+    "City": "Forks",
+    "State": "Washington",
+    "Zip": "98331",
+    "Phone": "(360) 374-6582",
+    "SnapshotFilename": "hohtribe-nsn.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Jamestown",
+    "City": "Sequim",
+    "State": "Washington",
+    "Zip": "98382",
+    "Phone": "(360) 683-1109",
+    "SnapshotFilename": "jamestowntribe.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Kalispel",
+    "City": "Cusick",
+    "State": "Washington",
+    "Zip": "99119",
+    "Phone": "(509) 445-1147",
+    "SnapshotFilename": "kalispeltribe.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Klamath",
+    "City": "Chiloquin",
+    "State": "Oregon",
+    "Zip": "97624",
+    "Phone": "(541) 783-2219",
+    "SnapshotFilename": "klamathtribes.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Kootenai",
+    "City": "Bonners Ferry",
+    "State": "Idaho",
+    "Zip": "83805",
+    "Phone": "(208) 267-3519",
+    "SnapshotFilename": "kootenai.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Lower Elwha",
+    "City": "Port Angeles",
+    "State": "Washington",
+    "Zip": "98363",
+    "Phone": "(360) 452-8471",
+    "SnapshotFilename": "elwha.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Lummi",
+    "City": "Bellingham",
+    "State": "Washington",
+    "Zip": "98226",
+    "Phone": "(360) 312-2000",
+    "SnapshotFilename": "lummi-nsn.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Makah",
+    "City": "Neah Bay",
+    "State": "Washington",
+    "Zip": "98357",
+    "Phone": "(360) 645-2201",
+    "SnapshotFilename": "makah.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Metlakatla",
+    "City": "Metlakatla",
+    "State": "Alaska",
+    "Zip": "99926",
+    "Phone": "(907) 886-4441",
+    "SnapshotFilename": "metlakatla.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Muckleshoot",
+    "City": "Auburn",
+    "State": "Washington",
+    "Zip": "98092",
+    "Phone": "(253) 939-3311",
+    "SnapshotFilename": "muckleshoot.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Nez Perce",
+    "City": "Lapwai",
+    "State": "Idaho",
+    "Zip": "83540",
+    "Phone": "(208) 843-2253",
+    "SnapshotFilename": "nezperce.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Nisqually",
+    "City": "Olympia",
+    "State": "Washington",
+    "Zip": "98513",
+    "Phone": "(360) 456-5221",
+    "SnapshotFilename": "nisqually-nsn.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Nooksack",
+    "City": "Deming",
+    "State": "Washington",
+    "Zip": "98244",
+    "Phone": "(360) 592-5176",
+    "SnapshotFilename": "nooksacktribe.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Northwestern Shoshone",
+    "City": "Ogden",
+    "State": "Utah",
+    "Zip": "84401",
+    "Phone": "(435) 734-2286",
+    "SnapshotFilename": "nwbshoshone.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Port Gamble",
+    "City": "Kingston",
+    "State": "Washington",
+    "Zip": "98346",
+    "Phone": "(360) 297-2646",
+    "SnapshotFilename": "pgst.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Puyallup",
+    "City": "Tacoma",
+    "State": "Washington",
+    "Zip": "98404",
+    "Phone": "(253) 573-7800",
+    "SnapshotFilename": "puyalluptribe-nsn.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Quileute",
+    "City": "La Push",
+    "State": "Washington",
+    "Zip": "98350",
+    "Phone": "(360) 374-6163",
+    "SnapshotFilename": "quileutenation.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Quinault",
+    "City": "Taholah",
+    "State": "Washington",
+    "Zip": "98587",
+    "Phone": "(360) 276-8211",
+    "SnapshotFilename": "quinault.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Samish",
+    "City": "Anacortes",
+    "State": "Washington",
+    "Zip": "98221",
+    "Phone": "(360) 293-6404",
+    "SnapshotFilename": "samishtribe.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Sauk-Suiattle",
+    "City": "Darrington",
+    "State": "Washington",
+    "Zip": "98241",
+    "Phone": "(360) 436-0131",
+    "SnapshotFilename": "sauk-suiattle.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Shoalwater",
+    "City": "Tokeland",
+    "State": "Washington",
+    "Zip": "98590",
+    "Phone": "(360) 267-6766",
+    "SnapshotFilename": "shoalwaterbay-nsn.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Shoshone-Bannock",
+    "City": "Fort Hall",
+    "State": "Idaho",
+    "Zip": "83203",
+    "Phone": "(208) 478-3700",
+    "SnapshotFilename": "sbtribes.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Skokomish",
+    "City": "Shelton",
+    "State": "Washington",
+    "Zip": "98584",
+    "Phone": "(360) 426-4232",
+    "SnapshotFilename": "skokomish.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Snoqualmie",
+    "City": "Snoqualmie",
+    "State": "Washington",
+    "Zip": "98065",
+    "Phone": "(425) 888-6551",
+    "SnapshotFilename": "snoqualmietribe.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Spokane",
+    "City": "Wellpinit",
+    "State": "Washington",
+    "Zip": "99040",
+    "Phone": "(509) 458-6500",
+    "SnapshotFilename": "spokanetribe.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Squaxin",
+    "City": "Shelton",
+    "State": "Washington",
+    "Zip": "98584",
+    "Phone": "(360) 426-9781",
+    "SnapshotFilename": "squaxin.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Stillaguamish",
+    "City": "Arlington",
+    "State": "Washington",
+    "Zip": "98223",
+    "Phone": "(360) 652-7362",
+    "SnapshotFilename": "stillaguamish.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Suquamish",
+    "City": "Suquamish",
+    "State": "Washington",
+    "Zip": "98392",
+    "Phone": "(360) 598-3311",
+    "SnapshotFilename": "suquamish.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Swinomish",
+    "City": "LaConner",
+    "State": "Washington",
+    "Zip": "98257",
+    "Phone": "(360) 466-3163",
+    "SnapshotFilename": "swinomish-nsn.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Tulalip",
+    "City": "Tulalip",
+    "State": "Washington",
+    "Zip": "98271",
+    "Phone": "(360) 716-4000",
+    "SnapshotFilename": "tulaliptribes-nsn.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Upper Skagit",
+    "City": "Sedro Woolley",
+    "State": "Washington",
+    "Zip": "98284",
+    "Phone": "(360) 854-7090",
+    "SnapshotFilename": "upperskagit.png",
+    "Region": "Northwest"
+  },
+  {
+    "Tribe": "Agua Caliente",
+    "City": "Palm Springs",
+    "State": "California",
+    "Zip": "92264",
+    "Phone": "(760) 699-6800",
+    "SnapshotFilename": "aguacaliente.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Alturas",
+    "City": "Alturas",
+    "State": "California",
+    "Zip": "96101",
+    "Phone": "(541) 941-2324",
+    "SnapshotFilename": "",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Augustine",
+    "City": "Coachella",
+    "State": "California",
+    "Zip": "92236",
+    "Phone": "(760) 398-4722",
+    "SnapshotFilename": "augustinetribe-nsn.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Bear River",
+    "City": "Loleta",
+    "State": "California",
+    "Zip": "95551",
+    "Phone": "(707) 733-1900",
+    "SnapshotFilename": "brb-nsn.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Berry Creek",
+    "City": "Oroville",
+    "State": "California",
+    "Zip": "95966",
+    "Phone": "(530) 534-3859",
+    "SnapshotFilename": "berrycreekrancheria.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Big Lagoon",
+    "City": "Arcata",
+    "State": "California",
+    "Zip": "95521",
+    "Phone": "(707) 826-2079",
+    "SnapshotFilename": "earthlink.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Big Pine Reservation",
+    "City": "Big Pine",
+    "State": "California",
+    "Zip": "93513",
+    "Phone": "(760) 938-2003",
+    "SnapshotFilename": "bigpinepaiute.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Big Sandy",
+    "City": "Auberry",
+    "State": "California",
+    "Zip": "93602",
+    "Phone": "(559) 855-4003",
+    "SnapshotFilename": "bsrnation.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Big Valley Rancheria",
+    "City": "Lakeport",
+    "State": "California",
+    "Zip": "95453",
+    "Phone": "(707) 263-3924",
+    "SnapshotFilename": "big-valley.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Bishop Paiute",
+    "City": "Bishop",
+    "State": "California",
+    "Zip": "93514",
+    "Phone": "(760) 873-3584",
+    "SnapshotFilename": "bishoppaiute.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Blue Lake",
+    "City": "Blue Lake",
+    "State": "California",
+    "Zip": "95525",
+    "Phone": "(707) 668-5101",
+    "SnapshotFilename": "bluelakerancheria-nsn.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Bridgeport",
+    "City": "Bridgeport",
+    "State": "California",
+    "Zip": "93517",
+    "Phone": "(760) 932-7083",
+    "SnapshotFilename": "bridgeportindiancolony.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Buena Vista Rancheria",
+    "City": "Sacramento",
+    "State": "California",
+    "Zip": "95826",
+    "Phone": "(916) 491-0011",
+    "SnapshotFilename": "buenavistatribe.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Cabazon",
+    "City": "Indio",
+    "State": "California",
+    "Zip": "92203",
+    "Phone": "(760) 342-2593",
+    "SnapshotFilename": "caltribalfamilies.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Cachil DeHe",
+    "City": "Colusa",
+    "State": "California",
+    "Zip": "95932",
+    "Phone": "(530) 458-8231",
+    "SnapshotFilename": "colusa-nsn.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Cahto",
+    "City": "Laytonville",
+    "State": "California",
+    "Zip": "95454",
+    "Phone": "(707) 984-6197",
+    "SnapshotFilename": "cahtotribe-nsn.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Cahuilla",
+    "City": "Anza",
+    "State": "California",
+    "Zip": "92539",
+    "Phone": "(951) 763-5549",
+    "SnapshotFilename": "cahuilla-nsn.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "California Valley",
+    "City": "",
+    "State": "California",
+    "Zip": "",
+    "Phone": "(209) 660-7122",
+    "SnapshotFilename": "",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Campo",
+    "City": "Campo",
+    "State": "California",
+    "Zip": "91906",
+    "Phone": "(619) 478-9046",
+    "SnapshotFilename": "campo-nsn.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Capitan Grande Band",
+    "City": "",
+    "State": "California",
+    "Zip": "",
+    "Phone": "",
+    "SnapshotFilename": "",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Capitan Grande",
+    "City": "Lakeside",
+    "State": "California",
+    "Zip": "92040",
+    "Phone": "(619) 443-6612",
+    "SnapshotFilename": "barona-nsn.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Viejas",
+    "City": "Alpine",
+    "State": "California",
+    "Zip": "91901",
+    "Phone": "(619) 445-3810",
+    "SnapshotFilename": "viejasbandofkumeyaay.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Cedarville",
+    "City": "Alturas",
+    "State": "California",
+    "Zip": "96101",
+    "Phone": "(530) 233-3969",
+    "SnapshotFilename": "cedarvillerancheria.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Cher-Ae Heights",
+    "City": "Trinidad",
+    "State": "California",
+    "Zip": "95570",
+    "Phone": "(707) 677-0211",
+    "SnapshotFilename": "trinidadrancheria.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Chicken Ranch",
+    "City": "Jamestown",
+    "State": "California",
+    "Zip": "95327",
+    "Phone": "(209) 984-9066",
+    "SnapshotFilename": "chickenranchtribe.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Cloverdale",
+    "City": "Cloverdale",
+    "State": "California",
+    "Zip": "95425",
+    "Phone": "(707) 894-5775",
+    "SnapshotFilename": "cloverdalerancheria.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Cold Springs",
+    "City": "Tollhouse",
+    "State": "California",
+    "Zip": "May",
+    "Phone": "(559) 855-5043",
+    "SnapshotFilename": "caltribalfamilies_2.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Coyote Valley",
+    "City": "Redwood Valley",
+    "State": "California",
+    "Zip": "95470",
+    "Phone": "(707) 485-8723",
+    "SnapshotFilename": "coyotevalley-nsn.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Dry Creek",
+    "City": "Santa Rosa",
+    "State": "California",
+    "Zip": "95403",
+    "Phone": "707-814-4150",
+    "SnapshotFilename": "drycreekrancheria.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Elem",
+    "City": "Santa Rosa",
+    "State": "California",
+    "Zip": "95401",
+    "Phone": "(707) 541-6516",
+    "SnapshotFilename": "elemindiancolony.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Elk Valley",
+    "City": "Crescent City",
+    "State": "California",
+    "Zip": "95531",
+    "Phone": "(707) 464-4680",
+    "SnapshotFilename": "elk-valley.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Enterprise",
+    "City": "Oroville",
+    "State": "California",
+    "Zip": "95966",
+    "Phone": "(530) 532-9214",
+    "SnapshotFilename": "enterpriserancheria.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Ewiiaapaayp",
+    "City": "Alpine",
+    "State": "California",
+    "Zip": "91901",
+    "Phone": "(619) 445-6315",
+    "SnapshotFilename": "leaningrock.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Federated Indians of Graton",
+    "City": "Rohnert Park",
+    "State": "California",
+    "Zip": "94928",
+    "Phone": "(707) 566-2288",
+    "SnapshotFilename": "gratonrancheria.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Fort Bidwell",
+    "City": "Fort Bidwell",
+    "State": "California",
+    "Zip": "96112",
+    "Phone": "(530) 537-0109",
+    "SnapshotFilename": "caltribalfamilies_3.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Fort Independence",
+    "City": "Independence",
+    "State": "California",
+    "Zip": "93526",
+    "Phone": "(760) 878-5160",
+    "SnapshotFilename": "fortindependence.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Greenville",
+    "City": "",
+    "State": "California",
+    "Zip": "",
+    "Phone": "(530) 284-7990",
+    "SnapshotFilename": "greenvillerancheria.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Grindstone",
+    "City": "Elk Creek",
+    "State": "California",
+    "Zip": "95939",
+    "Phone": "(530) 968-5365",
+    "SnapshotFilename": "",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Guidiville",
+    "City": "Ukiah",
+    "State": "California",
+    "Zip": "95482",
+    "Phone": "(707) 462-3682",
+    "SnapshotFilename": "guidiville.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Habematolel",
+    "City": "Upper Lake",
+    "State": "California",
+    "Zip": "95485",
+    "Phone": "(707) 275-0737",
+    "SnapshotFilename": "hpultribe-nsn.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Hoopa",
+    "City": "Hoopa",
+    "State": "California",
+    "Zip": "95546",
+    "Phone": "(530) 625-4211",
+    "SnapshotFilename": "hoopa-nsn.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Hopland",
+    "City": "Hopland",
+    "State": "California",
+    "Zip": "95449",
+    "Phone": "(707) 472-2100",
+    "SnapshotFilename": "hoplandtribe.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Iipay Nation of Santa Ysabel",
+    "City": "Santa Ysabel",
+    "State": "California",
+    "Zip": "92070",
+    "Phone": "(760) 765-0846",
+    "SnapshotFilename": "iipaynation-nsn.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Inaja",
+    "City": "Escondido",
+    "State": "California",
+    "Zip": "92025",
+    "Phone": "(760) 737-7628",
+    "SnapshotFilename": "",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Ione",
+    "City": "Plymouth",
+    "State": "California",
+    "Zip": "95669",
+    "Phone": "(209) 245-5800",
+    "SnapshotFilename": "ionemiwok.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Jackson",
+    "City": "Jackson",
+    "State": "California",
+    "Zip": "95642",
+    "Phone": "(209) 223-1935",
+    "SnapshotFilename": "jacksoncasino.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Jamul",
+    "City": "Jamul",
+    "State": "California",
+    "Zip": "91935",
+    "Phone": "(619) 669-4785",
+    "SnapshotFilename": "jamulindianvillage.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Karuk",
+    "City": "Happy Camp",
+    "State": "California",
+    "Zip": "96039",
+    "Phone": "(530) 493-1600",
+    "SnapshotFilename": "karuk.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Kashia",
+    "City": "Santa Rosa",
+    "State": "California",
+    "Zip": "95403",
+    "Phone": "(707) 591-0580",
+    "SnapshotFilename": "stewartspoint.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Kletsel Dehe Wintun",
+    "City": "Williams",
+    "State": "California",
+    "Zip": "95987",
+    "Phone": "(530) 419-5058",
+    "SnapshotFilename": "kdwn.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Koi",
+    "City": "",
+    "State": "California",
+    "Zip": "",
+    "Phone": "(707) 575-5586",
+    "SnapshotFilename": "koination.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "La Jolla",
+    "City": "Pauma Valley",
+    "State": "California",
+    "Zip": "92061",
+    "Phone": "(760) 742-3771",
+    "SnapshotFilename": "lajollaindians.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "La Posta",
+    "City": "Boulevard",
+    "State": "California",
+    "Zip": "91905",
+    "Phone": "(619) 478-2113",
+    "SnapshotFilename": "lptribe.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Lone Pine",
+    "City": "Lone Pine",
+    "State": "California",
+    "Zip": "93545",
+    "Phone": "(760) 876-1034",
+    "SnapshotFilename": "lppsr.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Los Coyotes",
+    "City": "Warner Springs",
+    "State": "California",
+    "Zip": "92086",
+    "Phone": "(760) 782-0711",
+    "SnapshotFilename": "",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Lytton",
+    "City": "Windsor",
+    "State": "California",
+    "Zip": "95492",
+    "Phone": "(707) 575-5917",
+    "SnapshotFilename": "lyttonrancheria.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Manchester",
+    "City": "Point Arena",
+    "State": "California",
+    "Zip": "95468",
+    "Phone": "(707) 241-4795",
+    "SnapshotFilename": "",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Manzanita",
+    "City": "Boulevard",
+    "State": "California",
+    "Zip": "91905",
+    "Phone": "(619) 766-4930",
+    "SnapshotFilename": "",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Mechoopda",
+    "City": "Chico",
+    "State": "California",
+    "Zip": "95928",
+    "Phone": "(530) 899-8922",
+    "SnapshotFilename": "mechoopda-nsn.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Mesa Grande",
+    "City": "Santa Ysabel",
+    "State": "California",
+    "Zip": "92070",
+    "Phone": "(760) 782-3818",
+    "SnapshotFilename": "mesagrandeband-nsn.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Middletown",
+    "City": "Presque Isle",
+    "State": "California",
+    "Zip": "04769",
+    "Phone": "(707) 987-3670",
+    "SnapshotFilename": "middletownrancheria.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Mooretown",
+    "City": "Oroville",
+    "State": "California",
+    "Zip": "95966",
+    "Phone": "(530) 533-3625",
+    "SnapshotFilename": "mooretownrancheria-nsn.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Morongo",
+    "City": "Banning",
+    "State": "California",
+    "Zip": "92220",
+    "Phone": "(951) 849-4697",
+    "SnapshotFilename": "morongo-nsn.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "North Fork",
+    "City": "North Fork",
+    "State": "California",
+    "Zip": "93643",
+    "Phone": "(559) 877-2461",
+    "SnapshotFilename": "northforkrancheria-nsn.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Pala",
+    "City": "Pala",
+    "State": "California",
+    "Zip": "92059",
+    "Phone": "(760) 591-0926",
+    "SnapshotFilename": "palatribe.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Paskenta",
+    "City": "Corning",
+    "State": "California",
+    "Zip": "96021",
+    "Phone": "(530) 670-1750",
+    "SnapshotFilename": "paskenta.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Pauma",
+    "City": "Pauma Valley",
+    "State": "California",
+    "Zip": "92061",
+    "Phone": "(760) 742-1289",
+    "SnapshotFilename": "paumatribe.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Pechanga",
+    "City": "Temecula",
+    "State": "California",
+    "Zip": "92392",
+    "Phone": "(951) 676-2768",
+    "SnapshotFilename": "pechanga-nsn.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Picayune",
+    "City": "Coarsegold",
+    "State": "California",
+    "Zip": "93614",
+    "Phone": "(559) 412-5590",
+    "SnapshotFilename": "chukchansi-nsn.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Pinoleville",
+    "City": "Ukiah",
+    "State": "California",
+    "Zip": "95482",
+    "Phone": "(707) 463-1454",
+    "SnapshotFilename": "pinolevillepomonation.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Pit River",
+    "City": "Burney",
+    "State": "California",
+    "Zip": "96013",
+    "Phone": "(530) 335-5421",
+    "SnapshotFilename": "pitrivertribe.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Potter Valley",
+    "City": "Ukiah",
+    "State": "California",
+    "Zip": "95482",
+    "Phone": "(707) 462-1213",
+    "SnapshotFilename": "comcast.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Quartz Valley",
+    "City": "Fort Jones",
+    "State": "California",
+    "Zip": "96032",
+    "Phone": "(530) 468-5907",
+    "SnapshotFilename": "qvir-nsn.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Ramona",
+    "City": "Anza",
+    "State": "California",
+    "Zip": "92539",
+    "Phone": "(951) 763-4105",
+    "SnapshotFilename": "ramona-nsn.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Redding",
+    "City": "Redding",
+    "State": "California",
+    "Zip": "96001",
+    "Phone": "(530) 225-8979",
+    "SnapshotFilename": "redding-rancheria.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Redwood Valley",
+    "City": "Redwood Valley",
+    "State": "California",
+    "Zip": "95470",
+    "Phone": "(707) 485-0361",
+    "SnapshotFilename": "rvrpomo.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Resighini",
+    "City": "Klamath",
+    "State": "California",
+    "Zip": "95548",
+    "Phone": "(707) 482-2431",
+    "SnapshotFilename": "resighinirancheria.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Rincon",
+    "City": "Valley Center",
+    "State": "California",
+    "Zip": "92082",
+    "Phone": "(760) 749-1051",
+    "SnapshotFilename": "rincon-nsn.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Robinson",
+    "City": "Nice",
+    "State": "California",
+    "Zip": "95464",
+    "Phone": "(707) 275-0527",
+    "SnapshotFilename": "rrcbc-nsn.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Round Valley",
+    "City": "",
+    "State": "California",
+    "Zip": "",
+    "Phone": "(707) 983-6126",
+    "SnapshotFilename": "rvit.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "San Pasqual",
+    "City": "Valley Center",
+    "State": "California",
+    "Zip": "92082",
+    "Phone": "(760) 749-3200",
+    "SnapshotFilename": "sanpasqualbandofmissionindians.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Santa Rosa of Cahuilla",
+    "City": "Mountain Center",
+    "State": "California",
+    "Zip": "92561",
+    "Phone": "(951) 659-2700",
+    "SnapshotFilename": "santarosa-nsn.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Santa Rosa",
+    "City": "Lemoore",
+    "State": "California",
+    "Zip": "93245",
+    "Phone": "(559) 924-1278",
+    "SnapshotFilename": "tachi-yokut-nsn.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Santa Ynez",
+    "City": "Santa Ynez",
+    "State": "California",
+    "Zip": "93460",
+    "Phone": "(805) 688-7997",
+    "SnapshotFilename": "santaynezchumash.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Scotts Valley",
+    "City": "Lakeport",
+    "State": "California",
+    "Zip": "95453",
+    "Phone": "(707) 263-4220",
+    "SnapshotFilename": "sv-nsn.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Sherwood Valley",
+    "City": "Willits",
+    "State": "California",
+    "Zip": "95490",
+    "Phone": "(707) 459-9690",
+    "SnapshotFilename": "sherwoodvalleybandofpomo.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Shingle Springs",
+    "City": "Placerville",
+    "State": "California",
+    "Zip": "95667",
+    "Phone": "(530) 698-1400",
+    "SnapshotFilename": "ssband.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Soboba",
+    "City": "San Jacinto",
+    "State": "California",
+    "Zip": "92583",
+    "Phone": "(951) 654-2765",
+    "SnapshotFilename": "soboba-nsn.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Susanville",
+    "City": "Susanville",
+    "State": "California",
+    "Zip": "96130",
+    "Phone": "(530) 257-6264",
+    "SnapshotFilename": "sir-nsn.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Sycuan",
+    "City": "El Cajon",
+    "State": "California",
+    "Zip": "92019",
+    "Phone": "(619) 445-2613",
+    "SnapshotFilename": "sycuan-nsn.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Table Mountain",
+    "City": "Friant",
+    "State": "California",
+    "Zip": "93626",
+    "Phone": "(559) 822-2587",
+    "SnapshotFilename": "caltribalfamilies_4.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Tejon",
+    "City": "",
+    "State": "California",
+    "Zip": "",
+    "Phone": "(661) 834-8566",
+    "SnapshotFilename": "",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Timbi-sha Shoshone",
+    "City": "Bishop",
+    "State": "California",
+    "Zip": "93514",
+    "Phone": "(760) 872-3614",
+    "SnapshotFilename": "timbisha.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Tolowa Dee-ni'",
+    "City": "Smith River",
+    "State": "California",
+    "Zip": "95567",
+    "Phone": "(707) 487-9255",
+    "SnapshotFilename": "tolowa.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Torres Martinez",
+    "City": "Thermal",
+    "State": "California",
+    "Zip": "92274",
+    "Phone": "(760) 397-0300",
+    "SnapshotFilename": "torresmartinez.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Tule River",
+    "City": "Porterville",
+    "State": "California",
+    "Zip": "93257",
+    "Phone": "(559) 781-4271",
+    "SnapshotFilename": "tulerivertribe-nsn.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Tuolumne",
+    "City": "Tuolumne",
+    "State": "California",
+    "Zip": "95379",
+    "Phone": "(209) 928-5300",
+    "SnapshotFilename": "mewuk.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Twenty-Nine Palms",
+    "City": "Coachella",
+    "State": "California",
+    "Zip": "92236",
+    "Phone": "(760) 863-2444",
+    "SnapshotFilename": "29palmstribe.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "United Auburn",
+    "City": "Auburn",
+    "State": "California",
+    "Zip": "95603",
+    "Phone": "(530) 883-2390",
+    "SnapshotFilename": "auburnrancheria.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Benton",
+    "City": "Benton",
+    "State": "California",
+    "Zip": "93512",
+    "Phone": "(760) 933-2321",
+    "SnapshotFilename": "bentontribe.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Wilton",
+    "City": "Elk Grove",
+    "State": "California",
+    "Zip": "95624",
+    "Phone": "(916) 683-6000",
+    "SnapshotFilename": "wiltonrancheria-nsn.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Wiyot",
+    "City": "Loleta",
+    "State": "California",
+    "Zip": "95551",
+    "Phone": "(707) 733-5055",
+    "SnapshotFilename": "wiyot.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Yocha Dehe",
+    "City": "Brooks",
+    "State": "",
+    "Zip": "95606",
+    "Phone": "(530) 796-3400",
+    "SnapshotFilename": "yochadehe.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Yuhaaviatam",
+    "City": "Highland",
+    "State": "California",
+    "Zip": "92346",
+    "Phone": "(909) 864-8933",
+    "SnapshotFilename": "sanmanuel-nsn.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Yurok",
+    "City": "Klamath",
+    "State": "California",
+    "Zip": "95548",
+    "Phone": "(707) 482-1350",
+    "SnapshotFilename": "yuroktribe.png",
+    "Region": "Pacific"
+  },
+  {
+    "Tribe": "Assiniboine and Sioux",
+    "City": "Poplar",
+    "State": "Montana",
+    "Zip": "59255",
+    "Phone": "(406) 768-2300",
+    "SnapshotFilename": "fortpecktribes.png",
+    "Region": "Rocky Mountain"
+  },
+  {
+    "Tribe": "Blackfeet",
+    "City": "Browning",
+    "State": "Montana",
+    "Zip": "59417",
+    "Phone": "(406) 338-7276",
+    "SnapshotFilename": "blackfeetnation.png",
+    "Region": "Rocky Mountain"
+  },
+  {
+    "Tribe": "Chippewa-Cree",
+    "City": "Box Elder",
+    "State": "Montana",
+    "Zip": "59521",
+    "Phone": "(406) 395-4282",
+    "SnapshotFilename": "chippewa-cree.png",
+    "Region": "Rocky Mountain"
+  },
+  {
+    "Tribe": "Crow",
+    "City": "Crow Agency",
+    "State": "Montana",
+    "Zip": "59022",
+    "Phone": "(406) 638-3715",
+    "SnapshotFilename": "crow-nsn.png",
+    "Region": "Rocky Mountain"
+  },
+  {
+    "Tribe": "Eastern Shoshone",
+    "City": "Fort Washakie",
+    "State": "Wyoming",
+    "Zip": "82514",
+    "Phone": "(307) 332-4932",
+    "SnapshotFilename": "easternshoshone.png",
+    "Region": "Rocky Mountain"
+  },
+  {
+    "Tribe": "Assiniboine and Gros Ventre Tribes",
+    "City": "Harlem",
+    "State": "Montana",
+    "Zip": "59526",
+    "Phone": "(406) 353-2205",
+    "SnapshotFilename": "ftbelknap.png",
+    "Region": "Rocky Mountain"
+  },
+  {
+    "Tribe": "Little Shell Tribe",
+    "City": "Great Falls",
+    "State": "Montana",
+    "Zip": "59404",
+    "Phone": "406 315-2399",
+    "SnapshotFilename": "gng.png",
+    "Region": "Rocky Mountain"
+  },
+  {
+    "Tribe": "Northern Arapaho",
+    "City": "Ethete",
+    "State": "Wyoming",
+    "Zip": "82520",
+    "Phone": "(307) 332-6120",
+    "SnapshotFilename": "northernarapaho.png",
+    "Region": "Rocky Mountain"
+  },
+  {
+    "Tribe": "Northern Cheyenne",
+    "City": "Lame Deer",
+    "State": "Montana",
+    "Zip": "59043",
+    "Phone": "(406) 477-6284",
+    "SnapshotFilename": "cheyennenation.png",
+    "Region": "Rocky Mountain"
+  },
+  {
+    "Tribe": "Absentee-Shawnee",
+    "City": "Shawnee",
+    "State": "Oklahoma",
+    "Zip": "74801",
+    "Phone": "(405) 275-4030",
+    "SnapshotFilename": "astribe.png",
+    "Region": "Southern Plains"
+  },
+  {
+    "Tribe": "Alabama-Coushatta",
+    "City": "Livingston",
+    "State": "Texas",
+    "Zip": "77351",
+    "Phone": "(936) 563-1100",
+    "SnapshotFilename": "alabama-coushatta.png",
+    "Region": "Southern Plains"
+  },
+  {
+    "Tribe": "Apache Tribe of Oklahoma",
+    "City": "Anadarko",
+    "State": "Oklahoma",
+    "Zip": "73005",
+    "Phone": "(405) 247-9493",
+    "SnapshotFilename": "apachetribe.png",
+    "Region": "Southern Plains"
+  },
+  {
+    "Tribe": "Caddo",
+    "City": "Binger",
+    "State": "Oklahoma",
+    "Zip": "73009",
+    "Phone": "(405) 656-2344",
+    "SnapshotFilename": "mycaddonation.png",
+    "Region": "Southern Plains"
+  },
+  {
+    "Tribe": "Cheyenne and Arapaho Tribes",
+    "City": "Concho",
+    "State": "Oklahoma",
+    "Zip": "73022",
+    "Phone": "(800) 247-4612",
+    "SnapshotFilename": "c-a-tribes.png",
+    "Region": "Southern Plains"
+  },
+  {
+    "Tribe": "Citizen Potawatomi Nation",
+    "City": "Shawnee",
+    "State": "Oklahoma",
+    "Zip": "74801",
+    "Phone": "(405) 275-3121",
+    "SnapshotFilename": "potawatomi.png",
+    "Region": "Southern Plains"
+  },
+  {
+    "Tribe": "Comanche Nation",
+    "City": "Lawton",
+    "State": "Oklahoma",
+    "Zip": "73507",
+    "Phone": "(580) 492-4988",
+    "SnapshotFilename": "comanchenation.png",
+    "Region": "Southern Plains"
+  },
+  {
+    "Tribe": "Delaware Nation",
+    "City": "Anadarko",
+    "State": "Oklahoma",
+    "Zip": "73005",
+    "Phone": "(405) 247-2448",
+    "SnapshotFilename": "delawarenation-nsn.png",
+    "Region": "Southern Plains"
+  },
+  {
+    "Tribe": "Fort Sill-Chiricahua-Warm Springs-Apache Tribe",
+    "City": "Apache",
+    "State": "Oklahoma",
+    "Zip": "73006",
+    "Phone": "(580) 588-2298",
+    "SnapshotFilename": "fortsillapache-nsn.png",
+    "Region": "Southern Plains"
+  },
+  {
+    "Tribe": "Iowa of Kansas",
+    "City": "White Cloud",
+    "State": "Kansas",
+    "Zip": "66439",
+    "Phone": "(785) 595-3258",
+    "SnapshotFilename": "iowatribeofkansasandnebraska.png",
+    "Region": "Southern Plains"
+  },
+  {
+    "Tribe": "Iowa of Oklahoma",
+    "City": "Perkins",
+    "State": "Oklahoma",
+    "Zip": "74059",
+    "Phone": "(405) 547-2402",
+    "SnapshotFilename": "iowanation.png",
+    "Region": "Southern Plains"
+  },
+  {
+    "Tribe": "Kaw",
+    "City": "Kaw City",
+    "State": "Oklahoma",
+    "Zip": "74641",
+    "Phone": "(580) 269-2552",
+    "SnapshotFilename": "kawnation.png",
+    "Region": "Southern Plains"
+  },
+  {
+    "Tribe": "Kickapoo of Texas",
+    "City": "Eagle Pass",
+    "State": "Texas",
+    "Zip": "78852",
+    "Phone": "(830) 773-2105",
+    "SnapshotFilename": "kickapootexas.png",
+    "Region": "Southern Plains"
+  },
+  {
+    "Tribe": "Kickapoo Tribe in Kansas",
+    "City": "Horton",
+    "State": "Kansas",
+    "Zip": "66439",
+    "Phone": "(785) 486-3419",
+    "SnapshotFilename": "ktik-nsn.png",
+    "Region": "Southern Plains"
+  },
+  {
+    "Tribe": "Kickapoo of Oklahoma",
+    "City": "McCloud",
+    "State": "Oklahoma",
+    "Zip": "74851",
+    "Phone": "(405) 964-7053",
+    "SnapshotFilename": "okkt.png",
+    "Region": "Southern Plains"
+  },
+  {
+    "Tribe": "Kiowa Indian Tribe of Oklahoma",
+    "City": "Carnegie",
+    "State": "Oklahoma",
+    "Zip": "73015",
+    "Phone": "(580) 654-2300",
+    "SnapshotFilename": "kiowatribe.png",
+    "Region": "Southern Plains"
+  },
+  {
+    "Tribe": "Otoe-Missouria",
+    "City": "Red Rock",
+    "State": "Oklahoma",
+    "Zip": "74651",
+    "Phone": "(580) 723-4466",
+    "SnapshotFilename": "omtribe.png",
+    "Region": "Southern Plains"
+  },
+  {
+    "Tribe": "Pawnee Nation of Oklahoma",
+    "City": "Pawnee",
+    "State": "Oklahoma",
+    "Zip": "74058",
+    "Phone": "(918) 762-3621",
+    "SnapshotFilename": "pawneenation.png",
+    "Region": "Southern Plains"
+  },
+  {
+    "Tribe": "Ponca Tribe of Indians of Oklahoma",
+    "City": "Ponca City",
+    "State": "Oklahoma",
+    "Zip": "74601",
+    "Phone": "(580) 762-8104",
+    "SnapshotFilename": "",
+    "Region": "Southern Plains"
+  },
+  {
+    "Tribe": "Prairie Band",
+    "City": "Mayetta",
+    "State": "Kansas",
+    "Zip": "66509",
+    "Phone": "(785) 966-4000",
+    "SnapshotFilename": "pbpindiantribe.png",
+    "Region": "Southern Plains"
+  },
+  {
+    "Tribe": "Sac & Fox of Missouri",
+    "City": "Reserve",
+    "State": "Kansas",
+    "Zip": "66434",
+    "Phone": "(785) 742-7471",
+    "SnapshotFilename": "sacandfoxks.png",
+    "Region": "Southern Plains"
+  },
+  {
+    "Tribe": "Sac and Fox Nation",
+    "City": "Stroud",
+    "State": "Oklahoma",
+    "Zip": "74079",
+    "Phone": "(918) 968-3526",
+    "SnapshotFilename": "sacandfoxnation-nsn.png",
+    "Region": "Southern Plains"
+  },
+  {
+    "Tribe": "Tonkawa",
+    "City": "Tonkawa",
+    "State": "Oklahoma",
+    "Zip": "74653",
+    "Phone": "(580) 628-2561",
+    "SnapshotFilename": "tonkawatribe.png",
+    "Region": "Southern Plains"
+  },
+  {
+    "Tribe": "Wichita",
+    "City": "Anadarko",
+    "State": "Oklahoma",
+    "Zip": "73005",
+    "Phone": "(405) 247-2425",
+    "SnapshotFilename": "wichitatribe.png",
+    "Region": "Southern Plains"
+  },
+  {
+    "Tribe": "Jicarilla Apache Nation",
+    "City": "Dulce",
+    "State": "New Mexico",
+    "Zip": "87528",
+    "Phone": "(575) 759-3242",
+    "SnapshotFilename": "janadmin.png",
+    "Region": "Southwest"
+  },
+  {
+    "Tribe": "Mescalero Apache",
+    "City": "Mescalero",
+    "State": "New Mexico",
+    "Zip": "88340",
+    "Phone": "(575) 464-4494",
+    "SnapshotFilename": "mescaleroapachetribe.png",
+    "Region": "Southwest"
+  },
+  {
+    "Tribe": "Ohkay Owingeh",
+    "City": "Ohkay Owingeh",
+    "State": "New Mexico",
+    "Zip": "87566",
+    "Phone": "(505) 852-4400",
+    "SnapshotFilename": "ohkay.png",
+    "Region": "Southwest"
+  },
+  {
+    "Tribe": "Pueblo of Acoma",
+    "City": "Acoma",
+    "State": "New Mexico",
+    "Zip": "87034",
+    "Phone": "(505) 552-6604",
+    "SnapshotFilename": "poamail.png",
+    "Region": "Southwest"
+  },
+  {
+    "Tribe": "Pueblo of Cochiti",
+    "City": "Cochiti",
+    "State": "New Mexico",
+    "Zip": "87072",
+    "Phone": "(505) 465-2244",
+    "SnapshotFilename": "cochiti.png",
+    "Region": "Southwest"
+  },
+  {
+    "Tribe": "Pueblo of Isleta",
+    "City": "Isleta",
+    "State": "New Mexico",
+    "Zip": "87022",
+    "Phone": "(505) 869-3111",
+    "SnapshotFilename": "isletapueblo.png",
+    "Region": "Southwest"
+  },
+  {
+    "Tribe": "Pueblo of Jemez",
+    "City": "Jemez Pueblo",
+    "State": "New Mexico",
+    "Zip": "87024",
+    "Phone": "(575) 834-7359",
+    "SnapshotFilename": "jemezpueblo.png",
+    "Region": "Southwest"
+  },
+  {
+    "Tribe": "Pueblo of Laguna",
+    "City": "Laguna",
+    "State": "New Mexico",
+    "Zip": "87026",
+    "Phone": "(505) 552-6654",
+    "SnapshotFilename": "lagunapueblo-nsn.png",
+    "Region": "Southwest"
+  },
+  {
+    "Tribe": "Pueblo of Nambe",
+    "City": "Santa Fe",
+    "State": "New Mexico",
+    "Zip": "87506",
+    "Phone": "(505) 455-4410",
+    "SnapshotFilename": "nambepueblo.png",
+    "Region": "Southwest"
+  },
+  {
+    "Tribe": "Pueblo of Picuris",
+    "City": "Penasco",
+    "State": "New Mexico",
+    "Zip": "87533",
+    "Phone": "(575) 587-2519",
+    "SnapshotFilename": "picurispueblo.png",
+    "Region": "Southwest"
+  },
+  {
+    "Tribe": "Pueblo of Pojoaque",
+    "City": "Santa Fe",
+    "State": "New Mexico",
+    "Zip": "87506",
+    "Phone": "(505) 455-2278",
+    "SnapshotFilename": "pojoaque.png",
+    "Region": "Southwest"
+  },
+  {
+    "Tribe": "Pueblo of San Felipe",
+    "City": "San Felipe Pueblo",
+    "State": "New Mexico",
+    "Zip": "87001",
+    "Phone": "(505) 867-3381",
+    "SnapshotFilename": "sfpueblo.png",
+    "Region": "Southwest"
+  },
+  {
+    "Tribe": "Pueblo of San Ildefonso",
+    "City": "Santa Fe",
+    "State": "New Mexico",
+    "Zip": "87501",
+    "Phone": "(505) 455-2273",
+    "SnapshotFilename": "sanipueblo.png",
+    "Region": "Southwest"
+  },
+  {
+    "Tribe": "Pueblo of Sandia",
+    "City": "Bernalillo",
+    "State": "New Mexico",
+    "Zip": "87004",
+    "Phone": "(505) 867-3317",
+    "SnapshotFilename": "sandiapueblo.png",
+    "Region": "Southwest"
+  },
+  {
+    "Tribe": "Pueblo of Santa Ana",
+    "City": "Santa Ana Pueblo",
+    "State": "New Mexico",
+    "Zip": "87004",
+    "Phone": "(505) 771-6700",
+    "SnapshotFilename": "santaana-nsn.png",
+    "Region": "Southwest"
+  },
+  {
+    "Tribe": "Pueblo of Santa Clara",
+    "City": "Espanola",
+    "State": "New Mexico",
+    "Zip": "87532",
+    "Phone": "(505) 753-7330",
+    "SnapshotFilename": "santaclarapueblo.png",
+    "Region": "Southwest"
+  },
+  {
+    "Tribe": "Pueblo of Taos",
+    "City": "Taos",
+    "State": "New Mexico",
+    "Zip": "87571",
+    "Phone": "(575) 758-9593",
+    "SnapshotFilename": "taospueblo.png",
+    "Region": "Southwest"
+  },
+  {
+    "Tribe": "Pueblo of Tesuque",
+    "City": "Santa Fe",
+    "State": "New Mexico",
+    "Zip": "87506",
+    "Phone": "(505) 983-2667",
+    "SnapshotFilename": "pueblooftesuque.png",
+    "Region": "Southwest"
+  },
+  {
+    "Tribe": "Pueblo of Zia",
+    "City": "Zia Pueblo",
+    "State": "New Mexico",
+    "Zip": "87053",
+    "Phone": "(505) 867-3304",
+    "SnapshotFilename": "ziapueblo.png",
+    "Region": "Southwest"
+  },
+  {
+    "Tribe": "Ramah Navajo Chapter",
+    "City": "Ramah",
+    "State": "New Mexico",
+    "Zip": "87321",
+    "Phone": "(505) 775-7130",
+    "SnapshotFilename": "ramahnavajo.png",
+    "Region": "Southwest"
+  },
+  {
+    "Tribe": "Santo Domingo",
+    "City": "Santo Domingo Pueblo",
+    "State": "New Mexico",
+    "Zip": "87052",
+    "Phone": "(505) 465-2214",
+    "SnapshotFilename": "kewa-nsn.png",
+    "Region": "Southwest"
+  },
+  {
+    "Tribe": "Southern Ute",
+    "City": "Ignacio",
+    "State": "Colorado",
+    "Zip": "81137",
+    "Phone": "(970) 563-0100",
+    "SnapshotFilename": "southernute-nsn.png",
+    "Region": "Southwest"
+  },
+  {
+    "Tribe": "Ute Mountain",
+    "City": "Towaoc",
+    "State": "Colorado",
+    "Zip": "81334",
+    "Phone": "(970) 564-5600",
+    "SnapshotFilename": "utemountain.png",
+    "Region": "Southwest"
+  },
+  {
+    "Tribe": "Ysleta del Sur",
+    "City": "El Paso",
+    "State": "Texas",
+    "Zip": "79907",
+    "Phone": "(915) 859-8053",
+    "SnapshotFilename": "ysletadelsurpueblo.png",
+    "Region": "Southwest"
+  },
+  {
+    "Tribe": "Zuni",
+    "City": "Zuni",
+    "State": "New Mexico",
+    "Zip": "87327",
+    "Phone": "(505) 782-7022",
+    "SnapshotFilename": "ashiwi.png",
+    "Region": "Southwest"
+  },
+  {
+    "Tribe": "Ak Chin",
+    "City": "Maricopa",
+    "State": "Arizona",
+    "Zip": "85138",
+    "Phone": "(520) 568-1000",
+    "SnapshotFilename": "ak-chin.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Chemehuevi",
+    "City": "Havasu Lake",
+    "State": "California",
+    "Zip": "92363",
+    "Phone": "(760) 858-4219",
+    "SnapshotFilename": "cit-nsn.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Cocopah",
+    "City": "Somerton",
+    "State": "Arizona",
+    "Zip": "85350",
+    "Phone": "(928) 627-2102",
+    "SnapshotFilename": "cocopah.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Colorado River",
+    "City": "Parker",
+    "State": "Arizona",
+    "Zip": "85344",
+    "Phone": "(928) 669-9211",
+    "SnapshotFilename": "crit-nsn.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Confederated Goshute",
+    "City": "",
+    "State": "Utah",
+    "Zip": "",
+    "Phone": "(435) 234-1138",
+    "SnapshotFilename": "ctgr.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Duckwater",
+    "City": "Duckwater",
+    "State": "Nevada",
+    "Zip": "89314",
+    "Phone": "(775) 863-0227",
+    "SnapshotFilename": "duckwatertribe.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Ely Shoshone",
+    "City": "Ely",
+    "State": "Nevada",
+    "Zip": "89301",
+    "Phone": "(775) 289-3013",
+    "SnapshotFilename": "elyshoshonetribe.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Fort McDermitt",
+    "City": "McDermitt",
+    "State": "Nevada",
+    "Zip": "89421",
+    "Phone": "(775) 532-8259",
+    "SnapshotFilename": "fmpst.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Fort McDowell",
+    "City": "Fort McDowell",
+    "State": "Arizona",
+    "Zip": "85264",
+    "Phone": "(480) 837-5121",
+    "SnapshotFilename": "fmyn.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Fort Mojave",
+    "City": "Needles",
+    "State": "California",
+    "Zip": "92363",
+    "Phone": "(760) 629-4591",
+    "SnapshotFilename": "fortmojave.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Gila River",
+    "City": "Sacaton",
+    "State": "Arizona",
+    "Zip": "85147",
+    "Phone": "(520) 562-9841",
+    "SnapshotFilename": "gilariver.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Havasupai",
+    "City": "Supai",
+    "State": "Arizona",
+    "Zip": "86435",
+    "Phone": "(928) 448-2731",
+    "SnapshotFilename": "theofficialhavasupaitribe.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Hopi",
+    "City": "Kykotsmovi Village",
+    "State": "Arizona",
+    "Zip": "86039",
+    "Phone": "(928) 734-3102",
+    "SnapshotFilename": "hopi-nsn.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Hualapai",
+    "City": "Peach Springs",
+    "State": "Arizona",
+    "Zip": "86434",
+    "Phone": "(928) 769-2216",
+    "SnapshotFilename": "hualapai-nsn.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Kaibab",
+    "City": "Fredonia",
+    "State": "Arizona",
+    "Zip": "86022",
+    "Phone": "(928) 643-7245",
+    "SnapshotFilename": "kaibabpaiute-nsn.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Las Vegas",
+    "City": "Las Vegas",
+    "State": "Nevada",
+    "Zip": "89106",
+    "Phone": "(702) 386-3926",
+    "SnapshotFilename": "lvpaiute.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Lovelock",
+    "City": "Lovelock",
+    "State": "Nevada",
+    "Zip": "89419",
+    "Phone": "(775) 273-7861",
+    "SnapshotFilename": "lovelocktribe.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Moapa",
+    "City": "Moapa",
+    "State": "Nevada",
+    "Zip": "89025",
+    "Phone": "(702) 865-2787",
+    "SnapshotFilename": "moapabandofpaiutes.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Paiute of Utah",
+    "City": "Cedar City",
+    "State": "Utah",
+    "Zip": "84720",
+    "Phone": "(435) 586-1112",
+    "SnapshotFilename": "utahpaiutes.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Paiute-Shoshone",
+    "City": "Fallon",
+    "State": "Nevada",
+    "Zip": "89406",
+    "Phone": "(775) 423-6075",
+    "SnapshotFilename": "fpst.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Pascua Yaqui",
+    "City": "Tucson",
+    "State": "Arizona",
+    "Zip": "85757",
+    "Phone": "(520) 883-5010",
+    "SnapshotFilename": "pascuayaqui-nsn.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Pyramid Lake",
+    "City": "Nixon",
+    "State": "Nevada",
+    "Zip": "89424",
+    "Phone": "(775) 574-1000",
+    "SnapshotFilename": "plpt.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Quechan",
+    "City": "Winterhaven",
+    "State": "California",
+    "Zip": "92283",
+    "Phone": "(760) 919-3600",
+    "SnapshotFilename": "quechantribe.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Reno-Sparks",
+    "City": "Reno",
+    "State": "Nevada",
+    "Zip": "89502",
+    "Phone": "(775) 329-2936",
+    "SnapshotFilename": "rsic.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Salt River",
+    "City": "Scottsdale",
+    "State": "Arizona",
+    "Zip": "85256",
+    "Phone": "(480) 362-7400",
+    "SnapshotFilename": "srpmic-nsn.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "San Carlos",
+    "City": "San Carlos",
+    "State": "Arizona",
+    "Zip": "85550",
+    "Phone": "(928) 475-1600",
+    "SnapshotFilename": "itcaonline.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "San Juan",
+    "City": "Tuba City",
+    "State": "Arizona",
+    "Zip": "86045",
+    "Phone": "(928) 212-9794",
+    "SnapshotFilename": "sanjuanpaiute-nsn.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Shoshone-Paiute",
+    "City": "Owyhee",
+    "State": "Nevada",
+    "Zip": "89832",
+    "Phone": "(208) 759-3100",
+    "SnapshotFilename": "shopai.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Skull Valley",
+    "City": "Tooele",
+    "State": "Utah",
+    "Zip": "84029",
+    "Phone": "(435) 882-4532",
+    "SnapshotFilename": "",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Summit Lake",
+    "City": "Sparks",
+    "State": "Nevada",
+    "Zip": "89431",
+    "Phone": "(775) 827-9670",
+    "SnapshotFilename": "summitlaketribe.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Te-Moak",
+    "City": "Elko",
+    "State": "Nevada",
+    "Zip": "89801",
+    "Phone": "(775) 738-9251",
+    "SnapshotFilename": "",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Tohono O'odham",
+    "City": "Sells",
+    "State": "Arizona",
+    "Zip": "85634",
+    "Phone": "(520) 383-2028",
+    "SnapshotFilename": "tonation-nsn.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Tonto Apache",
+    "City": "Payson",
+    "State": "Arizona",
+    "Zip": "85541",
+    "Phone": "(928) 474-5000",
+    "SnapshotFilename": "itcaonline_2.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Ute",
+    "City": "Ft. Duchesne",
+    "State": "Utah",
+    "Zip": "84026",
+    "Phone": "(435) 722-5141",
+    "SnapshotFilename": "utetribe.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Walker River",
+    "City": "",
+    "State": "Nevada",
+    "Zip": "",
+    "Phone": "(775) 773-2306",
+    "SnapshotFilename": "wrpt.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Washoe",
+    "City": "Gardnerville",
+    "State": "Nevada",
+    "Zip": "89410",
+    "Phone": "(775) 265-4191",
+    "SnapshotFilename": "washoetribe.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "White Mountain",
+    "City": "Whiteriver",
+    "State": "Arizona",
+    "Zip": "85941",
+    "Phone": "(928) 338-4346",
+    "SnapshotFilename": "wmat.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Winnemucca",
+    "City": "Reno",
+    "State": "Nevada",
+    "Zip": "89509",
+    "Phone": "(775) 329-5800",
+    "SnapshotFilename": "winnemuccaindiancolony.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Yavapai-Apache",
+    "City": "Camp Verde",
+    "State": "Arizona",
+    "Zip": "86322",
+    "Phone": "(928) 567-3649",
+    "SnapshotFilename": "yan-tribe.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Yavapai-Prescott",
+    "City": "Prescott",
+    "State": "Arizona",
+    "Zip": "86301",
+    "Phone": "(928) 445-8790",
+    "SnapshotFilename": "ypit.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Yerington",
+    "City": "Yerington",
+    "State": "Nevada",
+    "Zip": "89447",
+    "Phone": "(775) 783-0202",
+    "SnapshotFilename": "yeringtonpaiute.png",
+    "Region": "Western"
+  },
+  {
+    "Tribe": "Yomba Shoshone",
+    "City": "Austin",
+    "State": "Nevada",
+    "Zip": "89310",
+    "Phone": "(775) 964-6020",
+    "SnapshotFilename": "yombatribe.png",
+    "Region": "Western"
+  }
+]
