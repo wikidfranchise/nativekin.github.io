@@ -3,115 +3,304 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NativeKin Tribal News</title>
+  <title>NativeKin Tribal Directory</title>
   <style>
     body {
       font-family: "Segoe UI", sans-serif;
-      padding: 30px;
+      padding: 20px;
       background-color: #f7f7f7;
       color: #222;
+      margin: 0;
     }
     h1 {
       font-size: 2rem;
-      color: #008080;
-      margin-bottom: 1rem;
+      color: #008080; /* Teal color */
+      margin-bottom: 1.5rem;
+      text-align: center;
     }
-    input[type="text"] {
-      padding: 10px;
+
+    .search-container {
+      position: relative;
+      width: 100%;
+      max-width: 700px; /* Increased max width */
+      margin: 20px auto;
+    }
+
+    input[type="text"]#tribeSearchInput {
+      padding: 12px 15px;
       font-size: 16px;
       border: 1px solid #ccc;
       border-radius: 8px;
-      width: 300px;
+      width: 100%;
+      box-sizing: border-box;
+      transition: border-color 0.3s, box-shadow 0.3s;
     }
+    input[type="text"]#tribeSearchInput:focus {
+      border-color: #008080;
+      outline: none;
+      box-shadow: 0 0 8px rgba(0, 128, 128, 0.3);
+    }
+
+    .custom-dropdown {
+      display: none; /* Hidden by default */
+      position: absolute;
+      background-color: white;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-top: none;
+      border-radius: 0 0 8px 8px;
+      max-height: 350px; /* Increased height */
+      overflow-y: auto;
+      z-index: 1000;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-sizing: border-box;
+    }
+
+    .custom-dropdown .dropdown-item {
+      padding: 10px 15px;
+      cursor: pointer;
+      border-bottom: 1px solid #eee;
+      font-size: 15px;
+    }
+    .custom-dropdown .dropdown-item:last-child {
+      border-bottom: none;
+    }
+    .custom-dropdown .dropdown-item:hover {
+      background-color: #f0f0f0;
+    }
+    .custom-dropdown .dropdown-item.highlighted {
+      background-color: #e0e0e0; /* For keyboard navigation */
+    }
+    .custom-dropdown .no-results {
+        padding: 10px 15px;
+        color: #777;
+        font-style: italic;
+    }
+
     .card {
       background: white;
       border: 1px solid #ddd;
       border-radius: 12px;
-      padding: 16px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      max-width: 640px;
-      margin-top: 20px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 700px; /* Consistent max width */
+      margin: 30px auto;
+    }
+    .card div {
+        margin-bottom: 8px;
+        line-height: 1.6;
+    }
+    .card div:last-child {
+        margin-bottom: 0;
+    }
+    .card strong {
+        color: #005050; /* Darker teal for emphasis */
+        font-size: 1.25em; /* Slightly larger tribe name */
+    }
+    .image-preview-link {
+        display: block; /* Make the link a block for better layout */
+        margin-top: 15px;
     }
     .image-preview {
       width: 100%;
       max-width: 600px;
-      border-radius: 12px;
-      margin-top: 12px;
-      border: 1px solid #ccc;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      transition: transform 0.2s ease-in-out;
+    }
+    .image-preview:hover {
+        transform: scale(1.02); /* Slight zoom on hover */
+    }
+    .error-message {
+        color: red;
+        text-align: center;
+        padding: 10px;
+        background-color: #ffe0e0;
+        border: 1px solid red;
+        border-radius: 8px;
+        margin: 20px auto;
+        max-width: 700px;
     }
   </style>
 </head>
 <body>
-  <h1>NativeKin Tribal News</h1>
+  <h1>NativeKin Tribal Directory</h1>
 
-  <input type="text" id="tribeSearch" placeholder="Search for your tribe..." list="tribeList" autocomplete="off" />
-  <datalist id="tribeList"></datalist>
+  <div class="search-container">
+    <input type="text" id="tribeSearchInput" placeholder="Search or select your tribe..." autocomplete="off" />
+    <div id="customTribeDropdown" class="custom-dropdown">
+      <!-- Tribe names will be populated here by JavaScript -->
+    </div>
+  </div>
 
-  <div id="tribeInfo"></div>
+  <div id="tribeInfoOutput"></div>
+  <!-- Placeholder for news articles, to be addressed later -->
+  <div id="newsArticlesOutput"></div>
 
   <script>
-    const tribeSearch = document.getElementById('tribeSearch');
-    const tribeList = document.getElementById('tribeList');
-    const tribeInfo = document.getElementById('tribeInfo');
-    let tribalData = [];
+    const searchInput = document.getElementById('tribeSearchInput');
+    const dropdown = document.getElementById('customTribeDropdown');
+    const tribeInfoContainer = document.getElementById('tribeInfoOutput');
+    // const newsContainer = document.getElementById('newsArticlesOutput'); // For later
 
-    fetch('./data/tribalDirectory.json')
-      .then(res => res.json())
-      .then(data => {
-        tribalData = data;
-        data.forEach(t => {
-          if (t.Tribe && t.Tribe.trim() !== "") {
-            const opt = document.createElement('option');
-            opt.value = t.Tribe;
-            tribeList.appendChild(opt);
-          }
-        });
-      })
-      .catch(err => console.error('❌ Failed to load tribal data:', err));
+    let allTribalData = [];
+    let currentKeyboardFocus = -1; // For keyboard navigation in dropdown
 
-    function renderTribe(tribe) {
-      const imgSrc = tribe.SnapshotFilename && tribe.SnapshotFilename.trim() !== ''
-        ? `/media/hpsnaps/${tribe.SnapshotFilename}`
-        : '/media/hpsnaps/placeholder.png';
+    // --- DATA FETCHING ---
+    async function fetchTribalData() {
+      try {
+        // MODIFIED: Changed path to be absolute from the root
+        const response = await fetch('/data/tribalDirectory.json'); 
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}. Failed to load tribalDirectory.json. Ensure the file exists at '/data/tribalDirectory.json' (from the root of your site) and is valid.`);
+        }
+        const data = await response.json();
+        allTribalData = data
+          .filter(tribe => tribe.Tribe && tribe.Tribe.trim() !== "") // Ensure tribe name exists
+          .sort((a, b) => a.Tribe.localeCompare(b.Tribe)); // Sort alphabetically
+        
+        // console.log(`Loaded ${allTribalData.length} tribes.`);
+      } catch (error) {
+        console.error('❌ Error fetching or parsing tribal data:', error);
+        tribeInfoContainer.innerHTML = `<div class="error-message">Error loading tribal directory. Please check the console for details or try again later. <br>Details: ${error.message}</div>`;
+      }
+    }
 
-      tribeInfo.innerHTML = `
+    // --- RENDERING FUNCTIONS ---
+    function renderTribeInfo(tribe) {
+      if (!tribe) {
+        tribeInfoContainer.innerHTML = ''; // Clear if no tribe
+        return;
+      }
+
+      const websiteLink = (tribe.Website && tribe.Website.trim() !== '') ? tribe.Website.trim() : '#';
+      
+      // MODIFIED: Changed image paths to be absolute from the root
+      const imageSource = (tribe.SnapshotFilename && tribe.SnapshotFilename.trim() !== '' && tribe.SnapshotFilename.trim().toLowerCase() !== 'placeholder.png')
+        ? `/media/hpsnaps/${tribe.SnapshotFilename.trim()}` 
+        : '/media/hpsnaps/placeholder.png'; 
+
+      tribeInfoContainer.innerHTML = `
         <div class="card">
-          <div><strong>${tribe.Tribe}</strong></div>
-          <div>${tribe.City}, ${tribe.State} ${tribe.Zip}</div>
-          <div>${tribe.Phone}</div>
-          <div><em>Region: ${tribe.Region}</em></div>
-          <img src="${imgSrc}" alt="${tribe.Tribe}" class="image-preview" />
+          <div><strong>${tribe.Tribe || 'N/A'}</strong></div>
+          <div>
+            ${tribe.City || ''}${tribe.City && tribe.State ? ', ' : ''}${tribe.State || ''} ${tribe.Zip || ''}
+          </div>
+          <div>Phone: ${tribe.Phone || 'N/A'}</div>
+          <div><em>Region: ${tribe.Region || 'N/A'}</em></div>
+          <a href="${websiteLink}" target="_blank" rel="noopener noreferrer" class="image-preview-link" title="Visit ${tribe.Tribe}'s Website">
+            <img src="${imageSource}" alt="Snapshot of ${tribe.Tribe || 'Tribe'}'s website" class="image-preview"
+                 onerror="this.onerror=null; this.src='/media/hpsnaps/placeholder.png'; console.warn('Image not found: ${imageSource}, using placeholder.');" />
+          </a>
         </div>
       `;
     }
 
-    function performSearch(inputValue) {
-      const input = inputValue.trim().toLowerCase();
-      const match = tribalData.find(t => t.Tribe.toLowerCase() === input);
-      if (match) {
-        tribeSearch.value = match.Tribe;
-        renderTribe(match);
+    function populateDropdown(tribesToDisplay) {
+      dropdown.innerHTML = ''; 
+      currentKeyboardFocus = -1; 
+
+      if (tribesToDisplay.length === 0) {
+        dropdown.innerHTML = '<div class="no-results">No tribes match your search.</div>';
+        dropdown.style.display = 'block';
+        return;
+      }
+
+      tribesToDisplay.forEach(tribe => {
+        const itemDiv = document.createElement('div');
+        itemDiv.classList.add('dropdown-item');
+        itemDiv.textContent = tribe.Tribe;
+        itemDiv.addEventListener('mousedown', (e) => { 
+          e.preventDefault(); 
+          searchInput.value = tribe.Tribe;
+          renderTribeInfo(tribe);
+          dropdown.style.display = 'none';
+        });
+        dropdown.appendChild(itemDiv);
+      });
+      dropdown.style.display = 'block';
+    }
+
+    // --- EVENT LISTENERS ---
+    searchInput.addEventListener('input', () => {
+      const query = searchInput.value.toLowerCase().trim();
+      if (query === '') {
+        populateDropdown(allTribalData); 
       } else {
-        tribeInfo.innerHTML = '';
+        const filteredTribes = allTribalData.filter(tribe =>
+          tribe.Tribe.toLowerCase().includes(query)
+        );
+        populateDropdown(filteredTribes);
+      }
+    });
+
+    searchInput.addEventListener('focus', () => {
+      const query = searchInput.value.toLowerCase().trim();
+       if (query === '') {
+           populateDropdown(allTribalData);
+       } else {
+           const filteredTribes = allTribalData.filter(tribe =>
+               tribe.Tribe.toLowerCase().includes(query)
+           );
+           populateDropdown(filteredTribes);
+       }
+    });
+
+    searchInput.addEventListener('keydown', (e) => {
+      const items = dropdown.querySelectorAll('.dropdown-item');
+      if (items.length === 0 && e.key !== 'Escape') return;
+
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        currentKeyboardFocus++;
+        if (currentKeyboardFocus >= items.length) currentKeyboardFocus = 0;
+        updateKeyboardFocus(items);
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        currentKeyboardFocus--;
+        if (currentKeyboardFocus < 0) currentKeyboardFocus = items.length - 1;
+        updateKeyboardFocus(items);
+      } else if (e.key === 'Enter') {
+        e.preventDefault();
+        if (currentKeyboardFocus > -1 && items[currentKeyboardFocus]) {
+          items[currentKeyboardFocus].dispatchEvent(new MouseEvent('mousedown')); 
+        } else if (items.length > 0) {
+          const directMatch = allTribalData.find(t => t.Tribe.toLowerCase() === searchInput.value.toLowerCase().trim());
+          if (directMatch) {
+              searchInput.value = directMatch.Tribe;
+              renderTribeInfo(directMatch);
+              dropdown.style.display = 'none';
+          } else if (items.length === 1 && items[0].textContent !== 'No tribes match your search.') {
+             items[0].dispatchEvent(new MouseEvent('mousedown')); 
+          }
+        }
+      } else if (e.key === 'Escape') {
+        dropdown.style.display = 'none';
+      }
+    });
+
+    function updateKeyboardFocus(items) {
+      items.forEach(item => item.classList.remove('highlighted'));
+      if (items[currentKeyboardFocus]) {
+        items[currentKeyboardFocus].classList.add('highlighted');
+        items[currentKeyboardFocus].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       }
     }
 
-    tribeSearch.addEventListener('input', () => {
-      performSearch(tribeSearch.value);
-    });
-
-    tribeSearch.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') {
-        e.preventDefault();
-        performSearch(tribeSearch.value);
+    document.addEventListener('click', (e) => {
+      const searchContainer = searchInput.closest('.search-container');
+      if (searchContainer && !searchContainer.contains(e.target)) {
+        dropdown.style.display = 'none';
       }
     });
 
-    tribeSearch.addEventListener('focus', () => {
-      tribeSearch.select();
-    });
-  </script>
+    // --- INITIALIZATION ---
+    fetchTribalData(); 
 
+  </script>
   <script data-goatcounter="https://nativekin.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
