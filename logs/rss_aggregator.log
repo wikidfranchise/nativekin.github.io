@@ -65,3 +65,30 @@
 2025-06-05 10:41:39 - WARNING - Feed 'Native News Online' may be ill-formed. Error: SAXParseException('not well-formed (invalid token)')
 2025-06-05 10:41:39 - WARNING - No entries could be processed for 'Native News Online'. Feed data might be empty or errored before entry processing (feed_data: True, feed_data.entries: True).
 2025-06-05 10:41:39 - INFO - Processing feed 6/9: 'Native America Calling' from https://www.nativeamericacalling.com/feed/
+2025-06-05 10:46:03 - INFO - Global socket timeout set to 20 seconds.
+2025-06-05 10:46:03 - INFO - Starting RSS feed aggregation script.
+2025-06-05 10:46:03 - INFO - Successfully loaded 9 feed definitions from C:\Users\John\documents\nativekin.org\nativekin-media-site\nativekin.github.io\scripts\..\media\nativekin_feeds.json
+2025-06-05 10:46:03 - INFO - Processing feed 1/9: 'Mvskoke Media' from https://www.mvskokemedia.com/feed/
+2025-06-05 10:46:04 - INFO - Successfully parsed 5 entries from 'Mvskoke Media'.
+2025-06-05 10:46:04 - INFO - Processing feed 2/9: 'Osage News' from https://osagenews.org/feed/
+2025-06-05 10:46:04 - INFO - Successfully parsed 5 entries from 'Osage News'.
+2025-06-05 10:46:04 - INFO - Processing feed 3/9: 'Cherokee Phoenix' from https://www.cherokeephoenix.org/rss/
+2025-06-05 10:46:05 - WARNING - Feed 'Cherokee Phoenix' may be ill-formed. Error: SAXParseException('syntax error')
+2025-06-05 10:46:05 - WARNING - No entries could be processed for 'Cherokee Phoenix'. Feed data might be empty or errored before entry processing (feed_data: True, feed_data.entries: True).
+2025-06-05 10:46:05 - INFO - Processing feed 4/9: 'Indian Country Today' from https://indiancountrytoday.com/.rss/full/
+2025-06-05 10:46:05 - WARNING - Feed 'Indian Country Today' may be ill-formed. Error: SAXParseException('syntax error')
+2025-06-05 10:46:05 - WARNING - No entries could be processed for 'Indian Country Today'. Feed data might be empty or errored before entry processing (feed_data: True, feed_data.entries: True).
+2025-06-05 10:46:05 - INFO - Processing feed 5/9: 'Native News Online' from https://nativenewsonline.net/rss
+2025-06-05 10:46:17 - WARNING - Feed 'Native News Online' may be ill-formed. Error: SAXParseException('not well-formed (invalid token)')
+2025-06-05 10:46:17 - WARNING - No entries could be processed for 'Native News Online'. Feed data might be empty or errored before entry processing (feed_data: True, feed_data.entries: True).
+2025-06-05 10:46:17 - INFO - Processing feed 6/9: 'Native America Calling' from https://www.nativeamericacalling.com/feed/
+2025-06-05 10:46:18 - INFO - Successfully parsed 5 entries from 'Native America Calling'.
+2025-06-05 10:46:18 - INFO - Processing feed 7/9: 'National Native News' from https://www.nativenews.net/feed/
+2025-06-05 10:46:20 - INFO - Successfully parsed 5 entries from 'National Native News'.
+2025-06-05 10:46:20 - INFO - Processing feed 8/9: 'The Circle News' from https://thecirclenews.org/feed/
+2025-06-05 10:46:20 - INFO - Successfully parsed 5 entries from 'The Circle News'.
+2025-06-05 10:46:20 - INFO - Processing feed 9/9: 'Lakota Times' from https://www.lakotatimes.com/rss/
+2025-06-05 10:46:22 - INFO - Successfully parsed 5 entries from 'Lakota Times'.
+2025-06-05 10:46:22 - INFO - Feed processing complete. Successfully attempted to process: 9, Failed/Skipped: 0
+2025-06-05 10:46:22 - INFO - Successfully saved 30 aggregated articles to C:\Users\John\documents\nativekin.org\nativekin-media-site\nativekin.github.io\scripts\..\media\nativekin_aggregated_articles.json
+2025-06-05 10:46:22 - INFO - RSS feed aggregation script finished successfully.
