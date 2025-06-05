@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>NativeKin Tribal Directory</title>
   <style>
     body {
@@ -13,55 +13,37 @@
       margin: 0;
     }
     h1 {
-      font-size: 2rem;
-      color: #008080;
-      margin-bottom: 1.5rem;
       text-align: center;
+      color: #008080;
     }
     .search-container {
-      position: relative;
-      width: 100%;
       max-width: 700px;
-      margin: 20px auto;
+      margin: 0 auto 20px auto;
+      position: relative;
     }
-    input[type="text"]#tribeSearchInput {
-      padding: 12px 15px;
-      font-size: 16px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
+    #tribeSearchInput {
       width: 100%;
-      box-sizing: border-box;
-      transition: border-color 0.3s, box-shadow 0.3s;
-    }
-    input[type="text"]#tribeSearchInput:focus {
-      border-color: #008080;
-      outline: none;
-      box-shadow: 0 0 8px rgba(0, 128, 128, 0.3);
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
     }
     .custom-dropdown {
       display: none;
       position: absolute;
-      background-color: white;
+      top: 48px;
       width: 100%;
+      background: white;
       border: 1px solid #ccc;
-      border-top: none;
-      border-radius: 0 0 8px 8px;
-      max-height: 350px;
+      max-height: 300px;
       overflow-y: auto;
       z-index: 1000;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      box-sizing: border-box;
     }
-    .custom-dropdown .dropdown-item {
-      padding: 10px 15px;
+    .dropdown-item {
+      padding: 10px;
       cursor: pointer;
-      border-bottom: 1px solid #eee;
-      font-size: 15px;
     }
-    .custom-dropdown .dropdown-item:last-child {
-      border-bottom: none;
-    }
-    .custom-dropdown .dropdown-item:hover {
+    .dropdown-item:hover {
       background-color: #f0f0f0;
     }
     .card {
@@ -69,110 +51,110 @@
       border: 1px solid #ddd;
       border-radius: 12px;
       padding: 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       max-width: 700px;
       margin: 30px auto;
-    }
-    .card div {
-        margin-bottom: 8px;
-        line-height: 1.6;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
     .card strong {
-        color: #005050;
-        font-size: 1.25em;
+      color: #005050;
+      font-size: 1.25em;
+    }
+    .image-preview-link {
+      display: block;
+      margin-top: 15px;
+    }
+    .image-preview {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      display: block;
+      margin: 0 auto;
     }
   </style>
 </head>
 <body>
   <h1>NativeKin Tribal Directory</h1>
+
   <div class="search-container">
-    <input type="text" id="tribeSearchInput" placeholder="Search or select your tribe..." autocomplete="off" />
+    <input type="text" id="tribeSearchInput" placeholder="Search or select your tribe..." autocomplete="off"/>
     <div id="customTribeDropdown" class="custom-dropdown"></div>
   </div>
+
   <div id="tribeInfoOutput"></div>
-  <div id="newsArticlesOutput"></div>
 
   <script>
-    const input = document.getElementById('tribeSearchInput');
+    const searchInput = document.getElementById('tribeSearchInput');
     const dropdown = document.getElementById('customTribeDropdown');
     const tribeInfoOutput = document.getElementById('tribeInfoOutput');
-    const newsArticlesOutput = document.getElementById('newsArticlesOutput');
-    let allTribalData = [];
-    let allArticles = [];
+    let tribeData = [];
 
-    async function loadTribes() {
+    async function fetchTribeData() {
       try {
-        const response = await fetch('data/tribalDirectory.json');
+        const response = await fetch('data/tribalDirectory_cleaned.json');
         const data = await response.json();
-        allTribalData = data.filter(t => t.Tribe && t.Tribe.trim() !== '').sort((a, b) => a.Tribe.localeCompare(b.Tribe));
-        populateDropdown(allTribalData.map(t => t.Tribe));
-      } catch (err) {
-        console.error('Failed to load tribalDirectory.json:', err);
-      }
-    }
-
-    async function loadArticles() {
-      try {
-        const response = await fetch('media/nativekin_aggregated_articles.json');
-        allArticles = await response.json();
-      } catch (err) {
-        console.error('Failed to load nativekin_aggregated_articles.json:', err);
+        tribeData = data.filter(t => t.Tribe).sort((a, b) => a.Tribe.localeCompare(b.Tribe));
+        populateDropdown(tribeData);
+      } catch (e) {
+        console.error("Failed to fetch tribal data", e);
       }
     }
 
     function populateDropdown(tribes) {
-      if (!tribes || tribes.length === 0) {
-        dropdown.innerHTML = '<div class="dropdown-item">No matching tribes found</div>';
-        dropdown.style.display = 'block';
-        return;
-      }
-
-      dropdown.innerHTML = tribes.map(t => `<div class="dropdown-item">${t}</div>`).join('');
+      dropdown.innerHTML = tribes.map(t =>
+        `<div class="dropdown-item" data-tribe="${t.Tribe}">${t.Tribe}</div>`
+      ).join('');
       dropdown.style.display = 'block';
     }
 
-    function renderArticlesForTribe(tribeName) {
-      newsArticlesOutput.innerHTML = '';
-      const matches = allArticles.filter(a => a.tribe?.toLowerCase() === tribeName.toLowerCase());
+    function showTribeCard(tribeName) {
+      const tribe = tribeData.find(t => t.Tribe === tribeName);
+      if (!tribe) return;
 
-      if (matches.length === 0) {
-        newsArticlesOutput.innerHTML = `<div class="card"><strong>No articles found for ${tribeName}</strong></div>`;
-        return;
-      }
+      const site = tribe.Website?.trim() || '';
+      const link = site.startsWith('http') ? site : 'http://' + site;
+      const domain = site.replace(/^https?:\/\//, '').replace(/\/$/, '').replace(/[^a-zA-Z0-9.-]/g, '_');
+      const img = `media/hpsnaps/${domain}.png`;
 
-      matches.forEach(article => {
-        newsArticlesOutput.innerHTML += `
-          <div class="card">
-            <div><strong>${article.title}</strong></div>
-            <div>${article.summary}</div>
-            <div><a href="${article.link}" target="_blank">Read more</a></div>
-          </div>
-        `;
-      });
+      tribeInfoOutput.innerHTML = `
+        <div class="card">
+          <div><strong>${tribe.Tribe}</strong></div>
+          <div>${tribe.City || ''}${tribe.City && tribe.State ? ', ' : ''}${tribe.State || ''}</div>
+          <div>Region: ${tribe.Region || 'Unknown'}</div>
+          <a class="image-preview-link" href="${link}" target="_blank" rel="noopener">
+            <img class="image-preview" src="${img}" alt="Snapshot of ${tribe.Tribe}" onerror="this.src='media/hpsnaps/placeholder.png';">
+          </a>
+        </div>
+      `;
     }
 
-    input.addEventListener('focus', () => {
-      populateDropdown(allTribalData.map(t => t.Tribe));
+    // Event listeners
+    searchInput.addEventListener('input', () => {
+      const query = searchInput.value.toLowerCase().trim();
+      const matches = tribeData.filter(t => t.Tribe.toLowerCase().includes(query));
+      populateDropdown(matches);
     });
 
-    input.addEventListener('input', () => {
-      const val = input.value.toLowerCase();
-      const filtered = allTribalData.filter(t => t.Tribe.toLowerCase().includes(val));
-      populateDropdown(filtered.map(t => t.Tribe));
+    searchInput.addEventListener('focus', () => {
+      populateDropdown(tribeData);
     });
 
-    dropdown.addEventListener('click', (e) => {
-      if (!e.target.classList.contains('dropdown-item')) return;
-      const tribeName = e.target.textContent;
-      input.value = tribeName;
-      dropdown.style.display = 'none';
-      renderArticlesForTribe(tribeName);
+    dropdown.addEventListener('click', e => {
+      if (e.target.classList.contains('dropdown-item')) {
+        const tribeName = e.target.dataset.tribe;
+        searchInput.value = tribeName;
+        dropdown.style.display = 'none';
+        showTribeCard(tribeName);
+      }
     });
 
-    window.addEventListener('load', async () => {
-      await loadTribes();
-      await loadArticles();
+    window.addEventListener('click', e => {
+      if (!dropdown.contains(e.target) && e.target !== searchInput) {
+        dropdown.style.display = 'none';
+      }
     });
+
+    fetchTribeData();
   </script>
 </body>
 </html>
