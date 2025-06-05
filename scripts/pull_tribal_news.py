@@ -31,6 +31,19 @@ WORKING_RSS_FEEDS = [
     "https://www.kxci.org/feed/",
     "https://www.koahnic.org/rss.xml",
     "https://www.bia.gov/rss.xml",
+    "https://www.nativenews.net/feed",
+    "https://www.indianz.com/rss/news.xml",
+    "https://www.indianz.com/rss/indiangaming.xml",
+    "https://www.nv1.org/rss-feeds/",
+    "http://www.nativetimes.com/index.php?option=com_content&view=category&id=48&Itemid=24&format=feed&type=rss",
+    "https://tribalbusinessnews.com",
+    "https://digitalcommons.law.seattleu.edu/ailj/announcements.html",
+    "https://digitalcommons.law.ou.edu/ailr/announcements.html",
+    "https://openscholarship.wustl.edu/nativehealth/announcements.html",
+    "https://digitalrepository.unm.edu/natv_fsp/announcements.html",
+    "https://nativeamericans.einnews.com/rss/67-xc0wHdGzonmfm",
+    "https://nativeamericans.einnews.com/rss/oo3Q2npvnVobKLs_",
+
 ]
 
 def get_feed_info(rss_url, max_entries=10):
