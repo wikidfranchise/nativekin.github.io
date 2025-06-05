@@ -95,17 +95,26 @@
     let tribes = [];
 
     async function fetchTribes() {
-      const res = await fetch('data/tribalDirectory.json');
-      const data = await res.json();
-      tribes = data.map(row => row.Tribe).filter((t, i, arr) => t && arr.indexOf(t) === i).sort((a, b) => a.localeCompare(b));
+      try {
+        const res = await fetch('data/tribalDirectory.json');
+        const data = await res.json();
+        tribes = data.map(row => row.Tribe).filter(Boolean).sort((a, b) => a.localeCompare(b));
+        updateDropdown();
+      } catch (err) {
+        console.error('Error loading tribes:', err);
+      }
     }
 
     const articles = [];
 
     async function fetchArticles() {
-      const res = await fetch('media/nativekin_aggregated_articles.json');
-      const data = await res.json();
-      articles.push(...data);
+      try {
+        const res = await fetch('media/nativekin_aggregated_articles.json');
+        const data = await res.json();
+        articles.push(...data);
+      } catch (err) {
+        console.error('Error loading articles:', err);
+      }
     }
 
     function renderArticlesForTribe(tribeName) {
@@ -135,10 +144,7 @@
     const dropdown = document.getElementById('customTribeDropdown');
 
     input.addEventListener('input', () => {
-      const value = input.value.toLowerCase();
-      const matches = tribes.filter(t => t.toLowerCase().includes(value));
-      dropdown.innerHTML = matches.map(t => `<div class="dropdown-item">${t}</div>`).join('');
-      dropdown.style.display = matches.length ? 'block' : 'none';
+      updateDropdown();
     });
 
     dropdown.addEventListener('click', e => {
@@ -150,8 +156,16 @@
       }
     });
 
+    function updateDropdown() {
+      const value = input.value.toLowerCase();
+      const matches = tribes.filter(t => t.toLowerCase().includes(value));
+      dropdown.innerHTML = matches.map(t => `<div class="dropdown-item">${t}</div>`).join('');
+      dropdown.style.display = matches.length ? 'block' : 'none';
+    }
+
     window.addEventListener('load', async () => {
-      await Promise.all([fetchTribes(), fetchArticles()]);
+      await fetchTribes();
+      await fetchArticles();
     });
   </script>
 </body>
