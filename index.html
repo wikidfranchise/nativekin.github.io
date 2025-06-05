@@ -91,48 +91,57 @@
   </div>
   <div id="tribeInfoOutput"></div>
   <div id="newsArticlesOutput"></div>
+
   <script>
-    let tribes = [];
     const input = document.getElementById('tribeSearchInput');
     const dropdown = document.getElementById('customTribeDropdown');
+    const tribeInfoOutput = document.getElementById('tribeInfoOutput');
+    const newsArticlesOutput = document.getElementById('newsArticlesOutput');
+    let allTribalData = [];
+    let allArticles = [];
 
-    async function fetchTribes() {
+    async function loadTribes() {
       try {
-        const res = await fetch('data/tribalDirectory.json');
-        const data = await res.json();
-        tribes = data.map(row => row.Tribe).filter(Boolean).sort((a, b) => a.localeCompare(b));
-        populateDropdown(tribes);
+        const response = await fetch('data/tribalDirectory.json');
+        const data = await response.json();
+        allTribalData = data.filter(t => t.Tribe && t.Tribe.trim() !== '').sort((a, b) => a.Tribe.localeCompare(b.Tribe));
+        populateDropdown(allTribalData.map(t => t.Tribe));
       } catch (err) {
-        console.error('Error loading tribes:', err);
+        console.error('Failed to load tribalDirectory.json:', err);
       }
     }
 
-    const articles = [];
-
-    async function fetchArticles() {
+    async function loadArticles() {
       try {
-        const res = await fetch('media/nativekin_aggregated_articles.json');
-        const data = await res.json();
-        articles.push(...data);
+        const response = await fetch('media/nativekin_aggregated_articles.json');
+        allArticles = await response.json();
       } catch (err) {
-        console.error('Error loading articles:', err);
+        console.error('Failed to load nativekin_aggregated_articles.json:', err);
       }
     }
 
-    function renderArticlesForTribe(tribeName) {
-      const output = document.getElementById('newsArticlesOutput');
-      const tribeLower = tribeName.toLowerCase();
-      const matchingArticles = articles.filter(a => (a.tribe || '').toLowerCase() === tribeLower);
-
-      output.innerHTML = '';
-
-      if (matchingArticles.length === 0) {
-        output.innerHTML = `<div class="card"><strong>No articles found for ${tribeName}</strong></div>`;
+    function populateDropdown(tribes) {
+      if (!tribes || tribes.length === 0) {
+        dropdown.innerHTML = '<div class="dropdown-item">No matching tribes found</div>';
+        dropdown.style.display = 'block';
         return;
       }
 
-      matchingArticles.forEach(article => {
-        output.innerHTML += `
+      dropdown.innerHTML = tribes.map(t => `<div class="dropdown-item">${t}</div>`).join('');
+      dropdown.style.display = 'block';
+    }
+
+    function renderArticlesForTribe(tribeName) {
+      newsArticlesOutput.innerHTML = '';
+      const matches = allArticles.filter(a => a.tribe?.toLowerCase() === tribeName.toLowerCase());
+
+      if (matches.length === 0) {
+        newsArticlesOutput.innerHTML = `<div class="card"><strong>No articles found for ${tribeName}</strong></div>`;
+        return;
+      }
+
+      matches.forEach(article => {
+        newsArticlesOutput.innerHTML += `
           <div class="card">
             <div><strong>${article.title}</strong></div>
             <div>${article.summary}</div>
@@ -142,39 +151,27 @@
       });
     }
 
-    function populateDropdown(list) {
-      if (!list || list.length === 0) {
-        dropdown.innerHTML = '<div class="dropdown-item">No matching tribes found</div>';
-        dropdown.style.display = 'block';
-        return;
-      }
-
-      dropdown.innerHTML = list.map(t => `<div class="dropdown-item">${t}</div>`).join('');
-      dropdown.style.display = 'block';
-    }
-
     input.addEventListener('focus', () => {
-      populateDropdown(tribes);
+      populateDropdown(allTribalData.map(t => t.Tribe));
     });
 
     input.addEventListener('input', () => {
-      const value = input.value.toLowerCase();
-      const matches = tribes.filter(t => t.toLowerCase().includes(value));
-      populateDropdown(matches);
+      const val = input.value.toLowerCase();
+      const filtered = allTribalData.filter(t => t.Tribe.toLowerCase().includes(val));
+      populateDropdown(filtered.map(t => t.Tribe));
     });
 
-    dropdown.addEventListener('click', e => {
-      if (e.target.classList.contains('dropdown-item')) {
-        const tribeName = e.target.textContent;
-        input.value = tribeName;
-        dropdown.style.display = 'none';
-        renderArticlesForTribe(tribeName);
-      }
+    dropdown.addEventListener('click', (e) => {
+      if (!e.target.classList.contains('dropdown-item')) return;
+      const tribeName = e.target.textContent;
+      input.value = tribeName;
+      dropdown.style.display = 'none';
+      renderArticlesForTribe(tribeName);
     });
 
     window.addEventListener('load', async () => {
-      await fetchTribes();
-      await fetchArticles();
+      await loadTribes();
+      await loadArticles();
     });
   </script>
 </body>
