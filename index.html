@@ -92,11 +92,18 @@
   <div id="tribeInfoOutput"></div>
   <div id="newsArticlesOutput"></div>
   <script>
-    const tribes = [
-      "Absentee-Shawnee Tribe of Indians of Oklahoma", "Agua Caliente Band of Cahuilla Indians of the Agua Caliente Indian Reservation, California", "Ak Chin Indian Community", "Alabama-Coushatta Tribe of Texas", "Alabama-Quassarte Tribal Town", "Alturas Indian Rancheria, California", "Apache Tribe of Oklahoma", "Arapaho Tribe of the Wind River Reservation, Wyoming", "Aroostook Band of Micmacs", "Assiniboine and Sioux Tribes of the Fort Peck Indian Reservation, Montana",
-      "Bad River Band of the Lake Superior Tribe of Chippewa Indians of the Bad River Reservation, Wisconsin", "Bay Mills Indian Community, Michigan", "Bear River Band of the Rohnerville Rancheria, California", "Berry Creek Rancheria of Maidu Indians of California", "Big Lagoon Rancheria, California", "Big Pine Paiute Tribe of the Owens Valley, California"
-      // ... continue full list
-    ];
+    const tribes = [];
+
+    async function fetchTribes() {
+      const res = await fetch('data/tribalDirectory.json');
+      const data = await res.json();
+      data.forEach(row => {
+        if (row.Tribe && !tribes.includes(row.Tribe)) {
+          tribes.push(row.Tribe);
+        }
+      });
+      tribes.sort((a, b) => a.localeCompare(b));
+    }
 
     const articles = [];
 
@@ -148,7 +155,7 @@
       }
     });
 
-    fetchArticles();
+    Promise.all([fetchTribes(), fetchArticles()]);
   </script>
 </body>
 </html>
