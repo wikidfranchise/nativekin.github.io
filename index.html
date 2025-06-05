@@ -108,10 +108,14 @@
     }
 
     function showTribeCard(tribeName) {
-      const tribe = tribeData.find(t => t.Tribe === tribeName);
-      if (!tribe) return;
+      const normalize = str => (str || "").toLowerCase().replace(/[^a-z0-9 ]/gi, '').trim();
+      const tribe = tribeData.find(t => normalize(t.Tribe) === normalize(tribeName));
+      if (!tribe) {
+        tribeInfoOutput.innerHTML = '<div class="card">Tribe not found.</div>';
+        return;
+      }
 
-      const site = tribe.Website?.trim() || '';
+      const site = (tribe.Website || '').trim();
       const link = site.startsWith('http') ? site : 'http://' + site;
       const domain = site.replace(/^https?:\/\//, '').replace(/\/$/, '').replace(/[^a-zA-Z0-9.-]/g, '_');
       const img = `media/hpsnaps/${domain}.png`;
@@ -128,7 +132,6 @@
       `;
     }
 
-    // Event listeners
     searchInput.addEventListener('input', () => {
       const query = searchInput.value.toLowerCase().trim();
       const matches = tribeData.filter(t => t.Tribe.toLowerCase().includes(query));
