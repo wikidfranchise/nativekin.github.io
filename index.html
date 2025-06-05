@@ -14,18 +14,16 @@
     }
     h1 {
       font-size: 2rem;
-      color: #008080; /* Teal color */
+      color: #008080;
       margin-bottom: 1.5rem;
       text-align: center;
     }
-
     .search-container {
       position: relative;
       width: 100%;
-      max-width: 700px; /* Increased max width */
+      max-width: 700px;
       margin: 20px auto;
     }
-
     input[type="text"]#tribeSearchInput {
       padding: 12px 15px;
       font-size: 16px;
@@ -40,22 +38,20 @@
       outline: none;
       box-shadow: 0 0 8px rgba(0, 128, 128, 0.3);
     }
-
     .custom-dropdown {
-      display: none; /* Hidden by default */
+      display: none;
       position: absolute;
       background-color: white;
       width: 100%;
       border: 1px solid #ccc;
       border-top: none;
       border-radius: 0 0 8px 8px;
-      max-height: 350px; /* Increased height */
+      max-height: 350px;
       overflow-y: auto;
       z-index: 1000;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       box-sizing: border-box;
     }
-
     .custom-dropdown .dropdown-item {
       padding: 10px 15px;
       cursor: pointer;
@@ -68,340 +64,91 @@
     .custom-dropdown .dropdown-item:hover {
       background-color: #f0f0f0;
     }
-    .custom-dropdown .dropdown-item.highlighted {
-      background-color: #e0e0e0; /* For keyboard navigation */
-    }
-    .custom-dropdown .no-results, .custom-dropdown .loading-message {
-        padding: 10px 15px;
-        color: #777;
-        font-style: italic;
-    }
-
     .card {
       background: white;
       border: 1px solid #ddd;
       border-radius: 12px;
       padding: 20px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      max-width: 700px; /* Consistent max width */
+      max-width: 700px;
       margin: 30px auto;
     }
     .card div {
         margin-bottom: 8px;
         line-height: 1.6;
     }
-    .card div:last-child {
-        margin-bottom: 0;
-    }
     .card strong {
-        color: #005050; /* Darker teal for emphasis */
-        font-size: 1.25em; /* Slightly larger tribe name */
-    }
-    .image-preview-link {
-        display: block; /* Make the link a block for better layout */
-        margin-top: 15px;
-    }
-    .image-preview {
-      width: 100%;
-      max-width: 600px;
-      border-radius: 8px;
-      border: 1px solid #ddd;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      transition: transform 0.2s ease-in-out;
-    }
-    .image-preview:hover {
-        transform: scale(1.02); /* Slight zoom on hover */
-    }
-    .error-message {
-        color: red;
-        text-align: center;
-        padding: 10px;
-        background-color: #ffe0e0;
-        border: 1px solid red;
-        border-radius: 8px;
-        margin: 20px auto;
-        max-width: 700px;
+        color: #005050;
+        font-size: 1.25em;
     }
   </style>
 </head>
 <body>
   <h1>NativeKin Tribal Directory</h1>
-
   <div class="search-container">
     <input type="text" id="tribeSearchInput" placeholder="Search or select your tribe..." autocomplete="off" />
-    <div id="customTribeDropdown" class="custom-dropdown">
-      <!-- Tribe names will be populated here by JavaScript -->
-    </div>
+    <div id="customTribeDropdown" class="custom-dropdown"></div>
   </div>
-
   <div id="tribeInfoOutput"></div>
-  <!-- Placeholder for news articles, to be addressed later -->
   <div id="newsArticlesOutput"></div>
-
   <script>
-    const searchInput = document.getElementById('tribeSearchInput');
-    const dropdown = document.getElementById('customTribeDropdown');
-    const tribeInfoContainer = document.getElementById('tribeInfoOutput');
-    
-    let allTribalData = [];
-    let currentKeyboardFocus = -1;
-    let blurTimeoutId = null; 
-    let isFetchingData = false; 
+    const tribes = [
+      "Absentee-Shawnee Tribe of Indians of Oklahoma", "Agua Caliente Band of Cahuilla Indians of the Agua Caliente Indian Reservation, California", "Ak Chin Indian Community", "Alabama-Coushatta Tribe of Texas", "Alabama-Quassarte Tribal Town", "Alturas Indian Rancheria, California", "Apache Tribe of Oklahoma", "Arapaho Tribe of the Wind River Reservation, Wyoming", "Aroostook Band of Micmacs", "Assiniboine and Sioux Tribes of the Fort Peck Indian Reservation, Montana",
+      "Bad River Band of the Lake Superior Tribe of Chippewa Indians of the Bad River Reservation, Wisconsin", "Bay Mills Indian Community, Michigan", "Bear River Band of the Rohnerville Rancheria, California", "Berry Creek Rancheria of Maidu Indians of California", "Big Lagoon Rancheria, California", "Big Pine Paiute Tribe of the Owens Valley, California"
+      // ... continue full list
+    ];
 
-    // --- DATA FETCHING ---
-    async function fetchTribalData() {
-      if (isFetchingData) {
-        console.log("Fetch already in progress, skipping duplicate call.");
-        return; 
-      }
-      isFetchingData = true;
-      console.log("Attempting to fetch tribal data...");
-      
-      const dataUrl = 'data/tribalDirectory.json'; // Simplest relative path
-      
-      // Log current page's protocol to check for 'blob:'
-      if (window.location.protocol === 'blob:') {
-        console.warn(
-          "WARNING: Page is running from a 'blob:' URL (" + window.location.href + "). " +
-          "Fetching relative paths like '" + dataUrl + "' can be unreliable in this context, " +
-          "leading to 'Failed to parse URL' errors. Please test on your live deployed site (e.g., https://nativekin.org) " +
-          "for accurate behavior."
-        );
-      }
-      
-      // For debugging, log what the browser would resolve the relative path to:
-      try {
-        const resolvedDataUrlForLogging = new URL(dataUrl, window.location.href).href;
-        console.log("Browser will attempt to resolve relative path '"+dataUrl+"' to full URL:", resolvedDataUrlForLogging);
-      } catch(e) {
-        console.warn("Could not construct full URL for logging due to invalid base (window.location.href):", window.location.href, e.message);
-      }
+    const articles = [];
 
-
-      try {
-        const response = await fetch(dataUrl); 
-        
-        if (!response.ok) {
-          console.error("Fetch failed. URL attempted by browser:", response.url); // response.url shows what was actually fetched
-          throw new Error(`HTTP error! Status: ${response.status}. Failed to load tribalDirectory.json from '${dataUrl}' (Browser attempted: '${response.url}'). Ensure the file exists at this path relative to your index.html and is accessible.`);
-        }
-        const data = await response.json();
-        allTribalData = data
-          .filter(tribe => tribe.Tribe && tribe.Tribe.trim() !== "") 
-          .sort((a, b) => a.Tribe.localeCompare(b.Tribe)); 
-        console.log(`Successfully loaded ${allTribalData.length} tribes.`);
-        
-      } catch (error) {
-        console.error('❌ Error fetching or parsing tribal data:', error);
-        allTribalData = []; 
-        tribeInfoContainer.innerHTML = `<div class="error-message">Error loading tribal directory. Please check the console for details or try again later. <br>Details: ${error.message}</div>`;
-        throw error; 
-      } finally {
-        isFetchingData = false; 
-      }
+    async function fetchArticles() {
+      const res = await fetch('media/nativekin_aggregated_articles.json');
+      const data = await res.json();
+      articles.push(...data);
     }
 
-    // --- RENDERING FUNCTIONS ---
-    function renderTribeInfo(tribe) {
-      if (!tribe) {
-        tribeInfoContainer.innerHTML = ''; 
+    function renderArticlesForTribe(tribeName) {
+      const output = document.getElementById('newsArticlesOutput');
+      const tribeLower = tribeName.toLowerCase();
+      const matchingArticles = articles.filter(a => (a.tribe || '').toLowerCase() === tribeLower);
+
+      output.innerHTML = '';
+
+      if (matchingArticles.length === 0) {
+        output.innerHTML = `<div class="card"><strong>No articles found for ${tribeName}</strong></div>`;
         return;
       }
 
-      const websiteLink = (tribe.Website && tribe.Website.trim() !== '') ? tribe.Website.trim() : '#';
-      
-      const imageBase = 'media/hpsnaps/'; 
-      const placeholderImgPath = `${imageBase}placeholder.png`;
-      let imageSource = placeholderImgPath;
-
-      if (tribe.SnapshotFilename && tribe.SnapshotFilename.trim() !== '' && tribe.SnapshotFilename.trim().toLowerCase() !== 'placeholder.png') {
-        imageSource = `${imageBase}${tribe.SnapshotFilename.trim()}`;
-      }
-      
-      tribeInfoContainer.innerHTML = `
-        <div class="card">
-          <div><strong>${tribe.Tribe || 'N/A'}</strong></div>
-          <div>
-            ${tribe.City || ''}${tribe.City && tribe.State ? ', ' : ''}${tribe.State || ''} ${tribe.Zip || ''}
+      matchingArticles.forEach(article => {
+        output.innerHTML += `
+          <div class="card">
+            <div><strong>${article.title}</strong></div>
+            <div>${article.summary}</div>
+            <div><a href="${article.link}" target="_blank">Read more</a></div>
           </div>
-          <div>Phone: ${tribe.Phone || 'N/A'}</div>
-          <div><em>Region: ${tribe.Region || 'N/A'}</em></div>
-          <a href="${websiteLink}" target="_blank" rel="noopener noreferrer" class="image-preview-link" title="Visit ${tribe.Tribe}'s Website">
-            <img src="${imageSource}" alt="Snapshot of ${tribe.Tribe || 'Tribe'}'s website" class="image-preview"
-                 onerror="this.onerror=null; this.src='${placeholderImgPath}'; console.warn('Image not found: ${imageSource} (tried relative path), using placeholder.');" />
-          </a>
-        </div>
-      `;
+        `;
+      });
     }
 
-    function populateDropdown(tribesToDisplay) {
-      dropdown.innerHTML = ''; 
-      currentKeyboardFocus = -1; 
+    const input = document.getElementById('tribeSearchInput');
+    const dropdown = document.getElementById('customTribeDropdown');
 
-      if (isFetchingData) { 
-          dropdown.innerHTML = '<div class="loading-message">Loading tribes...</div>';
-      } else if (tribesToDisplay.length === 0 && searchInput.value.trim() !== '') {
-        dropdown.innerHTML = '<div class="no-results">No tribes match your search.</div>';
-      } else if (tribesToDisplay.length === 0 && searchInput.value.trim() === '') {
-         if (allTribalData.length === 0 && !isFetchingData) { 
-             dropdown.innerHTML = '<div class="no-results">No tribal data available. Check console for errors.</div>';
-         } else {
-             dropdown.style.display = 'none'; 
-             return;
-         }
-      }
-
-      if (!isFetchingData && tribesToDisplay.length > 0) {
-          tribesToDisplay.forEach(tribe => {
-            const itemDiv = document.createElement('div');
-            itemDiv.classList.add('dropdown-item');
-            itemDiv.textContent = tribe.Tribe;
-            itemDiv.addEventListener('mousedown', (e) => { 
-              e.preventDefault(); 
-              searchInput.value = tribe.Tribe; 
-              renderTribeInfo( tribe ); 
-              dropdown.style.display = 'none';
-            });
-            dropdown.appendChild(itemDiv);
-          });
-      }
-      
-      if (dropdown.hasChildNodes()) {
-          dropdown.style.display = 'block';
-      } else {
-          dropdown.style.display = 'none';
-      }
-    }
-
-    // --- EVENT LISTENERS ---
-    searchInput.addEventListener('input', () => {
-      const query = searchInput.value.toLowerCase().trim();
-      const filteredTribes = allTribalData.filter(tribe =>
-        tribe.Tribe.toLowerCase().includes(query)
-      );
-      populateDropdown(filteredTribes);
-      
-      if (query === '') { 
-        tribeInfoContainer.innerHTML = '';
-      }
+    input.addEventListener('input', () => {
+      const value = input.value.toLowerCase();
+      const matches = tribes.filter(t => t.toLowerCase().includes(value));
+      dropdown.innerHTML = matches.map(t => `<div class="dropdown-item">${t}</div>`).join('');
+      dropdown.style.display = matches.length ? 'block' : 'none';
     });
 
-    searchInput.addEventListener('focus', async () => {
-      console.log("Search input focused.");
-      if (blurTimeoutId) {
-        clearTimeout(blurTimeoutId); 
-        blurTimeoutId = null;
-        console.log("Cleared blur timeout.");
-      }
-      
-      if (allTribalData.length === 0 && !isFetchingData) { 
-        console.log("Focus event: No data, attempting to fetch.");
-        populateDropdown([]); // Show "Loading tribes..." message
-        try {
-          await fetchTribalData(); 
-          console.log("Focus event: Fetch attempt complete. Current allTribalData length:", allTribalData.length);
-          populateDropdown(allTribalData); 
-        } catch (e) {
-          console.error("Focus event: Fetch failed during focus.", e);
-          // Error message already handled by fetchTribalData.
-          // populateDropdown will show "No tribal data available" if allTribalData is still empty.
-          populateDropdown(allTribalData); 
-        }
-      } else if (isFetchingData) {
-        console.log("Focus event: Data is currently being fetched, showing loading message.");
-        populateDropdown([]); 
-      }
-      else {
-        // Data is already loaded, always show all tribes.
-        console.log("Focus event: Data already loaded. Current allTribalData length:", allTribalData.length, "Populating with all tribes.");
-        populateDropdown(allTribalData);
-      }
-    });
-    
-    searchInput.addEventListener('blur', () => {
-        console.log("Search input blurred.");
-        if (blurTimeoutId) { 
-            clearTimeout(blurTimeoutId);
-        }
-        blurTimeoutId = setTimeout(() => {
-            console.log("Executing blur timeout action.");
-            if (document.activeElement !== searchInput && !dropdown.matches(':hover')) { 
-                console.log("Hiding dropdown on blur.");
-                dropdown.style.display = 'none';
-            } else {
-                console.log("Not hiding dropdown: activeElement is searchInput or mouse is over dropdown.");
-            }
-            blurTimeoutId = null; 
-        }, 200); 
-    });
-
-    searchInput.addEventListener('keydown', (e) => {
-      const items = dropdown.querySelectorAll('.dropdown-item');
-      
-      if ((dropdown.style.display === 'none' || !dropdown.style.display) && (e.key === 'ArrowDown' || e.key === 'ArrowUp')) {
-            if (blurTimeoutId) { clearTimeout(blurTimeoutId); blurTimeoutId = null; } 
-            
-            console.log("Keydown: Opening dropdown with arrow keys.");
-            // On arrow key when dropdown is hidden, show all tribes (if data is loaded)
-            populateDropdown(allTribalData);
-
-            const newItems = dropdown.querySelectorAll('.dropdown-item'); 
-            if (newItems.length > 0) {
-                 currentKeyboardFocus = (e.key === 'ArrowDown') ? 0 : newItems.length -1;
-                 updateKeyboardFocus(newItems);
-            }
-            return; 
-      }
-
-      if (items.length === 0 && e.key !== 'Escape') return; 
-
-      if (e.key === 'ArrowDown') {
-        e.preventDefault();
-        currentKeyboardFocus++;
-        if (currentKeyboardFocus >= items.length) currentKeyboardFocus = 0;
-        updateKeyboardFocus(items);
-      } else if (e.key === 'ArrowUp') {
-        e.preventDefault();
-        currentKeyboardFocus--;
-        if (currentKeyboardFocus < 0) currentKeyboardFocus = items.length - 1;
-        updateKeyboardFocus(items);
-      } else if (e.key === 'Enter') {
-        e.preventDefault();
-        if (currentKeyboardFocus > -1 && items[currentKeyboardFocus]) {
-          items[currentKeyboardFocus].dispatchEvent(new MouseEvent('mousedown')); 
-        } else if (items.length > 0) { 
-          const directMatch = allTribalData.find(t => t.Tribe.toLowerCase() === searchInput.value.toLowerCase().trim());
-          if (directMatch) {
-              searchInput.value = directMatch.Tribe;
-              renderTribeInfo(directMatch);
-              dropdown.style.display = 'none';
-          } else if (items.length === 1 && items[0].textContent !== 'No tribes match your search.' && items[0].textContent !== 'Loading tribes...' && items[0].textContent !== 'No tribal data available. Check console for errors.') {
-             items[0].dispatchEvent(new MouseEvent('mousedown')); 
-          }
-        }
-      } else if (e.key === 'Escape') {
+    dropdown.addEventListener('click', e => {
+      if (e.target.classList.contains('dropdown-item')) {
+        const tribeName = e.target.textContent;
+        input.value = tribeName;
         dropdown.style.display = 'none';
+        renderArticlesForTribe(tribeName);
       }
     });
 
-    function updateKeyboardFocus(items) {
-      items.forEach(item => item.classList.remove('highlighted'));
-      if (items[currentKeyboardFocus] && items[currentKeyboardFocus].classList) { 
-        items[currentKeyboardFocus].classList.add('highlighted');
-        items[currentKeyboardFocus].scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      }
-    }
-
-    // --- INITIALIZATION ---
-    fetchTribalData().then(() => {
-        console.log("Initial data fetch attempt complete on page load.");
-    }).catch(err => {
-        console.error("Initial data fetch failed on page load:", err);
-    }); 
-
+    fetchArticles();
   </script>
-  <script data-goatcounter="https://nativekin.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
