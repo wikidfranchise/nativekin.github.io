@@ -99,7 +99,7 @@
         const res = await fetch('data/tribalDirectory.json');
         const data = await res.json();
         tribes = data.map(row => row.Tribe).filter(Boolean).sort((a, b) => a.localeCompare(b));
-        populateDropdown(tribes);
+        populateDropdown(tribes); // Ensure dropdown is populated immediately
       } catch (err) {
         console.error('Error loading tribes:', err);
       }
@@ -140,29 +140,8 @@
       });
     }
 
-    const input = document.getElementById('tribeSearchInput');
-    const dropdown = document.getElementById('customTribeDropdown');
-
-    input.addEventListener('focus', () => {
-      populateDropdown(tribes);
-    });
-
-    input.addEventListener('input', () => {
-      const value = input.value.toLowerCase();
-      const matches = tribes.filter(t => t.toLowerCase().includes(value));
-      populateDropdown(matches);
-    });
-
-    dropdown.addEventListener('click', e => {
-      if (e.target.classList.contains('dropdown-item')) {
-        const tribeName = e.target.textContent;
-        input.value = tribeName;
-        dropdown.style.display = 'none';
-        renderArticlesForTribe(tribeName);
-      }
-    });
-
     function populateDropdown(list) {
+      const dropdown = document.getElementById('customTribeDropdown');
       if (!list || list.length === 0) {
         dropdown.innerHTML = '<div class="dropdown-item">No matching tribes found</div>';
         dropdown.style.display = 'block';
@@ -176,6 +155,28 @@
     window.addEventListener('load', async () => {
       await fetchTribes();
       await fetchArticles();
+
+      const input = document.getElementById('tribeSearchInput');
+      const dropdown = document.getElementById('customTribeDropdown');
+
+      input.addEventListener('focus', () => {
+        populateDropdown(tribes);
+      });
+
+      input.addEventListener('input', () => {
+        const value = input.value.toLowerCase();
+        const matches = tribes.filter(t => t.toLowerCase().includes(value));
+        populateDropdown(matches);
+      });
+
+      dropdown.addEventListener('click', e => {
+        if (e.target.classList.contains('dropdown-item')) {
+          const tribeName = e.target.textContent;
+          input.value = tribeName;
+          dropdown.style.display = 'none';
+          renderArticlesForTribe(tribeName);
+        }
+      });
     });
   </script>
 </body>
