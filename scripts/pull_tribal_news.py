@@ -43,6 +43,12 @@ WORKING_RSS_FEEDS = [
     "https://digitalrepository.unm.edu/natv_fsp/announcements.html",
     "https://nativeamericans.einnews.com/rss/67-xc0wHdGzonmfm",
     "https://nativeamericans.einnews.com/rss/oo3Q2npvnVobKLs_",
+    "https://navajotimes.com/feed/",
+    "https://www.quapawtribe.com/rss.aspx",
+    "https://www.cherokeephoenix.org/rss.aspx",
+    "https://www.nativenews.net/feed/",
+    "https://www.wvtf.org/podcast/tribal-truths/rss.xml",
+    "https://ncaied.org/stories-media/native-edge-podcast.html",
 
 ]
 
