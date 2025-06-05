@@ -1,0 +1,67 @@
+2025-06-05 10:34:31 - INFO - Starting RSS feed aggregation script.
+2025-06-05 10:34:31 - INFO - Successfully loaded 9 feed definitions from C:\Users\John\documents\nativekin.org\nativekin-media-site\nativekin.github.io\scripts\..\media\nativekin_feeds.json
+2025-06-05 10:34:31 - INFO - Processing feed: 'Mvskoke Media' from https://www.mvskokemedia.com/feed/
+2025-06-05 10:34:32 - INFO - Successfully parsed 5 entries from 'Mvskoke Media'.
+2025-06-05 10:34:32 - INFO - Processing feed: 'Osage News' from https://osagenews.org/feed/
+2025-06-05 10:34:32 - INFO - Successfully parsed 5 entries from 'Osage News'.
+2025-06-05 10:34:32 - INFO - Processing feed: 'Cherokee Phoenix' from https://www.cherokeephoenix.org/rss/
+2025-06-05 10:34:33 - WARNING - Feed 'Cherokee Phoenix' may be ill-formed. Error: <unknown>:2:0: syntax error
+2025-06-05 10:34:33 - INFO - No entries found in feed 'Cherokee Phoenix'.
+2025-06-05 10:34:33 - INFO - Processing feed: 'Indian Country Today' from https://indiancountrytoday.com/.rss/full/
+2025-06-05 10:34:33 - WARNING - Feed 'Indian Country Today' may be ill-formed. Error: <unknown>:2:0: syntax error
+2025-06-05 10:34:33 - INFO - No entries found in feed 'Indian Country Today'.
+2025-06-05 10:34:33 - INFO - Processing feed: 'Native News Online' from https://nativenewsonline.net/rss
+2025-06-05 10:35:54 - INFO - Starting RSS feed aggregation script.
+2025-06-05 10:35:54 - INFO - Successfully loaded 9 feed definitions from C:\Users\John\Documents\nativekin.org\nativekin-media-site\nativekin.github.io\scripts\..\media\nativekin_feeds.json
+2025-06-05 10:35:54 - INFO - Processing feed: 'Mvskoke Media' from https://www.mvskokemedia.com/feed/
+2025-06-05 10:35:54 - INFO - Successfully parsed 5 entries from 'Mvskoke Media'.
+2025-06-05 10:35:54 - INFO - Processing feed: 'Osage News' from https://osagenews.org/feed/
+2025-06-05 10:35:55 - INFO - Successfully parsed 5 entries from 'Osage News'.
+2025-06-05 10:35:55 - INFO - Processing feed: 'Cherokee Phoenix' from https://www.cherokeephoenix.org/rss/
+2025-06-05 10:35:55 - WARNING - Feed 'Cherokee Phoenix' may be ill-formed. Error: <unknown>:2:0: syntax error
+2025-06-05 10:35:55 - INFO - No entries found in feed 'Cherokee Phoenix'.
+2025-06-05 10:35:55 - INFO - Processing feed: 'Indian Country Today' from https://indiancountrytoday.com/.rss/full/
+2025-06-05 10:35:55 - WARNING - Feed 'Indian Country Today' may be ill-formed. Error: <unknown>:2:0: syntax error
+2025-06-05 10:35:55 - INFO - No entries found in feed 'Indian Country Today'.
+2025-06-05 10:35:55 - INFO - Processing feed: 'Native News Online' from https://nativenewsonline.net/rss
+2025-06-05 10:39:29 - INFO - Global socket timeout set to 20 seconds.
+2025-06-05 10:39:29 - INFO - Starting RSS feed aggregation script.
+2025-06-05 10:39:29 - INFO - Successfully loaded 9 feed definitions from C:\Users\John\documents\nativekin.org\nativekin-media-site\nativekin.github.io\scripts\..\media\nativekin_feeds.json
+2025-06-05 10:39:29 - INFO - Processing feed 1/9: 'Mvskoke Media' from https://www.mvskokemedia.com/feed/
+2025-06-05 10:39:29 - ERROR - Exception processing feed 'Mvskoke Media' (https://www.mvskokemedia.com/feed/): parse() got an unexpected keyword argument 'timeout'
+2025-06-05 10:39:29 - INFO - Processing feed 2/9: 'Osage News' from https://osagenews.org/feed/
+2025-06-05 10:39:29 - ERROR - Exception processing feed 'Osage News' (https://osagenews.org/feed/): parse() got an unexpected keyword argument 'timeout'
+2025-06-05 10:39:29 - INFO - Processing feed 3/9: 'Cherokee Phoenix' from https://www.cherokeephoenix.org/rss/
+2025-06-05 10:39:29 - ERROR - Exception processing feed 'Cherokee Phoenix' (https://www.cherokeephoenix.org/rss/): parse() got an unexpected keyword argument 'timeout'
+2025-06-05 10:39:29 - INFO - Processing feed 4/9: 'Indian Country Today' from https://indiancountrytoday.com/.rss/full/
+2025-06-05 10:39:29 - ERROR - Exception processing feed 'Indian Country Today' (https://indiancountrytoday.com/.rss/full/): parse() got an unexpected keyword argument 'timeout'
+2025-06-05 10:39:29 - INFO - Processing feed 5/9: 'Native News Online' from https://nativenewsonline.net/rss
+2025-06-05 10:39:29 - ERROR - Exception processing feed 'Native News Online' (https://nativenewsonline.net/rss): parse() got an unexpected keyword argument 'timeout'
+2025-06-05 10:39:29 - INFO - Processing feed 6/9: 'Native America Calling' from https://www.nativeamericacalling.com/feed/
+2025-06-05 10:39:29 - ERROR - Exception processing feed 'Native America Calling' (https://www.nativeamericacalling.com/feed/): parse() got an unexpected keyword argument 'timeout'
+2025-06-05 10:39:29 - INFO - Processing feed 7/9: 'National Native News' from https://www.nativenews.net/feed/
+2025-06-05 10:39:29 - ERROR - Exception processing feed 'National Native News' (https://www.nativenews.net/feed/): parse() got an unexpected keyword argument 'timeout'
+2025-06-05 10:39:29 - INFO - Processing feed 8/9: 'The Circle News' from https://thecirclenews.org/feed/
+2025-06-05 10:39:29 - ERROR - Exception processing feed 'The Circle News' (https://thecirclenews.org/feed/): parse() got an unexpected keyword argument 'timeout'
+2025-06-05 10:39:29 - INFO - Processing feed 9/9: 'Lakota Times' from https://www.lakotatimes.com/rss/
+2025-06-05 10:39:29 - ERROR - Exception processing feed 'Lakota Times' (https://www.lakotatimes.com/rss/): parse() got an unexpected keyword argument 'timeout'
+2025-06-05 10:39:29 - INFO - Feed processing complete. Successfully attempted: 0, Failed/Skipped: 9
+2025-06-05 10:39:29 - INFO - Successfully saved 0 aggregated articles to C:\Users\John\documents\nativekin.org\nativekin-media-site\nativekin.github.io\scripts\..\media\nativekin_aggregated_articles.json
+2025-06-05 10:39:29 - INFO - RSS feed aggregation script finished successfully.
+2025-06-05 10:41:22 - INFO - Global socket timeout set to 20 seconds.
+2025-06-05 10:41:22 - INFO - Starting RSS feed aggregation script.
+2025-06-05 10:41:22 - INFO - Successfully loaded 9 feed definitions from C:\Users\John\documents\nativekin.org\nativekin-media-site\nativekin.github.io\scripts\..\media\nativekin_feeds.json
+2025-06-05 10:41:22 - INFO - Processing feed 1/9: 'Mvskoke Media' from https://www.mvskokemedia.com/feed/
+2025-06-05 10:41:22 - INFO - Successfully parsed 5 entries from 'Mvskoke Media'.
+2025-06-05 10:41:22 - INFO - Processing feed 2/9: 'Osage News' from https://osagenews.org/feed/
+2025-06-05 10:41:22 - INFO - Successfully parsed 5 entries from 'Osage News'.
+2025-06-05 10:41:22 - INFO - Processing feed 3/9: 'Cherokee Phoenix' from https://www.cherokeephoenix.org/rss/
+2025-06-05 10:41:23 - WARNING - Feed 'Cherokee Phoenix' may be ill-formed. Error: SAXParseException('syntax error')
+2025-06-05 10:41:23 - WARNING - No entries could be processed for 'Cherokee Phoenix'. Feed data might be empty or errored before entry processing (feed_data: True, feed_data.entries: True).
+2025-06-05 10:41:23 - INFO - Processing feed 4/9: 'Indian Country Today' from https://indiancountrytoday.com/.rss/full/
+2025-06-05 10:41:23 - WARNING - Feed 'Indian Country Today' may be ill-formed. Error: SAXParseException('syntax error')
+2025-06-05 10:41:23 - WARNING - No entries could be processed for 'Indian Country Today'. Feed data might be empty or errored before entry processing (feed_data: True, feed_data.entries: True).
+2025-06-05 10:41:23 - INFO - Processing feed 5/9: 'Native News Online' from https://nativenewsonline.net/rss
+2025-06-05 10:41:39 - WARNING - Feed 'Native News Online' may be ill-formed. Error: SAXParseException('not well-formed (invalid token)')
+2025-06-05 10:41:39 - WARNING - No entries could be processed for 'Native News Online'. Feed data might be empty or errored before entry processing (feed_data: True, feed_data.entries: True).
+2025-06-05 10:41:39 - INFO - Processing feed 6/9: 'Native America Calling' from https://www.nativeamericacalling.com/feed/

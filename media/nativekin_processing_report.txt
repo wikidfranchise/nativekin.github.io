@@ -1,4 +1,4 @@
---- Tribal News Aggregation Report - 2025-06-02 11:25:35 ---
+--- Tribal News Aggregation Report - 2025-06-04 15:30:17 ---
 
 Total tribes in directory: 404
 
@@ -316,7 +316,7 @@ Processing Tribe: Chickahominy Indian Tribe - Eastern Division (URL: http://www.
   No articles pulled from RSS or Scrape.
 
 Processing Tribe: Chitimacha Tribe of Louisiana (URL: http://www.chitimacha.gov)
-  No specific news section found. Will try Base URL: http://www.chitimacha.gov
+  News Section Identified: http://www.chitimacha.gov/announcements
   No articles pulled from RSS or Scrape.
 
 Processing Tribe: Coushatta Tribe of Louisiana (URL: https://www.coushatta.org/)
@@ -608,7 +608,7 @@ Processing Tribe: Lower Sioux Indian Community in the State of Minnesota (URL: h
   No articles pulled from RSS or Scrape.
 
 Processing Tribe: Match-e-be-nash-she-wish Band of Pottawatomi Indians of Michigan (URL: https://gunlaketribe-nsn.gov/)
-  News Section Identified: https://gunlaketribe-nsn.gov/news/
+  No specific news section found. Will try Base URL: https://gunlaketribe-nsn.gov/
   No articles pulled from RSS or Scrape.
 
 Processing Tribe: Menominee Indian Tribe of Wisconsin (URL: http://www.menominee-nsn.gov)
@@ -817,7 +817,7 @@ Processing Tribe: Northwestern Band of the Shoshone Nation (URL: http://www.nwbs
 
 Processing Tribe: Port Gamble S'Klallam Tribe (URL: http://www.pgst.nsn.us)
   No specific news section found. Will try Base URL: http://www.pgst.nsn.us
-  Pulled 1 articles via Scrape from http://www.pgst.nsn.us
+  No articles pulled from RSS or Scrape.
 
 Processing Tribe: Puyallup Tribe of the Puyallup Reservation (URL: http://www.puyallup-tribe.com)
   No specific news section found. Will try Base URL: http://www.puyallup-tribe.com
@@ -1620,8 +1620,8 @@ Processing Tribe: Yomba Shoshone Tribe of the Yomba Reservation, Nevada (URL: ht
   No articles pulled from RSS or Scrape.
 
 --- Aggregation Summary ---
-Total articles collected: 138
-Unique sources yielding articles: 54
+Total articles collected: 137
+Unique sources yielding articles: 53
   - Inupiat Community of the Arctic Slope: 1 articles via Scrape from https://icas-nsn.gov/
   - Native Village of Napaimute: 1 articles via Scrape from http://www.napaimute.org
   - Nenana Native Association: 5 articles via Scrape from https://www.nenananativeassociation.org/
@@ -1651,7 +1651,6 @@ Unique sources yielding articles: 54
   - Confederated Tribes of the Warm Springs Reservation of Oregon: 1 articles via Scrape from https://warmsprings-nsn.gov/
   - Nooksack Indian Tribe: 3 articles via Scrape from https://nooksacktribe.org/
   - Northwestern Band of the Shoshone Nation: 1 articles via Scrape from http://www.nwbshoshone.com
-  - Port Gamble S'Klallam Tribe: 1 articles via Scrape from http://www.pgst.nsn.us
   - Puyallup Tribe of the Puyallup Reservation: 1 articles via Scrape from http://www.puyallup-tribe.com
   - Spokane Tribe of the Spokane Reservation: 2 articles via Scrape from http://www.spokanetribe.com
   - Suquamish Indian Tribe of the Port Madison Reservation: 4 articles via Scrape from http://www.suquamish.nsn.us
