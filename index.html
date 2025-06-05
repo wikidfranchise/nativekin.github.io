@@ -92,17 +92,12 @@
   <div id="tribeInfoOutput"></div>
   <div id="newsArticlesOutput"></div>
   <script>
-    const tribes = [];
+    let tribes = [];
 
     async function fetchTribes() {
       const res = await fetch('data/tribalDirectory.json');
       const data = await res.json();
-      data.forEach(row => {
-        if (row.Tribe && !tribes.includes(row.Tribe)) {
-          tribes.push(row.Tribe);
-        }
-      });
-      tribes.sort((a, b) => a.localeCompare(b));
+      tribes = data.map(row => row.Tribe).filter((t, i, arr) => t && arr.indexOf(t) === i).sort((a, b) => a.localeCompare(b));
     }
 
     const articles = [];
@@ -155,7 +150,9 @@
       }
     });
 
-    Promise.all([fetchTribes(), fetchArticles()]);
+    window.addEventListener('load', async () => {
+      await Promise.all([fetchTribes(), fetchArticles()]);
+    });
   </script>
 </body>
 </html>
